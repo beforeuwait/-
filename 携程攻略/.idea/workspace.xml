@@ -21,8 +21,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_restaurant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_restaurant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_shop.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/get_shop.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -33,10 +53,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/get_area.py" />
+        <option value="$PROJECT_DIR$/get_restaurant.py" />
+        <option value="$PROJECT_DIR$/get_shop.py" />
       </list>
     </option>
   </component>
@@ -90,16 +119,6 @@
             <path>
               <item name="携程攻略" type="b2602c69:ProjectViewProjectNode" />
               <item name="携程攻略" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="携程攻略" type="b2602c69:ProjectViewProjectNode" />
-              <item name="携程攻略" type="462c0819:PsiDirectoryNode" />
-              <item name="DataList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="携程攻略" type="b2602c69:ProjectViewProjectNode" />
-              <item name="携程攻略" type="462c0819:PsiDirectoryNode" />
-              <item name="DataTemp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,6 +209,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_restaurant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_shop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
