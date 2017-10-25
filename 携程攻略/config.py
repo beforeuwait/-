@@ -53,3 +53,7 @@ def get_proxy():
 # 编码
 BLANK = '\u0001'
 ENCODING = 'utf-8'
+
+# 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
+CMT_START_DATE = '2012-01-01'
+CMT_START_END = '2017-10-25'
