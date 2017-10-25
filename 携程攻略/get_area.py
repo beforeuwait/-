@@ -75,6 +75,7 @@ def get_city_list():
         f.write(text)
 
 def execute():
+    # 每次抓取列表前，首先要清空文件
     f = open(config.PROVS_LIST, 'w+', encoding=config.ENCODING)
     g = open(config.CITY_LIST, 'w+', encoding=config.ENCODING)
     f.close()
