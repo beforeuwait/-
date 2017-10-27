@@ -5,7 +5,7 @@ import os
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
 # 命令
-RESTAURANT_COMMAND = 'all'
+RESTAURANT_COMMAND = 'list'
 
 PATH = 'Data'
 if not os.path.exists(PATH):
@@ -25,30 +25,30 @@ ALL_CITY_LIST = os.path.join(os.path.abspath(LIST), 'city_list_total.txt')
 
 CITY_LIST = os.path.join(os.path.abspath(LIST), 'city_list.txt')    # 城市列表
 if not os.path.exists(CITY_LIST):
-    f = open(CITY_LIST)
+    f = open(CITY_LIST, 'w+')
     f.close()
 
 PROVS_LIST = os.path.join(os.path.abspath(TEMP), 'provs_list.txt')  # 临时的省份列表
 if not os.path.exists(PROVS_LIST):
-    f = open(PROVS_LIST)
+    f = open(PROVS_LIST, 'w+')
     f.close()
 
 RESTAURANT_SHOP_LIST = os.path.join(os.path.abspath(PATH), 'restaurant_shop_list.txt')
 if not os.path.exists(RESTAURANT_SHOP_LIST):
-    f = open(RESTAURANT_SHOP_LIST)
+    f = open(RESTAURANT_SHOP_LIST, 'w+')
     f.close()
 
 RESTAURANT_SHOP_INFO = os.path.join(os.path.abspath(PATH), 'restaurant_shop_info.txt')
 if not os.path.exists(RESTAURANT_SHOP_INFO):
-    f = open(RESTAURANT_SHOP_INFO)
+    f = open(RESTAURANT_SHOP_INFO, 'w+')
     f.close()
 
 
 RESTAURANT_SHOP_EX = os.path.join(os.path.abspath(PATH), 'restaurant_shop_ex.txt') # 记录已抓取目录已经pid
 if not os.path.exists(RESTAURANT_SHOP_EX):
-    f = open(RESTAURANT_SHOP_EX)
+    f = open(RESTAURANT_SHOP_EX, 'w+')
     f.close()
-    
+
 # 代理
 
 def get_proxy():

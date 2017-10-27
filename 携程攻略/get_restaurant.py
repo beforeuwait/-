@@ -2,11 +2,14 @@ __author__ = 'Wang Jia Wei'
 
 """
 这个脚本作为携程攻略中各旅游目的的餐馆的采集脚本
+记录：
+2017-10-27： 为二级市添加行政区，不然，数据少的可怜,这个模块放在get_area.py中了
 """
 
 import requests
 import json
 import re
+import config
 from faker import Faker
 import multiprocessing
 from lxml import etree
@@ -25,6 +28,7 @@ class ctripShopEngine:
         # pool = multiprocessing.Pool(2)
         city_list = (i.strip().split(setting.blank) for i in open(setting.city_list, 'r', encoding=setting.encode)) # 获取已抓取的城市列表
         for each in city_list:
+            print(each)
             self.shop_list_logic(each)
             # pool.apply_async(self.shop_list, (each,))
         # pool.close()
@@ -33,13 +37,14 @@ class ctripShopEngine:
     def shop_list_logic(self, info):
         page, next_page = 1, True
         while next_page:
-            html = self.down.shop_list(info[-1], page)
+            print(page)
+            html = self.down.shop_list(info[-2], page) if info[-1] == '' else self.down.shop_list_area(info[-2], info[-1], page)
             shop_list = self.spider.shop_list(html) if html is not 'bad_requests' else []
             next_page = True if not shop_list == [] else False
             if next_page:
                 self.pipe.save_shop_list(info, shop_list)
             page += 1
-            break
+
 
     def shop_info_pid(self):
         """
@@ -53,6 +58,7 @@ class ctripShopEngine:
         shop_ex_set = set(i.strip().split(setting.blank)[0]for i in open(setting.restaurant_ex, 'r', encoding=setting.encode))
         shop_list = (i.strip().split(setting.blank)for i in open(setting.restaurant_list, 'r', encoding=setting.encode))
         for each in shop_list:
+            print(each)
             if each[7] not in shop_ex_set:
                 self.shop_info_pid_logic(each)
                 # pool.apply_async(self.shop_info_pid_logic, (each,))
@@ -93,12 +99,19 @@ class ctripShopDownloader:
 
     def shop_list(self, city_id, page):
         url = setting.shop_list_url %(city_id, page)
+        print(url)
         headers = setting.headers
         html = self.do_get_requests(url, headers)
         return html
 
     def shop_info_pid(self, link):
         url = setting.local_url % link
+        headers = setting.headers
+        html = self.do_get_requests(url, headers)
+        return html
+
+    def shop_list_area(self, city_id, area_id, page):
+        url = setting.shop_list_url_area %(city_id, area_id, page)
         headers = setting.headers
         html = self.do_get_requests(url, headers)
         return html
@@ -171,8 +184,9 @@ class ctripShopPipeline:
 
     def save_shop_list(self, info, data):
         text = ''
-        info.pop(-1)
-        city = info
+        exinfo = info.copy()
+        exinfo.pop(-1)
+        city = exinfo
         for each in data:
             context = setting.blank.join(city)
             text += context + setting.blank + setting.blank.join(each) + '\n'
@@ -214,7 +228,6 @@ class setting:
     """
     这个类作为引入config.py里的参数并提供给这个脚本里使用
     """
-    import config
 
     blank = config.BLANK
 
@@ -225,6 +238,8 @@ class setting:
     city_list = config.CITY_LIST
 
     shop_list_url = 'http://you.ctrip.com/restaurantlist/%s/s0-p%s.html'
+
+    shop_list_url_area = 'http://you.ctrip.com/restaurantlist/%s/s0-r%s-p%s.html'
 
     local_url = 'http://you.ctrip.com%s'
 
@@ -264,6 +279,5 @@ class ctripShopExecute:
             del cse
 
 if __name__ == '__main__':
-    from config import RESTAURANT_COMMAND
-    cse = ctripShopExecute(RESTAURANT_COMMAND)
+    cse = ctripShopExecute(config.RESTAURANT_COMMAND)
     cse.execute()

@@ -80,6 +80,55 @@ def get_city_list():
     with open(config.CITY_LIST, 'a', encoding=config.ENCODING) as f:
         f.write(text)
 
+def get_sub_area():
+    city_list = [i.strip().split(config.BLANK)for i in open(config.CITY_LIST, 'r', encoding=config.ENCODING)]
+    data = []
+    for each in city_list:
+        print(each)
+        if not each[4] == '':
+            each.append('')
+            data.append(each)
+        else:
+            data.extend(get_sub_area_logic(each))
+
+    # 再次匹配内容
+    for each in data:
+        for t in (i.strip().split(config.BLANK)for i in open(config.ALL_CITY_LIST, 'r', encoding=config.ENCODING)):
+            if each[0] in t and each[2] in t and each[5] in t and each[4] == '':
+                each[5] = t[5]
+                each[6] = t[6]
+    content = ''
+    # 写入文件
+    for each in data:
+        each[4], each[5] = each[5], each[4]
+        content += config.BLANK.join(each) + '\n'
+    with open(config.CITY_LIST, 'w', encoding=config.ENCODING) as f:
+        f.write(content)
+
+def get_sub_area_logic(each):
+    data = []
+    url = 'http://you.ctrip.com/restaurantlist/%s.html' %each[-1]
+    retry = 5
+    html = ''
+    while retry > 0:
+        try:
+            html = requests.get(url, headers=headers, proxies=config.get_proxy()).content.decode(config.ENCODING)
+            break
+        except:
+            pass
+        retry -= 1
+    selector = etree.HTML(html)
+    cons = selector.xpath('//div[@id="locationDiv"]/p/a')
+    for i in cons:
+        info = each.copy()
+        area = i.xpath('text()')[0] if i.xpath('text()') else ''
+        co = i.xpath('@onclick')[0] if i.xpath('@onclick') else ''
+        code = re.findall('OnRegion\((.*?)\)', co)[0]
+        info[5] = area
+        info.append(code)
+        data.append(info)
+    return data
+
 def execute():
     # 每次抓取列表前，首先要清空文件
     f = open(config.PROVS_LIST, 'w+', encoding=config.ENCODING)
@@ -88,6 +137,7 @@ def execute():
     g.close()
     get_provs_list()
     get_city_list()
+    get_sub_area()
 
 if __name__ == '__main__':
     execute()
