@@ -4,6 +4,9 @@ import os
 
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
+# 命令
+RESTAURANT_COMMAND = 'all'
+
 PATH = 'Data'
 if not os.path.exists(PATH):
     os.mkdir(os.path.abspath(PATH))
@@ -28,6 +31,8 @@ PROVS_LIST = os.path.join(os.path.abspath(TEMP), 'provs_list.txt')  # 临时的�
 RESTAURANT_SHOP_LIST = os.path.join(os.path.abspath(PATH), 'restaurant_shop_list.txt')
 
 RESTAURANT_SHOP_INFO = os.path.join(os.path.abspath(PATH), 'restaurant_shop_info.txt')
+
+RESTAURANT_SHOP_EX = os.path.join(os.path.abspath(PATH), 'restaurant_shop_ex.txt') # 记录已抓取目录已经pid
 
 # 代理
 
@@ -76,3 +81,39 @@ HEADERS_XML = {
 # 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
 CMT_START_DATE = '2012-01-01'
 CMT_START_END = '2017-10-25'
+
+# 字段，类似scrapy里的item
+
+RESTAURANT_DICT = {
+    "中文全称": "",
+    "中文简称": "",
+    "所属地区": "",
+    "地址": "",
+    "地理位置": "",
+    "类型": "",
+    "等级": "",
+    "营业时间": "",
+    "人均消费": "",
+    "特色菜品": "",
+    "咨询电话": "",
+    "传真": "",
+    "邮政编码": "",
+    "投诉电话": "",
+    "交通信息": "",
+    "周边信息": "",
+    "简介": "",
+    "国别": "CN",
+    "省自治区全称": "",
+    "省自治区简称": "",
+    "市州全称": "",
+    "市州简称": "",
+    "区县全称": "",
+    "区县简称": "",
+    "地区编码": "",
+    "url": "",
+}
+RESTAURANT_DICT_L = [
+    "中文全称", "中文简称", "所属地区", "地址", "地理位置", "类型", "等级", "营业时间", "人均消费",
+    "特色菜品", "咨询电话", "传真", "邮政编码", "投诉电话", "交通信息", "周边信息", "简介", "国别",
+    "省自治区全称", "省自治区简称", "市州全称", "市州简称", "区县全称", "区县简称", "地区编码", "url"
+]

@@ -10,35 +10,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/$get_restaurant.coverage" NAME="get_restaurant Coverage Results" MODIFIED="1509008156000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$get_restaurant.coverage" NAME="get_restaurant Coverage Results" MODIFIED="1509056622503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$get_area.coverage" NAME="get_area Coverage Results" MODIFIED="1509055689691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="city_list.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataList/city_list.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="1402" column="36" lean-forward="false" selection-start-line="1402" selection-start-column="36" selection-end-line="1402" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_restaurant.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_restaurant.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_restaurant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1379">
-              <caret line="137" column="19" lean-forward="false" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
+            <state relative-caret-position="358">
+              <caret line="259" column="0" lean-forward="true" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
               <folding>
                 <element signature="e#63#78#0" expanded="true" />
               </folding>
@@ -46,8 +27,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant_shop_list.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_list.txt">
+      <file leaf-file-name="restaurant_shop_ex.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_ex.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restaurant_shop_info.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_info.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -67,8 +68,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>南充</find>
       <find>成都</find>
+      <find>南充</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -77,11 +78,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/get_area.py" />
         <option value="$PROJECT_DIR$/get_shop.py" />
-        <option value="$PROJECT_DIR$/DataList/city_list.txt" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/Data/restaurant_shop_list.txt" />
+        <option value="$PROJECT_DIR$/get_area.py" />
+        <option value="$PROJECT_DIR$/DataList/city_list.txt" />
+        <option value="$PROJECT_DIR$/Data/restaurant_shop_info.txt" />
+        <option value="$PROJECT_DIR$/Data/restaurant_shop_ex.txt" />
+        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/get_restaurant.py" />
       </list>
     </option>
@@ -176,6 +179,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.get_restaurant">
+    <configuration name="get_area" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="携程攻略" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_area.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="get_restaurant" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,9 +215,14 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.get_restaurant" />
+      <item index="1" class="java.lang.String" itemvalue="Python.get_area" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.get_restaurant" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_area" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +291,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataTemp/provs_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataList/city_list_total.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -273,26 +307,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-2010535109/builtins.py">
+    <entry file="file://$PROJECT_DIR$/DataList/city_list.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1268" column="8" lean-forward="false" selection-start-line="1268" selection-start-column="8" selection-end-line="1268" selection-end-column="8" />
+        <state relative-caret-position="112">
+          <caret line="1284" column="33" lean-forward="false" selection-start-line="1284" selection-start-column="33" selection-end-line="1284" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_area.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="58" />
+        <state relative-caret-position="217">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataList/city_list.txt">
+    <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="1402" column="36" lean-forward="false" selection-start-line="1402" selection-start-column="36" selection-end-line="1402" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_ex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -305,21 +347,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-2010535109/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+        <state relative-caret-position="181">
+          <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_restaurant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1379">
-          <caret line="137" column="19" lean-forward="false" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
+        <state relative-caret-position="358">
+          <caret line="259" column="0" lean-forward="true" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
           <folding>
             <element signature="e#63#78#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

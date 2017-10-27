@@ -6,6 +6,7 @@ __author__ = 'Wang Jia Wei'
 
 import requests
 import json
+import re
 from faker import Faker
 import multiprocessing
 from lxml import etree
@@ -21,13 +22,11 @@ class ctripShopEngine:
         """
         获取携程攻略各目的地的餐馆列表
         """
-        pool = multiprocessing.Pool(2)
+        # pool = multiprocessing.Pool(2)
         city_list = (i.strip().split(setting.blank) for i in open(setting.city_list, 'r', encoding=setting.encode)) # 获取已抓取的城市列表
         for each in city_list:
-            print(each)
             self.shop_list_logic(each)
-            # pool.apply_async()
-            break
+            # pool.apply_async(self.shop_list, (each,))
         # pool.close()
         # pool.join()
 
@@ -47,10 +46,28 @@ class ctripShopEngine:
         1. 再获取列表后，获取每个商铺的详情
         2. 同时获取pid，为评论的抓取做准备
         3. 这里暴露一个问题就是，必须在获取详情后才能拿到pid
+        4. 注意这里需要做一个增量更新
+        5. 提供两种方式抓取，普通，和多进程两种
         """
+        # pool = multiprocessing.Pool(2)
+        shop_ex_set = set(i.strip().split(setting.blank)[0]for i in open(setting.restaurant_ex, 'r', encoding=setting.encode))
         shop_list = (i.strip().split(setting.blank)for i in open(setting.restaurant_list, 'r', encoding=setting.encode))
         for each in shop_list:
-            print(each)
+            if each[7] not in shop_ex_set:
+                self.shop_info_pid_logic(each)
+                # pool.apply_async(self.shop_info_pid_logic, (each,))
+        # pool.close()
+        # pool.join()
+
+    def shop_info_pid_logic(self, info):
+        """
+        这里要做的是获取每个商铺详细信息，保存，同时保存一份已保存目录并添加pid字段，评论从已获取中提取商铺id以及pid
+        :param info: 列表信息
+        :return:
+        """
+        html = self.down.shop_info_pid(info[-1])
+        data = self.spider.shop_info_pid(html) if html is not 'bad_requests' else []
+        self.pipe.save_shop_info_pid(data, info) if data[0] is not '1' else ''
 
 class ctripShopDownloader:
     def do_get_requests(self, *args):
@@ -80,18 +97,75 @@ class ctripShopDownloader:
         html = self.do_get_requests(url, headers)
         return html
 
+    def shop_info_pid(self, link):
+        url = setting.local_url % link
+        headers = setting.headers
+        html = self.do_get_requests(url, headers)
+        return html
+
 class ctripShopSpider:
     def shop_list(self, html):
         selector = etree.HTML(html)
         shop_list = selector.xpath('//div[@class="list_wide_mod2"]/div[@class="list_mod2"]')
         data = []
         for each in shop_list:
-            id = each.xpath('div[@class="abiconbox"]/@data-id')[0] if each.xpath('div[@class="abiconbox"]/@data-id') else ''
-            name = each.xpath('div[@class="rdetailbox"]/dl/dt/a/@title')[0] if each.xpath('div[@class="rdetailbox"]/dl/dt/a/@title') else ''
-            address = each.xpath('div[@class="rdetailbox"]/dl/dd[1]/text()')[0]if each.xpath('div[@class="rdetailbox"]/dl/dd[1]/text()')else ''
-            average = each.xpath('div[@class="rdetailbox"]/dl/dd[2]/span/text()')[0]if each.xpath('div[@class="rdetailbox"]/dl/dd[2]/span/text()')else ''
-            data.append([id, name, address, average])
+            id = each.xpath('div[@class="abiconbox"]/@data-id')[0] \
+                if each.xpath('div[@class="abiconbox"]/@data-id') \
+                else ''
+            name = each.xpath('div[@class="rdetailbox"]/dl/dt/a/@title')[0] \
+                if each.xpath('div[@class="rdetailbox"]/dl/dt/a/@title') \
+                else ''
+            address = each.xpath('div[@class="rdetailbox"]/dl/dd[1]/text()')[0] \
+                if each.xpath('div[@class="rdetailbox"]/dl/dd[1]/text()') \
+                else ''
+            average = each.xpath('div[@class="rdetailbox"]/dl/dd[2]/span/text()')[0] \
+                if each.xpath('div[@class="rdetailbox"]/dl/dd[2]/span/text()') \
+                else ''
+            url = each.xpath('div[@class="rdetailbox"]/dl/dt/a/@href')[0] \
+                if each.xpath('div[@class="rdetailbox"]/dl/dt/a/@href') \
+                else ''
+            data.append([id, name, address, average, url])
         return data
+
+    def shop_info_pid(self, html):
+        selector = etree.HTML(html)
+        data = []
+        ex_info = re.findall('poiData: (.*),', html)[0] \
+            if re.findall('poiData: (.*),', html) \
+            else ''
+        js_dict = json.loads(ex_info)
+        # 经纬度
+        lng = js_dict.get('lng', '')
+        lat = js_dict.get('lat', '')
+        data.append(lng)
+        data.append(lat)
+        # 如果pid 返回值为'1'的话，则放弃对该店铺的评论获取
+        pid = selector.xpath('//input[@id="poi_id"]/@value')[0]\
+            if selector.xpath('//input[@id="poi_id"]/@value')\
+            else '1'
+        data.append(pid)
+        category = selector.xpath('//div[@class="s_sight_infor"]/ul/li[2]/span[2]/dd/a[1]/text()')[0]\
+            if selector.xpath('//div[@class="s_sight_infor"]/ul/li[2]/span[2]/dd/a[1]/text()')\
+            else ''
+        data.append(category)
+        tel = selector.xpath('//div[@class="s_sight_infor"]/ul/li[3]/span[2]/text()')[0]\
+            if selector.xpath('//div[@class="s_sight_infor"]/ul/li[3]/span[2]/text()')\
+            else ''
+        data.append(tel)
+        opentime = selector.xpath('//div[@class="s_sight_infor"]/ul/li[5]/span[2]/text()')[0]\
+            if selector.xpath('//div[@class="s_sight_infor"]/ul/li[5]/span[2]/text()')\
+            else ''
+        data.append(opentime)
+        description = selector.xpath('//div[@class="detailcon"]/div[@itemprop="description"]/text()')[0]\
+            if selector.xpath('//div[@class="detailcon"]/div[@itemprop="description"]/text()')\
+            else ''
+        data.append(description)
+        cate = selector.xpath('//div[@class="detailcon"]/div[@class="text_style"]/p/text()')[0]\
+            if selector.xpath('//div[@class="detailcon"]/div[@class="text_style"]/p/text()')\
+            else ''
+        data.append(cate)
+        return data
+
 
 class ctripShopPipeline:
 
@@ -104,6 +178,37 @@ class ctripShopPipeline:
             text += context + setting.blank + setting.blank.join(each) + '\n'
         with open(setting.restaurant_list, 'a', encoding=setting.encode) as f:
             f.write(text)
+
+    def save_shop_info_pid(self, data, shop_info):
+        info = setting.restaurant_dict
+        info_l = setting.restaurant_dict_l
+        info['中文全称'] = shop_info[8]
+        info['所属地区'] = shop_info[2]
+        info['地址'] = shop_info[-3]
+        info['地理位置'] = repr(data[0]) + ',' + repr(data[1])
+        info['类型'] = data[3]
+        info['营业时间'] = data[5]
+        info['人均消费'] = shop_info[-2]
+        info['特色菜品'] = data[-1]
+        info['咨询电话'] = data[4]
+        info['简介'] = data[-2]
+        info['url'] = setting.local_url %shop_info[-1]
+        info['省自治区全称'] = shop_info[0]
+        info['省自治区简称'] = shop_info[1]
+        info['市州全称'] = shop_info[2]
+        info['市州简称'] = shop_info[3]
+        info['区县全称'] = shop_info[4]
+        info['区县简称'] = shop_info[5]
+        info['地区编码'] = shop_info[6]
+        text_list = [info[i] for i in info_l]
+        text = setting.blank.join(text_list).replace('\n', '').replace('\r', '').replace(' ', '') + '\n'
+        text_ex = setting.blank.join([shop_info[7], data[2], re.findall('(.*?)\d', shop_info[-1].split('/')[2])[0]]) + '\n'
+
+        with open(setting.restaurant_info, 'a', encoding=setting.encode) as f:
+            f.write(text)
+
+        with open(setting.restaurant_ex, 'a', encoding=setting.encode) as f:
+            f.write(text_ex)
 
 class setting:
     """
@@ -121,18 +226,44 @@ class setting:
 
     shop_list_url = 'http://you.ctrip.com/restaurantlist/%s/s0-p%s.html'
 
+    local_url = 'http://you.ctrip.com%s'
+
     restaurant_list = config.RESTAURANT_SHOP_LIST
 
     restaurant_info = config.RESTAURANT_SHOP_INFO
+
+    restaurant_ex = config.RESTAURANT_SHOP_EX
+
+    restaurant_dict = config.RESTAURANT_DICT
+
+    restaurant_dict_l = config.RESTAURANT_DICT_L
 
     headers = config.HEADERS
 
     headers_xml = config.HEADERS_XML
 
 class ctripShopExecute:
-    pass
+    def __init__(self, commend):
+        self.commend = commend
+
+    def execute(self):
+        if self.commend == 'all':
+            cse = ctripShopEngine()
+            cse.shop_list()
+            cse.shop_info_pid()
+            del cse
+
+        elif self.commend == 'list':
+            cse = ctripShopEngine()
+            cse.shop_list()
+            del cse
+
+        elif self.commend == 'info':
+            cse = ctripShopEngine()
+            cse.shop_info_pid()
+            del cse
 
 if __name__ == '__main__':
-    cse = ctripShopEngine()
-    cse.shop_list()
-    # cse.shop_info_pid()
+    from config import RESTAURANT_COMMAND
+    cse = ctripShopExecute(RESTAURANT_COMMAND)
+    cse.execute()

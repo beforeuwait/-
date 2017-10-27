@@ -68,7 +68,13 @@ def get_city_list():
     for i in data:
         for t in all_citys:
             if i[0] in t and i[1] in t:
-                text += config.BLANK.join(t) + config.BLANK + i[-1] + '\n'
+                count = t.index(i[1])
+                if count == 2 or count == 3:
+                    t[4], t[5] = '', ''
+                    t[-1] = str(re.findall('\d\d\d\d', t[-1])[0]) + '00'
+                    text += config.BLANK.join(t) + config.BLANK + i[-1] + '\n'
+                else:
+                    text += config.BLANK.join(t) + config.BLANK + i[-1] + '\n'
                 break
 
     with open(config.CITY_LIST, 'a', encoding=config.ENCODING) as f:
