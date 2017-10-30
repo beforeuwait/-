@@ -43,7 +43,8 @@ class ctripShopEngine:
     def shop_list_logic(self, info):
         page, next_page = 1, True
         while next_page:
-            html = self.down.shop_list(info[-2], page) if info[-1] == '' else self.down.shop_list_area(info[-2], info[-1], page)
+            # html = self.down.shop_list(info[-2], page) if info[-1] == '' else self.down.shop_list_area(info[-2], info[-1], page)
+            html = self.down.shop_list(info[-2], page)
             shop_list = self.spider.shop_list(html) if html is not 'bad_requests' else []
             next_page = True if not shop_list == [] else False
             if next_page:
