@@ -5,7 +5,9 @@ import os
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
 # 命令
-RESTAURANT_COMMAND = 'list'
+RESTAURANT_COMMAND = 'info'
+
+SHOPPING_COMMAND = 'all'
 
 PATH = 'Data'
 if not os.path.exists(PATH):
@@ -33,6 +35,8 @@ if not os.path.exists(PROVS_LIST):
     f = open(PROVS_LIST, 'w+')
     f.close()
 
+# 餐馆
+
 RESTAURANT_SHOP_LIST = os.path.join(os.path.abspath(PATH), 'restaurant_shop_list.txt')
 if not os.path.exists(RESTAURANT_SHOP_LIST):
     f = open(RESTAURANT_SHOP_LIST, 'w+')
@@ -47,6 +51,28 @@ if not os.path.exists(RESTAURANT_SHOP_INFO):
 RESTAURANT_SHOP_EX = os.path.join(os.path.abspath(PATH), 'restaurant_shop_ex.txt') # 记录已抓取目录已经pid
 if not os.path.exists(RESTAURANT_SHOP_EX):
     f = open(RESTAURANT_SHOP_EX, 'w+')
+    f.close()
+
+# 商铺购物
+
+SHOPPING_SHOP_LIST= os.path.join(os.path.abspath(PATH), 'shopping_shop_list.txt')
+if not os.path.exists(SHOPPING_SHOP_LIST):
+    f = open(SHOPPING_SHOP_LIST, 'w+')
+    f.close()
+
+SHOPPING_SHOP_INFO = os.path.join(os.path.abspath(PATH), 'shopping_shop_info.txt')
+if not os.path.exists(SHOPPING_SHOP_INFO):
+    f = open(SHOPPING_SHOP_INFO, 'w+')
+    f.close()
+
+SHOPPING_SHOP_EX = os.path.join(PATH, 'shopping_shop_ex.txt')
+if not os.path.exists(SHOPPING_SHOP_EX):
+    f = open(SHOPPING_SHOP_EX, 'w+')
+    f.close()
+
+SHOPPING_SHOP_LIST_EX = os.path.join(os.path.abspath(PATH), 'shopping_shop_list_ex.txt')
+if not  os.path.exists(SHOPPING_SHOP_LIST_EX):
+    f = open(SHOPPING_SHOP_LIST_EX, 'w+')
     f.close()
 
 # 代理
@@ -131,4 +157,37 @@ RESTAURANT_DICT_L = [
     "中文全称", "中文简称", "所属地区", "地址", "地理位置", "类型", "等级", "营业时间", "人均消费",
     "特色菜品", "咨询电话", "传真", "邮政编码", "投诉电话", "交通信息", "周边信息", "简介", "国别",
     "省自治区全称", "省自治区简称", "市州全称", "市州简称", "区县全称", "区县简称", "地区编码", "url"
+]
+
+
+SHOPPING_DICT = {
+    "中文全称": "",
+    "中文简称": "",
+    "所属地区": "",
+    "地址": "",
+    "地理位置": "",
+    "类型": "",
+    "营业时间": "",
+    "特色商品": "",
+    "传真": "",
+    "邮政编码": "",
+    "投诉电话": "",
+    "交通信息": "",
+    "周边信息": "",
+    "简介": "",
+    "国别": "CN",
+    "省自治区全称": "",
+    "省自治区简称": "",
+    "市州全称": "",
+    "市州简称": "",
+    "区县全称": "",
+    "区县简称": "",
+    "地区编码": "",
+    "url": "",
+}
+
+SHOPPING_DICT_L = [
+    "中文全称", "中文简称", "所属地区", "地址", "地理位置", "类型", "营业时间", "特色商品", "传真", "邮政编码", "投诉电话",
+    "交通信息", "周边信息", "简介", "国别", "省自治区全称", "省自治区简称", "市州全称", "市州简称",
+    "区县全称", "区县简称", "地区编码", "url",
 ]

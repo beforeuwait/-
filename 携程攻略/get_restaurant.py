@@ -28,7 +28,6 @@ class ctripShopEngine:
         # pool = multiprocessing.Pool(2)
         city_list = (i.strip().split(setting.blank) for i in open(setting.city_list, 'r', encoding=setting.encode)) # 获取已抓取的城市列表
         for each in city_list:
-            print(each)
             self.shop_list_logic(each)
             # pool.apply_async(self.shop_list, (each,))
         # pool.close()
@@ -37,7 +36,6 @@ class ctripShopEngine:
     def shop_list_logic(self, info):
         page, next_page = 1, True
         while next_page:
-            print(page)
             html = self.down.shop_list(info[-2], page) if info[-1] == '' else self.down.shop_list_area(info[-2], info[-1], page)
             shop_list = self.spider.shop_list(html) if html is not 'bad_requests' else []
             next_page = True if not shop_list == [] else False
@@ -58,8 +56,7 @@ class ctripShopEngine:
         shop_ex_set = set(i.strip().split(setting.blank)[0]for i in open(setting.restaurant_ex, 'r', encoding=setting.encode))
         shop_list = (i.strip().split(setting.blank)for i in open(setting.restaurant_list, 'r', encoding=setting.encode))
         for each in shop_list:
-            print(each)
-            if each[7] not in shop_ex_set:
+            if each[8] not in shop_ex_set:
                 self.shop_info_pid_logic(each)
                 # pool.apply_async(self.shop_info_pid_logic, (each,))
         # pool.close()
@@ -99,7 +96,6 @@ class ctripShopDownloader:
 
     def shop_list(self, city_id, page):
         url = setting.shop_list_url %(city_id, page)
-        print(url)
         headers = setting.headers
         html = self.do_get_requests(url, headers)
         return html
@@ -146,7 +142,11 @@ class ctripShopSpider:
         ex_info = re.findall('poiData: (.*),', html)[0] \
             if re.findall('poiData: (.*),', html) \
             else ''
-        js_dict = json.loads(ex_info)
+        try:
+            js_dict = json.loads(ex_info)
+        except Exception as e:
+            print('坐标解析错误，', e)
+            js_dict = {}
         # 经纬度
         lng = js_dict.get('lng', '')
         lat = js_dict.get('lat', '')
@@ -196,7 +196,7 @@ class ctripShopPipeline:
     def save_shop_info_pid(self, data, shop_info):
         info = setting.restaurant_dict
         info_l = setting.restaurant_dict_l
-        info['中文全称'] = shop_info[8]
+        info['中文全称'] = shop_info[9]
         info['所属地区'] = shop_info[2]
         info['地址'] = shop_info[-3]
         info['地理位置'] = repr(data[0]) + ',' + repr(data[1])
@@ -216,8 +216,7 @@ class ctripShopPipeline:
         info['地区编码'] = shop_info[6]
         text_list = [info[i] for i in info_l]
         text = setting.blank.join(text_list).replace('\n', '').replace('\r', '').replace(' ', '') + '\n'
-        text_ex = setting.blank.join([shop_info[7], data[2], re.findall('(.*?)\d', shop_info[-1].split('/')[2])[0]]) + '\n'
-
+        text_ex = setting.blank.join([shop_info[8], data[2], re.findall('(.*?)\d', shop_info[-1].split('/')[2])[0]]) + '\n'
         with open(setting.restaurant_info, 'a', encoding=setting.encode) as f:
             f.write(text)
 
