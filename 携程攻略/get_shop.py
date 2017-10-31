@@ -79,7 +79,7 @@ class ctripShopEngine:
         """
         html = self.down.shop_info_pid(info[-1])
         data = self.spider.shop_info_pid(html) if html is not 'bad_requests' else []
-        self.pipe.save_shop_info_pid(data, info) if data[0] is not '0'or data == [] else ''
+        self.pipe.save_shop_info_pid(data, info) if not data == [] and data[0] is not '0' else ''
 
 class ctripShopDownloader:
     def do_get_requests(self, *args):
