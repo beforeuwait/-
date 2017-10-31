@@ -17,10 +17,22 @@ __author__ = "Wang Jia Wei"
 
 import requestModel
 import config
-
+import requests
+import json
 
 class figgyHotelEngine:
-    pass
+    def test_modle(self):
+        url = config.HOTEL_LIST_URL
+        headers = config.HEADERS
+        params = config.PARAMS_LIST
+        # response = requests.get(url, headers=headers, params=params, cookies=config.COOKISE, proxies=config.get_proxy())
+        response = requests.get(url, headers=headers, params=params, cookies=config.COOKISE)
+        print(response.status_code)
+        print(response.content.decode('gbk'))
+        js_dict = json.loads(response.text)
+        cons = js_dict.get('hotelList', '')
+        for each in cons:
+            print(each)
 
 class figgyHotelSpider:
     pass
@@ -33,3 +45,4 @@ class setting:
 
 if __name__ == '__main__':
     fhe = figgyHotelEngine()
+    fhe.test_modle()

@@ -169,7 +169,10 @@ class ctripShopSpider:
             if selector.xpath('//div[@class="des_narrow f_right"]/div[@class="s_sight_infor"]/dl/dd/text()')\
             else ''
         data.append(opentime)
-        descriptation = selector.xpath('//div[@itemprop="description"]')[0].xpath('string(.)')
+        try:
+            descriptation = selector.xpath('//div[@itemprop="description"]')[0].xpath('string(.)')
+        except:
+            descriptation = ''
         data.append(descriptation)
         products = ','.join(selector.xpath('//div[@class="card_list product_card"]/ul/li/dl/dt/text()'))
         data.append(products)
