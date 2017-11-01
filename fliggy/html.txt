@@ -1,0 +1,1571 @@
+
+
+  <!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9 lte9"><![endif]-->
+<!--[if gt IE 9]><html class="no-js"><![endif]-->
+<!--[if !IE]><!--><html class="w1190"><!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="gbk">
+    <meta name="data-spm" content="181" />
+    <title>（新品）汉庭酒店北京门头沟滨河路店预订,（新品）汉庭酒店北京门头沟滨河路店价格,点评,电话查询,飞猪酒店</title>
+    <meta name="description" content="飞猪酒店为您提供 （新品）汉庭酒店北京门头沟滨河路店预订及价格查询,涵盖（新品）汉庭酒店北京门头沟滨河路店电话,服务设施,地址交通及周边酒店信息.飞猪酒店,实价有房.（新品）汉庭酒店北京门头沟滨河路店预订的最佳选择." />
+    <meta name="keywords" content="（新品）汉庭酒店北京门头沟滨河路店,（新品）汉庭酒店北京门头沟滨河路店价格查询,（新品）汉庭酒店北京门头沟滨河路店电话,（新品）汉庭酒店北京门头沟滨河路店地址"/>
+        <link type="image/x-icon" rel="shortcut icon" href="//img.alicdn.com/tps/TB1zzIwNVXXXXcBXpXXXXXXXXXX-32-32.ico" />
+    
+
+
+
+
+
+<!-- S GLOBAL CSS -->
+<link rel="stylesheet" href="//g.alicdn.com/tb/global/3.5.34/global-min.css">
+<!-- S GLOBAL CSS -->
+<link rel="stylesheet" href="//g.alicdn.com??tpi/pi/1.2.86/base/index-min.css,tpi/topbar/1.1.138/global-min.css,tpi/header-footer/1.1.42/index-min.css">
+
+
+    <script>
+        window.g_config = {
+            appId:10,
+            toolbar:false,
+            one_search_version:'0.2.11',
+            assetsServer:"//g.alicdn.com/",
+        app_version: "0.3.92"         };
+    </script>
+            
+
+
+
+
+
+
+
+<!-- S GLOBAL JS -->
+<script src="//g.alicdn.com/??kissy/k/1.4.16/seed-min.js,tb/global/3.5.34/global-min.js"></script>
+<!-- E GLOBAL JS -->
+<script src="//g.alicdn.com??tpi/pi/1.2.86/seed-min.js,tpi/header-footer/1.1.42/index-min.js,tpi/topbar/1.1.138/global-min.js,trip/hotel-search/0.3.92/config-min.js,trip/hotel-search/0.3.92/deps-min.js"></script>
+<link rel="shortcut icon" href="//g.alicdn.com/trip/tools/img/favicon.ico?t=20141028" type="image/x-icon"/>
+<!--[if lt IE 9]><script src="//g.alicdn.com/tpi/pi/1.2.9/base/html5shiv-min.js"></script><![endif]-->
+        <!--[if lt IE 9]>
+    <script src="//assets.alicdn.com/app/dp/s/html5/js/??html5shiv-min.js,modernizr-v2.5.3-min.js"></script>
+    <![endif]-->
+</head>
+<body   data-spm="7087313"  ><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&hotel_search_id=d%2d71484c96%2d7be4%2d4207%2dab79%2d1cffbaa8bd9b&yunid=&eb3befdb88087&trid=0b802cba15095259111068464e1dbc&asid=AQAAAACXiflZrCmMCwAAAACWAIF5Of5PuQ==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+        
+    
+    
+                        <div data-hudge-tmsid="607325" data-hudge-tmstitle="2016飞猪公共顶通，请慎重维护"></div>
+
+    
+    <style type="text/css">
+    
+    #chn-header-act-main{
+         background-image: url(https://gw.alicdn.com/tfs/TB1n8JbowMPMeJjy1XdXXasrXXa-1920-96.jpg);  
+        background-color: ;
+        background-repeat: no-repeat;
+        background-position:  center top;
+    }
+    #chn-header-act-main.hide{
+        display: none;
+    }
+    #chn-header-act-main .header-act-cnt{
+        width:1190px;
+        margin:0 auto;
+        overflow:hidden;
+    }
+    .home-page-index #chn-header-act-main,.home-page-flight  #chn-header-act-main,.home-page-hotel  #chn-header-act-main,.home-page-kezhan  #chn-header-act-main,.home-page-travel  #chn-header-act-main,.home-page-tuan #chn-header-act-main , .home-page-mudidi #chn-header-act-main, .home-page-tehui #chn-header-act-main,.home-page-ticket #chn-header-act-main,#trip-global-top-activity #chn-header-act-main{
+      display:block;
+    }
+    #chn-header-act-main img{
+        float:left;
+        opacity: 0.01;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    }
+    </style>
+    
+    <style>
+    /*hack for tmall*/
+    #page #header,.detail-trip #header{margin-top:0!important;}
+    #page #header,.detail-trip-hk #header{margin-top:0!important;}
+    #page #headerCon, .detail-trip #headerCon{padding-top:0;}
+    #page #headerCon, .detail-trip-hk #headerCon{padding-top:0;}
+    </style>
+    
+    
+    <div id="chn-header-act-main" class="hide" data-spm="a1z6z" data-blacklist=>
+      <div class="header-act-cnt" style="margin: 0 auto;">
+        
+        <a href="javascript:;" target="_blank" ><img src="https://gw.alicdn.com/tfs/TB12Jj3kjihSKJjy0FiXXcuiFXa-234-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/index?hlreferid=trip_dingtong" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB1EJ.2ogMPMeJjy1XdXXasrXXa-160-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/gn?hlreferid=dingtong_guonei" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB1BTNijLxNTKJjy0FjXXX6yVXa-161-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/flight-test?hlreferid=dingtong_jipiao" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB19vArkjihSKJjy0FlXXadEXXa-160-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/hotel?hlreferid=dingtong_jiudianfenhui" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB1GJ.2ogMPMeJjy1XdXXasrXXa-158-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/zby?hlreferid=dingtong_zhoubianyou" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB1HJ.2ogMPMeJjy1XdXXasrXXa-159-96.jpg" alt="" /></a>
+        
+        <a href="https://market.fliggy.com/holiday2017/1111/market?hlreferid=dingtong_chujingchaoshi" target="_blank" style="cursor:pointer;"><img src="https://gw.alicdn.com/tfs/TB1edn3kjihSKJjy0FiXXcuiFXa-157-96.jpg" alt="" /></a>
+        
+      </div>
+    </div>
+    
+    
+    
+    <div id="J_HomePCPopContainer"></div>
+    <script id="J_HomePCPopStyle" type="text/lazyload">
+        <style>
+        .body-wrapper{
+            background-position: top 25px center;
+            background-repeat: no-repeat;
+            background-image: url(https://gw.alicdn.com/tfs/TB1a0gWj6ihSKJjy0FiXXcuiFXa-1920-566.jpg);
+            background-color: ;
+        }
+         
+        .trip-header-box, .trip-header-box.trip-header-top{
+            background-color: transparent!important;    
+        }
+        .header-telephone{
+            background-color: transparent!important;   
+        }
+        .market-nav-wrapper{
+            background-color: transparent!important;   
+        }
+        .trip-header-2014{
+            background-color: transparent!important;    
+        }
+        .header-logo{
+            display: none!important;
+        }
+        
+        </style>
+    </script>
+    
+    <script>
+        var node = document.querySelector('#chn-header-act-main');
+        var popContainerNode = document.querySelector('#J_HomePCPopContainer');
+        var popStyleNode = document.querySelector('#J_HomePCPopStyle');
+        if(node) {
+            var blackListObjArr = getJsonObj(node.getAttribute('data-blacklist'));
+            var blackList = [];
+            for(var i = 0, len = blackListObjArr.length; i < len; i++) {
+                blackList.push(blackListObjArr[i].url);
+            }
+            var HOST_NAME = location.hostname;
+            var PATH_NAME = location.pathname;
+            var PATH = HOST_NAME + PATH_NAME;
+            var _blackList = ['jipiao.alitrip.com/trip_open_order.htm','jipiao.fliggy.com/trip_open_order.htm','ijipiao.alitrip.com/ie/open_order.htm','ijipiao.fliggy.com/ie/open_order.htm','hotel.alitrip.com/order/auction/buy_now.htm','hotel.fliggy.com/order/auction/buy_now.htm','hotel.alitrip.hk/order/auction/buyNow.htm','travelbuy.alitrip.com/buy/confirmOrder.htm','travelbuy.fliggy.com/buy/confirmOrder.htm'];
+            blackList = blackList.concat(_blackList);
+            if(blackList.indexOf(PATH) !== -1) {
+                node.classList.add('hide');
+            }else {
+                node.classList.remove('hide');
+            }
+            if(document.documentElement.offsetWidth<1190) {
+                node.classList.add('hide');
+            }
+        }
+        if(popContainerNode && popStyleNode && document.documentElement.offsetWidth>=1190 && window.g_config && window.g_config.pageName == 'PC_HOME'){
+            popContainerNode.innerHTML = popStyleNode.innerHTML;   
+        }
+        function getJsonObj(jsonStr) {
+            var jsonObj = {};
+            if (jsonStr) {
+                try {
+                    jsonObj = JSON.parse(jsonStr);
+                } catch (e) {
+    
+                    jsonObj = {}
+                }
+    
+            } else {
+                jsonObj = {}
+            }
+            return jsonObj;
+        }
+    </script>
+
+
+  <!-- 吊顶 -->
+  <div id="J_TSiteNav" class="tsite-nav">
+    <div id="J_TSiteNavBd" class="tsite-nav-bd">
+      <ul id="J_TSiteNavBdL" class="tsite-nav-bd-l"></ul>
+      <ul id="J_TSiteNavBdR" class="tsite-nav-bd-r"></ul>
+    </div>
+  </div>
+    <script>
+  window.TT && TT.Global.init();
+  </script>
+    <div id="trip-global-top-activity">
+        <div data-hudge-tmsid="607325" data-hudge-tmstitle="淘宝旅行公共头广告位，请慎重维护"></div>
+<!-- 公共广告-->
+
+
+<style>
+/*hack for tmall*/
+#page #header,.detail-trip #header{margin-top:0!important;}
+#page #header,.detail-trip-hk #header{margin-top:0!important;}
+#page #headerCon, .detail-trip #headerCon{padding-top:0;}
+#page #headerCon, .detail-trip-hk #headerCon{padding-top:0;}
+</style>
+  </div>
+  <!-- 吊顶 -->
+
+<!-- trip-header vmc begin-->
+   <div id="trip-header-pg">
+	<div class="header-w" style="position:relative;">
+		<h1>
+                    <a href="//www.fliggy.com" title="飞猪" class="header-logo-link">飞猪</a>
+        						<s class="header-point"></s><strong class="header-logo-jiudian"><a href="//www.alitrip.com/jiudian/" title="酒店首页">酒店</a></strong>				            				</h1>
+
+        		<div class="header-telephone" style="right: -10px;top: 20px;">
+            <div class="home-mun">
+                <div class="icon"></div>
+                <div class="txt">国内<em>400-1688-688</em></div>
+                <div class="arrow"></div>
+                <div class="aboard-num">国际<em>+86-571-56888688</em></div>
+            </div>
+        </div>
+        
+        	</div>
+</div>
+
+<!-- trip-header vmc end-->
+
+            
+
+<!-- begin -->
+    
+
+
+
+
+<div style="text-align:center;background:4cb4f1;display:none;">
+	<a href="//trip.taobao.com/go/act/ticket/kzlbkj.php?spm=181.7182765.a214cb6.1" target="_blank">
+		<img style="vertical-align:middle" src="//img.alicdn.com/tps/i1/T1GIjUFypcXXbNWNHs-990-50.jpg" />
+	</a>
+</div>
+
+<link href="//g.alicdn.com/trip/hotel-search/0.3.92/pages/detail/index-combo-min.css" rel="stylesheet" />
+<link href="//g.alicdn.com/trip/hotel-search/0.3.92/mods/international-detail-desc/index.css" rel="stylesheet" />
+<link href="//g.alicdn.com/trip/pc-act-common/0.1.4/item-icon/index-min.css" rel="stylesheet" >
+<link href="//g.alicdn.com/trip/hotel-search/0.3.92/mods/package-mask/index.css" rel="stylesheet" />
+<div id="hotel-page" class="hotel-page">
+    <div class="hotel-content">		
+	        <!-- 酒店详情页面包屑 begin-->
+		<div class="hotel-crumbs">
+            	        <div class="crumbs">
+	             <a href="//www.fliggy.com/jiudian" target="_blank">酒店首页</a> <em>&gt;</em>
+                <a target="_blank" href="//www.fliggy.com/jiudian/city/110100">北京酒店</a> <em>&gt;</em>
+                <span>（新品）汉庭酒店北京门头沟滨河路店</span>
+	        </div>
+	     </div>
+
+
+		<!-- 酒店详情页面包屑 end-->
+		 <!-- hotel baseinfo start -->
+<!--css:../../widgets/price/index.css-->
+<!--css:../../mods/detail-baseinfo/index.css-->
+
+ 
+
+<div class="hotel-box hotel-baseinfo">
+    <input id="J_SelectValue" type="hidden" name="_fmd.h._0.r"  value="0" >
+    <!-- 0,,,-->
+
+    <div class="main-img">
+                        <a href="javascript:;" title="（新品）汉庭酒店北京门头沟滨河路店" class="J_ImgViewer" data-category="0" data-idx="0">
+                <img src="//img.alicdn.com/bao/uploaded/i5/TB1l2d.XioaPuJjSspl4abg7XXa_125219.jpg_450x10000.jpg" alt="（新品）汉庭酒店北京门头沟滨河路店"/>
+            </a>
+            </div>
+    <div class="other">
+                    <ul>
+                                    <li class="rate">
+                        <a href="#hotel-review" target="_self">4.7</a>
+                        <br>打分</li>
+                                                    <li class="comments">
+                        <a href="#hotel-review" target="_self">96</a>
+                        <br>点评</li>
+                                <li class="price" >
+
+                                            <span class="pi-price" id="J_HotelPrice"><i>&yen;</i>199</span>
+	                <span class="zhijian-container">
+	                                                <span class="zhijian hidden">-0</span>
+                                                <span class="floor">起</span></span>
+                                    </li>
+            </ul>
+                <div class="mini-map">
+            <!--<iframe src="//www.alitrip.com/go/chn/minimap.php?lat=39.939912&lng=116.108971&width=250&height=158" frameborder="0" scrolling="no"></iframe>-->
+            <iframe src="//h5.m.taobao.com/trip/pc/channel/minimap.html?lat=39.939912&lng=116.108971&width=250&height=158&googlezoom=13" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="info">
+        <div class="base" meta-from="">
+            <h2>（新品）汉庭酒店北京门头沟滨河路店  <!--<em>其它类型</em>-->                       <span class="row-subtitle" title="飞猪旅行用户评定为2.5钻经济型" meta-level="2-其它类型"><i class="groupStarIcons star-25"><i class="starIcon"></i></i></span>
+               </h2>
+            <p class="address">滨河路87号 , 北京 </p>
+                                            <p class="facility">
+                     <span class="facility-icon icon-hotwater" title="24小时热水"></span> <span class="facility-icon icon-wakeup" title="叫醒服务"></span>                </p>
+                                        <!-- 收藏 -->
+                            <button class="J_AddCollect add-collect" shid="50512770" price="19900" rateScore="4.7" actionType=1 href="//hotel.fliggy.com/ajax/favorite.do?_tb_token_=eb3befdb88087"><i>&#xe603;</i><span>收藏</span></button>
+                        <!-- 收藏 -->
+        </div>
+                <div class="hotel-pics-box">
+            <ul class="hotel-pics clearfix">
+                                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="0" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i5/TB1l2d.XioaPuJjSspl4abg7XXa_125219.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="1" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i6/TB1ihOqbiERMeJjSspi4abZLFXa_125219.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="2" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i3/TB1FNKlbgsSMeJjSsphJN0uJFXa_125220.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="3" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i7/TB1xSWwbgMPMeJjy1XcJN0pppXa_125220.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="4" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i8/TB1N2h.XioaPuJjSsplnB_g7XXa_125221.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="5" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i2/TB1FSmrbogQMeJjy0FgnB.5dXXa_125221.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="6" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i4/TB1n2l.XioaPuJjSsplnB_g7XXa_125221.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="7" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i7/TB1haCobogQMeJjy0Fe4aXOEVXa_125222.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="8" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i8/TB1Fk9nbnZRMeJjSspk4aXGpXXa_125222.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="javascript:;" target="_self" class="J_ImgViewer" data-idx="9" data-category = "0">
+                            <img src="//img.alicdn.com/bao/uploaded/i5/TB1ZK5tbgoSMeJjSspaG1jMOFXa_125223.jpg_210x1000.jpg" alt=""/><span></span>
+                        </a>
+                    </li>
+                                                </ul>
+        </div>
+    </div>
+</div>
+
+		<div class="hotel-layout">
+			<div class="hotel-col-main">
+                                
+<div class="hotel-box hotel-roomlist"  id="hotel-roomlist" data-seotype="default"    data-spm="1996526065" >
+    <div class="hd">
+        <div class="pi-tab pi-tab-default hotel-nav">
+           <ul class="pi-tab-list tab-nav">
+                <li class="pi-tab-item pi-tab-item-selected"><span class="pi-tab-item-inner">
+                        <a  href="//fliggy.com/jiudian/detail/110100/50512770"  data-scrollTo="hotel-roomlist"   target="_self"  data-spm-click="gostr=/tbtrip;locaid=d1"> 酒店预订 </a></span>
+                </li>
+                                <li class="pi-tab-item "><span class="pi-tab-item-inner">
+                        <a href="//fliggy.com/jiudian/detail/110100/50512770/info" data-scrollTo="hotel-desc" target="_self"  data-spm-click="gostr=/tbtrip;locaid=d2" > 酒店信息 </a></span>
+                </li>
+                                    <li class="pi-tab-item"><span class="pi-tab-item-inner">
+                        <a href="//fliggy.com/jiudian/detail/110100/50512770/info" data-scrollTo="hotel-traffic" target="_self"  data-spm-click="gostr=/tbtrip;locaid=d3">交通及周边</a></span>
+                </li>
+                                                                                            <li class="pi-tab-item"><span class="pi-tab-item-inner">
+                            <a href="//fliggy.com/jiudian/detail/110100/50512770/dianping" data-scrollTo="hotel-review" target="_self"  data-spm-click="gostr=/tbtrip;locaid=d4">住客评价(<span id="J_ReviewCount">96</span>)</a></span>
+                    </li>
+                                                </ul>
+                    </div>
+
+        <div class="change-range">
+            <form action="" id="J_RangeForm">
+                <input type="hidden" id="J_Shid" value="50512770">
+                <input type="hidden" id="J_City" value="110100">
+                <input type="hidden" name="bizNo" id="J_BizCode" value="">
+                <input type="hidden" name="bizType" id="J_BizCode" value="">
+                <ul>
+                    <li><label for="J_CheckInDate">入住</label> <input id="J_CheckInDate" maxlength="10" type="text" value="2017-11-02" readonly></li>
+
+                    <li><label for="J_CheckOutDate">离店</label> <input id="J_CheckOutDate" maxlength="10" type="text" value="2017-11-03" readonly></li>
+
+                    <li class="total-night">共<span id="J_TotalNight">1</span>晚</li>
+
+                    <li><button class="pi-btn pi-btn-primary pi-btn-sm" id="J_ChangeRange" type="submit">搜索</button></li>
+                    <!-- 收藏 -->
+                    <!--
+                    <li meta-data="-1">
+                                                    <button class="add-collect" shid="50512770" price="19900" rateScore="4.7" actionType=1 href="//hotel.fliggy.com/ajax/favorite.do?_tb_token_=eb3befdb88087&shid=50512770&price=19900&rateScore=4.7&actionType=1"><i>&#xe603;</i><span>收藏</span></button>
+                                            </li>
+                    -->
+                    <!-- 收藏 -->
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="bd">
+         <div class="room-list" id="J_RoomList" data-spm="1997114781">
+
+                                                 <div class="room-item-wrapper" data-srtid="55985132" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="55985132"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>199<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">特价房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="55985132" data-category="1">查看房型图片(7)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                        <img class="hotsale-label" src="//img.alicdn.com/tps/i2/T1m7fqFQBXXXcX.Izg-44-16.png">
+                                                                                                                                                                                                                                                                        
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                             <span>床型：大床1.5m </span>                                                                                          <span>面积：18㎡</span>                                              <span>楼层：-1</span>                                              <span>窗型：无窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="room-item-wrapper" data-srtid="55241553" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="55241553"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>209<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">特价双床房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="55241553" data-category="2">查看房型图片(4)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                                                                                                                                                                                                    
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                             <span>床型：单人床1.2m </span>                                                                                                                                                                                  <span>窗型：无窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="room-item-wrapper" data-srtid="51893945" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="51893945"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>227<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">大床房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="51893945" data-category="3">查看房型图片(7)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                                                                                                                                                                                                    
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                             <span>床型：大床1.5m </span>                                              <span>上网方式：有线上网(免费) </span>                                              <span>面积：18㎡</span>                                              <span>楼层：1-5</span>                                              <span>窗型：无窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="room-item-wrapper" data-srtid="51893943" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="51893943"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>246<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">双床房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="51893943" data-category="4">查看房型图片(11)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                                                                                                                                                                                                    
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                             <span>床型：单人床1.2m </span>                                              <span>上网方式：有线上网(免费) </span>                                              <span>面积：20㎡</span>                                              <span>楼层：1-5</span>                                              <span>窗型：部分有窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="room-item-wrapper" data-srtid="51893944" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="51893944"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>256<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">高级大床房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="51893944" data-category="5">查看房型图片(9)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                                                                                                                                                                                                    
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                             <span>床型：大床1.8m </span>                                              <span>上网方式：有线上网(免费) </span>                                              <span>面积：20㎡</span>                                              <span>楼层：1-5</span>                                              <span>窗型：部分有窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="room-item-wrapper" data-srtid="55238569" room-quota="true"  data-drid="">
+                        <div class="room-item-inner">
+                            <div class="room-item-baseinfo J_ExpandQuotedPrice">
+                                <div class="quoted-price-wrapper">
+                                    <div class="quoted-price">
+                                                                                    <button class="pi-btn pi-btn-primary " data-srtid="55238569"><span>报价列表</span></button>
+                                                                            </div>
+                                </div>
+                                <div class="room-price-wrapper">
+                                                                                                                <div class="pi-price pi-price-lgt">
+                                                                                        	<i>&yen;</i>294<span class="zhijian-container"><span class="floor">起</span></span>
+                                                                                    </div>
+                                                                                                     </div>
+                                <div class="room-info">
+                                    <div class="info">
+                                        <p>
+                                            <span class="item-title">家庭房 </span>
+                                                                                            <a href="javascript:;" class="J_ImgViewer" data-idx="0" data-id="55238569" data-category="6">查看房型图片(3)</a>
+                                                                                                                                                                                    <span class="later-pay-tag"></span>
+                                                                                                                                                                                                                                                                                                                    
+                                            
+                                        </p>
+                                        <p class="general-info">
+                                                                                                                                     <span>面积：30㎡</span>                                              <span>楼层：2-4</span>                                              <span>窗型：部分有窗</span>                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                      </div>
+
+    </div>
+</div>
+<script>
+  KISSY.use('hotel-search/mods/detail-roomlist/index,hotel-search/mods/detail-imgviewer/index',function(S,HotelSearch,ImgViewer){
+    HotelSearch.init({
+        fullFilled : 0 ,
+        shid : "50512770",
+        shname : "（新品）汉庭酒店北京门头沟滨河路店",
+        searchBy: "",
+        today : "2017-11-01",
+        maxCheckOut:362,
+        bookUrlOld : "//hotel.fliggy.com/auction/buyNow.htm?city=110100&source=hotel_detail2&roomnum=1&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        bookUrl : "//hotel.fliggy.com/order/auction/buyNow.htm?city=110100&source=hotel_detail2&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        detailUrl : "//hotel.fliggy.com/item2.htm?city=110100&source=hotel_detail2&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        roomUrl : "//hotel.fliggy.com/ajax/hotelDetailSRT.htm?shid=50512770&city=110100&sellerIds=&activityCode=&filterByRoomTickets=&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        itemUrl : "//hotel.fliggy.com/ajax/hotelDetailRT.htm?shid=50512770&city=110100&urlType=1&biParam=no&sellerIds=&activityCode=&filterByRoomTickets=&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        isPayJudgeUrl: "//hotel.fliggy.com/ajax/checkLoginAndAlipay.htm?requestUrl=http://hotel.fliggy.com/hotel_detail2.htm&searchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b",
+        bizNo: "",
+        bizType: "",
+        hotelTelForTips: "",
+        isAgreementHotel:"0",
+        
+        data: {"sroomTypes":[{"srtId":55985132,"b2bVip":false,"srtName":"特价房","quota":1,"bedType":["大床1.5m"],"windowType":"无窗","picUrls":["//img.alicdn.com/bao/uploaded/i4/TB19xqDpbsTMeJjy1zcOL4AgXXa_110657.jpg","//img.alicdn.com/bao/uploaded/i7/TB1SnG5pgoQMeJjy0Fp9ogTxpXa_110659.jpg","//img.alicdn.com/bao/uploaded/i1/TB10CA0kWagSKJjy0Fb3MS.mVXa_110701.jpg","//img.alicdn.com/bao/uploaded/i1/TB1bmM8kWagSKJjy0Fhko.rbFXa_110703.jpg","//img.alicdn.com/bao/uploaded/i4/TB1BJw5k6ihSKJjy0FfA0DGzFXa_110711.jpg","//img.alicdn.com/bao/uploaded/i7/TB1ZURxljuhSKJjSspmvCgQDpXa_110720.jpg","//img.alicdn.com/bao/uploaded/i2/TB1pqmtkvBNTKJjy1zd9CCScpXa_110724.jpg"],"facility":[],"size":"18㎡","floor":"-1","recommendPrice":"199","isHotSale":true,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"sellersRoomTypes":{"total":1,"totalPage":1,"isOverseas":0,"isGangAoTai":0,"items":[{"isShowRobot":false,"sellerId":1813033576,"sellerIcon":"//img.alicdn.com/tps/i3/TB17XULHXXXXXXVXpXXjgKUHFXX-180-48.png","sellerName":"华住酒店旗舰店","salesCount":0,"isB":true,"isLianMeng":true,"isTbtrip":true,"sellerRoomPrices":[{"sellerRoomTypeId":30103908576,"sellerRoomTypeName":"特价房","isB2bVip":false,"hid":1669352576,"adultNum":2,"childerNum":0,"ages":[],"isOuterRate":false,"vendor":"","isHotelPackage":0,"sellerRatePlan":"信用住 【点评即享延迟退房1小时】 无早","gifts":[],"itemType":"实时预订价商品","maxReserveAmount":1,"nod":0,"nop":0,"maxDays":9,"hasReceipt":true,"breakfirst":"无早","breakfirstCalList":["无早"],"refundPolicy":["免费取消订单"],"price":"199","bookingNoticeText1":"根据酒店所在地当地法规，您可能还需在酒店支付额外税费。","dailyPrices":[{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611}],"totalPriceWithTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"taxPrice":{"currencyCode":"USD","amount":0.0,"amountCNY":0,"exCurrencyRate":6.6611},"avgPriceWithOutTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"avgPriceWithTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"copyWriter":"","foreignCurrencyDesc":"美元","virtualCardSubtractPrice":0,"backCash":0,"backTicketAmount":0,"refundDesc":"退订政策","minusPrice":0,"isJu":false,"discountPrice":"","discountDescs":"","paymentType":"信用住","paymentTypeCode":6,"salesCount":0,"isSJYF":true,"itemId":537231763499,"othersDiscounts":[""],"rpId":7439875576,"quickBuy":true,"enable":true,"isNewRate":true,"rateId":66806426576,"quota":1,"url":"//hotel.fliggy.com/order/auction/buy_now.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b&id=537231763499&rpId=7439875576&occupancy=0","isMemberPrice":-1,"isFirstStay":false,"dailyPrice":["199"],"oldBuyUrl":"//hotel.fliggy.com/auction/buy_now.htm?city=110100&source=hotel_detail2&roomnum=1&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","newBuyUrl":"//hotel.fliggy.com/order/auction/buy_now.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","oldItemUrl":"//hotel.fliggy.com/item.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","newItemUrl":"//hotel.fliggy.com/item2.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","gid":29136760576,"autoShip":true,"isDualEleven":false,"isGuarantee":false,"immediatelySubtract":0,"subtractPrice":0,"newYearSpeOffer":false,"agreement":0,"occupancy":2,"promotionDescArr":[],"double12Desc":"年度盛典","totalSubtractAmount":0,"totalBackCashAmount":0},{"sellerRoomTypeId":30103908576,"sellerRoomTypeName":"特价房","isB2bVip":false,"hid":1669352576,"adultNum":2,"childerNum":0,"ages":[],"isOuterRate":false,"vendor":"","isHotelPackage":0,"sellerRatePlan":" 【点评即享延迟退房1小时】 无早","gifts":[],"itemType":"实时预订价商品","maxReserveAmount":1,"nod":0,"nop":0,"maxDays":90,"hasReceipt":true,"breakfirst":"无早","breakfirstCalList":["无早"],"refundPolicy":["2017年11月02日中午12点前取消，房费全额退回2017年11月02日中午12点及以后取消，房费不可退。"],"price":"199","bookingNoticeText1":"根据酒店所在地当地法规，您可能还需在酒店支付额外税费。","dailyPrices":[{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611}],"totalPriceWithTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"taxPrice":{"currencyCode":"USD","amount":0.0,"amountCNY":0,"exCurrencyRate":6.6611},"avgPriceWithOutTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"avgPriceWithTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"copyWriter":"根据酒店所在地当地法规，您可能还需在酒店支付额外税费。","foreignCurrencyDesc":"美元","virtualCardSubtractPrice":0,"backCash":0,"backTicketAmount":0,"refundDesc":"退订政策","minusPrice":0,"isJu":false,"discountPrice":"","discountDescs":"","paymentType":"全额支付","paymentTypeCode":1,"salesCount":0,"isSJYF":true,"itemId":537231763499,"othersDiscounts":[""],"rpId":90991174576,"quickBuy":true,"enable":true,"isNewRate":true,"rateId":124713377576,"quota":1,"url":"//hotel.fliggy.com/order/auction/buy_now.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b&id=537231763499&rpId=90991174576&occupancy=0","isMemberPrice":-1,"isFirstStay":false,"dailyPrice":["199"],"oldBuyUrl":"//hotel.fliggy.com/auction/buy_now.htm?city=110100&source=hotel_detail2&roomnum=1&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","newBuyUrl":"//hotel.fliggy.com/order/auction/buy_now.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","oldItemUrl":"//hotel.fliggy.com/item.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","newItemUrl":"//hotel.fliggy.com/item2.htm?city=110100&source=hotel_detail2&hotelSearchId=d-71484c96-7be4-4207-ab79-1cffbaa8bd9b","gid":29136760576,"autoShip":true,"isDualEleven":false,"isGuarantee":false,"immediatelySubtract":0,"subtractPrice":0,"newYearSpeOffer":false,"agreement":0,"occupancy":2,"promotionDescArr":[],"double12Desc":"年度盛典","totalSubtractAmount":0,"totalBackCashAmount":0}],"sellerScore":4.7,"sellerScoreThanAvg":9,"orderShipTime":0,"showShipTime":"","shipTimeThanAvg":1,"orderSucessRate":100,"successRateThanAvg":1,"isGuojiSeller":false,"showNewPeopleCash":false,"isDualEleven":false,"quaGuoji":false,"isB2bVip":false,"isShowVendorLogoUrl":false}]},"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"},{"srtId":55241553,"b2bVip":false,"srtName":"特价双床房","quota":1,"bedType":["单人床1.2m"],"windowType":"无窗","picUrls":["//img.alicdn.com/bao/uploaded/i1/TB1wjnGpgoQMeJjy0FoOL7ShVXa_110657.jpg","//img.alicdn.com/bao/uploaded/i2/TB1_PFAlX9gSKJjSspb9ofeNXXa_110659.jpg","//img.alicdn.com/bao/uploaded/i7/TB1U3wYk6uhSKJjSspd3MU11XXa_110701.jpg","//img.alicdn.com/bao/uploaded/i7/TB1nMNxljuhSKJjSspaGA0FgFXa_110702.jpg"],"facility":[],"size":"","recommendPrice":"209","isHotSale":false,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"},{"srtId":51893945,"b2bVip":false,"srtName":"大床房","quota":1,"bedType":["大床1.5m"],"windowType":"无窗","picUrls":["//img.alicdn.com/bao/uploaded/i3/TB1anOlkvNNTKJjSspf.YYXIFXa_110656.jpg","//img.alicdn.com/bao/uploaded/i5/TB1H1QVkWagSKJjy0FasAb0dpXa_110658.jpg","//img.alicdn.com/bao/uploaded/i4/TB1ElqnpbsTMeJjSszimZQdwXXa_110700.jpg","//img.alicdn.com/bao/uploaded/i4/TB18MqMkvNNTKJjSspcGA24KVXa_110702.jpg","//img.alicdn.com/bao/uploaded/i6/TB1LUuskvBNTKJjy1zdYXuScpXa_110710.jpg","//img.alicdn.com/bao/uploaded/i2/TB1OD5npbsTMeJjSsziXaodwXXa_110718.jpg","//img.alicdn.com/bao/uploaded/i3/TB1y5xtlamgSKJjSspi9CByJFXa_110724.jpg"],"facility":[],"size":"18㎡","floor":"1-5","networkService":"有线上网(免费)","recommendPrice":"227","isHotSale":false,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"},{"srtId":51893943,"b2bVip":false,"srtName":"双床房","quota":1,"bedType":["单人床1.2m"],"windowType":"部分有窗","picUrls":["//img.alicdn.com/bao/uploaded/i4/TB1Eie9pgMPMeJjy1XbvnUwxVXa_110655.jpg","//img.alicdn.com/bao/uploaded/i6/TB1.rRAlaigSKJjSsppsAabnpXa_110658.jpg","//img.alicdn.com/bao/uploaded/i7/TB1qiS9pgMPMeJjy1XbmZQwxVXa_110700.jpg","//img.alicdn.com/bao/uploaded/i8/TB1yJiNplUSMeJjy1zj3MU0dXXa_110701.jpg","//img.alicdn.com/bao/uploaded/i7/TB18vJvljihSKJjy0Flko9dEXXa_110703.jpg","//img.alicdn.com/bao/uploaded/i3/TB1Xn.0kWagSKJjy0FbeNK.mVXa_110712.jpg","//img.alicdn.com/bao/uploaded/i4/TB1QQCCkvBNTKJjSszbvCeFrFXa_110720.jpg","//img.alicdn.com/bao/uploaded/i7/TB1mb0alamgSKJjSsphMaMy1VXa_110725.jpg","//img.alicdn.com/bao/uploaded/i3/TB1mDpAlX9gSKJjSspbMaLeNXXa_110725.jpg","//img.alicdn.com/bao/uploaded/i2/TB1I5FsljqhSKJjSspnp1U79XXa_110726.jpg","//img.alicdn.com/bao/uploaded/i7/TB1UXJyljuhSKJjSspmp1UQDpXa_110726.jpg"],"facility":[],"size":"20㎡","floor":"1-5","networkService":"有线上网(免费)","recommendPrice":"246","isHotSale":false,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"},{"srtId":51893944,"b2bVip":false,"srtName":"高级大床房","quota":1,"bedType":["大床1.8m"],"windowType":"部分有窗","picUrls":["//img.alicdn.com/bao/uploaded/i4/TB1.O74k6ihSKJjy0Fi.YZuiFXa_110656.jpg","//img.alicdn.com/bao/uploaded/i4/TB1SSGskvBNTKJjy1zdsAaScpXa_110658.jpg","//img.alicdn.com/bao/uploaded/i2/TB1lbOQkvNNTKJjSspemZOSwpXa_110700.jpg","//img.alicdn.com/bao/uploaded/i2/TB1he9lpbsTMeJjSszdGA3EupXa_110702.jpg","//img.alicdn.com/bao/uploaded/i7/TB1AZKQkvNNTKJjSspehBqSwpXa_110706.jpg","//img.alicdn.com/bao/uploaded/i5/TB1qM1lpbsTMeJjSszdyXZEupXa_110714.jpg","//img.alicdn.com/bao/uploaded/i8/TB1tgqNplUSMeJjy1zjsOA0dXXa_110723.jpg","//img.alicdn.com/bao/uploaded/i2/TB1kPtBljuhSKJjSspjMaMi8VXa_110725.jpg","//img.alicdn.com/bao/uploaded/i7/TB1HCq9pgMPMeJjy1XbMaMwxVXa_110725.jpg"],"facility":[],"size":"20㎡","floor":"1-5","networkService":"有线上网(免费)","recommendPrice":"256","isHotSale":false,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"},{"srtId":55238569,"b2bVip":false,"srtName":"家庭房","quota":1,"bedType":[],"windowType":"部分有窗","picUrls":["//img.alicdn.com/bao/uploaded/i1/TB191psljqhSKJjSspnvnU79XXa_110655.jpg","//img.alicdn.com/bao/uploaded/i8/TB1Zk1npbsTMeJjSsziOL7dwXXa_110657.jpg","//img.alicdn.com/bao/uploaded/i2/TB11uV8plUSMeJjy1zk9oeWmpXa_110659.jpg"],"facility":[],"size":"30㎡","floor":"2-4","recommendPrice":"294","isHotSale":false,"showNewPeopleCash":false,"isDualEleven":false,"isLaterPay":true,"subtractPrice":0,"immediatelySubtract":0,"newYearSpeOffer":false,"isFirstStay":false,"isMemberPrice":false,"backCash":0,"virtualCardSubtractDesc":"","promotionDescArr":[],"double12Desc":"年度盛典"}],"subtractPrice":0,"hotelPriceWithoutTax":{"currencyCode":"USD","amount":29.87,"amountCNY":199,"exCurrencyRate":6.6611},"hotelPrice":"199"},
+        // 最大入住人数
+        occupancy: {
+            container : '#J_RangeForm',
+            defaultData: {
+                maxAdult: 5, // {Number} 最大成人位数
+                maxChild: 3, // {Number} 最大儿童位数
+                maxAge: 17,  // {Number} 儿童最大年龄数
+                optionTxt : {
+                    adult: '成人${i}位', //{String} 成人人数下拉框选项文本
+                    child: '儿童${i}位', //{String} 儿童人数下拉框选项文本
+                    age: {
+                        infant : '小于1岁', //{String} 儿童年龄下拉框选项“小于1岁”时显示的文本
+                        child : '${i}岁' //{String} 儿童年龄下拉框选项文本
+                    }
+                }
+            }
+        }
+    });
+    ImgViewer.init({
+        url : '//hotel.fliggy.com/ajax/shotelGallery.htm?shid=50512770&city=110100&checkIn=2017-11-02&checkOut=2017-11-03'
+    });
+})
+</script>
+<script>
+    KISSY.use('hotel-search/mods/package-mask/index', function (S, PackageMask) {
+        PackageMask.init();
+    });
+</script>
+
+									 <!-- hotel baseinfo end -->
+
+<div class="hotel-facility-desc">
+    <div class="hotel-box hotel-desc" id="hotel-desc">
+        <div class="hd">
+            <h3>
+		 酒店介绍
+	             </h3>
+                    </div>
+        <div class="bd">
+        	        		2014年开业&nbsp;&nbsp;
+        	        	
+        	        	
+        	        		69间房&nbsp;&nbsp;
+        	        	        	电话010-69828398
+        	        	
+        	        	传真010-69828318
+        	        	<br>
+        	汉庭酒店&rdquo;是华住酒店集团旗下品牌，酒店典雅的氛围、简约的风格是为商旅人士量身打造的温馨而舒适的家。北京门头沟滨河路店位于门头沟双峪路十字路口西北角，与阜石路相邻，相邻区药监局、公路分局等政府部门，北面紧邻门头沟住宅绿岛家园，酒店对面则是滨河世纪广场公园。酒店交通便利距离地铁一号线路程10分钟，乘坐一号线可以直接到达天安门，北京站。周边有餐饮、娱乐、购物、银行、医院。配套设施有便利店、配套的娱乐场所，酒店宽带上网、设施
+        	            <span class="ellpsis">
+               ...
+            </span>
+            
+            <span class="more">
+            	设备齐全，是您商务、探亲、旅游观光、休闲度假的优佳之选。
+            </span>
+            <span class="more-desc" id="J_MoreHotelDesc">
+                展开全部
+                <i>
+                </i>
+            </span>
+                    </div>
+    </div>
+    <div class="hotel-box hotel-facility" id="hotel-facility">
+    	        <div class="hd">
+        	
+            <h3>
+    	 酒店设施	
+		        </h3>
+        </div>
+        <div class="bd">
+            <ul>
+            	                                <li>
+                    <label>
+                        服务项目
+                    </label>
+                    <div>
+                         <span>叫醒服务</span> <span>行李寄存</span>                    </div>
+                </li>
+                                                <li>
+                    <label>
+                        客房设施
+                    </label>
+                    <div>
+                         <span>吹风机</span> <span>24小时热水</span> <span>空调</span>                    </div>
+                </li>
+                                            </ul>
+        </div>
+            </div>
+</div>
+  
+
+
+
+<script>
+    KISSY.use('hotel-search/mods/detail-desc/index',function(S,Desc){
+        Desc.init();
+    });
+</script>
+<!-- hotel description and facility end -->
+
+					<!-- hotel traffic start -->
+<!--css:../../mods/detail-traffic/index.css-->
+<!--css:../../widgets/rich-map/index.css-->
+<script src="//webapi.amap.com/maps?v=1.3&key=5358d1aa58f3dc1ff8e2bfe17121038d"></script><div class="hotel-box hotel-traffic" id="hotel-traffic">
+    <div class="hd">
+         <h3>交通及周边</h3>
+    </div>
+    <div class="bd">
+        <div id="J_Map">
+            
+        </div>
+    </div>
+</div>
+<script>
+    var cfg = {
+    region:0, //0国内,1国际及台湾
+        hotelInfo:{
+            name: "（新品）汉庭酒店北京门头沟滨河路店",
+            address: "滨河路87号",
+            tel: "010-69828398",
+            lat: 39.939912,
+            lng: 116.108971
+        },
+        trafficPOI:{"cityName":"北京","airports":[{"name":"首都国际机场","longitude":116.587991,"latitude":40.081325,"weight":28113,"type":6,"typeId":29152},{"name":"北京南苑国际机场","longitude":116.396444,"latitude":39.791792,"weight":7631,"type":6,"typeId":62671}],"trains":[{"name":"北京西站","longitude":116.321149,"latitude":39.896057,"weight":70649,"type":7,"typeId":29583},{"name":"北京南站","longitude":116.379041,"latitude":39.865036,"weight":57532,"type":7,"typeId":29585},{"name":"北京站","longitude":116.427295,"latitude":39.903733,"weight":38452,"type":7,"typeId":29581},{"name":"北京东站","longitude":116.484621,"latitude":39.902765,"weight":2671,"type":7,"typeId":29584},{"name":"北京北站","longitude":116.353807,"latitude":39.942787,"weight":1583,"type":7,"typeId":29582}],"buses":[{"name":"东直门枢纽","longitude":116.438089,"latitude":39.944011,"weight":6227,"type":8,"typeId":30618},{"name":"六里桥客运主枢纽","longitude":116.306299,"latitude":39.878952,"weight":2414,"type":8,"typeId":30626},{"name":"北京南站汽车站","longitude":116.383731,"latitude":39.869286,"weight":1783,"type":8,"typeId":30625},{"name":"四惠长途汽车站","longitude":116.501798,"latitude":39.90749,"weight":785,"type":8,"typeId":30627},{"name":"永定门长途汽车站","longitude":116.384027,"latitude":39.868766,"weight":631,"type":8,"typeId":30624},{"name":"八王坟长途客运站","longitude":116.479012,"latitude":39.902748,"weight":511,"type":8,"typeId":30621},{"name":"莲花池长途汽车站","longitude":116.313614,"latitude":39.886582,"weight":199,"type":8,"typeId":30623},{"name":"西直门汽车客运站","longitude":116.345904,"latitude":39.945396,"weight":28,"type":8,"typeId":30622},{"name":"长途汽车站(东直门站)","longitude":116.438473,"latitude":39.943072,"weight":17,"type":8,"typeId":30619},{"name":"广渠门(马圈)长途汽车站","longitude":116.460543,"latitude":39.894109,"weight":7,"type":8,"typeId":30620}]}
+    };
+    KISSY.use('hotel-search/mods/detail-traffic/index', function(S, Traffic){
+        Traffic.init(cfg);
+    });
+</script>
+
+<!-- hotel traffic end -->
+
+				                				    					   <!-- hotel review start -->
+<!--css:../../widgets/page/index.css-->
+<!--css:../../mods/detail-review/index.css-->
+
+
+<div class="hotel-box hotel-review" id="hotel-review">
+    <div class="hd">
+        <h3>
+            住客评价
+        </h3>
+    </div>
+    <div class="bd">
+        <div id="J_Reviews" class="review-content">
+            <!-- 评价详情 start -->
+            <div class="J_TablazyLoad J_TabBox review-box" id="J_ReviewBox" data-value="loadReview">
+                <div id="J_ReviewList" class="review-list">
+                </div>
+                <!-- 房型 -->
+                <div id="J_ReviewRoomType" class="review-roomtype">
+                    <h5 id="J_ReviewL" class="l-disabled">
+                        <span>
+                            左
+                        </span>
+                    </h5>
+                    <h5 id="J_ReviewR" class="r-disabled">
+                        <span>
+                            右
+                        </span>
+                    </h5>
+                    <div class="rt-box">
+                    </div>
+                </div>
+                <!-- 评论操作区 -->
+                <div class="review-bd">
+                    <!-- 标签 -->
+                    <div class="review-tag" id="J_ReviewTag">
+                        <h3>大家印象：</h3>
+                        <ul class="clearfix">
+                                                    </ul>    
+                    </div>
+                    <!-- 过滤 -->
+                    <div class="review-filter" style="display: block;">
+                        <ul class="ta-list clearfix" style="display: block;">
+                            <li class="taRate">
+                                                                    <div class="rate">4.7</div>
+                                    <div class="comment">
+                                        <p class="assess">非常好</p>
+                                        <p>96条点评</p>
+                                    </div>
+                                                            </li>
+                            <li class="taService">
+                                <div class="scoreItem">
+                                    <div class="itemLabel">位置</div>
+                                    <div class="itemProgress">
+                                                                            <div class="progressActive" style="width:94.0%;"></div>
+                                    </div>
+                                    <div class="itemScore">4.7</div>
+                                </div>
+                                <div class="scoreItem">
+                                    <div class="itemLabel">卫生</div>
+                                    <div class="itemProgress">
+                                                                                <div class="progressActive" style="width:94.0%;"></div>
+                                    </div>
+                                    <div class="itemScore">4.7</div>
+                                </div>
+                                <div class="scoreItem">
+                                    <div class="itemLabel">服务</div>
+                                    <div class="itemProgress">
+                                                                                <div class="progressActive" style="width:90.0%;"></div>
+                                    </div>
+                                    <div class="itemScore">4.5</div>
+                                </div>
+                                <div class="scoreItem">
+                                    <div class="itemLabel">性价比</div>
+                                    <div class="itemProgress">
+                                                                                <div class="progressActive" style="width:92.0%;"></div>
+                                    </div>
+                                    <div class="itemScore">4.6</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="filter-list clearfix" style="display: block;">
+                            <li class="filter-current">
+                                <input id="review-t-1" value="0" data-type="rateScore" type="radio" checked="checked"
+                                name="review-type">
+                                <label for="review-t-1">
+                                    <span class="r-title">
+                                        全部
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-long">
+                                <input id="review-t-2" value="1" data-type="rateScore" type="radio" name="review-type">
+                                <label for="review-t-2">
+                                    <span class="r-title">好评</span>
+                                    <span class="r-count">(91)</span>
+                                </label>
+                            </li>
+                            <li class="filter-long">
+                                <input id="review-t-4" value="2" data-type="rateScore" type="radio" name="review-type">
+                                <label for="review-t-4">
+                                    <span class="r-title">差评</span>
+                                    <span class="r-count">(1)</span>
+                                </label>
+                            </li>
+                            <li class="filter-long">
+                                <input id="review-t-5" value="3" data-type="rateScore" type="radio" name="review-type">
+                                <label for="review-t-5">
+                                    <span class="r-title">有图</span>
+                                    <span class="r-count">(2)</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="add-list clearfix" style="display: none;">
+                            <li>
+                                <input id="review-addreply" type="checkbox" data-type="rateScoreSingle">
+                                <label>
+                                    追加评价
+                                </label>
+                            </li>
+                        </ul>
+                        <!-- 评论过滤 -->
+                    </div>
+                </div>
+                <!-- 评论内容 -->
+                <div class="review-content review-bd no-border" page-mata="96_91_0_1_0">
+                                            <ul class="review-list">
+                                                    <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM084PF8WPGMIO8P-v0kGMmlh&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="v***i" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM084PF8WPGMIO8P-v0kGMmlh&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM084PF8WPGMIO8P-v0kGMmlh&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM084PF8WPGMIO8P-v0kGMmlh&amp;type=sns" title="v***i" target="_blank">v***i</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;临时又重新换的床单&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:60%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">早早地就订了房，前台不太放心的还给打了电话问到底住不住，按时到了酒店后被安排在一层，被告知没房了只能安排在一楼。在网上订就没房了只能安排在一楼，到店住的就可以安排在高楼层。勉强住进来后发现床单上有灰，前台来人后告诉说可能是房顶漏下来的。晕！临时又重新换的床单。</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-08-20 11:44]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyOHkYvC7zXm--XmP-vmPH&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="龙***8" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyOHkYvC7zXm--XmP-vmPH&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyOHkYvC7zXm--XmP-vmPH&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyOHkYvC7zXm--XmP-vmPH&amp;type=sns" title="龙***8" target="_blank">龙***8</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">屋里环境很赞，光线很好，而且打扫的也非常干净，请继续保持！</div>
+                                                                                                                            <ul class="tb-r-photos clearfix">
+                                                                                                    <li>
+                                                        <img src="https://img.alicdn.com/i2/0/TB2HQ_RbfBNTKJjSszcXXbO2VXa_!!0-rate.jpg_40x40.jpg" data-val="https://img.alicdn.com/i2/0/TB2HQ_RbfBNTKJjSszcXXbO2VXa_!!0-rate.jpg_400x400.jpg">
+                                                        <b class="tb-photos-arrow"></b>
+                                                    </li>
+                                                                                            </ul>
+                                            <div class="tb-r-photo-viewer">
+                                                <img src="">
+                                                <a class="tb-r-photo-viewer-navleft">
+                                                    <i class="tb-r-photo-viewer-navicon">�Z</i></a>
+                                                <a class="tb-r-photo-viewer-navright">
+                                                    <i class="tb-r-photo-viewer-navicon">�[</i></a>
+                                            </div>
+                                                                                <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-09-24 11:43]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMGH0vFvyPGZHOFkuPCguPChHOFZ-XH*zM07eOml-PGPz&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="玛**丝" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMGH0vFvyPGZHOFkuPCguPChHOFZ-XH*zM07eOml-PGPz&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMGH0vFvyPGZHOFkuPCguPChHOFZ-XH*zM07eOml-PGPz&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMGH0vFvyPGZHOFkuPCguPChHOFZ-XH*zM07eOml-PGPz&amp;type=sns" title="玛**丝" target="_blank">玛**丝</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:60%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">一点都不隔音 不是有事的话肯定不会再住了 去了连窗户都没有 且挨着一个保洁的打扫间？特别吵 楼道也吵 挨着电梯 </div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-08-29 14:48]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8Z-OF7-vFhHvFHyOmlevGNL&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="a***j" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8Z-OF7-vFhHvFHyOmlevGNL&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8Z-OF7-vFhHvFHyOmlevGNL&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8Z-OF7-vFhHvFHyOmlevGNL&amp;type=sns" title="a***j" target="_blank">a***j</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">房间整洁干净，非常棒！</div>
+                                                                                                                            <ul class="tb-r-photos clearfix">
+                                                                                                    <li>
+                                                        <img src="https://img.alicdn.com/i1/0/TB2vkSbbPihSKJjy0FlXXadEXXa_!!0-rate.jpg_40x40.jpg" data-val="https://img.alicdn.com/i1/0/TB2vkSbbPihSKJjy0FlXXadEXXa_!!0-rate.jpg_400x400.jpg">
+                                                        <b class="tb-photos-arrow"></b>
+                                                    </li>
+                                                                                                    <li>
+                                                        <img src="https://img.alicdn.com/i3/0/TB2nW6viVcJL1JjSZFOXXcWlXXa_!!0-rate.jpg_40x40.jpg" data-val="https://img.alicdn.com/i3/0/TB2nW6viVcJL1JjSZFOXXcWlXXa_!!0-rate.jpg_400x400.jpg">
+                                                        <b class="tb-photos-arrow"></b>
+                                                    </li>
+                                                                                            </ul>
+                                            <div class="tb-r-photo-viewer">
+                                                <img src="">
+                                                <a class="tb-r-photo-viewer-navleft">
+                                                    <i class="tb-r-photo-viewer-navicon">�Z</i></a>
+                                                <a class="tb-r-photo-viewer-navright">
+                                                    <i class="tb-r-photo-viewer-navicon">�[</i></a>
+                                            </div>
+                                                                                <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-09-22 23:11]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="x***1" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" title="x***1" target="_blank">x***1</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">不错，服务态度很好，环境也可以，这次很满意</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-11-01 07:38]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="x***1" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvGvm8YMHRHPF-HOmvWM0R-OFheXHkyPFQuOmxYP8x0&amp;type=sns" title="x***1" target="_blank">x***1</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:80%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">前台那个男的服务态度不好，第二，未来酒店上没有说特价房是在地下，还不能换。</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-10-04 10:47]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8ZzPmQLM0lHM8kGvCHYv8Q0&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="w***n" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8ZzPmQLM0lHM8kGvCHYv8Q0&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8ZzPmQLM0lHM8kGvCHYv8Q0&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM0gSMF*IMH8WvHlzX8QSM8ZzPmQLM0lHM8kGvCHYv8Q0&amp;type=sns" title="w***n" target="_blank">w***n</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:90%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">位置很好离西单很近 ，就是房间特别的小 只能放下一张床，东西很全，卫生间也很小。</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-09-20 15:37]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxWvGlzO8xLMFcuOH8Sv8lI&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="瞄*乖" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxWvGlzO8xLMFcuOH8Sv8lI&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxWvGlzO8xLMFcuOH8Sv8lI&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxWvGlzO8xLMFcuOH8Sv8lI&amp;type=sns" title="瞄*乖" target="_blank">瞄*乖</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;人超级多,信用住很棒&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">常去的地方，环境很好，这回赶着周末，人超级多，但没有排队，直接给办理了，信用住很棒</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-06-10 17:33]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-O8RhMCHbXHkbM0QuOHcuPkgGPmcWP0gYP0*zOmIY&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="f***7" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-O8RhMCHbXHkbM0QuOHcuPkgGPmcWP0gYP0*zOmIY&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-O8RhMCHbXHkbM0QuOHcuPkgGPmcWP0gYP0*zOmIY&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-O8RhMCHbXHkbM0QuOHcuPkgGPmcWP0gYP0*zOmIY&amp;type=sns" title="f***7" target="_blank">f***7</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;非常干净整洁的环境&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">非常干净整洁的环境！希望下次来北京一定住门头沟汉庭酒店</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-06-02 12:27]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM07HvG8SvFI0Xm7Hvm80MkZIPCIGOmHSMGQbPmIGXF*z&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="刘***0" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM07HvG8SvFI0Xm7Hvm80MkZIPCIGOmHSMGQbPmIGXF*z&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM07HvG8SvFI0Xm7Hvm80MkZIPCIGOmHSMGQbPmIGXF*z&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM07HvG8SvFI0Xm7Hvm80MkZIPCIGOmHSMGQbPmIGXF*z&amp;type=sns" title="刘***0" target="_blank">刘***0</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;房间很大很宽敞,有一点吵&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">房间很大很宽敞、可能是挨着道的原因、有一点吵！</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-02-26 20:42]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=Xmhzv8xLX8cbP0lhOmcSPmcLOH8LPG80XFR-P8c4PGvGP88SMHPHMHRIv0kLOHky&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="z**d" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=Xmhzv8xLX8cbP0lhOmcSPmcLOH8LPG80XFR-P8c4PGvGP88SMHPHMHRIv0kLOHky&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=Xmhzv8xLX8cbP0lhOmcSPmcLOH8LPG80XFR-P8c4PGvGP88SMHPHMHRIv0kLOHky&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=Xmhzv8xLX8cbP0lhOmcSPmcLOH8LPG80XFR-P8c4PGvGP88SMHPHMHRIv0kLOHky&amp;type=sns" title="z**d" target="_blank">z**d</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;家庭房面积还不小&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:90%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">很少住经济型的酒店，尤其是在多数负面报道的情况下。这家酒店的入住率还是比较高的。家庭房面积还不小，一张大床一张单人床，三口之家足够了。只是卫生确实是个不让人放心的。</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2016-08-13 16:03]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-MCM-MGl-XFcyPGgyM080vCcyvGvWPHg0OFguX88W&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="将***记" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-MCM-MGl-XFcyPGgyM080vCcyvGvWPHg0OFguX88W&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-MCM-MGl-XFcyPGgyM080vCcyvGvWPHg0OFguX88W&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXHP-MCM-MGl-XFcyPGgyM080vCcyvGvWPHg0OFguX88W&amp;type=sns" title="将***记" target="_blank">将***记</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;光线倒是很适合晚上睡觉&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:80%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">酒店的环境和位置及服务都很不错，但是隔音一般，不过这是经济型连锁酒店的通病，相对来说汉庭就算不错的了。光线倒是很适合晚上睡觉，通风很一般，屋里空气不是很好。</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2016-05-02 18:52]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyP8kWXH*IP8*-XmlevCxG&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="t***2" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyP8kWXH*IP8*-XmlevCxG&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyP8kWXH*IP8*-XmlevCxG&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbMG*HXFkWMkxYPFxuv8gSXFxyP8kWXH*IP8*-XmlevCxG&amp;type=sns" title="t***2" target="_blank">t***2</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name">&ldquo;房间里还有酸味&rdquo;</div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:50%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">连个停车场都没有。没有停车场门口监控你也多弄几个啊！睡一宿车在门口让人刮了！房间里还有酸味！</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-03-09 17:34]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmNSOFILXmcyMCRIP0ZhP8cWO8xYXmRIMGhIvCI0X8k4&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="l***呗" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmNSOFILXmcyMCRIP0ZhP8cWO8xYXmRIMGhIvCI0X8k4&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmNSOFILXmcyMCRIP0ZhP8cWO8xYXmRIMGhIvCI0X8k4&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmNSOFILXmcyMCRIP0ZhP8cWO8xYXmRIMGhIvCI0X8k4&amp;type=sns" title="l***呗" target="_blank">l***呗</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:100%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">非常好 干净整洁 空间大</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-10-23 15:35]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                                <li class="tb-r-comment clearfix">
+                                <div class="tb-r-buyer">
+                                    <div class="tb-r-avatar">
+                                                                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvuMm9IvClhM8Q4PH8SP0kLPFIYPCgYMFgyPCQ4M0Re&amp;type=sns" target="_blank">
+                                                    <img width="40" data-val="0" nick="g***6" nickurl="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvuMm9IvClhM8Q4PH8SP0kLPFIYPCgYMFgyPCQ4M0Re&amp;type=sns" height="40" data-val="img"
+                                                         src="http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvuMm9IvClhM8Q4PH8SP0kLPFIYPCgYMFgyPCQ4M0Re&amp;type=sns" />
+                                                </a>
+                                                                                                                        </div>
+                                    <div class="tb-r-nick">
+                                                                                    <a href="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXmvuMm9IvClhM8Q4PH8SP0kLPFIYPCgYMFgyPCQ4M0Re&amp;type=sns" title="g***6" target="_blank">g***6</a>
+                                                                            </div>
+                                    <div class="tb-r-rank">
+                                                                            </div>    
+                                </div> 
+                                <div class="tb-r-bd">
+                                    <div class="tb-r-body">
+                                                                                <div class="comment-name"></div>
+                                                                                    <div class="groupIcon">
+                                                                                                <div class="itemIcon" style="width:80%;"></div>
+                                            </div>
+                                                                                <div class="tb-r-cnt">还行，特价房是半地下，卫生一般</div>
+                                                                                                                        <div class="tb-r-info">
+                                            <span class="tb-r-date">[2017-10-23 12:59]</span>
+                                        </div>
+                                                                                                                    </div>
+                                </div>    
+                            </li>
+                                                                            </ul>
+                                    </div>
+                <!-- 评价详情 end -->
+            </div>
+        </div>
+        <script>
+            var _hotel_data = {"detail":{"hotel":{"id":50512770}}};
+            KISSY.use('hotel-search/mods/detail-review/index',
+            function(S, Review) {
+                var review = new Review();
+                //review.load();
+                review.type='hotel';
+                review.hotelParams={hid:50512770, sellerId:'', page:1, showContent:0};
+				review.showPagation(96);
+            });
+        </script>
+    </div>
+</div>
+
+<!-- hotel review end -->
+                    							 <!-- seo link-->
+			 <div class="hotel-box hotel-seo">
+                    <h3>北京酒店信息</h3>
+                    <p>放心找北京的酒店，飞猪为您提供北京酒店预订、实时酒店价格、特惠酒店预订以及北京住宿推荐，精选了多家北京酒店、宾馆、青年旅舍、青年旅社、经济连锁酒店、星级酒店供您选择。 北京酒店预订，酒店团购，特价酒店，尽在飞猪。</p>
+                </div>
+				<!-- seo link end-->
+			</div>
+			<!---- 酒店详情页右边部分 begin---->
+			<div class="hotel-col-sub">
+            <!-- 酒店详情页服务保障begin-->
+                <!-- hotel service assurance start -->
+    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/tpi/consumer/0.1.0/index-min.css">
+
+<div class="t-insure-aside ne-insure-aside">
+    <a href="https://market.alitrip.com/markets/channel/insure?title=%E9%85%92%E5%BA%97%E5%AE%A2%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C&json=json" target="_blank" title="放心出行，保障有我" class="t-insure-aside-a"></a>
+    <ul class="t-insure-aside-con">
+        
+        <li class="ins-aside-item">
+            <a href="https://market.alitrip.com/markets/channel/insure?title=%E9%85%92%E5%BA%97%E5%AE%A2%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C&json=json">
+                <h2 class="ins-item-hd"><em>快速确认</em></h2>
+                <p class="ins-item-bd">
+                    闪电发货
+                </p>
+            </a>
+        </li>
+        
+        <li class="ins-aside-item">
+            <a href="https://market.alitrip.com/markets/channel/insure?title=%E9%85%92%E5%BA%97%E5%AE%A2%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C&json=json">
+                <h2 class="ins-item-hd"><em>到店有房</em></h2>
+                <p class="ins-item-bd">
+                    订单发货后放心入住，确保有房，无房100%赔付
+                </p>
+            </a>
+        </li>
+        
+        <li class="ins-aside-item">
+            <a href="https://market.alitrip.com/markets/channel/insure?title=%E9%85%92%E5%BA%97%E5%AE%A2%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C&json=json">
+                <h2 class="ins-item-hd"><em>资金安全</em></h2>
+                <p class="ins-item-bd">
+                    信用住扣款多扣，差额双倍赔付
+                </p>
+            </a>
+        </li>
+        
+    </ul>
+    
+    <div class="ins-hot-line hidden">
+        <h2 class="hotline-tit">7x24小时客服热线：</h2>
+        <p class="hotline-con">400-1688-688</p>
+    </div>
+</div>
+<!-- hotel service assurance end -->
+
+            <!-- 酒店详情页服务保障end-->
+                          
+<div style="overflow:hidden;margin:10px 0;"><a href="https://www.alitrip.com/jiudian/?spm=181.7091613.191938.19.qOQHKb" target="_blank"><img src="//img.alicdn.com/tps/i2/TB13XVfHFXXXXa6XFXXN03r2pXX-190-370.png_210x1000.jpg" title="信用住" style="vertical-align:middle"></a></div>
+
+
+
+                <!-- 国际机票搜索 -->
+                
+            		<!-- 酒店详情页别人正在买 begin -->
+    			<!-- hotel others buy start -->
+    <!--css:../../mods/other-buy/index.css-->
+    <div class="hotel-side-box hotel-otherbuy" id="J_HotelOtherBuy">
+        <div class="hd">
+            <h4>
+                别人正在买
+            </h4>
+        </div>
+        <div class="bd">
+
+        </div>
+    </div>
+    <script>
+        KISSY.use('hotel-search/mods/other-buy/index',function(S,OtherBuy){
+            OtherBuy.init({
+                url : '//hotel.fliggy.com//ajax/getLatestHotelOrders.htm?cityCode=110100&count=5&hotelType='
+            });
+        });
+    </script>
+    <!-- hotel others buy end -->
+    		<!-- 酒店详情页别人正在买 end -->
+    		<!-- 酒店详情页周边同类酒店 begin -->
+    		<!-- 酒店详情页周边同类酒店 end -->
+            		<!-- 我浏览过的酒店 begin -->
+    			<!-- hotel viewed start -->
+    <!--css:../../mods/viewed/index.css-->
+    <div class="hotel-side-box hotel-viewed  " id="hotel-viewed">
+        <div class="hd">
+            <h4>
+                我浏览过的酒店客栈
+            </h4>
+        </div>
+        <div class="bd">
+            <ul class="hotel-list-sm">
+                                	<li  class="first" >
+                    <div class="hotel-img">
+												                        <a href="hotel_detail2.htm?shid=50512770&city=110100&checkIn=Thu Nov 02 00:00:00 CST 2017&checkOut=Fri Nov 03 00:00:00 CST 2017">
+                        	                            	<img src="//img.alicdn.com/bao/uploaded/i5/TB1l2d.XioaPuJjSspl4abg7XXa_125219.jpg_60x60">
+                                                    </a>
+                    </div>
+                    <div class="hotel-info">
+                        <a href="hotel_detail2.htm?shid=50512770&checkIn=Thu Nov 02 00:00:00 CST 2017&checkOut=Fri Nov 03 00:00:00 CST 2017"  target="_blank">
+                            （新品）汉庭酒店北京门头沟滨河路店
+                        </a>
+                        <br>
+                        	其它类型
+                    </div>
+                    <span class="remove J_RemoveViewed" data-hid="50512770">
+                        x
+                    </span>
+                </li>
+                            </ul>
+        </div>
+    </div>
+    <script>
+        KISSY.use('hotel-search/mods/viewed/index',
+        function(S, Viewed) {
+            Viewed.init({ //相关配置项
+                removeUrl: 'ajax/deleteVisitedHid.do'
+            });
+        });
+    </script>
+    <!-- hotel viewed end -->
+    		<!-- 我浏览过的酒店 end -->
+</div>
+			<!---- 酒店详情页右边部分 end---->
+		</div>
+    </div>
+</div>
+<script>
+    KISSY.use('hotel-search/mods/detail-layout/index,hotel-search/mods/detail-fixedtab/index');
+</script>
+<script type="text/javascript" src="//assets.alicdn.com/s/fdc/xwj.js"></script>
+<script type="text/javascript">
+    window._ap_xwj && _ap_xwj.monitor("140106-483");
+</script>
+
+<!--北京 （新品）汉庭酒店北京门头沟滨河路店 false false true-->
+
+<img src="//ac.mmstat.com/tbtrip.19.8.1?logtype=4&abtest=no&mvt=_mvt_m356-3_m357-1&ptn=detail_page&subptn=hotel_dom_detail_page" style="display:none">
+<img src="/hsc/hotel.flowStat" style="display: none">
+<!--cnzz-->
+<div style="display:none;">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253581663'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1253581663' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+<!-- end -->
+        <div class="trip-footer">
+        <div data-hudge-tmstitle="2016双11淘宝旅行公共底部导航，请慎重维护"></div>
+
+
+<div class="footer" data-spm="774530365">
+  <div class="footer-hd">
+    <p>
+      <a href="http://www.alibabagroup.com/cn/global/home?spm=1.7274553.1997523009.1.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.1">阿里巴巴集团</a>
+      <b>|</b>
+      <a href="//www.taobao.com?spm=1.7274553.1997523009.2.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.2">淘宝网</a>
+      <b>|</b>
+      <a href="//www.tmall.com?spm=1.7274553.1997523009.3.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.3">天猫</a>
+      <b>|</b>
+      <a href="//ju.taobao.com?spm=1.7274553.1997523009.4.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.4">聚划算</a>
+      <b>|</b>
+      <a href="http://www.aliexpress.com?spm=1.7274553.1997523009.5.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.5">全球速卖通</a>
+      <b>|</b>      
+      <a href="http://www.alibaba.com/?spm=1.7274553.1997523009.6.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.6">阿里巴巴国际交易市场</a>
+      <b>|</b>
+      <a href="http://www.1688.com?spm=1.7274553.1997523009.7.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.7">1688</a>
+      <b>|</b>
+      <a href="http://www.alimama.com?spm=1.7274553.1997523009.8.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.8">阿里妈妈</a>
+      <b>|</b>
+      <a href="//www.fliggy.com?spm=1.7274553.1997523009.12.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.12">飞猪</a>
+      <b>|</b>
+      <a href="//www.aliyun.com?spm=1.7274553.1997523009.9.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.9">阿里云计算</a>
+      <b>|</b>
+      <a href="http://www.yunos.com?spm=1.7274553.1997523009.10.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.10">YunOS</a>
+      <b>|</b>
+      <a href="http://www.aliqin.cn" data-spm-anchor-id="1.7274553.1997523009.16">阿里通信</a>
+      <b>|</b>
+      <a href="http://www.net.cn?spm=1.7274553.1997523009.11.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.11">万网</a>
+      <b>|</b>
+      <a href="http://www.amap.com/" data-spm-anchor-id="1.7274553.1997523009.16">高德</a>
+      <b>|</b>
+      <a href="http://www.uc.cn/" data-spm-anchor-id="1.7274553.1997523009.17">UC</a>
+      <b>|</b>
+      <a href="http://www.umeng.com/" data-spm-anchor-id="1.7274553.1997523009.18">友盟</a>
+      <b>|</b>
+      <a href="http://www.xiami.com?spm=1.7274553.1997523009.13.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.13">虾米</a>
+      <b>|</b>
+      <a href="http://www.alibabaplanet.com/" data-spm-anchor-id="1.7274553.1997523009.20">阿里星球</a>
+      <b>|</b>
+      <a href="http://www.laiwang.com/?spm=1.7274553.1997523009.14.NrtRhb" data-spm-anchor-id="1.7274553.1997523009.14">来往</a>
+      <b>|</b>
+      <a href="http://www.dingtalk.com/?lwfrom=20150130165205602">钉钉</a>
+      <b>|</b>
+      <a href="//www.alipay.com" data-spm-anchor-id="1.7274553.1997523009.15">支付宝</a>
+    </p>
+  </div>
+  <div class="footer-bd">
+    <p>
+      <a style="margin-right: 4px" href="//www.taobao.com/about">关于淘宝</a>
+      <a style="margin: 0 4px" href="//zhaoshang.alitrip.com">商家入驻</a>
+      <a style="margin: 0 4px" href="//pro.taobao.com">营销中心</a>
+      <a style="margin: 0 4px" href="//service.taobao.com/support/main/service_route.htm">联系客服</a>
+      <a style="margin: 0 4px" href="//open.taobao.com">开放平台</a>
+      <a style="margin: 0 4px" href="//www.taobao.com/about/join.php">诚征英才</a>
+      <a style="margin: 0 4px" href="//www.taobao.com/about/contact.php">联系我们</a>
+      <a style="margin: 0 4px" href="//www.taobao.com/sitemap.php">网站地图</a>
+      <a style="margin: 0 4px" href="//www.taobao.com/go/chn/tb-fp/2014/law.php">法律声明</a>
+      <em>&copy; Fliggy.com版权所有</em>
+    </p>
+    <p>
+      <span>增值电信业务经营许可证：浙B2-20160773</span>
+    </p>
+  </div>
+  <a target="_blank" href="http://idinfo.zjaic.gov.cn/bscx.do?method=hddoc&amp;id=33018400005621"><img src="https://img.alicdn.com/tps/TB1nooFPFXXXXbWXVXXXXXXXXXX-65-70.gif" border="0" width="40px"></a>
+  <div class="footer-ft">
+    <a href="http://www.pingpinganan.gov.cn/web/index.aspx?file=index.aspx"><img width="36" height="36" src="//img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif"></a>
+    <a href="http://idinfo.zjaic.gov.cn/bscx.do?method=hddoc&id=33018400000067" class="mod mod-a"></a>
+    <a href="http://idinfo.zjaic.gov.cn/bscx.do?&method=hddoc&id=33018400000067" class="mod mod-b"></a>
+    <a href="http://www.theclimategroup.org.cn/about/friend" class="mod mod-c"></a>
+    <a href="https://ss.cnnic.cn/verifyseal.dll?&sn=2010062300100001357&pa=20100701" class="mod mod-d"></a>
+    <a href="http://www.ppaaol.com/verifySite.do?id=1051" class="mod mod-e"></a>
+  </div>
+  <div class="footer-toy"></div>
+</div>
+<div id="server-num">hsp011250063143.center.et2</div>
+    </div>
+    </body>
+</html>

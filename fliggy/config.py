@@ -6,6 +6,9 @@ import os
 
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
+COMMEND = 'all'
+
+
 PATH = 'Data'
 if not os.path.exists(PATH):
     os.mkdir(os.path.abspath(PATH))
@@ -13,6 +16,30 @@ if not os.path.exists(PATH):
 LIST = 'DataList'
 if not os.path.exists(LIST):
     os.mkdir(os.path.abspath(LIST))
+
+# 文件路径
+ALL_AREA = os.path.join(os.path.abspath(LIST), 'city_list_total.txt')
+
+HOTEL_LIST = os.path.join(os.path.abspath(LIST), 'fliggy_hotel_list.txt')
+if not os.path.exists(HOTEL_LIST):
+    f = open(HOTEL_LIST, 'w+')
+    f.close()
+
+HOTEL_LIST_AREA_ALREADY = os.path.join(os.path.abspath(LIST), 'hotel_list_area_already.txt')
+if not os.path.exists(HOTEL_LIST_AREA_ALREADY):
+    f = open(HOTEL_LIST_AREA_ALREADY, 'w+')
+    f.close()
+
+HOTEL_INFO = os.path.join(os.path.abspath(PATH), 'fliggy_hotel_info.txt')
+if not os.path.exists(HOTEL_INFO):
+    f = open(HOTEL_INFO, 'w+')
+    f.close()
+
+HOTEL_INFO_EX = os.path.join(os.path.abspath(PATH), 'hotel_info_ex.txt')
+if not os.path.exists(HOTEL_INFO_EX):
+    f = open(HOTEL_INFO_EX, 'w+')
+    f.close()
+
 
 # 请求头
 HEADERS = {
@@ -22,28 +49,11 @@ HEADERS = {
     "scheme": "https",
     "upgrade-insecure-requests": "1",
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-    # "Proxy-Switch-Ip": "yes",
 }
+
+# cookies
 COOKISE = {
-    "cookie": "cna=omZJEqUkxWICAXAsaqSn1mIS;"
-              " UM_distinctid=15f702fc1813cc-0d94376464443a-31657c00-13c680-15f702fc182221;"
-              " chanelStat=\"NQ==\";"
-              " chanelStatExpire=\"2017-11-03 10:12:57\";"
-              " hng=CN%7Czh-CN%7CCNY%7C156;"
-              " uc1=cookie16=W5iHLLyFPlMGbLDwA%2BdvAGZqLg%3D%3D&cookie21=VFC%2FuZ9ainBZ&cookie15="
-              "WqG3DMC9VAQiUQ%3D%3D&existShop=false&pas=0&cookie14=UoTcBryi%2BzwP0g%3D%3D&tag=8&lng=zh_CN;"
-              " tracknick=beforeuwait;"
-              " _l_g_=Ug%3D%3D;"
-              " unb=457421924;"
-              " cookie1=Vv9IQ5%2BKbs20nJ4RAK0TRc%2B6RhfoVlhcC4rRkQpoltg%3D;"
-              " login=true;"
-              " cookie17=VynOVuku3XDV; cookie2=17ef7be0359cc3960d53263da0bbd37d;"
-              " _nk_=beforeuwait; uss=ACPnWjQ0qcBI3wnJKY57Z3ujftjTCaLUuTDw85GSgNf01du4TDjsMWs4iA%3D%3D;"
-              " sg=t4e;"
-              " t=e8b4d5b9fe24f7a4dc381101747811d1;"
-              " _tb_token_=LmTsp8m2Iw5QTtdJd3mU; JSESSIONID=D811181BFC08822148DFD067D027461F;"
-              " CNZZDATA1253581663=281493417-1509415606-https%253A%252F%252Fwww.alitrip.com%252F%7C1509433228;"
-              " isg=AnNzJizLLuKBbOK5zGejXEMHAnFdAAX85zEW3iUQbRLJJJLGq3pBuij2qGIx"
+    "cookie": ""
 }
 
 
@@ -51,128 +61,65 @@ COOKISE = {
 # URL
 HOTEL_LIST_URL = 'https://hotel.fliggy.com/ajax/hotelList.htm'
 
+HOTEL_INFO_URL = 'https://hotel.fliggy.com/hotel_detail2.htm'
 
 # params
 PARAMS_LIST = {
     "pageSize": 20,
     "currentPage": 1,
-    # "totalItem": 15057,
-    # "startRow": 0,
-    # "endRow": 19,
     "city": "511324",
-    # "tid": "null",
-    # "market": "0",
-    # "previousChannel": "",
-    # "u": "null",
     "detailLinkCity": "511300",
     "cityName": "南充",
     "checkIn": "2017-11-03",
     "checkOut": "2017-11-04",
-    # "browserUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-    # "userClientIp": "182.151.214.57",
-    # "userSessionId": "omZJEqUkxWICAXAsaqSn1mIS",
-    # "offset": 20,
-    # "keywords": "null",
-    # "priceRange": "R0",
-    # "dangcis": "null",
-    # "brands": "null",
-    # "services": "null",
-    # "order": "DEFAULT",
-    # "dir": "DESC",
-    # "client": "11.228.51.56",
-    # "tagids": "null",
-    # "searchPoiName": "undefined",
-    # "pByRadiusLng": "-1",
-    # "pByRadiusLat": "-1",
-    # "radius": "-1",
-    # "pByRectMinLat": "-1",
-    # "pByRectMinLng": "-1",
-    # "pByRectMaxLat": "-1",
-    # "pByRectMaxLng": "-1",
-    # "lowPrice": "-1",
-    # "highPrice": "-1",
-    # "filterByKezhan": "false",
-    # "searchBy": "",
-    # "searchByTb": "false",
-    # "businessAreaId": "null",
-    # "skipKeywords": "false",
-    # "district": "null",
-    # "backCash": "false",
-    # "shids": "null",
-    # "activity": "null",
-    # "filterDoubleEleven": "false",
-    # "filterByRoomTickets": "false",
-    # "filterHxk": "false",
-    # "filterCxk": "false",
-    # "filterByRoomTicketsAndNeedLogin": "false",
-    # "filterByRoomTicketsAndNeedBuyTicket": "false",
-    # "activityCode": "null",
-    # "searchId": "null",
-    # "userId": "null",
-    # "hotelTypes": "null",
-    # "filterByB2g": "false",
-    # "filterByAgreement": "false",
-    # "bizNo": "null",
-    # "bizType": "null",
-    # "region": 0,
-    # "newYearSpeOffer": "false",
-    # "laterPay": "false",
-    # "sellerId": "null",
-    # "isMemberPrice": "false",
-    # "isLaterPayActivity": "false",
-    # "isFilterByTeHui": "false",
-    # "keyWordsType": "",
-    # "userUniqTag": "null",
-    # "iniSearchKW": "false",
-    # "poiNameFilter": "",
-    # "isFreeCancel": "false",
-    # "isInstantConfirm": "false",
-    # "activityCodes": "",
-    # "overseaMarket": "false",
-    # "roomNum": 1,
-    # "notFilterActivityCodeShotel": "false",
-    # "poisearch": "false",
-    # "adultChildrenCondition": "&roomNum=1&aNum_1=2&cNum_1=0",
-    # "previousPage": 1,
-    # "nextPage": 2,
-    # "pageFirstItem": 1,
-    # "firstPage": "true",
-    # "lastPage": "false",
-    # "totalPage": 753,
-    # "pageLastItem": 20,
-    # "aNum_1": 2,
-    # "cNum_1": 0,
-    # "cAge_1_1": 0,
-    # "cAge_1_2": 0,
-    # "cAge_1_3": 0,
-    # "_input_charset": "utf-8",
-    # "laterPaySwitch": "",
-    # "_ksTS": "1509416502865_3007",
-    # "callback": "jsonp3008",
 }
 
-# 代理
+PARAMS_INFO = {
+    "shid": "10089487"
+}
 
-def get_proxy():
-    # 要访问的目标页面
-    # targetUrl = "http://test.abuyun.com/proxy.php"
-    # 代理服务器
-    proxyHost = "proxy.abuyun.com"
-    proxyPort = "9010"
+# Data
 
-    # 代理隧道验证信息
-    proxyUser = "HY3JE71Z6CDS782P"
-    proxyPass = "CE68530DAD880F3B"
+HOTEL_DICT = {
+    "中文全称": "",
+    "中文简称": "",
+    "所属地区": "",
+    "地址": "",
+    "地理位置": "",
+    "等级": "",
+    "类型": "",
+    "开业时间": "",
+    "最后一次装修时间": "",
+    "最早入住时间": "",
+    "最晚离店时间": "",
+    "总客房数": "",
+    "总床位数": "",
+    "咨询电话": "",
+    "传真": "",
+    "邮政编码": "",
+    "投诉电话": "",
+    "交通信息": "",
+    "周边信息": "",
+    "简介": "",
+    "国别": "CN",
+    "省全称": "",
+    "省简称": "",
+    "市全称": "",
+    "市简称": "",
+    "县全称": "",
+    "县简称": "",
+    "行政区号": "",
+    "url": "",
+}
+HOTEL_DICT_L = [
+    "中文全称", "中文简称", "所属地区", "地址", "地理位置", "等级", "类型", "开业时间", "最后一次装修时间", "最早入住时间",
+    "最晚离店时间", "总客房数", "总床位数", "咨询电话", "传真", "邮政编码", "投诉电话", "交通信息", "周边信息", "简介",
+    "国别", "省全称", "省简称", "市全称", "市简称", "县全称", "县简称", "行政区号", "url",
+]
+# setting
 
-    proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
-        "host": proxyHost,
-        "port": proxyPort,
-        "user": proxyUser,
-        "pass": proxyPass,
-    }
+BLANK = '\u0001'
 
-    proxies = {
-        "http": proxyMeta,
-        "https": proxyMeta,
-    }
-    return proxies
+ENCODING = 'utf-8'
+
+DELAY = 5
