@@ -1,2 +1,0 @@
-Fri, 03 Nov 2017 00:27:08 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
-Fri, 03 Nov 2017 00:27:08 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.baidu.com/ HTTP/1.1" 200 None
