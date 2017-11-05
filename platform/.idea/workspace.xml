@@ -17,8 +17,8 @@
       <file leaf-file-name="requestsModule.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requestsModule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="176" column="31" lean-forward="false" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
+            <state relative-caret-position="1647">
+              <caret line="235" column="4" lean-forward="false" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
               <folding>
                 <element signature="e#2692#2706#0" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="12" />
     <option name="y" value="109" />
     <option name="width" value="1440" />
@@ -106,7 +106,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,22 +214,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo.py">
+    <entry file="file://$PROJECT_DIR$/requestsModule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2692#2706#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py" />
+    <entry file="file://$PROJECT_DIR$/demo.py" />
     <entry file="file://$PROJECT_DIR$/../携程攻略/get_shop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -244,14 +240,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -260,27 +249,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapps.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myapps.log" />
+    <entry file="file://$PROJECT_DIR$/myapp.log" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-2010535109/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1698">
           <caret line="491" column="4" lean-forward="false" selection-start-line="491" selection-start-column="4" selection-end-line="491" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -292,19 +266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requests.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="783" column="23" lean-forward="false" selection-start-line="783" selection-start-column="19" selection-end-line="783" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -318,11 +283,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requestsModule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="176" column="31" lean-forward="false" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
+        <state relative-caret-position="1647">
+          <caret line="235" column="4" lean-forward="false" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
           <folding>
             <element signature="e#2692#2706#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
