@@ -207,7 +207,6 @@ class getModule:
                     """
                     kwargs['allow_redirects'] = False
                     logging.info('在请求 %s 时,返回 status_code:%s,将不允许重定向' % (kwargs.get('url'), status_code))
-
                     continue
                 elif repr(status_code).startswith('4'):
                     """
@@ -233,8 +232,8 @@ class getModule:
                 response = connfig.response_error
             retry -= 1
         return response
-    
-    def response_parse(self, response):
+
+    def response_status_code_parse(self, response):
         """
         返回response对象，然后通过 状态码的判断，从而相应的处理
         :param response: response 对象
