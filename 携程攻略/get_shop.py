@@ -91,7 +91,8 @@ class ctripShopEngine:
             if each[0] not in cmt_done:
                 self.shop_comment_logic(shop_id=each[3], pid=each[0], districtId=each[2], cnc=each[1])
                 self.pipe.save_cmt_done(each[0])
-                break
+
+
     def shop_comment_logic(self, **kwargs):
         """
         由于网站恶心，只能看1000条，100页是上限。
