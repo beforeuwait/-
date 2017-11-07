@@ -5,9 +5,9 @@ import os
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
 # 命令
-RESTAURANT_COMMAND = 'info'
+RESTAURANT_COMMAND = 'cmt'
 
-SHOPPING_COMMAND = 'all'
+SHOPPING_COMMAND = 'cmt'
 
 PATH = 'Data'
 if not os.path.exists(PATH):
@@ -48,13 +48,22 @@ if not os.path.exists(RESTAURANT_SHOP_INFO):
     f.close()
 
 
-RESTAURANT_SHOP_EX = os.path.join(os.path.abspath(PATH), 'restaurant_shop_ex.txt') # 记录已抓取目录已经pid
+RESTAURANT_SHOP_EX = os.path.join(os.path.abspath(PATH), 'restaurant_shop_ex.txt')  # 记录已抓取目录已经pid
 if not os.path.exists(RESTAURANT_SHOP_EX):
     f = open(RESTAURANT_SHOP_EX, 'w+')
     f.close()
 
-# 商铺购物
+RESTAURANT_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'restaurant_shop_cmt.txt')
+if not os.path.exists(RESTAURANT_SHOP_CMT):
+    f = open(RESTAURANT_SHOP_CMT, 'w+')
+    f.close()
 
+RESTAURANT_CMT_DONE = os.path.join(os.path.abspath(PATH), 'restaurant_cmt_done.txt')
+if not os.path.exists(RESTAURANT_CMT_DONE):
+    f = open(RESTAURANT_CMT_DONE, 'w+')
+    f.close()
+
+# 商铺购物
 SHOPPING_SHOP_LIST= os.path.join(os.path.abspath(PATH), 'shopping_shop_list.txt')
 if not os.path.exists(SHOPPING_SHOP_LIST):
     f = open(SHOPPING_SHOP_LIST, 'w+')
@@ -71,9 +80,20 @@ if not os.path.exists(SHOPPING_SHOP_EX):
     f.close()
 
 SHOPPING_SHOP_LIST_EX = os.path.join(os.path.abspath(PATH), 'shopping_shop_list_ex.txt')
-if not  os.path.exists(SHOPPING_SHOP_LIST_EX):
+if not os.path.exists(SHOPPING_SHOP_LIST_EX):
     f = open(SHOPPING_SHOP_LIST_EX, 'w+')
     f.close()
+
+SHOPPING_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'shopping_shop_cmt.txt')
+if not os.path.exists(SHOPPING_SHOP_CMT):
+    f = open(SHOPPING_SHOP_CMT, 'w+')
+    f.close()
+
+SHOPPING_CMT_DONE = os.path.join(os.path.abspath(PATH), 'shopping_cmt_done.txt')
+if not os.path.exists(SHOPPING_CMT_DONE):
+    f = open(SHOPPING_CMT_DONE, 'w+')
+    f.close()
+
 
 # 代理
 
@@ -118,6 +138,29 @@ HEADERS_XML = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
 }
 
+RESTAURANT_DATA = {
+    "poiID": "11383200",
+    # "districtId": "104",
+    "districtEName": "Chengdu",
+    "pagenow": 1,
+    "order": 1,
+    "star": 0,
+    "tourist": 0,
+    "resourceId": "5233332",
+    "resourcetype": 3,
+}
+
+SHOPPING_DATA = {
+    "poiID": "10566545",
+    "districtId": "104",
+    "districtEName": "Chengdu",
+    "pagenow": 1,
+    "order": 1,
+    "star": 0,
+    "tourist": 0,
+    "resourceId": "138472",
+    "resourcetype": 4,
+}
 
 # 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
 CMT_START_DATE = '2012-01-01'

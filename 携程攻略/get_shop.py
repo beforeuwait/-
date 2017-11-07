@@ -81,6 +81,31 @@ class ctripShopEngine:
         data = self.spider.shop_info_pid(html) if html is not 'bad_requests' else []
         self.pipe.save_shop_info_pid(data, info) if not data == [] and data[0] is not '0' else ''
 
+    def shop_comment(self):
+        """
+        这里作为获取每个店铺的评论模块
+        """
+        shop_list = (i.strip().split(setting.blank)for i in open(setting.shopping_ex, 'r', encoding=setting.encode))
+        cmt_done = set(i.strip() for i in open(setting.comment_done, 'r', encoding=setting.encode))
+        for each in shop_list:
+            if each[0] not in cmt_done:
+                self.shop_comment_logic(shop_id=each[3], pid=each[0], districtId=each[2], cnc=each[1])
+                self.pipe.save_cmt_done(each[0])
+
+    def shop_comment_logic(self, **kwargs):
+        """
+        由于网站恶心，只能看1000条，100页是上限。
+        """
+        num, next_page = 1, True
+        while next_page:
+            html = self.down.shop_comment(**kwargs, page=num)
+            cmt_list = self.spider.shop_comment(html) if html is not 'bad_requests' else []
+            next_page = True if not cmt_list == [] else False
+            self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else ''
+            if num == 100:
+                break
+            num += 1
+
 class ctripShopDownloader:
     def do_get_requests(self, *args):
         retry = 5
@@ -120,6 +145,18 @@ class ctripShopDownloader:
         print(url)
         headers = setting.headers
         html = self.do_get_requests(url, headers)
+        return html
+
+    def shop_comment(self, **kwargs):
+        url = setting.shop_comment_url
+        data = setting.comment_data
+        data['poiID'] = kwargs.get('pid')
+        data['districtEName'] = kwargs.get('cnc')
+        data['pagenow'] = kwargs.get('page')
+        data['resourceId'] = kwargs.get('shop_id')
+        data['districtId'] = kwargs.get('districtId')
+        headers = setting.headers_xml
+        html = self.do_get_requests(url, headers, data)
         return html
 
 class ctripShopSpider:
@@ -186,6 +223,21 @@ class ctripShopSpider:
         data.append(trans)
         return data
 
+    def shop_comment(self, html):
+        selector = etree.HTML(html)
+        cons = selector.xpath('//div[@class="comment_ctrip"]/div[@class="comment_single"]')
+        cmt_list = []
+        if cons:
+            for each in cons:
+                user = each.xpath('div[@class="userimg"]/span/a/text()')[0] if each.xpath('div[@class="userimg"]/span/a/text()') else ''
+                star = each.xpath('ul/li[1]/span[1]/span[1]/span/@style')[0] if each.xpath('ul/li[1]/span[1]/span[1]/span/@style') else ''
+                socar = each.xpath('ul/li[1]/span[1]/span[2]/text()')[0] if each.xpath('ul/li[1]/span[1]/span[2]/text()') else ''
+                time1 = each.xpath('ul/li[1]/span[2]/text()')[0] if each.xpath('ul/li[1]/span[2]/text()') else ''
+                comment = each.xpath('ul/li[2]/span/text()')[0] if each.xpath('ul/li[2]/span/text()') else ''
+                time2 = each.xpath('ul/li[3]/span[1]/span/em/text()')[0] if each.xpath('ul/li[3]/span[1]/span/em/text()') else ''
+                cmt_list.append([user, star, socar, time1, comment, time2])
+        return cmt_list
+
 
 class ctripShopPipeline:
 
@@ -234,6 +286,20 @@ class ctripShopPipeline:
         with open(setting.shopping_ex, 'a', encoding=setting.encode) as f:
             f.write(text_ex)
 
+    def save_shop_cmt(self, cmt_list, shop_id):
+        text = ''
+        for each in cmt_list:
+            text += shop_id + setting.blank + setting.blank.join(each).replace('\n', '').replace('\r', '')\
+                .replace(' ', '').replace('width:', '').replace('%', '') + '\n'
+
+        with open(setting.comment_txt, 'a', encoding=setting.encode) as f:
+            f.write(text)
+
+    def save_cmt_done(self, shop_id):
+        # 保存进度
+        with open(setting.comment_done, 'a', encoding=setting.encode) as f:
+            f.write(shop_id + '\n')
+
 class setting:
     """
     这个类作为引入config.py里的参数并提供给这个脚本里使用
@@ -250,6 +316,8 @@ class setting:
     shop_list_url = 'http://you.ctrip.com/shoppinglist/%s/s0-p%s.html'
 
     shop_list_url_area = 'http://you.ctrip.com/shoppinglist/%s/s0-r%s-p%s.html'
+
+    shop_comment_url = 'http://you.ctrip.com/destinationsite/TTDSecond/SharedView/AsynCommentView'
 
     local_url = 'http://you.ctrip.com%s'
 
@@ -268,6 +336,12 @@ class setting:
     headers = config.HEADERS
 
     headers_xml = config.HEADERS_XML
+
+    comment_data = config.SHOPPING_DATA
+
+    comment_txt = config.SHOPPING_SHOP_CMT
+
+    comment_done = config.SHOPPING_CMT_DONE
 
 class ctripShopExecute:
     def __init__(self, commend):
@@ -290,6 +364,10 @@ class ctripShopExecute:
             cse.shop_info_pid()
             del cse
 
+        elif self.commend == 'cmt':
+            cse = ctripShopEngine()
+            cse.shop_comment()
+            del cse
 if __name__ == '__main__':
     cse = ctripShopExecute(config.SHOPPING_COMMAND)
     cse.execute()

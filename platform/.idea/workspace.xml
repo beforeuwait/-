@@ -68,11 +68,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="12" />
-    <option name="y" value="109" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -179,7 +177,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="109" width="1440" height="821" extended-state="1" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -255,6 +253,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1698">
           <caret line="491" column="4" lean-forward="false" selection-start-line="491" selection-start-column="4" selection-end-line="491" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
