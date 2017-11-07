@@ -9,6 +9,10 @@ RESTAURANT_COMMAND = 'cmt'
 
 SHOPPING_COMMAND = 'cmt'
 
+# 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
+CMT_START_DATE = '2012-01-01'
+CMT_START_END = '2017-10-25'
+
 PATH = 'Data'
 if not os.path.exists(PATH):
     os.mkdir(os.path.abspath(PATH))
@@ -161,10 +165,6 @@ SHOPPING_DATA = {
     "resourceId": "138472",
     "resourcetype": 4,
 }
-
-# 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
-CMT_START_DATE = '2012-01-01'
-CMT_START_END = '2017-10-25'
 
 # 字段，类似scrapy里的item
 

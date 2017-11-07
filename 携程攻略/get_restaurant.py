@@ -94,8 +94,9 @@ class ctripShopEngine:
         while next_page:
             html = self.down.shop_comment(**kwargs, page=num)
             cmt_list = self.spider.shop_comment(html) if html is not 'bad_requests' else []
-            next_page = True if not cmt_list == [] else False
-            self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else ''
+            next_page = self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else False
+            if num == 100:
+                break
             num += 1
 
 
@@ -279,12 +280,19 @@ class ctripShopPipeline:
 
     def save_shop_cmt(self, cmt_list, shop_id):
         text = ''
+        start = setting.start_date
+        end = setting.end_date
+        result = False
         for each in cmt_list:
-            text += shop_id + setting.blank + setting.blank.join(each).replace('\n', '').replace('\r', '')\
-                .replace(' ', '').replace('width:', '').replace('%', '') + '\n'
-
+            if each[-1] >= start and each[-1] <= end:
+                text += shop_id + setting.blank + setting.blank.join(each).replace('\n', '').replace('\r', '') \
+                    .replace(' ', '').replace('width:', '').replace('%', '') + '\n'
+                result = True
+            else:
+                result = False
         with open(setting.comment_txt, 'a', encoding=setting.encode) as f:
             f.write(text)
+        return result
 
     def save_cmt_done(self, shop_id):
         #   保存进度
@@ -331,6 +339,10 @@ class setting:
     comment_txt = config.RESTAURANT_SHOP_CMT
 
     comment_done = config.RESTAURANT_CMT_DONE
+
+    start_date = config.CMT_START_DATE
+
+    end_date = config.CMT_START_END
 
 class ctripShopExecute:
     def __init__(self, commend):

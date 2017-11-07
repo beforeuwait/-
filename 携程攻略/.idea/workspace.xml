@@ -12,15 +12,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$get_restaurant.coverage" NAME="get_restaurant Coverage Results" MODIFIED="1510034883897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$get_area.coverage" NAME="get_area Coverage Results" MODIFIED="1509085236993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$get_shop.coverage" NAME="get_shop Coverage Results" MODIFIED="1510039032045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$get_shop.coverage" NAME="get_shop Coverage Results" MODIFIED="1510039709213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="get_shop.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_shop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="364" column="19" lean-forward="true" selection-start-line="364" selection-start-column="19" selection-end-line="364" selection-end-column="19" />
+            <state relative-caret-position="219">
+              <caret line="105" column="20" lean-forward="false" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
               <folding>
                 <element signature="e#119#134#0" expanded="true" />
               </folding>
@@ -28,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_restaurant.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shopping_cmt_done.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/shopping_cmt_done.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_restaurant.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_restaurant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="970">
-              <caret line="362" column="17" lean-forward="false" selection-start-line="362" selection-start-column="17" selection-end-line="362" selection-end-column="17" />
+            <state relative-caret-position="189">
+              <caret line="98" column="21" lean-forward="false" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
               <folding>
                 <element signature="e#141#156#0" expanded="true" />
               </folding>
@@ -40,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="195">
+              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -80,9 +90,9 @@
         <option value="$PROJECT_DIR$/Data/shopping_shop_list_ex.txt" />
         <option value="$PROJECT_DIR$/Data/shopping_shop_list.txt" />
         <option value="$PROJECT_DIR$/Data/restaurant_shop_cmt.txt" />
-        <option value="$PROJECT_DIR$/Data/shopping_cmt_done.txt" />
         <option value="$PROJECT_DIR$/Data/shopping_shop_cmt.txt" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/Data/shopping_cmt_done.txt" />
         <option value="$PROJECT_DIR$/get_shop.py" />
         <option value="$PROJECT_DIR$/get_restaurant.py" />
       </list>
@@ -453,10 +463,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/get_shop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="364" column="19" lean-forward="true" selection-start-line="364" selection-start-column="19" selection-end-line="364" selection-end-column="19" />
+        <state relative-caret-position="219">
+          <caret line="105" column="20" lean-forward="false" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
           <folding>
             <element signature="e#119#134#0" expanded="true" />
           </folding>
@@ -465,19 +483,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_restaurant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="970">
-          <caret line="362" column="17" lean-forward="false" selection-start-line="362" selection-start-column="17" selection-end-line="362" selection-end-column="17" />
+        <state relative-caret-position="189">
+          <caret line="98" column="21" lean-forward="false" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
           <folding>
             <element signature="e#141#156#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>

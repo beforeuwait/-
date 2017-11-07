@@ -91,7 +91,7 @@ class ctripShopEngine:
             if each[0] not in cmt_done:
                 self.shop_comment_logic(shop_id=each[3], pid=each[0], districtId=each[2], cnc=each[1])
                 self.pipe.save_cmt_done(each[0])
-
+                break
     def shop_comment_logic(self, **kwargs):
         """
         由于网站恶心，只能看1000条，100页是上限。
@@ -100,8 +100,7 @@ class ctripShopEngine:
         while next_page:
             html = self.down.shop_comment(**kwargs, page=num)
             cmt_list = self.spider.shop_comment(html) if html is not 'bad_requests' else []
-            next_page = True if not cmt_list == [] else False
-            self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else ''
+            next_page = self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else False
             if num == 100:
                 break
             num += 1
@@ -234,7 +233,7 @@ class ctripShopSpider:
                 socar = each.xpath('ul/li[1]/span[1]/span[2]/text()')[0] if each.xpath('ul/li[1]/span[1]/span[2]/text()') else ''
                 time1 = each.xpath('ul/li[1]/span[2]/text()')[0] if each.xpath('ul/li[1]/span[2]/text()') else ''
                 comment = each.xpath('ul/li[2]/span/text()')[0] if each.xpath('ul/li[2]/span/text()') else ''
-                time2 = each.xpath('ul/li[3]/span[1]/span/em/text()')[0] if each.xpath('ul/li[3]/span[1]/span/em/text()') else ''
+                time2 = each.xpath('ul/li[@class="from_link"]/span[1]/span/em/text()')[0] if each.xpath('ul/li[@class="from_link"]/span[1]/span/em/text()') else ''
                 cmt_list.append([user, star, socar, time1, comment, time2])
         return cmt_list
 
@@ -288,12 +287,19 @@ class ctripShopPipeline:
 
     def save_shop_cmt(self, cmt_list, shop_id):
         text = ''
+        start = setting.start_date
+        end = setting.end_date
+        result = False
         for each in cmt_list:
-            text += shop_id + setting.blank + setting.blank.join(each).replace('\n', '').replace('\r', '')\
-                .replace(' ', '').replace('width:', '').replace('%', '') + '\n'
-
+            if each[-1] >= start and each[-1] <=end:
+                text += shop_id + setting.blank + setting.blank.join(each).replace('\n', '').replace('\r', '')\
+                    .replace(' ', '').replace('width:', '').replace('%', '') + '\n'
+                result = True
+            else:
+                result = False
         with open(setting.comment_txt, 'a', encoding=setting.encode) as f:
             f.write(text)
+        return result
 
     def save_cmt_done(self, shop_id):
         # 保存进度
@@ -342,6 +348,11 @@ class setting:
     comment_txt = config.SHOPPING_SHOP_CMT
 
     comment_done = config.SHOPPING_CMT_DONE
+
+    start_date = config.CMT_START_DATE
+
+    end_date = config.CMT_START_END
+
 
 class ctripShopExecute:
     def __init__(self, commend):
