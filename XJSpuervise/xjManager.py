@@ -84,8 +84,7 @@ class xjEngine:
             break
 
     def each_team_info_logic(self, team_id):
-        # html = self.down.each_team_info(team_id)
-        html = open('html.txt', 'r', encoding='utf8').read()
+        html = self.down.each_team_info(team_id)
         data = self.spider.get_each_team_info(html)
         self.pipe.save_each_team_info(data, team_id)
 
