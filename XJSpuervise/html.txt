@@ -1,0 +1,3119 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_cn" xml:lang="zh_cn">
+	<head>
+<meta http-equiv="Cache-Control" content="no-store"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta name="renderer" content="webkit">
+<META http-equiv=Content-Type content="text/html; charset=gbk">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+
+
+
+        <script type="text/javascript"
+            src="/static/js/team/teamWin.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/alai_win.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/basic.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/global.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/chinese.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/jquery/jquery-1.11.1.min.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/editor/my97/wdatePicker.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/editor/lhgdialog/core_min.js?skin=team&?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/jquery/qtip/jquery.qtip.min.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/lib/sweetalert/sweetalert.min.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/struct.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/team.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/sheldule.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/mainInfo.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamAreaInfo.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamPersonInfo.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamDestAreaInfo.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamCar.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamCarDriver.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamGuide.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamLeader.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamPark.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamRestaurant.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamRoom.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamRecreation.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamShopping.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamOrder.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamSpotBook.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/team/teamRoute.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/validator.js?build=yct3.3 build 201709081433"></script>
+
+        <script type="text/javascript"
+            src="/static/js/fix.js?build=yct3.3 build 201709081433"></script>
+
+
+
+
+
+
+        <link rel="stylesheet" type="text/css" media="all"
+            href="/static/styles/team/teamEdit.css" />
+
+        <link rel="stylesheet" type="text/css" media="all"
+            href="/static/styles/team/displaytag.css" />
+
+        <link rel="stylesheet" type="text/css" media="all"
+            href="/static/js/jquery/qtip/jquery.qtip.min.css" />
+
+        <link rel="stylesheet" type="text/css" media="all"
+            href="/static/lib/sweetalert/sweetalert.css" />
+
+
+
+
+
+
+    <base target="_self">
+	</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" charset="gbk" src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" charset="GBK" src="/static/js/dict/city/cities.js"></script>
+<script>
+document.title="旅行社团队计划详细信息";
+</script>
+
+
+
+
+<script type="text/javascript" charset="GBK" src="/static/js/waitRefresh.js"></script>
+<script type="text/javascript" src="/static/js/basic_vbs.js"></script>
+<script type="text/javascript" charset="GBK" src="/static/editor/py/py.js"></script>
+<DIV id=absolutePosition style="LEFT: 0mm; POSITION: relative; TOP: 0mm;width:100%;">
+<TABLE id=descTeamTable class=Noprint cellSpacing=0 align=center bgColor=#ffffff border=0>
+  <TBODY>
+  <TR style="HEIGHT: 19.5mm">
+    <TD>
+      <TABLE cellSpacing=0 width="100%" border=0>
+        <TBODY>
+        <TR style="HEIGHT: 13.5mm">
+          <TH align=middle style="text-align:center;padding-left:150px;"
+          colSpan=2><span style="FONT-WEIGHT: bolder; FONT-SIZE: 19pt">新疆旅游团队行程单</span>(<span id=table_mainInfo_teamType_name style="color:blue;">地接 国内游</span>)</TH></TR>
+        <TR>
+          <TH id=testoutput1 align="left" style="WIDTH: 163mm;text-align:left;font-size:12px;font-weight:bold;">
+
+
+
+
+          </TH>
+          <TD style="WIDTH: 20mm" id="table_mainInfo_verifyCode">&nbsp;</TD>
+          <TH style="WIDTH: 3mm" align=right>NO. </TH>
+          <TD id="table_mainInfo_id">&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE class="header" cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR style="HEIGHT: 7.8mm">
+          <TH style="WIDTH: 20mm">团 号</TH>
+          <TD id="table_mainInfo_teamSN" class="edit" style="WIDTH: 29mm;" onclick="dispach_click(this);" dispachKey="MainInfo" tooltip="点击查看团队基本信息">&nbsp;</TD>
+          <TH style="WIDTH: 34mm">组 团 社</TH>
+          <TD id="table_mainInfo_fromTravelAgency" style="WIDTH: 47mm">&nbsp;</TD>
+          <TH style="WIDTH: 26mm">领队或全陪</TH>
+          <TD id="table_teamLeaders_leadersdesc" class="edit" onclick="dispach_click(this);" dispachKey="TeamLeader" tooltip="点击查看领队信息" style="WIDTH: 36mm">&nbsp;</TD>
+          <TH style="WIDTH: 27.6mm">客源地</TH>
+          <TD id="table_teamAreaInfos_fromdesc" style="WIDTH: 20mm" class="edit" onclick="dispach_click(this);" dispachKey="TeamPersonInfo" tooltip="点击查看游客名单">&nbsp;</TD></TR>
+        <TR style="HEIGHT: 7.8mm">
+          <TH>人 数</TH>
+          <TD id="table_teamAreaInfos_numberdesc" class="edit" onclick="dispach_click(this);" dispachKey="TeamAreaInfo" tooltip="点击查看客源地构成信息">&nbsp;</TD>
+          <TH>旅游运输公司</TH>
+          <TD id="table_teamCars_transportsdesc" class="edit" onclick="dispach_click(this);" dispachKey="TeamCar" tooltip="点击查看车辆信息">&nbsp;</TD>
+          <TH>司机(电话)</TH>
+          <TD id="table_teamCars_driversdesc">&nbsp;</TD>
+          <TH>车 &nbsp;号</TH>
+          <TD id="table_teamCars_carNosdesc">&nbsp;</TD></TR>
+        <TR style="HEIGHT: 7.8mm">
+          <TH>到达日期</TH>
+          <TD id="table_mainInfo_beginDay">&nbsp;</TD>
+          <TH>交通工具(到达)</TH>
+          <TD id="table_mainInfo_arriveDesc">&nbsp;</TD>
+          <TH>地陪(电话)</TH>
+          <TD id="table_teamGuides_guidesdesc" class="edit" onclick="dispach_click(this);" dispachKey="TeamGuide" tooltip="点击查看导游信息">&nbsp;</TD>
+          <TH tag="目的地">&nbsp;</TH>
+          <TD id="table_teamDestAreaInfos" style="WIDTH: 20mm" class="edit" onclick="dispach_click(this);" dispachKey="TeamDestAreaInfo" tooltip="点击查看目的地构成信息">&nbsp;</TD></TR>
+        <TR style="HEIGHT: 7.8mm">
+          <TH>离开日期</TH>
+          <TD id="table_mainInfo_endDay">&nbsp;</TD>
+          <TH>交通工具(离开)</TH>
+          <TD id="table_mainInfo_returnDesc">&nbsp;</TD>
+          <TH>保 险</TH>
+          <TD id="table_mainInfo_insuranceInfo" colspan="3">&nbsp;</TD>
+          <TH style="display:none;">团 费</TH>
+          <TD id=table_mainInfo_prepay style="display:none;">&nbsp;</TD>
+        </TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+    	<div style="height:93mm;overflow:auto;scrollbar-face-color:#d2f1fd;">
+      <TABLE id="table_sheldules" class="body" borderColor=#000000 cellSpacing=0 cellPadding=0
+      width="100%" border=0>
+        <TBODY>
+        <TR style="HEIGHT: 13mm;">
+          <TH style="WIDTH: 10mm;text-align:center;">月</TH>
+          <TH style="WIDTH: 10mm">日</TH>
+          <TH style="WIDTH: 20mm">前往地</TH>
+          <TH style="WIDTH: 62.6mm">行程安排及游览景点</TH>
+          <TH style="WIDTH: 23mm">早餐</TH>
+          <TH style="WIDTH: 23mm">中餐</TH>
+          <TH style="WIDTH: 20mm">晚餐</TH>
+          <TH style="WIDTH: 23mm">入住饭店</TH>
+          <TH style="WIDTH: 23mm">文化演艺</TH>
+          <TH style="WIDTH: 22mm">旅游购物</TH>
+        </TR>
+        <TR style="HEIGHT: 8mm;display:none;">
+          <TD>&nbsp;</TD>
+          <TD>&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamRoute" tooltip="点击查看站点信息">&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamPark" tooltip="点击查看行程安排信息">&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamRestaurant" tooltip="点击查看餐饮安排信息">&nbsp;</TD>
+          <TD>&nbsp;</TD>
+          <TD>&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamRoom" tooltip="点击查看住宿安排信息">&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamRecreation" tooltip="点击查看文化演艺安排信息">&nbsp;</TD>
+          <TD onclick="dispach_click(this);" dispachKey="TeamShopping" tooltip="点击查看旅游购物安排信息">&nbsp;</TD>
+        </TR>
+      </table>
+      <div>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <table id="table_footer" class=body borderColor=#000000 cellSpacing=0 cellPadding=0
+      width="100%" border=0>
+        <TR style="HEIGHT: 16.8mm">
+          <TH style="width:20mm;">备注<br>（签章栏）</TH>
+          <TD>
+          	<span id="table_mainInfo_remark">&nbsp;</span>
+          	<div style="TEXT-ALIGN:center;">
+<form method="post" action='/team/edit/editTeam.do' name="form_team" onkeydown="return form_team_keydown()">
+            <input type="hidden" name="TOKEN_ID" value="VPTDTUEamt" tag="submit">
+            <input type="hidden" name="forwardPath" value="" tag="submit">
+            <input type="hidden" name="teamId" value="13275960" tag="submit">
+            <input type="hidden" name="submit_teamInfo" value="" tag="submit">
+            <input type="hidden" name="submit_mainInfo" value="" tag="submit">
+            <input type="hidden" name="submit_teamAreaInfos" value="" tag="submit">
+            <input type="hidden" name="submit_teamPersonInfos" value="" tag="submit">
+            <input type="hidden" name="submit_teamDestAreaInfos" value="" tag="submit">
+            <input type="hidden" name="submit_teamCars" value="" tag="submit">
+            <input type="hidden" name="submit_teamGuides" value="" tag="submit">
+            <input type="hidden" name="submit_teamLeaders" value="" tag="submit">
+            <input type="hidden" name="submit_teamParks" value="" tag="submit">
+            <input type="hidden" name="submit_teamArranges" value="" tag="submit">
+            <input type="hidden" name="submit_teamRestaurants" value="" tag="submit">
+            <input type="hidden" name="submit_teamRooms" value="" tag="submit">
+            <input type="hidden" name="submit_teamRecreations" value="" tag="submit">
+            <input type="hidden" name="submit_teamShoppings" value="" tag="submit">
+            <input type="hidden" name="submit_teamRoutes" value="" tag="submit">
+            <input type="hidden" name="submit_teamOrders" value="" tag="submit">
+            <input type="hidden" name="submit_customKs" value="" tag="submit">
+            <input type="hidden" name="submit_allInfo" value="" onfocus="this.select();clipboardData.setData('Text',this.value);">
+            <input type="hidden" name="submit_url" value="" onfocus="this.select();">
+
+
+
+
+            <button type="button" class="btn btn-info team_buttons" onclick="return submit_team('close');">关闭</button>
+            <INPUT type="hidden" class="team_buttons" name="test" value="&nbsp;测&nbsp;&nbsp;试&nbsp;" onclick="return submit_team('test');">
+</form>
+          	</div>
+<div id="printBlock10" style="position:absolute;right:95mm;top:146mm;">
+		<p id="print_team_insurances_pa" class="textValue" style="position:absolute;left:0mm;top:0mm;width:70mm;height:10mm;text-align:left;vertical-align:middle;color:#5BADFF;" tag="print_team_insurances_pa">&nbsp;</p>
+</div>
+          </TD>
+        </TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE class=footer cellSpacing=0 width="100%" border=0>
+        <TBODY>
+        <TR style="HEIGHT: 9mm">
+          <TH style="WIDTH: 40mm" align=left>填写单位（盖章）：</TH>
+          <TD id="table_mainInfo_travelAgency_shortName" style="WIDTH: 50mm" align=right>&nbsp;</TD>
+          <TH style="WIDTH: 22mm" align=left>填写人：</TH>
+          <TD id="table_mainInfo_operator_userName" style="WIDTH: 40mm" align=right>&nbsp;</TD>
+          <TH style="WIDTH: 40mm" align=left>旅行社总经理签章：</TH>
+          <TD style="WIDTH: 49mm"
+  align=right>出团时间：2017-11-01 14:09:54<br>最近修改：2017-11-01 14:09:38</TD></TR></TBODY></TABLE>
+  	</TD></TR></TBODY></TABLE>
+
+<div id="div_teamItems" onkeydown="return div_teamItems_keydown()">
+<div id="div_mainInfo">
+  <table id="table_win_mainInfo" width="750" style="display:none">
+  <tr>
+  <td>
+  <table class="input" tag="editBody">
+    <tr>
+      <th class="must">团号</th>
+      <td class="value" field="teamSN" validInput="notnull" colspan="2"><input type="text" label="团号" onChange="maininfo_validateTeamSN(this.value);"><DIV class=sanjiao id=mainInfo_teamSN_msg style="visibility:hidden">
+<DIV class=biank><SPAN class=red_text style="width:250px;">您输入的团号已经存在，请更换其他团号。</SPAN></DIV></DIV><span class="viewAttach" style="width:30px;padding-left:25px;" tooltip="团队附件" onclick="maininfo_attach_onclick();">&nbsp;</span></td>
+      <th>外团号</th>
+      <td class="value" field="fromTeamSN" colspan="2"><input type="text" label="外团号"></td>
+    </tr>
+    <tr>
+      <th >部门</th>
+      <td class="value" colspan="2" field="dept.id" fieldShow="dept.name"  label="部门">
+      <select id="mainInfo_dept_id">
+      <option value=''>=请选择=</option>
+      </select>
+      </td>
+      <th>外联人</th>
+      <td class="value" colspan="2" field="outLinkMan.id" fieldShow="outLinkMan.name">
+      <select id="mainInfo_outLinkMan_id">
+      <option value=''>=请选择=</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <th class="must">行程开始日期</th>
+      <td class="value" colspan="2" field="beginDay" validInput="notnull,date"><input type="text" inputType="date" class="Wdate" label="行程开始日期"></td>
+      <th class="must">行程结束日期</th>
+      <td class="value" colspan="2" field="endDay" validInput="notnull,date"><input type="text" inputType="date" class="Wdate" label="行程结束日期"></td>
+    </tr>
+    <tr>
+      <th class="must">团队类型</th>
+      <td class="value" colspan="2" field="teamType.id" fieldShow="teamType.name" validInput="notnull">
+      <select id="mainInfo_teamType_id" label="团队类型" onchange="set_change_win_mainInfo_teamType(this.value);">
+      </select>
+      </td>
+      <th>结算方式</th>
+      <td class="value" colspan="2" field="settlementType.id" fieldShow="settlementType.name">
+      <select id="mainInfo_settlementType_id">
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <th class="must">组团社</th>
+      <td class="value" colspan="2" field="fromTravelAgency" validInput="notnull"><input type="text"></td>
+      <th>联系人</th>
+      <td class="value" colspan="2" field="contact"><input type="text"></td>
+    </tr>
+    <tr>
+      <th>团费</th>
+      <td class="value" colspan="2" field="prepay" validInput="bigdecimal0+"><input type="text" class="display" readOnly="true"></td>
+      <th>领队或全陪</th>
+      <td class="value" colspan="2" field="teamLeader"><input type="text"></td>
+    </tr>
+    <tr>
+      <th class="must">出发</th>
+      <td class="value" field="arriveDesc" style="display:none;"><input id="mainInfo_arriveDesc" type="text" size="45">
+      </td>
+      <td class="value" field="arriveWhenDesc" validInput="notnull">
+      <input id="mainInfo_arriveWhenDesc" inputType="masktip,time" class="Wdate" type="text" size="15" title="出发时间">
+      </td>
+      <td class="value" field="arriveWhereDesc" validInput="notnull">
+      <input id="mainInfo_arriveWhereDesc" inputType="masktip" type="text" size="10" title="出发城市">
+      </td>
+      <td class="value" field="outport">
+      <input id="mainInfo_outport" inputType="masktip" type="text" size="10" title="出境口岸">
+      </td>
+      <td class="value" field="arriveHowDesc" validInput="notnull">
+      <input id="mainInfo_arriveHowDesc" inputType="masktip" type="text" size="10" title="出发方式">
+      </td>
+      <td class="value" field="outlineNo">
+      <input id="mainInfo_outlineNo" inputType="masktip" type="text" size="10" title="出发班次">
+      </td>
+    </tr>
+    <tr>
+      <th class="must">返回</th>
+      <td class="value" field="returnDesc" style="display:none;"><input id="mainInfo_returnDesc" type="text" size="45">
+      <td class="value" field="returnWhenDesc" validInput="notnull">
+      <input id="mainInfo_returnWhenDesc" inputType="masktip,time" class="Wdate" type="text" size="15" title="返回时间">
+      </td>
+      <td class="value" field="returnWhereDesc" validInput="notnull">
+      <input id="mainInfo_returnWhereDesc" inputType="masktip" type="text" size="10" title="返回城市">
+      </td>
+      <td class="value" field="inport">
+      <input id="mainInfo_inport" inputType="masktip" type="text" size="10" title="出境口岸">
+      </td>
+      <td class="value" field="returnHowDesc" validInput="notnull">
+      <input id="mainInfo_returnHowDesc" inputType="masktip" type="text" size="10" title="返回方式">
+      </td>
+      <td class="value" field="inlineNo">
+      <input id="mainInfo_inlineNo" inputType="masktip" type="text" size="10" title="返回班次">
+      </td>
+    </tr>
+    <tr>
+      <th>线路名称</th>
+      <td class="value" colspan="2" field="lineName"><input type="text" size="35"></td>
+      <th>计调</th>
+      <td class="value" colspan="2" field="opMan"><input type="text" size="15"></td>
+    </tr>
+    <tr>
+      <th>地接社</th>
+      <td class="value" colspan="2" field="supplier">
+	       <input id="mainInfo_supplier" type="text" size="35">
+      </td>
+      <th>系统操作员</th>
+      <td class="value" colspan="2">庞小颖（T66002-wlpxy）</td>
+    </tr>
+    <tr>
+      <th>行程简述</th>
+
+
+      <td class="value" colspan="5" field="tripMemo">&nbsp;</td>
+
+    </tr>
+    <tr>
+      <th>备注</th>
+
+
+      <td class="value" colspan="5" field="remark">&nbsp;</td>
+
+    </tr>
+    <tr>
+      <th>保险情况</th>
+      <td class="value" colspan="5">
+      	<span field="zrxOrdered" fieldShow="zrxOrdered_name"><input type="checkBox" value="true"/>已购旅行社责任险</span>&nbsp;
+      	<span field="ywxOrdered" fieldShow="ywxOrdered_name"><input type="checkBox" value="true"/>已购团队意外险</span>&nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <th>特殊申请</th>
+      <td class="value" colspan="5">
+      	<span field="noGuide_permit_apply" fieldShow="noGuide_permit_apply_name"><input type="checkBox" value="yes"/>允许团队无导游</span>&nbsp;
+      	<span field="noCar_permit_apply" fieldShow="noCar_permit_apply_name"><input type="checkBox" value="yes"/>允许团队无车辆</span>&nbsp;
+      	<span field="award_apply" fieldShow="award_apply_name"><input type="checkBox" value="yes"/><font color=red>参与激励计划</span>&nbsp;
+      </td>
+    </tr>
+
+
+    </table>
+    </td>
+    </tr>
+  </table>
+</div>
+<div id="div_teamAreaInfos">
+  <table id="table_win_teamAreaInfos" width="600" style="display:none">
+    <tr>
+    	<td>
+  	  <table id="table_win_teamAreaInfos_main" class="input">
+    		<tr>
+    		  <th class="must" width="20%">成人数</th>
+    		  <td class="value" field="adultNumber" width="25%"><input type="text" size="9" class="display" readOnly="true"></td>
+    		  <th width="20%">儿童数</th>
+    		  <td class="value" field="childrenNumber"><input type="text" size="9" class="display" readOnly="true"></td>
+    		</tr>
+    		<tr>
+    		  <th>陪同数</th>
+    		  <td class="value" field="fullCompanyNumber" validInput="int"><input type="text" size="9" class="number"></td>
+    		  <th colspan="2">&nbsp;<input type="button" onclick="show_teamPersonInfos_when_teamAreaInfos();" value="查看游客名单">&nbsp;</th>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="20%">地区</th>
+    		            <th width="20%">成人数</th>
+    		            <th width="20%">儿童数</th>
+    		            <th width="30%">备注</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:75px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="20%" class="value" field="area.listName">&nbsp;</td>
+    		            <td width="20%" class="value" field="adultNumber" validInput="notnull,int"><input type="text" size="9" label="成人数" class="number"></td>
+    		            <td width="20%" class="value" field="childrenNumber" validInput="int"><input type="text" size="9" class="number"></td>
+    		            <td width="30%" class="value" field="remark"><input type="text" size="15"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamRoutes">
+  <table id="table_win_teamRoutes" width="750" style="position:absolute; top:55px;left:20px;display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="5%">站点</th>
+    		            <th width="15%">前往地<span style="color:red;">*</span></th>
+    		            <th width="20%">所属国家/省份</th>
+    		            <th width="20%" tag="supplier">地接社</th>
+    		            <th width="15%">是否过境/省</th>
+
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:350px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none;">
+    		            <td width="5%" class="value" field="istop" style="text-align:center;"><input type="text" class="display" readOnly="true" size="5" style="width:15px;"></td>
+    		            <td width="15%" class="value" field="city.name" validInput="notnull" label="前往地"><input type="text" size="10"></td>
+    		            <td width="20%" class="value" field="city.parentName">&nbsp;</td>
+    		            <td width="20%" class="value" field="supplier" label="地接社"><input type="text" size="10"></td>
+    		            <td width="15%" class="value" field="transit" fieldShow="transitName"><input type=checkbox value="true"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamPersonInfos">
+  <table id="table_win_teamPersonInfos" width="800px" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	        <div tag="noticeDesc" style="text-align:left;color:red;">
+
+
+  	        </div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th>姓名</th>
+    		            <th tag="familyName">拼音姓</th>
+    		            <th tag="givenName">拼音名</th>
+    		            <th>性别</th>
+    		            <th>出生日期</th>
+    		            <th tag="birthPlace">出生地</th>
+    		            <th>证件类型</th>
+    		            <th>证件号</th>
+    		            <th tag="passPlace">签发地</th>
+    		            <th tag="passBeginDay">发证日期</th>
+    		            <th tag="hide">打印<input type="text" size="5" id="hzzpy_input" style="display:none;"></th>
+    		            <th tag="cardAddress">住址</th>
+    		            <th tag="cardAuthority">签发机关</th>
+    		            <th tag="cardBeginDay">证件有效期</th>
+    		            <th tag="cardEndDay">&nbsp;</th>
+    		            <th tag="mobile">手机</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:325px;overflow:auto" id=div_teamPersonInfos_editBody>
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none;">
+    		            <td width="75px" class="value" field="fullName" validInput="notnull,char_50"><input type="text" size="5" onchange="change_editor_teamPersonInfo_fullName(this.parentNode.parentNode);" label="姓名"></td>
+    		            <td width="65px" class="value" field="familyName" validInput="notnull,char_50"><input type="text" size="5" label="拼音姓"></td>
+    		            <td width="85px" class="value" field="givenName" validInput="notnull,char_50"><input type="text" size="5" label="拼音名"></td>
+    		            <td width="55px" class="value" field="gender" fieldShow="genderName" validInput="notnull"><select id="teamPersonInfos_select_gender" label="性别"></select></td>
+    		            <td width="90px" class="value" field="birthDate" inputType="date" validInput="notnull,birthday"><input type="text" size="5" onchange="change_editor_teamPersonInfo_autocomplet(this.parentNode);" label="出生日期"></td>
+    		            <td width="65px" class="value" field="birthPlace" validInput="notnull,char_50"><input type="text" size="5" label="出生地"></td>
+    		            <td width="65px" class="value" field="cardTypeName">&nbsp;</td>
+    		            <td width="95px" class="value" field="cardId" validInput="notnull"><input type="text" size="5" onchange="change_editor_teamPersonInfo_autocomplet(this.parentNode);" label="证件号码"></td>
+    		            <td width="65px" class="value" field="passPlace" validInput="notnull,char_50"><input type="text" size="5" label="签发地"></td>
+    		            <td width="90px" class="value" field="passBeginDay" inputType="date" validInput="notnull,date"><input type="text" size="5" label="发证日期"></td>
+    		            <td width="45px" class="value" field="hide" fieldShow="printStatusName"><input type=checkbox value="false"></td>
+    		            <td width="90px" class="value" field="cardAddress"><input type="text" size="5" label="证件住址"></td>
+    		            <td width="90px" class="value" field="cardAuthority"><input type="text" size="5" label="证件签发机关"></td>
+    		            <td width="90px" class="value" field="cardBeginDay" inputType="date" validInput="date"><input type="text" size="5" onchange="change_editor_teamPersonInfo_autocomplet(this.parentNode);" label="证件有效开始日期"></td>
+    		            <td width="90px" class="value" field="cardEndDay" inputType="date" validInput="date"><input type="text" size="5" label="证件有效结束日期"></td>
+    		            <td width="103px" class="value" field="mobile" validInput="mobile"><input type="text" size="5" label="手机"></td>
+    		            <td field="cardType" style="display:none;"><input type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+  	            <div id="div_teamPersonInfos_totalnum">&nbsp;</div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  	            <table class="input" style="height:50px;" tag="findBody">
+    		          <tr>
+    		          <td style="text-align:left;">
+          		    &nbsp;
+          		      <select id="teamPersonInfos_select_cardType" field="cardType" validInput="notnull" onchange="change_editor_teamPersonInfo_autocomplet(this);" tooltip="证件类型"></select>
+          		    &nbsp;
+    		            <input type=text field="cardId" validInput="cardId_20" inputType="maskTip" onchange="change_editor_teamPersonInfo_autocomplet(this);" size=20 tooltip="证件号码" findInput="true">
+          		    &nbsp;
+    		            <input type=text field="fullName" validInput="char_50" inputType="maskTip" size=15 tooltip="姓名">
+          		    &nbsp;
+    		            <select field="gender" id="teamPersonInfos_select_find_gender" tooltip="性别"></select>
+          		    &nbsp;
+    		            <input type=text field="birthDate" inputType="date" validInput="birthday" inputType="maskTip" size=10 onchange="change_editor_teamPersonInfo_autocomplet(this);" tooltip="出生日期">
+
+          		    &nbsp;
+          		    <input type="button" onclick="find_teamPersonInfos();" value="查找" tooltip="在已录入数据中进行查找">
+          		    <br>
+          		    <br>
+          		    <div style="width:100%;text-align:center;">
+
+          		    &nbsp;
+          		    <a href="javascript:void(0);" class="files" style="background:url(/static/styles/team/images/put_excel.png) right top no-repeat;" onclick="write_teamPersonInfos_excel();return false;">导出到Excel</a>
+
+          		    </div>
+          		    </td>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamOrders">
+  <table id="table_win_teamOrders" width="700" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="15%">订购产品</th>
+    		            <th width="15%">提供商</th>
+    		            <th width="5%">预付</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="15%" class="value" field="chargeItem.name">&nbsp;</td>
+    		            <td width="15%" class="value" field="orderOrganName">&nbsp;</td>
+    		            <td width="10%" class="value" field="prepay">&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamOrderItems">
+  <table id="table_win_teamOrderItems" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="*" class="value">名称</th>
+    		            <th width="25%" class="number">预付价格</th>
+    		            <th width="25%" class="number">数量</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:245px;">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="*" class="value" field="chargeItem.name">&nbsp;</td>
+    		            <td width="25%" class="number" field="prePrice"><input type="text" size="5" class="display number" readOnly></td>
+    		            <td width="25%" class="number" field="preNum" validInput="int"><input type="text" size="5" class="number" onchange="reset_teamOrderItems_editrow();"></td>
+    		            <td field="chargeItem.id" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="id" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="chargeItem.remoteCallFlag" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="chargeItem.partsDesc" style="display:none;"><input name="chargeItemPartsDesc" type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            <br>
+  	            <div class="alert alert-info alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+  	             <div id="span_ins_tip" style="text-align:left;font-size:12px;line-height:22px;color:#7044E1;">
+
+
+  	             <span style="font-size:14px;line-height:25px;">目前可订购险种产品如下，可据团队适用情况择其中一种进行订购：</span><br>
+  	             <span>（1）<strong>团意险</strong>：保险期间1-8天基本保费分别为5元(普通)、6元(高风险)，以后每增加一天保费加收1元，保险期间最长至15天。</span><br>
+  	             <span>（2）<strong>张家界当地游 <font color="red">new!</font> </strong>：保险期间1-2天基本保费为2元，以后每增加一天保费加收1元，保险费最多5元，保险期间最长至15天。</span><br>
+  	             <span style="float:right;">（详情可参阅产品介绍或咨询平安保险服务热线 <strong>8295511</strong>)）</span><br>
+
+
+
+
+  	             </div>
+                </div>
+                <div id="div_ins_tip" style="display:none;">
+  	             <span style="float:left;text-align:left;font-weight:bold;font-size:18px;line-height:25px;color:black;">感谢一路有你，春节之即，“一诚通”平安新险种闪亮登场，即日起推出“张家界当地游”团队意外险，新险种，新体验，选中适合您的产品：</span><br><br><br><br><br>
+  	            <div class="alert alert-info alert-dismissable" style="text-align:left;font-size:16px;line-height:22px;">
+  	             <span>（1）<strong>团意险</strong>：保险期间1-8天基本保费分别为5元(普通)、6元(高风险)，以后每增加一天保费加收1元，保险期间最长至15天。</span><br><br>
+  	             <span>（2）<strong>张家界当地游 <font color="red">new!</font> </strong>：保险期间1-2天基本保费为2元，以后每增加一天保费加收1元，保险费最多5元，保险期间最长至15天。</span><br>
+                </div>
+  	             <span style="float:right;font-size:16px;line-height:25px;color:#7044E1;">（详情可参阅产品介绍或咨询平安保险服务热线 <strong>8295511</strong>)）</span><br>
+                </div>
+  	             <br>
+  	             <font color="red" style="float:left;font-size:14px">注：保险订单的变更，需要在新订单预付完成后，保险变更才能最终完成，否则之前的保险订单依然有效。</font><br/>
+  	            </div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_TeamOrderItems_main" class="input">
+            <tr>
+            	<th>名称</th>
+            	<td class="value" field="chargeItem.name" colspan="3">&nbsp;</td>
+            </tr>
+            <tr id='tr_teamInsurance_insPsNum' style="display:none;">
+            	<th width="45%">投保人数(投保名单以游客名单为准)</th>
+            	<td class="value" field="insProductNum">&nbsp;</td>
+            	<th width="20%">游客人数</th>
+            	<td class="value" field="psNum">&nbsp;</td>
+            </tr>
+            <tr id='tr_teamInsurance_insDaysNum' style="display:none;">
+            	<th>投保天数</th>
+            	<td class="value" field="insDaysNum">&nbsp;</td>
+            	<th>超期费用</th>
+            	<td class="value" field="attachPay">&nbsp;</td>
+            </tr>
+            <tr>
+            	<th>预付</th>
+            	<td class="value" field="prepay" colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+              <th>状态</th>
+              <td class="value" field="statusName" colspan="3" id='processStatusName'>&nbsp;</td>
+            </tr>
+            <tr id='tr_teamInsurance_note'>
+              <th>使用条款</th>
+              <td class="value" colspan="3"><div id="div_teamInsurance_note" style="color:red;"><a class="files" style="width:300px;color:red;" href="javascript:void(0);" title="查看平安旅行意外保险产品介绍"><input id=checkbox_teamInsurance_note_agree type=checkbox checked=true value=1 disabled=true>团队平安旅行意外保险产品介绍 点击阅读</a></div></td>
+              <!-- <td class="value" colspan="3"><div id="div_teamInsurance_note" style="color:red;">查看产品介绍，请点击上述保险产品后的图标</div></td> -->
+            </tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamDestAreaInfos">
+  <table id="table_win_teamDestAreaInfos" width="600" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="20%">地区</th>
+    		            <th width="20%">成人数</th>
+    		            <th width="20%">儿童数</th>
+    		            <th width="30%">备注</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:75px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="20%" class="value" field="area.listName">&nbsp;</td>
+    		            <td width="20%" class="value" field="adultNumber" validInput="notnull,int"><input type="text" size="9" label="成人数" class="number"></td>
+    		            <td width="20%" class="value" field="childrenNumber" validInput="int"><input type="text" size="9" class="number"></td>
+    		            <td width="30%" class="value" field="remark"><input type="text" size="15"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamCars">
+  <table id="table_win_teamCars" width="900" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+    		   <!-- 目前仅长沙市旅行社采用 -->
+
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="10%">用车模式</th>
+    		            <th width="10%">车牌号</th>
+    		            <th width="18%">司机(电话)</th>
+
+    		            <th width="8%">车型</th>
+    		            <th width="8%">座位数</th>
+    		            <th width="15%">车公司</th>
+
+    		            <th width="3%">&nbsp;</th>
+    		            <th width="5%">&nbsp;</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:150px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="10%" field="assignTypeName" class="value">&nbsp;</td>
+    		            <td width="10%" class="value" field="car.carNo" validInput="notnull,carNo" label="车牌号"><input type="text" size="7"></td>
+
+
+    		            <td width="18%" class="value" field="car.driverName" validInput="notnull" label="司机"><input type="text" size="15"></td>
+
+
+    		            <td width="8%" class="value" field="car.carTypeName">&nbsp;</td>
+    		            <td width="8%" class="value" field="car.seatNum">&nbsp;</td>
+    		            <td width="15%" class="value" field="car.transportName" validInput="notnull" label="车公司"><input type="text" size="10"></td>
+
+    		            <td width="3%" class="value" id='statusName' align="left">&nbsp;</td>
+    		            <td width="5%" onclick="dispach_click(this);" dispachKey="ProcessCarOrder" class="processOrder" tooltip="车辆委派" id='processOrder' style="display:none;">&nbsp;</td>
+    		            <td width="0%" class="value" field="assignType" style="display:none;"><input type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_processCarOrder">
+  <table id="table_win_processCarOrder" width="600px" style="top:50px;display:none;">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_CarOrder" class="input" tag="editBody">
+    		         <tr>
+    		           <th width="15%">车公司</th>
+    		           <td width="30%" field="car.transportName">&nbsp;</th>
+    		           <th width="15%">车牌号</th>
+    		           <td width="30%" class="value" field="car.carNo">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">预计人数</th>
+    		           <td width="60%" colspan="3" style="text-align:left;">
+    		            <span field="prepAdultNumber"><input type="text" size="10" label="预计成人数" class="number" onfocus="this.select();"></span>大+
+    		            <span field="prepChildrenNumber"><input type="text" size="10" label="预计儿童数" class="number" onfocus="this.select();"></span>小+
+    		            <span field="prepFullCompanyNumber"><input type="text" size="10" label="预计全陪数" class="number" onfocus="this.select();"></span>
+    		           </td>
+
+    		         </tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_CarOrder_process" class="input">
+    			<tr style="display:none"><td style="text-align:left;"><table>
+    				<tr>
+    				  <th width="15%">处理状态</th>
+    				  <td width="70%" colspan="2" class="value" field="processStatusName">&nbsp;</td>
+    				</tr>
+
+    			</table></td></tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamCarDriver">
+  <table id="table_win_teamCarDriver" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+                <table class="input" tag="editBody">
+    		          <tr>
+    		            <th width="15%">车公司</th>
+    		            <td width="30%" field="car.transportName" class="value">&nbsp;</td>
+    		            <th width="15%">车牌号</th>
+    		            <td width="30%" field="car.carNo" class="value">&nbsp;</td>
+    		          </tr>
+    		          <tr>
+    		            <th width="15%">开始时间</th>
+    		            <td width="30%" field="beginDay" class="value">&nbsp;</td>
+    		            <th width="15%">结束时间</th>
+    		            <td width="30%" field="endDay" class="value">&nbsp;</td>
+    		          </tr>
+    		          <tr>
+    		            <th width="15%">司机姓名</th>
+    		            <td width="30%" field="driver.fullName" class="value"><input type="text" size="15"></td>
+    		            <th width="15%">司机电话</th>
+    		            <td width="30%" field="driver.mobile" class="value"><input type="text" size="15"></td>
+    		          </tr>
+    		          <tr>
+    		            <th width="15%">岗位证号</th>
+    		            <td field="driver.publishNo" class="value"><input type="text" size="15"></td>
+    		            <th width="15%">系统数据</th>
+    		            <td width="30%" field="driver.is_sysdata" class="value">&nbsp;</td>
+    		          </tr>
+    		          <tr style="display:none;">
+    		            <td field="driver.id"><input type="text" size="15"></td>
+    		            <td field="car.driverName"><input type="text" size="15"></td>
+    		            <td width="15%">&nbsp;</td>
+    		            <td width="30%">&nbsp;</td>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamGuides">
+  <table id="table_win_teamGuides" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="5%">&nbsp;</th>
+    		            <th width="10%">导游证号</th>
+    		            <th width="10%">姓名</th>
+    		            <th width="5%">性别</th>
+    		            <th width="13%">手机</th>
+    		            <th width="22%" colspan="2">委派期间</th>
+    		            <th width="15%">旅行社</th>
+    		            <th width="5%">&nbsp;</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:100px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none;">
+    		            <td width="5%" style="cursor:pointer;" onclick="showDetail_guide(this.parentNode);" class="viewGuide" tooltip="导游详细信息">&nbsp;</td>
+    		            <td width="10%" class="value" field="guide.license">&nbsp;</td>
+    		            <td width="10%" class="value" field="guide.fullName">&nbsp;</td>
+    		            <td width="5%" class="value" field="guide.gender">&nbsp;</td>
+    		            <td width="13%" class="value" field="guide.mobile"><input type="text" size="8"></td>
+    		            <td width="11%" class="value" style="padding-left:5px;" field="beginDay" validInput="notnull,date"><input inputType="date" type="text" size="6" label="开始使用日期"></td>
+    		            <td width="11%" class="value" style="padding-left:1px;" field="endDay" validInput="notnull,date"><input inputType="date" type="text" size="6" label="结束使用日期"></td>
+    		            <td width="15%" class="value" field="guide.affiliatedOrganName">&nbsp;</td>
+    		            <td width="3%" class="value" id='statusName' align="left">&nbsp;</td>
+    		            <td width="5%" onclick="dispach_click(this);" dispachKey="ProcessGuideOrder" class="processOrder" tooltip="导游委派" id='processOrder' style="display:none;">&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_processGuideOrder">
+  <table id="table_win_processGuideOrder" width="600px" style="top:50px;display:none;">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_GuideOrder" style="border:1px;" class="input" tag="editBody">
+    		         <tr>
+    		           <th width="15%">导游证号</th>
+    		           <td width="30%" field="guide.license">&nbsp;</th>
+    		           <th width="15%">姓名</th>
+    		           <td width="30%" field="guide.fullName">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">性别</th>
+    		           <td width="30%" field="guide.gender">&nbsp;</th>
+    		           <th width="15%">手机</th>
+    		           <td width="30%" field="guide.mobile">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">委派开始日期</th>
+    		           <td width="30%" field="beginDay">&nbsp;</th>
+    		           <th width="15%">委派结束日期</th>
+    		           <td width="30%" field="endDay">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">旅行社</th>
+    		           <td width="30%" field="guide.affiliatedOrganName">&nbsp;</th>
+    		           <th width="15%">&nbsp;</th>
+    		           <td width="30%">&nbsp;</th>
+    		         </tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_GuideOrder_process" style="border:1px;" class="input">
+    			<tr style="display:none"><td><table width="100%">
+    				<tr>
+    				  <th width="20%">委派状态</th>
+    				  <td width="70%" colspan="2" class="value" field="processStatusName">&nbsp;</td>
+    				</tr>
+
+    			</table></td></tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamLeaders">
+  <table id="table_win_teamLeaders" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="5%">&nbsp;</th>
+    		            <th width="10%">领队证号</th>
+    		            <th width="10%">姓名</th>
+    		            <th width="5%">性别</th>
+    		            <th width="13%">手机</th>
+    		            <th width="20%" colspan="2">委派期间</th>
+    		            <th width="15%">旅行社</th>
+    		            <th width="5%">&nbsp;</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:100px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none;">
+    		            <td width="5%" style="cursor:pointer;" onclick="showDetail_leader(this.parentNode);" class="viewLeader" tooltip="领队详细信息">&nbsp;</td>
+    		            <td width="10%" class="value" field="leader.licenseNo">&nbsp;</td>
+    		            <td width="10%" class="value" field="leader.fullName">&nbsp;</td>
+    		            <td width="5%" class="value" field="leader.gender">&nbsp;</td>
+    		            <td width="8%" class="value" field="leader.mobile"><input type="text" size="10"></td>
+    		            <td width="11%" class="value" style="padding-left:15px;" field="beginDay" validInput="notnull,date"><input inputType="date" type="text" size="9" label="开始使用日期"></td>
+    		            <td width="11%" class="value" style="padding-left:1px;" field="endDay" validInput="notnull,date"><input inputType="date" type="text" size="9" label="结束使用日期"></td>
+    		            <td width="15%" class="value" field="leader.organName">&nbsp;</td>    		            <td width="3%" class="value" id='statusName' align="left">&nbsp;</td>
+    		            <td width="5%" onclick="dispach_click(this);" dispachKey="ProcessLeaderOrder" class="processOrder" tooltip="领队委派" id='processOrder' style="display:none;">&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_processLeaderOrder">
+  <table id="table_win_processLeaderOrder" width="600px" style="top:50px;display:none;">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_LeaderOrder" style="border:1px;" class="input" tag="editBody">
+    		         <tr>
+    		           <th width="15%">领队证号</th>
+    		           <td width="30%" field="leader.licenseNo">&nbsp;</th>
+    		           <th width="15%">姓名</th>
+    		           <td width="30%" field="leader.fullName">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">性别</th>
+    		           <td width="30%" field="leader.gender">&nbsp;</th>
+    		           <th width="15%">手机</th>
+    		           <td width="30%" field="leader.mobile">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">委派开始日期</th>
+    		           <td width="30%" field="beginDay">&nbsp;</th>
+    		           <th width="15%">委派结束日期</th>
+    		           <td width="30%" field="endDay">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">旅行社</th>
+    		           <td width="30%" field="leader.organName">&nbsp;</th>
+    		           <th width="15%">&nbsp;</th>
+    		           <td width="30%">&nbsp;</th>
+    		         </tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_LeaderOrder_process" style="border:1px;" class="input">
+    			<tr style="display:none"><td><table>
+    				<tr>
+    				  <th width="20%">委派状态</th>
+    				  <td width="70%" colspan="2" class="value" field="processStatusName">&nbsp;</td>
+    				</tr>
+
+    			</table></td></tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamParks">
+  <table id="table_win_teamParks" width="750" style="position:absolute; top:35px;left:20px;background:transparent;display:none;">
+    <tr>
+    	<td>
+  	  <table class="sublist" style="margin-left:70px;width:670px;">
+
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="15%">行程点</th>
+    		            <th width="15%">子项</th>
+    		            <th width="5%">成人</th>
+    		            <th width="5%">儿童</th>
+    		            <th width="10%">预付</th>
+    		            <th width="35%">备注</th>
+    		            <th width="5%">&nbsp;</th>
+
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="15%" class="value" id=scenicAreaName field="park.name1" tag="name1">&nbsp;</td>
+    		            <td width="15%" class="value" field="park.name2">&nbsp;</td>
+    		            <td width="5%" class="value" field="prepAdultNumber">&nbsp;</td>
+    		            <td width="5%" class="value" field="prepChildrenNumber">&nbsp;</td>
+
+    		            <td width="10%" class="value" field="prepay"><input type="text" size="6" class="display" readOnly="true" stlye="text-align: right;"></td>
+
+    		            <td width="25%" class="value" field="reserveRemark">
+
+    		            	<input tag="remark" type="text" size="20" tooltip="双击修改" ondblclick="editArrangeDiv_do('',this);" onclick="onclick_editArrangeDiv_do('',this);">
+
+
+    		            </td>
+    		            <td width="7%" class="value" id=spotBook_td>&nbsp;</td>
+    		            <td width="3%" class="value" id=ticketLeft_icon_td>&nbsp;</td>
+    		            <td width="3%" class="value" id=spotBook_icon_td>&nbsp;</td>
+    		            <td width="3%" class="value" id='settleStatusName' align="left" >&nbsp;</td>
+    		            <td width="3%" class="value" id=loginUserName>&nbsp;</td>
+    		            <td width="3%" class="value" id=ticketBook_td>&nbsp;</td>
+
+    		            <td field="chargeItem.id" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="settleTermType" style="display:none;"><input type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamParkSpots">
+  <table id="table_win_teamParkSpots" width="650" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="25%">行程点</th>
+    		            <th width="8%">成人</th>
+    		            <th width="8%">儿童</th>
+    		            <th width="10%">预付</th>
+    		            <th width="35%">备注</th>
+    		            <th width="5%" class="loginUser" tooltip="系统用户">&nbsp;</th>
+
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:75px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="25%" class="value" field="park.name">&nbsp;</td>
+    		            <td width="8%" class="value" field="prepAdultNumber">&nbsp;</td>
+    		            <td width="8%" class="value" field="prepChildrenNumber">&nbsp;</td>
+    		            <td width="10%" class="value" field="prepay"><input type="text" size="6" class="display" readOnly="true" stlye="text-align: right;"></td>
+
+    		            <td width="25%" class="value" field="reserveRemark">
+
+    		            	<input type="text" size="20">
+
+
+    		            </td>
+    		            <td width="7%" class="value" id=spotBook_td>&nbsp;</td>
+    		            <td width="3%" class="value" id=ticketLeft_icon_td>&nbsp;</td>
+    		            <td width="3%" class="value" id=spotBook_icon_td>&nbsp;</td>
+    		            <td width="3%" class="value" id='settleStatusName' align="left" >&nbsp;</td>
+    		            <td width="3%" class="value" id=loginUserName>&nbsp;</td>
+    		            <td width="10%" class="value" id=ticketBook_td>&nbsp;</td>
+
+    		            <td field="chargeItem.id" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="settleTermType" style="display:none;"><input type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamParkChargeItem">
+  <table id="table_win_teamParkChargeItem" width="600" style="display:none" class="sublist">
+    <tr>
+    	<td>
+  			  	<table id="table_win_teamParkChargeItem_process" class="input" tag="editBody">
+    <tr>
+    	<th width="20%">订购项目</th>
+    	<td class="value" field="park.chargeItem.name" colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+    	<th width="20%">价格</th>
+    	<td class="value" field="park.price"  width="30%">&nbsp;</td>
+    	<th width="20%">预计成人数</th>
+    	<td class="value" field="prepAdultNumber">&nbsp;</td>
+    </tr>
+    <tr>
+    	<th width="20%">优惠价</th>
+    	<td class="value" field="park.agioPrice"  width="30%">&nbsp;</td>
+    	<th width="20%">预计儿童数</th>
+    	<td class="value" field="prepChildrenNumber">&nbsp;</td>
+    </tr>
+    <tr>
+    	<th width="20%">预付</th>
+    	<td class="value" field="prepay">&nbsp;</td>
+    	<th width="20%">结算方式</th>
+    	<td class="value" field="settleTermType" fieldShow="settleTermTypeName">
+      <select id="teamPark_settleTermType_select_old">
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <th width="20%">订票状态</th>
+      <td class="value" field="settleStatusName" colspan="3">&nbsp;</td>
+    </tr>
+
+  			  	</table>
+    		  </td>
+    		</tr>
+  </table>
+</div>
+
+<div id="div_parkOrderItems">
+  <table id="table_win_parkOrderItems" width="600" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="25%" class="value">名称</th>
+    		            <th width="15%" class="number">预付价格</th>
+    		            <th width="15%" class="number">数量</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:175px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="25%" class="value" field="chargeItem.nameDesc">&nbsp;</td>
+    		            <td width="15%" class="value" field="prePrice">&nbsp;</td>
+    		            <td width="15%" class="number" field="preNum" validInput="int"><input type="text" size="5" class="number" style="margin-top:1px;" onchange="reset_teamPark_editrow_prepay();"></td>
+    		            <td field="chargeItem.id" style="display:none;"><input type="text" size="5"></td>
+    		            <td field="id" style="display:none;"><input type="text" size="5"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_ParkOrderItems_main" style="width:100%;" border="0" cellpadding="0" cellspacing="0">
+            <tr style="display:none">
+            	<td style="width:100%;">
+            		<table class="input">
+            <tr>
+            	<th width="20%">预计成人数</th>
+            	<td class="value" field="prepAdultNumber">&nbsp;</td>
+    	        <th width="20%">预计儿童数</th>
+    	        <td class="value" field="prepChildrenNumber">&nbsp;</td>
+            </tr>
+            <tr>
+            	<th width="20%">预付</th>
+            	<td class="value" field="prepay">&nbsp;</td>
+            	<th width="20%">结算方式</th>
+            	<td class="value" field="settleTermType" fieldShow="settleTermTypeName">
+              <select id="teamPark_settleTermType_select">
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <th width="20%">订票状态</th>
+              <td class="value" field="settleStatusName" colspan="3">&nbsp;</td>
+            </tr>
+    				<tr>
+    				  <th width="20%">说明</th>
+
+
+    				  <td class="value" colspan="3" field="reserveRemark">&nbsp;</td>
+
+    				</tr>
+  			  	</table>
+  			  	</td>
+  			  </tr>
+  			</table>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamRestaurants">
+  <table id="table_win_teamRestaurants" width="750px" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="35%">用餐地点</th>
+    		            <th width="20%">用餐类型</th>
+    		            <th width="30%">备注</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:150px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="35%" class="value" field="restaurant.name" validInput="notnull"><input type="text" size="10"></td>
+    		            <td width="20%" class="value" field="mealType.id" fieldShow="mealType.name"><select id="teamRestaurants_item_mealType"></select></td>
+    		            <td width="30%" class="value" field="remark"><input type="text" size="15"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamRooms">
+  <table id="table_win_teamRooms" width="750px" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="16%">酒店</th>
+    		            <th width="12%">预计人数</th>
+    		            <th colspan=2 width="30%">入住日期 离店日期</th>
+    		            <th width="6%">早餐</th>
+    		            <th width="6%">正餐</th>
+    		            <th width="9%">费用</th>
+    		            <th width="9%">&nbsp;</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:275px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="16%" class="value" field="hotel.name" validInput="notnull"><input type="text" size="10"></td>
+    		            <td width="12%" class="value" field="prepArrivePersonNumber" validInput="int"><input type="text" size="5" label="预计人数" class="number"></td>
+    		            <td width="15%" class="value" field="prepArriveDay" validInput="notnull,date"><input inputType="date" type="text" size="9" label="抵达日期"></td>
+    		            <td width="15%" class="value" field="prepLeftDay" validInput="notnull,date"><input inputType="date" type="text" size="9" label="离开日期"></td>
+    		            <td width="6%" class="value" field="breakfast" fieldShow='breakfastName'><input type=checkbox value="true"></td>
+    		            <td width="6%" class="value" field="dinner" fieldShow='dinnerName'><input type=checkbox value="true"></td>
+    		            <td width="9%" class="value" field="sumPay" validInput="bigdecimal0+"><input type="text" size="5" class="number"></td>
+    		            <td width="3%" class="value" id='statusName' align="left">&nbsp;</td>
+    		            <td width="5%" onclick="dispach_click(this);" dispachKey="RoomTypeInfo" class="subitem" tooltip="详细信息" id='editSubitem'>&nbsp;</td>
+    		            <td width="5%" onclick="dispach_click(this);" dispachKey="ProcessRoomOrder" class="processOrder" tooltip="处理订单" id='processOrder' style="display:none;">&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_roomTypeInfos">
+  <table id="table_win_roomTypeInfos" width="750px" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="25%">房型</th>
+    		            <th width="15%">整标</th>
+    		            <th width="15%">半标</th>
+    		            <th width="15%">价格</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:75px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="25%" class="value" field="roomType.name">&nbsp;</td>
+    		            <td width="15%" class="value" field="fullNum" validInput="int"><input type="text" size="5" class="number" onchange="cal_roomTypeInfo_editrow_prepay();"></td>
+    		            <td width="15%" class="value" field="halfNum" validInput="int"><input type="text" size="5" class="number" onchange="cal_roomTypeInfo_editrow_prepay();"></td>
+    		            <td width="15%" class="value" field="price" validInput="bigdecimal0+"><input type="text" size="5" class="number" onchange="cal_roomTypeInfo_editrow_prepay();"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_RoomTypeInfos_main" class="input">
+
+
+    				<tr style="display:none">
+    					<td>
+  			  	<table>
+  			  		<tr>
+    				  <th>房费</th>
+    				  <td class="value" field="sumPay">&nbsp;</td>
+    				  <th>预付</th>
+    				  <td class="value" field="prepay">&nbsp;</td>
+  			  		</tr>
+  			  		<tr>
+    				  <th>订房说明</th>
+    				  <td class="value" colspan="3" field="reserveRemark">&nbsp;</td>
+  			  		</tr>
+  			  	</table>
+    					</td>
+    				</tr>
+
+  			  	</table>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_processRoomOrder">
+  <table id="table_win_processRoomOrder" width="750" style="top:50px;display:none;">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_RoomOrder_main" class="input">
+    		         <tr>
+    		           <th width="15%">酒店</th>
+    		           <td width="30%" field="hotel.name">&nbsp;</th>
+    		           <th width="15%">预计人数</th>
+    		           <td width="30%" field="prepArrivePersonNumber">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">抵达日期</th>
+    		           <td width="30%" field="prepArriveDay">&nbsp;</th>
+    		           <th width="15%">离开日期</th>
+    		           <td width="30%" field="prepLeftDay">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">早餐</th>
+    		           <td width="30%" field="breakfastName">&nbsp;</th>
+    		           <th width="15%">正餐</th>
+    		           <td width="30%" field="dinnerName">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">房费</th>
+    		           <td width="30%" field="sumPay">&nbsp;</th>
+    		           <th width="15%">预付</th>
+    		           <td width="30%" field="prepay">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">状态</th>
+    		           <td width="75%" colspan="3" field="statusName">&nbsp;</th>
+    		         </tr>
+    		         <tr>
+    		           <th width="15%">订房说明</th>
+    		           <td width="75%" colspan="3" field="reserveRemark">&nbsp;</th>
+    		         </tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="25%">房型</th>
+    		            <th width="15%">整标</th>
+    		            <th width="15%">半标</th>
+    		            <th width="15%">价格</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:50px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="25%" class="value" field="roomType.name">&nbsp;</td>
+    		            <td width="15%" class="value" field="fullNum">&nbsp;</td>
+    		            <td width="15%" class="value" field="halfNum">&nbsp;</td>
+    		            <td width="15%" class="value" field="price">&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+  			  	<table id="table_win_RoomOrder_process" class="input">
+    			<tr style="display:none"><td><table>
+    				<tr>
+    				  <th width="20%">订单状态</th>
+    				  <td width="50%" colspan="2" class="value" field="processStatusName">&nbsp;</td>
+    				</tr>
+
+    			</table></td></tr>
+  			  	</table>
+    		  </td>
+    		</tr>
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamRecreations">
+  <table id="table_win_teamRecreations" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="30%">文化演艺场所</th>
+    		            <th width="10%">预付</th>
+    		            <th width="35%">备注</th>
+    		            <th width="5%">&nbsp;</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:100px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="30%" class="value" field="recreation.name" validInput="notnull"><input type="text" size="22"></td>
+    		            <td width="10%" class="value" field="teamOrder.prepay">&nbsp;</td>
+    		            <td width="35%" class="value" field="remark"><input type="text" size="20"></td>
+    		            <td width="3%" class="value" id='settleStatusName' fieldShow='teamOrder.settleStatusName' align="left" >&nbsp;</td>
+    		            <td width="3%" class="value" id='td_processOrder'>&nbsp;</td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+<div id="div_teamShoppings">
+  <table id="table_win_teamShoppings" width="750" style="display:none">
+    <tr>
+    	<td>
+  	  <table class="sublist">
+    		<tr>
+    		  <td>
+  	            <table class="sublist" tag="editHeader">
+    		          <tr>
+    		            <th width="55%">旅游购物场所</th>
+    		            <th width="45%" class="value">备注</th>
+    		          </tr>
+  	            </table>
+    		  </td>
+    		</tr>
+    		<tr>
+    		  <td>
+    		  <div style="height:100px;overflow:auto">
+  	            <table class="sublist" tag="editBody">
+    		          <tr style="display:none">
+    		            <td width="55%" class="value" field="shopping.name" validInput="notnull"><input type="text" size="22"></td>
+    		            <td width="35%" class="value" field="remark"><input type="text" size="30"></td>
+    		          </tr>
+  	            </table>
+  	            </div>
+    		  </td>
+    		</tr>
+
+  	  </table>
+    	</td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</div>
+
+<script id=downData type="text/javascript"}"></script>
+<script id=downData1 type="text/javascript"}"></script>
+<script id=downData2 type="text/javascript"}"></script>
+<script id=downData3 type="text/javascript"}"></script>
+<div id="waitDiv" style="position:absolute; left:40%; top:30%; width:200px; height:28px; z-index:1; display:none;" class="font12">
+  <table width="100%" border="0" cellspacing="1" cellpadding="5" height="26" class="font_12_a" bgcolor="#000000">
+    <tr>
+      <td id=waitDivMsg align="center" bgcolor="#00FF00">
+        请稍候.....
+      </td>
+    </tr>
+  </table>
+</div>
+<script language=javascript>
+function setValidTip(msgobj,valid) {
+msgobj.style.visibility = valid?'':'hidden';
+}
+</script>
+
+<script>
+function nocontextmenu(){
+ event.cancelBubble = true
+ event.returnValue = false;
+ return false;
+}
+function norightclick(e){
+  if (!e) var e = window.event;
+	if (e.which) {
+		if (e.which == 2 || e.which == 3) return false;
+	}
+	else if (e.button) {
+    if (event.button == 2 || event.button == 3){
+     event.cancelBubble = true
+     event.returnValue = false;
+     return false;
+    }
+	}
+}
+document.oncontextmenu = nocontextmenu; // for IE5+
+document.onmousedown = norightclick; // for all others
+</script>
+
+
+
+
+<script language=javascript>
+
+var teamProcessId='';
+var teamId = '13275960';
+var team_typeCode = '010100';
+var team_bureauReviewStatus = '';
+
+var teamItems_editors = getEditors(div_teamItems);
+if(teamItems_editors) {
+	for(var i=0;i<teamItems_editors.length;i++) {
+		var peditor = teamItems_editors[i];
+		if(getValidStr(peditor.id)!=''&&getValidStr(peditor.name)=='') peditor.name=peditor.id;
+	}
+}
+/*
+var submit_teamInfo=form_team.submit_teamInfo;
+var submit_mainInfo=form_team.submit_mainInfo;
+var submit_teamAreaInfos=form_team.submit_teamAreaInfos;
+var submit_teamPersonInfos=form_team.submit_teamPersonInfos;
+var submit_teamDestAreaInfos=form_team.submit_teamDestAreaInfos;
+var submit_teamCars=form_team.submit_teamCars;
+var submit_teamGuides=form_team.submit_teamGuides;
+var submit_teamParks=form_team.submit_teamParks;
+var submit_teamRestaurants=form_team.submit_teamRestaurants;
+var submit_teamRooms=form_team.submit_teamRooms;
+var submit_teamRecreations=form_team.submit_teamRecreations;
+var submit_teamShoppings=form_team.submit_teamShoppings;
+var submit_customKs=form_team.submit_customKs;
+var submit_allInfo=form_team.submit_allInfo;
+*/
+
+//var mainInfo_arriveWhereDesc=document.getElementById('mainInfo_arriveWhereDesc');
+/*
+var mainInfo_arriveDesc=form_team.mainInfo_arriveDesc;
+var mainInfo_arriveWhenDesc=form_team.mainInfo_arriveWhenDesc;
+var mainInfo_arriveWhereDesc=form_team.mainInfo_arriveWhereDesc;
+var mainInfo_arriveHowDesc=form_team.mainInfo_arriveHowDesc;
+var mainInfo_returnDesc=form_team.mainInfo_returnDesc
+var mainInfo_returnWhenDesc=form_team.mainInfo_returnWhenDesc
+var mainInfo_returnWhereDesc=form_team.mainInfo_returnWhereDesc
+var mainInfo_returnHowDesc=form_team.mainInfo_returnHowDesc
+var mainInfo_select_arriveDesc_when=form_team.mainInfo_select_arriveDesc_when;
+var mainInfo_select_arriveDesc_where=form_team.mainInfo_select_arriveDesc_where;
+var mainInfo_select_arriveDesc_how=form_team.mainInfo_select_arriveDesc_how;
+var mainInfo_select_returnDesc_when=form_team.mainInfo_select_returnDesc_when;
+var mainInfo_select_returnDesc_where=form_team.mainInfo_select_returnDesc_where;
+var mainInfo_select_returnDesc_how=form_team.mainInfo_select_returnDesc_how;
+var mainInfo_dept_id=form_team.mainInfo_dept_id;
+var mainInfo_outLinkMan_id=form_team.mainInfo_outLinkMan_id;
+var mainInfo_teamType_id=form_team.mainInfo_teamType_id;
+var mainInfo_settlementType_id=form_team.mainInfo_settlementType_id;
+var teamAreaInfos_select_area1=form_team.teamAreaInfos_select_area1;
+var teamAreaInfos_select_area2=form_team.teamAreaInfos_select_area2;
+var select_win_teamAreaInfos_items_select=form_team.select_win_teamAreaInfos_items_select;
+var teamDestAreaInfos_select_area1=form_team.teamDestAreaInfos_select_area1;
+var teamDestAreaInfos_select_area2=form_team.teamDestAreaInfos_select_area2;
+var select_win_teamDestAreaInfos_items_select=form_team.select_win_teamDestAreaInfos_items_select;
+var select_win_teamGuides_items_select=form_team.select_win_teamGuides_items_select;
+var select_win_teamCars_items_select=form_team.select_win_teamCars_items_select;
+var teamParks_select_parkLevel=form_team.teamParks_select_parkLevel;
+var teamRestaurants_item_mealType=form_team.teamRestaurants_item_mealType;
+var teamRooms_select_hotelStar=form_team.teamRooms_select_hotelStar;
+var teamPark_settleTermType_select=form_team.teamPark_settleTermType_select;
+var teamGuide_select_language=form_team.teamGuide_select_language;
+var teamPersonInfos_select_cardType=form_team.teamPersonInfos_select_cardType;
+var teamPersonInfos_select_gender=form_team.teamPersonInfos_select_gender;
+var teamPersonInfos_select_find_gender=form_team.teamPersonInfos_select_find_gender;
+*/
+
+var submit_path_save_team='/team/edit/saveTeam.do';
+var submit_path_make_team='/team/edit/saveTeam.do';
+var submit_path_print_team='/team/edit/editTeam.do';
+var submit_path_save_process='/teamProcess/save.do';
+var submit_path_save_process_change='/teamProcess/change/save.do';
+var submit_path_save_process_inure='/teamProcess/inure/save.do';
+var submit_path_save_process_hotel='/teamProcess/order/hotel/save.do';
+var submit_path_save_process_guide='/teamProcess/order/guide/save.do';
+var submit_path_save_process_leader='/teamProcess/order/leader/save.do';
+var submit_path_save_process_car='/teamProcess/order/car/save.do';
+var submit_path_save_process_customCar='/teamProcess/order/customCar/save.do';
+var submit_path_edit_process='/teamProcess/edit.do';
+var submit_path_edit_process_change='/teamProcess/change/edit.do';
+var submit_path_edit_process_inure='/teamProcess/inure/edit.do';
+var submit_path_down_data='/team/edit/downData.do';
+var submit_path_down_dict='/team/edit/downDict.do';
+
+var submit_html='/static/js/submit.htm';
+var wait_html='/static/js/wait.htm';
+var submit_path_base='/';
+
+
+
+var manualSheeted = '';
+var submit_path_view_guide='/travelagency/guide/edit.do';
+var submit_path_view_leader='/person/leader/edit.do';
+var submit_path_view_driver='/transport/driver/edit.do';
+var submit_path_edit_spot_book='/team/book/teamSpotBook/edit.do';
+var submit_path_view_spot_book_total='/team/book/teamSpotBookTotal/query.do';
+var submit_path_edit_editor='/util/editor/edit.do';
+var submit_path_edit_import_file='/util/file/edit.do';
+var submit_path_view_attach='/team/attachment/query.do';
+var submit_path_edit_parkorderitem_book='/park/team/dxg/book.do';
+
+
+var systemId = 'Bureau';
+var sheldulesMax = 35;
+var sheldulesNormal = 10;
+var stopsMax = 100;//站点总数
+var stopsNormal = 10;
+var currDate = new Date();currDate.setTime(1510787749323);
+var isSettleRun = getInt("1");
+var is_agency_joinSettle = '';
+var curr_regionId = ('650000').substring(0,4)+'00';
+var application_regionId = "650000";
+var application_regionId_prefix = findRegionPrefixKey(application_regionId);
+var province_application_regionId = application_regionId.substring(0,2)+'0000';
+
+var clientMacBrowerVersion=getClientMacBrowerVersion();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+/************************team begin****************************/
+
+teamDataflushFlag=false;
+function initTeamData() {
+
+
+	var pteam;
+	for(var i=0;i<arguments.length;i++) {
+		switch (i){
+		case 0:pteam=arguments[i];break;
+		default:;
+		}
+	}
+		if(!pteam)pteam=getTeam();
+		var team = pteam;
+	    var teamItem;
+	    var teamItems;
+	    var subIeamItem;
+	    var subTeamItems;
+	    var shelduleTeamItem;
+	    var shelduleTeamItems;
+
+
+            team.id=trimStr(getInt('13275960'));
+            team.regionId = getValidStr('660000');
+            team.status = trimStr('inure');
+            team.valid = false;
+            team.reviewStatus = trimStr('yes');
+            team.bureauReviewStatus = trimStr('');
+            team.statusName = getStatusName(team);
+            team.teamProcessId=getValidStr();
+            team.verifyCode=trimStr(getValidStr(''));
+            team.outrule = trimStr('false');
+            team.settleStatus = trimStr('');
+	          team.processStatus = getProcessStatus(team);
+	          team.templetTeamId = trimStr(getInt(''));
+
+	    	mainInfo=team.getMainInfo();
+            mainInfo.teamSN=trimStr('T66002171101524');
+            mainInfo.beginDay=trimStr('2017-11-01');
+            mainInfo.endDay=trimStr('2017-11-11');
+            mainInfo.getTravelAgency().id=trimStr(getInt('10648'));
+            mainInfo.getTravelAgency().name=trimStr('新疆兵团中国青年旅行社有限公司');
+            mainInfo.getDept().id=trimStr('1489');
+            mainInfo.getDept().name=trimStr('外联部');
+            mainInfo.getOperator().name=trimStr('庞小颖');
+            mainInfo.prefix=trimStr('');
+            mainInfo.noGuide_permit_apply=trimStr('');
+            mainInfo.noGuide_permit_apply_name=trimStr('');
+            mainInfo.noCar_permit_apply=trimStr('');
+            mainInfo.noCar_permit_apply_name=trimStr('');
+            mainInfo.award_apply=trimStr('');
+            mainInfo.award_apply_name=trimStr('');
+            fillTeamItem(mainInfo);
+            init_team_sheldules();
+
+
+
+	    	mainInfo=team.getMainInfo();
+            mainInfo.id=trimStr(getInt('330083'));
+            mainInfo.status = trimStr('inure');
+            mainInfo.valid = true;
+            mainInfo.getOutLinkMan().id=trimStr('');
+            mainInfo.getOutLinkMan().name=trimStr('');
+
+            mainInfo.fromTravelAgency=trimStr('台湾');
+            mainInfo.fromTeamSN=trimStr('');
+
+            mainInfo.contact=trimStr('');
+            mainInfo.teamLeader=trimStr('幹沛彤');
+            mainInfo.arriveDesc=trimStr('10：00 乌鲁木齐 汽车');
+            mainInfo.arriveWhenDesc=trimStr('10:00');
+            mainInfo.arriveWhereDesc=trimStr('乌鲁木齐');
+            mainInfo.arriveHowDesc=trimStr('汽车');
+            mainInfo.returnDesc=trimStr('18：00 乌鲁木齐 汽车');
+            mainInfo.returnWhenDesc=trimStr('18:00');
+            mainInfo.returnWhereDesc=trimStr('乌鲁木齐');
+            mainInfo.returnHowDesc=trimStr('汽车');
+            mainInfo.adultNumber=trimStr(getInt('20'));
+            mainInfo.childrenNumber=trimStr(getInt('0'));
+            mainInfo.fullCompanyNumber=trimStr(getInt('1'));
+            mainInfo.getTeamType().id=trimStr('010100');
+            mainInfo.getTeamType().name=trimStr('地接 国内游');
+            mainInfo.getSettlementType().id=trimStr(getInt(''));
+            mainInfo.getSettlementType().name=trimStr('');
+            mainInfo.lineName=trimStr('南疆12天');
+            mainInfo.outport=trimStr('');
+            mainInfo.inport=trimStr('');
+            mainInfo.outlineNo=trimStr('');
+            mainInfo.inlineNo=trimStr('');
+            mainInfo.supplier=trimStr('');
+
+            mainInfo.longTraffic=trimStr('');
+            mainInfo.tripMemo=trimStr('');
+            mainInfo.opMan=trimStr('艾克');
+            mainInfo.zrxOrdered=trimStr('true');
+            mainInfo.ywxOrdered=trimStr('true');
+            mainInfo.remark=trimStr('');
+            mainInfo.prepay=ChgNumberFormat(getFloat(trimStr('0')),2).replace(',','');
+            mainInfo.teamProcessId=getValidStr();
+            mainInfo.processModifyType=getValidStr('');
+            fillTeamItem(mainInfo);
+
+
+
+            teamItems=team.getTeamMains();
+
+	    	mainInfo=new MainInfo();
+            mainInfo.teamSN=trimStr('T66002171101524');
+            mainInfo.beginDay=trimStr('2017-11-01');
+            mainInfo.endDay=trimStr('2017-11-11');
+            mainInfo.getTravelAgency().id=trimStr(getInt('10648'));
+            mainInfo.getTravelAgency().name=trimStr('新疆兵团中国青年旅行社有限公司');
+            mainInfo.getDept().id=trimStr(getInt('1489'));
+            mainInfo.getDept().name=trimStr('外联部');
+            mainInfo.getOperator().name=trimStr('庞小颖');
+
+            mainInfo.id=trimStr(getInt('330083'));
+            updateOrInsertTeamItem(teamItems, mainInfo);
+            mainInfo.status = trimStr('inure');
+            mainInfo.valid = true;
+            mainInfo.getOutLinkMan().id=trimStr(getInt(''));
+            mainInfo.getOutLinkMan().name=trimStr('');
+            mainInfo.fromTravelAgency=trimStr('台湾');
+            mainInfo.fromTeamSN=trimStr('');
+            mainInfo.contact=trimStr('');
+            mainInfo.teamLeader=trimStr('幹沛彤');
+            mainInfo.arriveDesc=trimStr('10：00 乌鲁木齐 汽车');
+            mainInfo.arriveWhenDesc=trimStr('10:00');
+            mainInfo.arriveWhereDesc=trimStr('乌鲁木齐');
+            mainInfo.arriveHowDesc=trimStr('汽车');
+            mainInfo.returnDesc=trimStr('18：00 乌鲁木齐 汽车');
+            mainInfo.returnWhenDesc=trimStr('18:00');
+            mainInfo.returnWhereDesc=trimStr('乌鲁木齐');
+            mainInfo.returnHowDesc=trimStr('汽车');
+            mainInfo.adultNumber=trimStr(getInt('20'));
+            mainInfo.childrenNumber=trimStr(getInt('0'));
+            mainInfo.fullCompanyNumber=trimStr(getInt('1'));
+            mainInfo.getTeamType().id=trimStr('010100');
+            mainInfo.getTeamType().name=trimStr('地接 国内游');
+            mainInfo.getSettlementType().id=trimStr(getInt(''));
+            mainInfo.getSettlementType().name=trimStr('');
+            mainInfo.lineName=trimStr('南疆12天');
+            mainInfo.outport=trimStr('');
+            mainInfo.inport=trimStr('');
+            mainInfo.outlineNo=trimStr('');
+            mainInfo.inlineNo=trimStr('');
+            mainInfo.supplier=trimStr('');
+
+            mainInfo.longTraffic=trimStr('');
+            mainInfo.tripMemo=trimStr('');
+            mainInfo.opMan=trimStr('艾克');
+            mainInfo.zrxOrdered=trimStr('true');
+            mainInfo.ywxOrdered=trimStr('true');
+            mainInfo.remark=trimStr('');
+            mainInfo.prepay=ChgNumberFormat(getFloat(trimStr('0')),2).replace(',','');
+            mainInfo.teamProcessId=getValidStr();
+            mainInfo.processModifyType=getValidStr('');
+            fillTeamItem(mainInfo);
+
+
+
+
+            teamItems=team.getTeamAreaInfos();
+
+                teamItem = new TeamAreaInfo();
+            	teamItem.id = trimStr(getInt('432304'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	teamItem.getArea().id = trimStr(getInt('710000'));
+            	teamItem.getArea().listName = trimStr('台湾省');
+            	teamItem.adultNumber = trimStr(getInt('20'));
+            	teamItem.childrenNumber = trimStr(getInt('0'));
+            	teamItem.remark = trimStr('');
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+                fillTeamItem(teamItem);
+
+
+
+
+
+
+
+
+
+
+            teamItems=team.getTeamCars();
+
+            	teamItem=new TeamCar();
+            	teamItem.id = trimStr(getInt('325019'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+              teamItem.settleStatus = trimStr('');
+            	teamItem.valid = true;
+
+            	teamItem.custom = getInt('1');
+
+            	teamItem.getCar().carNo = trimStr('新AB7553');
+
+
+            	teamItem.getCar().transportName = trimStr('新月车队');
+
+
+            	teamItem.transportId = trimStr('');
+            	teamItem.driverName = trimStr('王乐友（13899906827）');
+            	teamItem.carNo = trimStr('新AB7553');
+            	teamItem.assignType = trimStr('001001');
+            	teamItem.assignTypeName = trimStr('本社采购');
+            	teamItem.tradeNo = trimStr('');
+            	teamItem.beginDay=trimStr('2017-11-01');
+            	teamItem.endDay=trimStr('2017-11-11');
+            	teamItem.prepAdultNumber = getInt('19');
+            	teamItem.prepChildrenNumber = getInt('0');
+            	teamItem.prepFullCompanyNumber = getInt('1');
+            	teamItem.prepay = ChgNumberFormat(trimStr(getFloat('0')),2).replace(',','');
+            	teamItem.remark = trimStr('');
+            	teamItem.inOrder = trimStr('false');
+            	teamItem.outrule=trimStr(false)
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+                fillTeamItem(teamItem);
+
+
+
+
+            teamItems=team.getTeamGuides();
+
+            	teamItem=new TeamGuide();
+            	teamItem.id = trimStr(getInt('252207'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	teamItem.getGuide().id = trimStr(getInt('2182'));
+            	teamItem.getGuide().fullName = trimStr('丁敏');
+            	teamItem.getGuide().gender = trimStr('女');
+            	teamItem.getGuide().license = trimStr('D-6590-005053');
+            	//teamItem.getGuide().languageId = trimStr('1');
+            	teamItem.getGuide().travelAgencyId= trimStr(getInt('12358'));
+            	teamItem.getGuide().affiliatedOrganName= trimStr('新疆导服中心');
+            	teamItem.getGuide().needAssigned= trimStr('no');
+	        	teamItem.mobile = trimStr('13579221939');
+            	teamItem.beginDay=trimStr('2017-11-01');
+            	teamItem.endDay=trimStr('2017-11-11');
+            	teamItem.prepay = ChgNumberFormat(trimStr(getFloat('')),2).replace(',','');
+            	teamItem.remark=getValidStr('');
+            	teamItem.inOrder='true';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+                fillTeamItem(teamItem);
+
+
+
+
+
+
+            teamItems=team.getTeamRooms();
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997336'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('万达文华酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-01');
+            	teamItem.prepLeftDay=trimStr('2017-11-02');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997335'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('万达文华酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-02');
+            	teamItem.prepLeftDay=trimStr('2017-11-03');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997338'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('月星锦江国际酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-09');
+            	teamItem.prepLeftDay=trimStr('2017-11-10');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997337'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('月星锦江国际酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-10');
+            	teamItem.prepLeftDay=trimStr('2017-11-11');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997349'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('双城酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(20));
+            	teamItem.prepArriveDay=trimStr('2017-11-04');
+            	teamItem.prepLeftDay=trimStr('2017-11-05');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997350'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('希尔顿酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(20));
+            	teamItem.prepArriveDay=trimStr('2017-11-03');
+            	teamItem.prepLeftDay=trimStr('2017-11-04');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997339'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('西湖国际酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-08');
+            	teamItem.prepLeftDay=trimStr('2017-11-09');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997340'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('阿克苏迎宾馆');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-07');
+            	teamItem.prepLeftDay=trimStr('2017-11-08');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997341'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('库车饭店贵宾楼');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-06');
+            	teamItem.prepLeftDay=trimStr('2017-11-07');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+            	teamItem=new TeamRoom();
+            	teamItem.id=trimStr(getInt('997342'));
+                updateOrInsertTeamItem(teamItems, teamItem);
+	        	teamItem.status = trimStr('inure');
+            	teamItem.valid = true;
+            	var hotel = new Hotel(trimStr(getInt('')),'',trimStr(''),trimStr(''),trimStr(getInt('')),trimStr(''),trimStr(''),trimStr(''),0);
+            	teamItem.arrange=trimStr('花园大酒店');
+            	teamItem.hotel = hotel;
+            	teamItem.reserveRemark=trimStr('');
+            	teamItem.sumPay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	teamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	teamItem.prepArrivePersonNumber=trimStr(getInt(19));
+            	teamItem.prepArriveDay=trimStr('2017-11-05');
+            	teamItem.prepLeftDay=trimStr('2017-11-06');
+	        	  teamItem.istop=getInt('1');
+            	teamItem.breakfast='true';
+            	teamItem.dinner='false';
+            	teamItem.inOrder='false';
+            	teamItem.teamProcessId=getValidStr();
+            	teamItem.payRequestId=getValidStr();
+            	teamItem.processModifyType=getValidStr('');
+            	subTeamItems=teamItem.getRoomTypeInfos();
+
+                fillTeamItem(teamItem);
+
+
+
+            sheldules=team.getSheldules();
+
+
+            	travelDay = trimStr('2017-11-04');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('1001656'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+              shelduleTeamItem.settleStatus = trimStr('');
+            	shelduleTeamItem.valid = true;
+            	var park = new Park(getInt('10263'),'650100',trimStr('乌鲁木齐市红山公园'),'002',trimStr('4'),getInt(0),'true','1','false','','','park','2','1','','','0');
+            	shelduleTeamItem.park=park;
+            	shelduleTeamItem.prepCapacity=getInt(0);
+            	shelduleTeamItem.flag='park';
+            	shelduleTeamItem.prepAdultNumber=getInt(20);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.chargeItem=new ChargeItem(getValidStr(''),getValidStr(''));
+            	shelduleTeamItem.chargeItem.enableRemoteCallFlag=getValidStr('');
+            	shelduleTeamItem.chargeItem.needRealName=getValidStr('');
+            	shelduleTeamItem.settleStatus=getValidStr('');
+            	shelduleTeamItem.price=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.agioPrice=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.outrule=trimStr(false)
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.payRequestId=getValidStr();
+            	shelduleTeamItem.settleTermType=getValidStr(0);
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.beginDay=trimStr('2017-11-04');
+            	shelduleTeamItem.endDay=trimStr('2017-11-04');
+	        	  shelduleTeamItem.istop=getInt('1');
+            	shelduleTeamItem.checkTime=trimStr('');
+            	shelduleTeamItem.checkSpotName=trimStr('');
+            	//shelduleTeamItem.checkDesc=trimStr('0+0+0');
+            	shelduleTeamItem.checkDesc=trimStr('0(0+0+0)');
+            	shelduleTeamItem.teamSpecialStatusName=trimStr('');
+            	shelduleTeamItem.checkStatus=trimStr('');
+              shelduleTeamItem.travelDay=trimStr(travelDay);
+            	subTeamItems=shelduleTeamItem.getParkOrderItems();
+
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-02');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('1001649'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+              shelduleTeamItem.settleStatus = trimStr('');
+            	shelduleTeamItem.valid = true;
+            	var park = new Park(getInt('10094'),'652300',trimStr('新疆天山天池风景区'),'001',trimStr('5'),getInt(0),'true','1','false','002001','天山天池门票','park','2','1','','','0');
+            	shelduleTeamItem.park=park;
+            	shelduleTeamItem.prepCapacity=getInt(0);
+            	shelduleTeamItem.flag='park';
+            	shelduleTeamItem.prepAdultNumber=getInt(20);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.chargeItem=new ChargeItem(getValidStr(''),getValidStr(''));
+            	shelduleTeamItem.chargeItem.enableRemoteCallFlag=getValidStr('');
+            	shelduleTeamItem.chargeItem.needRealName=getValidStr('');
+            	shelduleTeamItem.settleStatus=getValidStr('');
+            	shelduleTeamItem.price=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.agioPrice=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.outrule=trimStr(false)
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.payRequestId=getValidStr();
+            	shelduleTeamItem.settleTermType=getValidStr(0);
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.beginDay=trimStr('2017-11-02');
+            	shelduleTeamItem.endDay=trimStr('2017-11-02');
+	        	  shelduleTeamItem.istop=getInt('1');
+            	shelduleTeamItem.checkTime=trimStr('');
+            	shelduleTeamItem.checkSpotName=trimStr('');
+            	//shelduleTeamItem.checkDesc=trimStr('0+0+0');
+            	shelduleTeamItem.checkDesc=trimStr('0(0+0+0)');
+            	shelduleTeamItem.teamSpecialStatusName=trimStr('');
+            	shelduleTeamItem.checkStatus=trimStr('');
+              shelduleTeamItem.travelDay=trimStr(travelDay);
+            	subTeamItems=shelduleTeamItem.getParkOrderItems();
+
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-02');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('1001648'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+              shelduleTeamItem.settleStatus = trimStr('');
+            	shelduleTeamItem.valid = true;
+            	var park = new Park(getInt('10473'),'650100',trimStr('新疆国际大巴扎景区'),'020',trimStr('3'),getInt(0),'true','1','false','','','park','2','1','','','0');
+            	shelduleTeamItem.park=park;
+            	shelduleTeamItem.prepCapacity=getInt(0);
+            	shelduleTeamItem.flag='park';
+            	shelduleTeamItem.prepAdultNumber=getInt(20);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.chargeItem=new ChargeItem(getValidStr(''),getValidStr(''));
+            	shelduleTeamItem.chargeItem.enableRemoteCallFlag=getValidStr('');
+            	shelduleTeamItem.chargeItem.needRealName=getValidStr('');
+            	shelduleTeamItem.settleStatus=getValidStr('');
+            	shelduleTeamItem.price=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.agioPrice=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('2');
+            	shelduleTeamItem.outrule=trimStr(false)
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.payRequestId=getValidStr();
+            	shelduleTeamItem.settleTermType=getValidStr(0);
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.beginDay=trimStr('2017-11-02');
+            	shelduleTeamItem.endDay=trimStr('2017-11-02');
+	        	  shelduleTeamItem.istop=getInt('1');
+            	shelduleTeamItem.checkTime=trimStr('');
+            	shelduleTeamItem.checkSpotName=trimStr('');
+            	//shelduleTeamItem.checkDesc=trimStr('0+0+0');
+            	shelduleTeamItem.checkDesc=trimStr('0(0+0+0)');
+            	shelduleTeamItem.teamSpecialStatusName=trimStr('');
+            	shelduleTeamItem.checkStatus=trimStr('');
+              shelduleTeamItem.travelDay=trimStr(travelDay);
+            	subTeamItems=shelduleTeamItem.getParkOrderItems();
+
+                fillTeamItem(shelduleTeamItem);
+
+
+
+
+            	travelDay = trimStr('2017-11-01');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060702'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('乌鲁木齐接动车D55（1348-2045）');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-03');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060701'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('风力发电站苏公塔｜交河故城｜葡萄沟｜火焰山｜｜ 坎儿井');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-09');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060705'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('莎车王陵｜阿曼尼沙汗纪念陵｜英吉沙小刀作坊｜香妃墓');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-10');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060704'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('帕米尔高原｜盖孜峡谷｜布伦口沙湖｜卡拉库力湖');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-11');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060703'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('CA4242 1925｜2350 晚送飞机 艾提尕尔清真寺｜职人街｜噶尔老城区安排维吾尔族家访');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-05');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060710'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('途经风力发电站｜博斯腾湖含快艇｜孔雀河夜景｜铁门关');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat('0'),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-06');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060709'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('塔里木胡杨林公园含游园车｜世界文化遗产地｜苏巴什古城遗址｜库车大寺');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-07');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060708'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('世界文化遗产地｜克孜尔千佛洞含专业讲解、天山神秘大峡谷');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-08');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060707'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('塔克拉玛干大沙漠｜第二条沙漠公路沙漠观景台｜核桃王树｜葡萄长廊');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('1');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+            	travelDay = trimStr('2017-11-06');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamParks();
+            	shelduleTeamItem=new TeamPark();
+            	shelduleTeamItem.id=trimStr(getInt('2060711'));
+                updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem, 'flag');
+	        	shelduleTeamItem.status = trimStr('inure');
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arrange=trimStr('库车途径阿拉尔');
+            	shelduleTeamItem.flag='arrange';
+            	shelduleTeamItem.prepAdultNumber=getInt(19);
+            	shelduleTeamItem.prepChildrenNumber=getInt(0);
+            	shelduleTeamItem.prepFullCompanyNumber=getInt(1);
+            	shelduleTeamItem.prepay=ChgNumberFormat(getFloat(''),2).replace(',','');
+            	shelduleTeamItem.reserveRemark=trimStr('');
+	        	shelduleTeamItem.order=getInt('2');
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+            	shelduleTeamItem.travelDay=trimStr(travelDay);
+	        	  shelduleTeamItem.istop=getInt('0');
+                fillTeamItem(shelduleTeamItem);
+            	teamArranges = sheldules[pindex].getTeamArranges();
+
+
+
+
+
+
+
+
+
+
+
+            	travelDay = trimStr('2017-11-01');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165723'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('乌鲁木齐');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-10');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165727'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('喀什');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-07');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165730'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('阿拉尔');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-04');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165720'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('乌鲁木齐');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-06');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165731'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('库车');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-11');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165726'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('喀什');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-02');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165722'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('乌鲁木齐');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-09');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165728'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('喀什');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-03');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165721'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('吐鲁番');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-05');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165724'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('库尔勒');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+            	travelDay = trimStr('2017-11-08');
+            	pindex = findSheldule(travelDay);
+            	shelduleTeamItems = sheldules[pindex].getTeamRoutes();
+            	shelduleTeamItem=new TeamRoute();
+            	shelduleTeamItem.id=trimStr(getInt('1165729'));
+	        	  shelduleTeamItem.status = trimStr('inure');
+              updateOrInsertTeamItem(shelduleTeamItems, shelduleTeamItem);
+            	shelduleTeamItem.valid = true;
+            	shelduleTeamItem.arriveCity=trimStr('和田');
+            	shelduleTeamItem.supplier=trimStr('');
+            	shelduleTeamItem.istop = getInt('1');
+            	shelduleTeamItem.transit = false;
+            	shelduleTeamItem.travelDay=travelDay;
+            	shelduleTeamItem.teamProcessId=getValidStr();
+            	shelduleTeamItem.processModifyType=getValidStr('');
+                fillTeamItem(shelduleTeamItem);
+
+
+
+
+        return team;
+}
+/************************team end****************************/
+
+</script>
+
+
+
+<script language=javascript>
+
+
+</script>
+
+<script language=javascript>
+var pageAction="view";
+initTeam();
+</script>
+</body>
+</html>
+
+
+
+<script>
+setWindowsStatus();
+try {
+}
+catch(e) {
+}
+function setWindowsStatus() {
+    var usedTimeStr = '页面执行成功: 查询耗时 47 毫秒, ' +
+                      '页面耗时 60 毫秒'
+    window.defaultStatus=usedTimeStr;
+
+}
+</script>
