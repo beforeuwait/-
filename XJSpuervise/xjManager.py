@@ -297,6 +297,6 @@ class setting:
 
 if __name__ == '__main__':
     xje = xjEngine()
-    # xje.log_in()
+    xje.log_in()
     xje.query_data()
-    # xje.each_team_info()
+    xje.each_team_info()

@@ -53,7 +53,35 @@ HEADERS = {
 
 # cookies
 COOKISE = {
-    "cookie": ""
+    "cookie": "hng=CN%7Czh-CN%7CCNY%7C156;"
+              " thw=cn;"
+              " ali_apache_id=11.128.42.195.1506165836158.367209.4;"
+              " cna=omZJEqUkxWICAXAsaqSn1mIS; miid=527679198965532911;"
+              " UM_distinctid=15f6dcac8f7ba8-0d42b12b089e6c-31657c00-13c680-15f6dcac8f8e54;"
+              " _tb_token_=E0wN36l01wNEBwN4pzUF;"
+              "v=0;"
+              " uc3=sg2=BYTq733WezLkM7zXHVQevL79zcUGDMO%2F9xxLimVbR4c%3D&nk2=AQH1FfwVeBpCU8A%3D&id2=VynOVuku3XDV&vt3="
+              "F8dBzLKHdSJGBugrYH8%3D&lg2=W5iHLLyFOGW7aA%3D%3D; existShop=MTUwOTUwMTYyMg%3D%3D;"
+              " uss=Vvrz%2FHSi59HdqFfu3SK3F0%2Fn7anDMqJYD%2FQ7aseyTWDPS3aEXtFxqnzrog%3D%3D;"
+              " lgc=beforeuwait;"
+              " tracknick=beforeuwait;"
+              " cookie2=1a473cdad6796ac20cb933143379cff8;"
+              " sg=t4e;"
+              " cookie1=Vv9IQ5%2BKbs20nJ4RAK0TRc%2B6RhfoVlhcC4rRkQpoltg%3D;"
+              " unb=457421924;"
+              " skt=d4a742b2eead561b;"
+              " t=e8b4d5b9fe24f7a4dc381101747811d1;"
+              " _cc_=UtASsssmfA%3D%3D;"
+              " tg=0;"
+              " _l_g_=Ug%3D%3D;"
+              " _nk_=beforeuwait;"
+              " cookie17=VynOVuku3XDV;"
+              " _mw_us_time_=1509501749259;"
+              " uc1=cookie16=U%2BGCWk%2F74Mx5tgzv3dWpnhjPaQ%3D%3D&cookie21="
+              "Vq8l%2BKCLjA%2Bl&cookie15=U%2BGCWk%2F75gdr5Q%3D%3D&existShop=false&pas=0&"
+              "cookie14=UoTcBr1GxeNQNw%3D%3D&cart_m=0&tag=8&lng=zh_CN;"
+              " mt=ci=1_1;"
+              " isg=Amhox3PupfJ1t4lNUAoZJTqQOVC6Oc4NiPj9XyKZtuPWfQjnyqGcK_69AyN2"
 }
 
 
