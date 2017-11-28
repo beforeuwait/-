@@ -266,8 +266,15 @@ class dianpingFoodSpider:
                             'div[@class="content"]/div[@class="comment-recommend"]/text()'):
                         fav = ','.join(
                             each.xpath('div[@class="content"]/div[@class="comment-recommend"]/a/text()'))
+                    imgs = ''
+                    try:
+                        if each.xpath('div[@class="content"]/div[@class="shop-photo"]/ul/li'):
+                            imgs = ','.join(
+                                each.xpath('div[@class="content"]/div[@class="shop-photo"]/ul/li/a/img/@src'))
+                    except:
+                        pass
                     data.append([user, contribution, attitute,
-                                 socer, content, date, fav])
+                                 socer, content, date, fav, imgs])
         except BaseException:
             print('评论解析时出错')
         return data
@@ -328,23 +335,23 @@ class dianpingFoodPipeline:
                 if shop_id not in restaurant_set:
                     content += shop_id + self.blank + \
                         each[1] + self.blank + text + '\n'
-        with open(config.RESTAURANT_LIST, 'a', encoding=self.code) as f:
+        with open(config.RESTAURANT_LIST % config.PROVINCE , 'a', encoding=self.code) as f:
             f.write(content)
 
     def get_shop_list(self):
-        if os.path.exists(config.RESTAURANT_LIST):
+        if os.path.exists(config.RESTAURANT_LIST % config.PROVINCE):
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.RESTAURANT_LIST,
+                    config.RESTAURANT_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         else:
-            open(config.RESTAURANT_LIST, 'w+', encoding=self.code)
+            open(config.RESTAURANT_LIST % config.PROVINCE , 'w+', encoding=self.code)
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.RESTAURANT_LIST,
+                    config.RESTAURANT_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         return shop_list
@@ -400,8 +407,8 @@ class dianpingFoodPipeline:
             if date < max_date and date >= min_date:
                 content = info[0] + self.blank + info[1] + \
                     self.blank + info[2] + self.blank
-                content += each[0] + self.blank + each[1] + self.blank + each[3] + \
-                    self.blank + each[4] + self.blank + date + self.blank + each[6]
+                content += each[0] + self.blank + each[1] + self.blank + each[2] + self.blank + each[3] + \
+                           self.blank + each[4] + self.blank + date + self.blank + each[6] + self.blank + each[7]
                 text += content.replace('\n', '').replace('\r', '') + '\n'
                 result = True
             else:
@@ -514,13 +521,16 @@ class dianpingSchedule:
         shop_info = config.ENTAINMET_INFO % config.PROVINCE
         shop_cmt = config.ENTAINMENT_CMT % (
             config.PROVINCE, min_date, max_date)
+        shop_list = config.RESTAURANT_LIST % config.PROVINCE
         hdfs_shop_info = config.HDFS % (
             os.path.split(shop_info)[1])
         hdfs_shop_cmt = config.HDFS % (os.path.split(shop_cmt)[1])
+        hdfs_shop_list = config.HDFS % (os.path.split(shop_list)[1])
         try:
             hdfs = HDFileSystem(host='192.168.100.178', port=8020)
             hdfs.put(shop_info, hdfs_shop_info)
             hdfs.put(shop_cmt, hdfs_shop_cmt)
+            hdfs.put(shop_list, hdfs_shop_list)
         except Exception as e:
             print('集群挂了', e)
 

@@ -24,21 +24,21 @@ AREA_FILE = os.path.join(os.path.abspath(PATH), 'provs_city_code.txt')
 
 CATEGORY_FOOD = os.path.join(os.path.abspath(PATH), 'food_list.txt')
 
-RESTAURANT_LIST = os.path.join(os.path.abspath(PATH), 'restaurant_shop_list.txt')
+RESTAURANT_LIST = os.path.join(os.path.abspath(PATH), 'restaurant_shop_list_%s.txt')
 
-RESTAURANT_INFO = os.path.join(os.path.abspath(PATH), 'restaurant_shop_info.txt')
+RESTAURANT_INFO = os.path.join(os.path.abspath(PATH), 'restaurant_shop_info_%s.txt')
 
 EX_RESTAURANT_ID_LIST = os.path.join(os.path.abspath(PATH), 'ex_restaurant_list.txt')
 
-RESTAURANT_CMT = os.path.join(os.path.abspath(PATH), 'restaurant_cmt_%s_%s.txt')
+RESTAURANT_CMT = os.path.join(os.path.abspath(PATH), 'restaurant_cmt_%s_%s_%s.txt')
 
 '''*****************************娱乐*****************************************************'''
 
 CATEGORY_ENTAINMENT = os.path.join(os.path.abspath(PATH), 'entainment_list.txt')
 
-ENTAINMENT_LIST = os.path.join(os.path.abspath(PATH), 'entainment_shop_list.txt')
+ENTAINMENT_LIST = os.path.join(os.path.abspath(PATH), 'entainment_shop_list_%s.txt')
 
-ENTAINMET_INFO = os.path.join(os.path.abspath(PATH), 'entainment_shop_info.txt')
+ENTAINMET_INFO = os.path.join(os.path.abspath(PATH), 'entainment_shop_info_%s.txt')
 
 EX_ENTAINMENT_ID_LIST = os.path.join(os.path.abspath(PATH), 'ex_entainment_list.txt')
 
@@ -48,13 +48,13 @@ ENTAINMENT_CMT = os.path.join(os.path.abspath(PATH), 'entainment_cmt_%s_%s_%s.tx
 
 CATEGORY_SHOPPING = os.path.join(os.path.abspath(PATH), 'shopping_list.txt')
 
-SHOPPING_LIST = os.path.join(os.path.abspath(PATH), 'shopping_shop_list.txt')
+SHOPPING_LIST = os.path.join(os.path.abspath(PATH), 'shopping_shop_list_%s.txt')
 
-SHOPPING_INFO = os.path.join(os.path.abspath(PATH), 'shopping_shop_info.txt')
+SHOPPING_INFO = os.path.join(os.path.abspath(PATH), 'shopping_shop_info_%s.txt')
 
 EX_SHOPPING_ID_LIST = os.path.join(os.path.abspath(PATH), 'ex_shopping_list.txt')
 
-SHOPPING_CMT = os.path.join(os.path.abspath(PATH), 'shopping_cmt_%s_%s.txt')
+SHOPPING_CMT = os.path.join(os.path.abspath(PATH), 'shopping_cmt_%s_%s_%s.txt')
 
 '''***************************hdfs******************************************'''
 HDFS = '/user/spider/bianmu_22_data/%s'
