@@ -9,6 +9,8 @@
 
 2017-11-24 修改逻辑，跟随网页改版
 2017-11-27 修改逻辑，开始开发评论持久更新问题，开发自动提交模块
+2017-11-28 进一步修改逻辑，并部署
+
 '''
 
 import config
@@ -55,7 +57,7 @@ class dianpingEntainmentEngine:
         # 这里要做一个增量列表更新
         start_urls = self.pipe.construct_url()
         shop_set = self.pipe.get_shop_list_set()
-        pool = multiprocessing.Pool(2)
+        pool = multiprocessing.Pool(1)
         for i in start_urls:
             # self.get_shop_list(i, shop_set)
             pool.apply_async(self.get_shop_list, (i, shop_set))
@@ -80,7 +82,7 @@ class dianpingEntainmentEngine:
         # 也是要做一个清洗，做一个增量更新
         shop_list = self.pipe.get_shop_list()
         shop_list_already = self.pipe.get_shop_list_set()
-        pool = multiprocessing.Pool(2)
+        pool = multiprocessing.Pool(1)
         for each in shop_list:
             if each[0] not in shop_list_already:
                 # self.get_info(each)
@@ -100,7 +102,7 @@ class dianpingEntainmentEngine:
         # 在这里不关心到底有多少的评论，有评论就抓取，无评论就跳过。 按照日期来过滤
         # 对于新增加的店铺实现全部评论抓取
         shop_list = self.pipe.get_shop_list()
-        pool = multiprocessing.Pool(2)
+        pool = multiprocessing.Pool(1)
         for each in shop_list:
             pool.apply_async(self.get_comments, (each, min_date, max_date))
         pool.close()
@@ -381,7 +383,7 @@ class dianpingEntainmentPipeline:
         shop['区县简称'] = info[9]
         shop['地区编码'] = info[10]
         shop['url'] = url
-        with open(config.ENTAINMET_INFO, 'a', encoding=self.code) as f:
+        with open(config.ENTAINMET_INFO % config.PROVINCE, 'a', encoding=self.code) as f:
             # text = ''
             # for i in config.ENTAINMENT_DATA_L:
             #     text += shop[i].replace('&', '').replace('\n', '').replace('\r', '').replace('None', '') + self.blank
@@ -516,17 +518,7 @@ class dianpingSchedule:
     # 评论的更新，每一次从上一次的 end_date 开始，一开始执行就设置本次的end_date
     """
 
-    def execute(self):
-        with open(config.MAX_DATE_FILE_ENTERTAIN, 'w', encoding='utf8') as f:
-            f.write(datetime.datetime.today().strftime('%Y-%m-%d'))
-        min_date = open(
-            config.MIN_DATE_FILE_ENTERTAIN,
-            'r',
-            encoding='utf8').read()
-        max_date = open(
-            config.MAX_DATE_FILE_ENTERTAIN,
-            'r',
-            encoding='utf8').read()
+    def execute(self, min_date, max_date):
         dpe = dianpingEntainmentEngine()
         dpe.execute_get_catgory()
         dpe.execute_get_shop_list()
@@ -538,15 +530,26 @@ class dianpingSchedule:
 
     def main(self):
         while True:
-            self.execute()
-            self.load_2_hdfs()
+            with open(config.MAX_DATE_FILE_ENTERTAIN, 'w', encoding='utf8') as f:
+                f.write(datetime.datetime.today().strftime('%Y-%m-%d'))
+            min_date = open(
+                config.MIN_DATE_FILE_ENTERTAIN,
+                'r',
+                encoding='utf8').read()
+            max_date = open(
+                config.MAX_DATE_FILE_ENTERTAIN,
+                'r',
+                encoding='utf8').read()
+            self.execute(min_date, max_date)
+            self.load_2_hdfs(min_date, max_date)
 
-    def load_2_hdfs(self):
-        shop_info = config.ENTAINMET_INFO
-        shop_cmt = config.ENTAINMENT_CMT
+    def load_2_hdfs(self, min_date, max_date):
+        shop_info = config.ENTAINMET_INFO % config.PROVINCE
+        shop_cmt = config.ENTAINMENT_CMT % (
+            config.PROVINCE, min_date, max_date)
         hdfs_shop_info = config.HDFS % (
-            os.path.split(config.ENTAINMET_INFO)[1])
-        hdfs_shop_cmt = config.HDFS % (os.path.split(config.ENTAINMENT_CMT)[1])
+            os.path.split(shop_info)[1])
+        hdfs_shop_cmt = config.HDFS % (os.path.split(shop_cmt)[1])
         try:
             hdfs = HDFileSystem(host='192.168.100.178', port=8020)
             hdfs.put(shop_info, hdfs_shop_info)
@@ -557,6 +560,4 @@ class dianpingSchedule:
 
 if __name__ == '__main__':
     dps = dianpingSchedule()
-    # command = config.COMMAND_ENTAINMENT
-    # dps.execute(command)
     dps.main()
