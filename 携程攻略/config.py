@@ -10,8 +10,11 @@ RESTAURANT_COMMAND = 'cmt'
 SHOPPING_COMMAND = 'cmt'
 
 # 因为评论不做天更新的，因此，评论获取指定的一段时间内的全部评论
+# 新逻辑中，被弃用
 CMT_START_DATE = '2012-01-01'
 CMT_START_END = '2017-10-25'
+
+
 
 PATH = 'Data'
 if not os.path.exists(PATH):
@@ -26,6 +29,12 @@ if not os.path.exists(LIST):
     os.mkdir(os.path.abspath(LIST))
 
 ALL_CITY_LIST = os.path.join(os.path.abspath(LIST), 'city_list_total.txt')
+
+SHOP_CMT_START = os.path.join(os.path.abspath(LIST), 'start_date_shop.txt')
+SHOP_CMT_END = os.path.join(os.path.abspath(LIST), 'end_date_shop.txt')
+
+RESTAURANT_CMT_START = os.path.join(os.path.abspath(LIST), 'start_date_food.txt')
+RESTAURANT_CMT_END = os.path.join(os.path.abspath(LIST), 'end_date_food.txt')
 
 #
 
@@ -57,10 +66,10 @@ if not os.path.exists(RESTAURANT_SHOP_EX):
     f = open(RESTAURANT_SHOP_EX, 'w+')
     f.close()
 
-RESTAURANT_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'restaurant_shop_cmt.txt')
-if not os.path.exists(RESTAURANT_SHOP_CMT):
-    f = open(RESTAURANT_SHOP_CMT, 'w+')
-    f.close()
+RESTAURANT_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'restaurant_shop_cmt_%s_%s.txt')
+# if not os.path.exists(RESTAURANT_SHOP_CMT):
+#     f = open(RESTAURANT_SHOP_CMT, 'w+')
+#     f.close()
 
 RESTAURANT_CMT_DONE = os.path.join(os.path.abspath(PATH), 'restaurant_cmt_done.txt')
 if not os.path.exists(RESTAURANT_CMT_DONE):
@@ -88,10 +97,10 @@ if not os.path.exists(SHOPPING_SHOP_LIST_EX):
     f = open(SHOPPING_SHOP_LIST_EX, 'w+')
     f.close()
 
-SHOPPING_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'shopping_shop_cmt.txt')
-if not os.path.exists(SHOPPING_SHOP_CMT):
-    f = open(SHOPPING_SHOP_CMT, 'w+')
-    f.close()
+SHOPPING_SHOP_CMT = os.path.join(os.path.abspath(PATH), 'shopping_shop_cmt_%s_%s.txt')
+# if not os.path.exists(SHOPPING_SHOP_CMT):
+#     f = open(SHOPPING_SHOP_CMT, 'w+')
+#     f.close()
 
 SHOPPING_CMT_DONE = os.path.join(os.path.abspath(PATH), 'shopping_cmt_done.txt')
 if not os.path.exists(SHOPPING_CMT_DONE):
@@ -100,30 +109,10 @@ if not os.path.exists(SHOPPING_CMT_DONE):
 
 
 # 代理
-
-def get_proxy():
-    # 要访问的目标页面
-    # targetUrl = "http://test.abuyun.com/proxy.php"
-    # 代理服务器
-    proxyHost = "proxy.abuyun.com"
-    proxyPort = "9010"
-
-    # 代理隧道验证信息
-    proxyUser = "HY3JE71Z6CDS782P"
-    proxyPass = "CE68530DAD880F3B"
-
-    proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
-        "host": proxyHost,
-        "port": proxyPort,
-        "user": proxyUser,
-        "pass": proxyPass,
-    }
-
-    proxies = {
-        "http": proxyMeta,
-        "https": proxyMeta,
-    }
-    return proxies
+PROXY = {
+    "http": "http://HY3JE71Z6CDS782P:CE68530DAD880F3B@proxy.abuyun.com:9010",
+    "https": "http://HY3JE71Z6CDS782P:CE68530DAD880F3B@proxy.abuyun.com:9010",
+}
 
 # 编码
 BLANK = '\u0001'
@@ -234,3 +223,5 @@ SHOPPING_DICT_L = [
     "交通信息", "周边信息", "简介", "国别", "省自治区全称", "省自治区简称", "市州全称", "市州简称",
     "区县全称", "区县简称", "地区编码", "url",
 ]
+
+HDFS_PATH = '/user/spider/bianmu_22_data/%s'

@@ -11,10 +11,16 @@ __author__ = 'Wang Jia Wei'
 import requests
 import json
 import re
+import os
 import config
+import datetime
 from faker import Faker
 import multiprocessing
 from lxml import etree
+try:
+    from hdfs3 import HDFileSystem
+except:
+    pass
 
 class ctripShopEngine:
     def __init__(self) -> None:
@@ -27,17 +33,18 @@ class ctripShopEngine:
         """
         获取携程攻略各目的地的餐馆列表
         """
-        # pool = multiprocessing.Pool(2)
+        pool = multiprocessing.Pool(2)
         city_list = (i.strip().split(setting.blank) for i in open(setting.city_list, 'r', encoding=setting.encode)) # 获取已抓取的城市列表
         for each in city_list:
-            self.shop_list_logic(each)
-            # pool.apply_async(self.shop_list, (each,))
-        # pool.close()
-        # pool.join()
+            # self.shop_list_logic(each)
+            pool.apply_async(self.shop_list_logic, (each,))
+        pool.close()
+        pool.join()
 
     def shop_list_logic(self, info):
         page, next_page = 1, True
         while next_page:
+            print(info, page)
             html = self.down.shop_list(info[-2], page) if info[-1] == '' else self.down.shop_list_area(info[-2], info[-1], page)
             shop_list = self.spider.shop_list(html) if html is not 'bad_requests' else []
             next_page = True if not shop_list == [] else False
@@ -54,15 +61,15 @@ class ctripShopEngine:
         4. 注意这里需要做一个增量更新
         5. 提供两种方式抓取，普通，和多进程两种
         """
-        # pool = multiprocessing.Pool(2)
+        pool = multiprocessing.Pool(2)
         shop_ex_set = set(i.strip().split(setting.blank)[0]for i in open(setting.restaurant_ex, 'r', encoding=setting.encode))
         shop_list = (i.strip().split(setting.blank)for i in open(setting.restaurant_list, 'r', encoding=setting.encode))
         for each in shop_list:
             if each[8] not in shop_ex_set:
-                self.shop_info_pid_logic(each)
-                # pool.apply_async(self.shop_info_pid_logic, (each,))
-        # pool.close()
-        # pool.join()
+                # self.shop_info_pid_logic(each)
+                pool.apply_async(self.shop_info_pid_logic, (each,))
+        pool.close()
+        pool.join()
 
     def shop_info_pid_logic(self, info):
         """
@@ -75,26 +82,32 @@ class ctripShopEngine:
         self.pipe.save_shop_info_pid(data, info) if not data == [] and data[2] is not '1' else ''
 
 
-    def shop_comment(self):
+    def shop_comment(self, start, end):
         """
         这里作为获取每个店铺的评论模块
         """
+        pool = multiprocessing.Pool(1)
         shop_list = (i.strip().split(setting.blank)for i in open(setting.restaurant_ex, 'r', encoding=setting.encode))
-        cmt_done = set(i.strip() for i in open(setting.comment_done, 'r', encoding=setting.encode))
+        # cmt_done = set(i.strip() for i in open(setting.comment_done, 'r', encoding=setting.encode))
         for each in shop_list:
-            if each[0] not in cmt_done:
-                self.shop_comment_logic(shop_id=each[0], pid=each[1], cnc=each[2])
-                self.pipe.save_cmt_done(each[0])
+            # if each[0] not in cmt_done:
+            # self.shop_comment_logic(each[0], each[1], each[2])
+                # self.pipe.save_cmt_done(each[0])
+            pool.apply_async(self.shop_comment_logic, (each[0], each[1], each[2], start, end))
+        pool.close()
+        pool.join()
 
-    def shop_comment_logic(self, **kwargs):
+    def shop_comment_logic(self, shop_id, pid, cnc, start, end):
         """
         由于网站恶心，只能看1000条，100页是上限。
         """
+        print(shop_id, pid, cnc)
         num, next_page = 1, True
         while next_page:
-            html = self.down.shop_comment(**kwargs, page=num)
+            print(num)
+            html = self.down.shop_comment(pid, cnc, num, shop_id)
             cmt_list = self.spider.shop_comment(html) if html is not 'bad_requests' else []
-            next_page = self.pipe.save_shop_cmt(cmt_list, kwargs.get('shop_id')) if not cmt_list == [] else False
+            next_page = self.pipe.save_shop_cmt(cmt_list, shop_id, start, end) if not cmt_list == [] else False
             if num == 100:
                 break
             num += 1
@@ -119,6 +132,7 @@ class ctripShopDownloader:
                 # 这里暂时只对 2xx和4xx做处理
             except Exception as e:
                 print('GET请求过程中出错', e)
+                args[1]['Proxy-Switch-Ip'] = 'yes'
             retry -= 1
         return response
 
@@ -140,13 +154,13 @@ class ctripShopDownloader:
         html = self.do_get_requests(url, headers)
         return html
 
-    def shop_comment(self, **kwargs):
+    def shop_comment(self, pid, cnc, page, shop_id):
         url = setting.shop_comment_url
         data = setting.comment_data
-        data['poiID'] = kwargs.get('pid')
-        data['districtEName'] = kwargs.get('cnc')
-        data['pagenow'] = kwargs.get('page')
-        data['resourceId'] = kwargs.get('shop_id')
+        data['poiID'] = pid
+        data['districtEName'] = cnc
+        data['pagenow'] = page
+        data['resourceId'] = shop_id
         headers = setting.headers_xml
         html = self.do_get_requests(url, headers, data)
         return html
@@ -278,10 +292,8 @@ class ctripShopPipeline:
         with open(setting.restaurant_ex, 'a', encoding=setting.encode) as f:
             f.write(text_ex)
 
-    def save_shop_cmt(self, cmt_list, shop_id):
+    def save_shop_cmt(self, cmt_list, shop_id, start, end):
         text = ''
-        start = setting.start_date
-        end = setting.end_date
         result = False
         for each in cmt_list:
             if each[-1] >= start and each[-1] <= end:
@@ -290,7 +302,7 @@ class ctripShopPipeline:
                 result = True
             else:
                 result = False
-        with open(setting.comment_txt, 'a', encoding=setting.encode) as f:
+        with open(setting.comment_txt % (start, end), 'a', encoding=setting.encode) as f:
             f.write(text)
         return result
 
@@ -308,7 +320,7 @@ class setting:
 
     encode = config.ENCODING
 
-    proxy = config.get_proxy()
+    proxy = config.PROXY
 
     city_list = config.CITY_LIST
 
@@ -345,6 +357,7 @@ class setting:
     end_date = config.CMT_START_END
 
 class ctripShopExecute:
+    """
     def __init__(self, commend):
         self.commend = commend
 
@@ -370,6 +383,46 @@ class ctripShopExecute:
             cse.shop_comment()
             del cse
 
+    # 新的调度将执行, 只抓取9个省份的数据
+    # 不断重复抓取
+    # 每次更新列表，添加新的info信息
+    # 按抓取日期上床评论
+    """
+    def execute(self, start_date, end_date):
+
+        cse = ctripShopEngine()
+        cse.shop_list()
+        cse.shop_info_pid()
+        cse.shop_comment(start_date, end_date)
+        with open(config.RESTAURANT_CMT_START, 'w', encoding=setting.encode) as f:
+            f.write(datetime.datetime.today().strftime('%Y-%m-%d'))
+        del cse
+
+    def main(self):
+        while True:
+            # 一开始将设置当时的时间为结束时间
+            with open(config.RESTAURANT_CMT_END, 'w', encoding=setting.encode) as f:
+                f.write(datetime.datetime.today().strftime('%Y-%m-%d'))
+            start_date = open(config.RESTAURANT_CMT_START, 'r', encoding=setting.encode).read()
+            end_date = open(config.RESTAURANT_CMT_END, 'r', encoding=setting.encode).read()
+            self.execute(start_date, end_date)
+            self.load2hdfs(start_date, end_date)
+
+    def load2hdfs(self, start, end):
+        cmt = config.RESTAURANT_SHOP_CMT % (start, end)
+        shop_info = config.RESTAURANT_SHOP_INFO
+        shop_list = config.RESTAURANT_SHOP_LIST
+        hdfs_cmt = config.HDFS_PATH % (os.path.split(cmt)[1])
+        hdfs_info = config.HDFS_PATH % (os.path.split(shop_info)[1])
+        hdfs_shop_list = config.HDFS_PATH % (os.path.split(shop_list)[1])
+        try:
+            hdfs = HDFileSystem(host='192.168.100.178', port=8020)
+            hdfs.put(cmt, hdfs_cmt)
+            hdfs.put(shop_info, hdfs_info)
+            hdfs.put(shop_list, hdfs_shop_list)
+        except Exception as e:
+            print('集群挂了', e)
+
 if __name__ == '__main__':
-    cse = ctripShopExecute(config.RESTAURANT_COMMAND)
-    cse.execute()
+    cse = ctripShopExecute()
+    cse.main()
