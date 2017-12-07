@@ -51,6 +51,7 @@ class ctripShopEngine:
             if next_page:
                 self.pipe.save_shop_list(info, shop_list)
             page += 1
+            break
 
 
     def shop_info_pid(self):
@@ -260,7 +261,7 @@ class ctripShopPipeline:
             context = setting.blank.join(city)
             text += context + setting.blank + setting.blank.join(each) + '\n'
         with open(setting.restaurant_list, 'a', encoding=setting.encode) as f:
-            f.write(text)
+            f.write(re.sub('\n|\r', '', text))
 
     def save_shop_info_pid(self, data, shop_info):
         info = setting.restaurant_dict
