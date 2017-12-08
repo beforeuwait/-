@@ -135,7 +135,7 @@ SHOP_CMT = {
 
 SHOP_CMT_HISTORY = {
     'restaurant': os.path.join(os.path.abspath(PATH), '%s_restaurant_cmt_history.txt' % PATH),
-    'shopping': os.path.join(os.path.abspath(PATH), '%s_shopping_shop_cmt_history.txt' % PATH)
+    'shopping': os.path.join(os.path.abspath(PATH), '%s_shopping_cmt_history.txt' % PATH)
 }
 
 START_DATE = {

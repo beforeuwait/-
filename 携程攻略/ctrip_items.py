@@ -1,5 +1,6 @@
 # coding=utf8
 
+__auhtor__ = 'WangJiaWei'
 '''
 记录：
     2017.12.04 重新开发，按照规范要求，解决无缘无故程序死掉的问题
@@ -182,6 +183,7 @@ class CtripItemsEngine(object):
                 next_page = False
             if num == 100:
                 break
+            shop_cmt['data'].clear()
             num += 1
 
 
@@ -206,7 +208,8 @@ class CtripItemsEngine(object):
         elif response['error'] is not '':
             logging.warning('%s, url: %s, params: %s' % (response['error'], response['url'], response['params']))
         else:
-            logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
+            # logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
+            pass
 
 class CtripItemsDownloader(object):
     """下载模块，一切请求信息都在这里做处理
