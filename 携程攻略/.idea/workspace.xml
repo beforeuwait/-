@@ -22,8 +22,8 @@
       <file leaf-file-name="ctrip_items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ctrip_items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="211" column="94" lean-forward="false" selection-start-line="211" selection-start-column="94" selection-end-line="211" selection-end-column="94" />
               <folding>
                 <element signature="e#244#253#0" expanded="true" />
               </folding>
@@ -103,8 +103,8 @@
         <option value="$PROJECT_DIR$/四川/四川_restaurant_shop_list.txt" />
         <option value="$PROJECT_DIR$/四川/四川_shopping_shop_list.txt" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/ctrip_items.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ctrip_items.py" />
       </list>
     </option>
   </component>
@@ -658,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ctrip_items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="211" column="94" lean-forward="false" selection-start-line="211" selection-start-column="94" selection-end-line="211" selection-end-column="94" />
           <folding>
             <element signature="e#244#253#0" expanded="true" />
           </folding>

@@ -209,8 +209,7 @@ class CtripItemsEngine(object):
         elif response['error'] is not '':
             logging.warning('%s, url: %s, params: %s' % (response['error'], response['url'], response['params']))
         else:
-            # logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
-            pass
+            logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
 
 
 class CtripItemsDownloader(object):
