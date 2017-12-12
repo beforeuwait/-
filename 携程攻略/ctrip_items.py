@@ -6,6 +6,7 @@ __auhtor__ = 'WangJiaWei'
     2017.12.04 重新开发，按照规范要求，解决无缘无故程序死掉的问题
     2017.12.06 完成改版后的demo1，取消多进程，一是并发有限，二容易出现宕掉的情况，三是给了充裕的时间
     2017.12.07 继续完成两个脚本的整合
+    2017.12.12 修改逻辑，每次请求后，对requests_x.log 模块进行清空，只留最新的log信息
 '''
 
 
@@ -210,6 +211,7 @@ class CtripItemsEngine(object):
         else:
             # logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
             pass
+
 
 class CtripItemsDownloader(object):
     """下载模块，一切请求信息都在这里做处理
@@ -493,8 +495,8 @@ class CtripItemsSchedule(object):
             self.load_2_hdfs()
             end = time.time()
             cost = int(end-start)
-            if cost > 0:
-                time.sleep(cost)
+            if cost < 3600*24*7:
+                time.sleep(3600*24*7 - cost)
                 logging.debug('抓取完毕，开始休眠')
             else:
                 continue
