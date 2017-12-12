@@ -8,12 +8,15 @@ __author__ = 'WangJiaWei'
 """
 
 import re
-import time
+import os
 import json
+import datetime
+import time
 import logging
 import requests
 from faker import Faker
 from lxml import etree
+from hdfs3 import HDFileSystem
 import config
 
 class LinkIpEngine(object):
@@ -39,16 +42,29 @@ class LinkIpEngine(object):
         login = self.down.login()
 
     def get_news_types(self):
-        """根据不同的分类，抓取不同的关键词的舆情新闻"""
-        self.get_data()
-        pass
-    def get_data(self):
+        """根据不同的分类，抓取不同的关键词的舆情新闻
+
+        每次获取列表都要对id_list进行清空
+        以及 news_list进行清空
         """
-        这是一个测试
+        f = open(setting.news_list_ids_file, 'w+')
+        f.close()
+
+        f = open(setting.news_list_file, 'w+')
+        f.close()
+
+        id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
+        for key_word in setting.key_words:
+            self.get_data(key_word, id_set)
+
+
+    def get_data(self, key_word, id_set):
         """
-        page, num = 1, 1
+        每次都是请求 1个月前到当前请求的数据，如果id一旦重复，则停止
+        """
+        page, num, next_page = 1, 1, True
         while num <= page:
-            response = self.down.get_data(num)
+            response = self.down.get_data(num, key_word[1])
             # 处理cookie，出现新的jessionid则顺势添加
             cookie = response['cookies'].get('JSESSIONID', 'none')
             if cookie is not 'none':
@@ -57,28 +73,55 @@ class LinkIpEngine(object):
             news_list = self.spider.news_list(response['response'], news_list)
             page = news_list['page']
             if not news_list['list'] == []:
-                self.pipe.save_news_list(news_list['list'], '主题')
+                next_page = self.pipe.save_news_list(news_list['list'], key_word[0], id_set)
+            else:
+                next_page = False
             #清理
             news_list['list'].clear()
             news_list['page'] = 1
             news_list['json_error'] = False
             num += 1
-            break
+            # 遇到已采集就停止
+            if not next_page:
+                break
 
     def get_info(self):
         """抓取每天舆情的快照
+
+        每次开始前要将 news_info 清空
         """
-        id_list = (i.strip() for i in open(setting.news_list_ids, 'r', encoding=setting.encode))
+        f = open(setting.news_info_file, 'w+')
+        f.close()
+
+        id_list = (i.strip() for i in open(setting.news_list_ids_file, 'r', encoding=setting.encode))
         for id in id_list:
             self.get_info_logic(id)
-            break
+
 
     def get_info_logic(self, id):
         response = self.down.get_info(id)
+        info = setting.news_info_content
         if response['response'] is not 'bad_request':
-            info = setting.news_info_content
             info = self.spider.news_info_content(response['response'], info)
             self.pipe.save_news_info(id, info)
+        # 清空字典
+        info['content'] = ''
+        info['source'] = ''
+        info['author'] = ''
+        info['time'] = ''
+
+
+    def load_2_hdfs(self):
+        news_list = setting.news_list_file
+        hdfs_news_list = setting.hdfs % (os.path.split(news_list)[1])
+        news_info = setting.news_info_file
+        hdfs_news_info = setting.hdfs % (os.path.split(news_info)[1])
+        try:
+            hdfs = HDFileSystem(host='192.168.100.178', port=8020)
+            hdfs.put(news_list, hdfs_news_list)
+            hdfs.put(news_info, hdfs_news_info)
+        except:
+            print('集群挂了')
 
 class LinkIpDownloader(object):
     """sessin 模块
@@ -162,11 +205,14 @@ class LinkIpDownloader(object):
         response = self.POST_request(url, headers, data)
         return response
 
-    def get_data(self, num):
+    def get_data(self, num, theme_id):
         url = setting.url_data
         headers = setting.headers_xml
         data = setting.request_data
         data['currPage'] = num
+        data['themeId'] = theme_id
+        data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
+        data['endDay'] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
         response = self.POST_request(url, headers, data)
         return response
 
@@ -178,6 +224,8 @@ class LinkIpDownloader(object):
 
 class LinkIpSpider(object):
     """作为spider的存在
+
+    各种解析规则
     """
 
     def news_list(self, html, news_list):
@@ -205,37 +253,47 @@ class LinkIpSpider(object):
 
 
 class LinkIpPipeline(object):
+    """管道
 
-    def save_news_list(self, news_list, type):
+    作为数据存储清洗的地方
+    """
+
+    def save_news_list(self, news_list, type, id_set):
         """作为保存列表的存在
 
         同时保存一份 id 的列表用来避免重复录入
         :param news_list:
         """
+        next_page = True
         text = ''
-        for news in news_list:
-            news.append(type)
-            text += setting.blank.join(news) + '\n'
         record_id = ''
-        for id in news_list:
-            record_id += id[0] + '\n'
-        re.sub('\r|\n|', '', text)
+        for news in news_list:
+            if news[0] not in id_set:
+                news.append(type)
+                text += re.sub('\r|\n| ', '', setting.blank.join(news)) + '\n'
+                record_id += news[0] + '\n'
+                next_page = True
+            else:
+                next_page = False
+
         with open(setting.news_list_file, 'a', encoding=setting.encode) as f:
             f.write(text)
         with open(setting.news_list_history_file, 'a', encoding=setting.encode) as f:
             f.write(text)
-        with open(setting.news_list_ids, 'a', encoding=setting.encode) as f:
+        with open(setting.news_list_ids_file, 'a', encoding=setting.encode) as f:
             f.write(record_id)
-        return
+        with open(setting.news_list_ids_history_file, 'a', encoding=setting.encode) as f:
+            f.write(record_id)
+        return next_page
 
     def save_news_info(self, id, info):
         text = setting.blank.join([id, info['author'], info['time'], info['source'], info['content']])
-        re.sub('\r|\n|', '', text)
-        with open(setting.news_info, 'a', encoding=setting.encode) as f:
-            f.write(text)
+        text = re.sub('\r|\n', '', text)
+        with open(setting.news_info_file, 'a', encoding=setting.encode) as f:
+            f.write(text + '\n')
 
-        with open(setting.news_info_history, 'a', encoding=setting.encode) as f:
-            f.write(text)
+        with open(setting.news_info_history_file, 'a', encoding=setting.encode) as f:
+            f.write(text + '\n')
 
 class setting:
     encode = config.ENCODE
@@ -255,18 +313,37 @@ class setting:
     list_elements = config.LIST_ELEMENTS
     news_list_file = config.NEWS_LIST_FILE
     news_list_history_file = config.NEWS_LIST_HISTORY_FILE
-    news_list_ids = config.NEWS_LIST_IDS_FILE
-    news_list_ids_history = config.NEWS_LIST_IDS_HISTORY_FILE
-    news_info = config.NEWS_INFO_FILE
-    news_info_history = config.NEWS_INFO_HISTORY_FILE
+    news_list_ids_file = config.NEWS_LIST_IDS_FILE
+    news_list_ids_history_file = config.NEWS_LIST_IDS_HISTORY_FILE
+    news_info_file = config.NEWS_INFO_FILE
+    news_info_history_file = config.NEWS_INFO_HISTORY_FILE
     url_yq = config.URL_YQ
     news_info_content = config.NEWS_INFO_CONTENT
     info_parse = config.INFO_PARSE
+    key_words = config.KEYWORDS
+    hdfs = config.HDFS
+
 
 class LinkIpSchedule(object):
-    pass
+    """这是一个简单的调度
+
+    每小时，重复，反复的执行
+    """
+    def main(self):
+        while True:
+            start = time.time()
+            lie = LinkIpEngine()
+            lie.login_system()
+            lie.get_news_types()
+            lie.get_info()
+            lie.load_2_hdfs()
+            del lie
+            end = time.time()
+            rest_time = int(end-start)
+            if rest_time < 3600:
+                time.sleep(3600 - rest_time)
+
 
 if __name__ == '__main__':
-    lie = LinkIpEngine()
-    lie.login_system()
-    lie.get_info()
+    lis = LinkIpSchedule()
+    lis.main()

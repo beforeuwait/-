@@ -7,6 +7,7 @@ os.chdir(os.path.split(os.path.realpath(__file__))[0])
 BLANK = '\u0001'
 ENCODE = 'utf-8'
 TIME_DELAY = 3
+HDFS = '/user/spider/linkip_yq/%s'
 
 # INFO
 
@@ -29,7 +30,7 @@ REQUEST_DATA = {
     'type': 0,
     'startDay': '2017-12-05 00:00',
     'endDay': '2017-12-11 23:59',
-    'page': 5,
+    'page': 100,
     'allKeywords': '',
     'orKeywords': '',
     'noKeywords': '',
@@ -109,7 +110,7 @@ NEWS_LIST_HISTORY_FILE = os.path.abspath('news_list_history.txt')
 NEWS_LIST_IDS_FILE = os.path.abspath('news_list_id.txt')
 NEWS_LIST_IDS_HISTORY_FILE = os.path.abspath('news_list_ids_history.txt')
 NEWS_INFO_FILE = os.path.abspath('news_info.txt')
-NEWS_INFO_HISTORY_FILE = os.path.abspath('news_path_history.txt')
+NEWS_INFO_HISTORY_FILE = os.path.abspath('news_info_history.txt')
 
 for each in [NEWS_LIST_FILE,
              NEWS_LIST_HISTORY_FILE,
@@ -121,3 +122,38 @@ for each in [NEWS_LIST_FILE,
     if not os.path.exists(each):
         f = open(each, 'w')
         f.close()
+
+# 关键词
+
+KEYWORDS = [
+    ('西安旅游', '48810'),
+    ('云南石林', '48964'),
+    ('云南世博园', '48965'),
+    ('云南腾冲火山', '48966'),
+    ('丽江古城', '48967'),
+    ('玉龙雪山', '48968'),
+    ('西双版纳热带植物园 ', '48969'),
+    ('崇圣寺三塔文化 ', '48970'),
+    ('普达措国家公园 ', '48971'),
+    ('天山大峡谷 ', '48972'),
+    ('雅安', '48973'),
+    ('绵阳罗浮山', '48974'),
+    ('乌鲁木齐', '48975'),
+    ('吐鲁番', '48976'),
+    ('和田', '48977'),
+    ('丽江', '48978'),
+    ('克拉玛依', '48979'),
+    ('克孜勒苏柯尔克孜', '48980'),
+    ('博尔塔拉', '48981'),
+    ('哈密地区', '48982'),
+    ('阿勒泰', '48983'),
+    ('昌吉', '48984'),
+    ('塔城', '48985'),
+    ('喀什', '48986'),
+    ('新疆伊犁', '48987'),
+    ('新疆巴音', '48988'),
+    ('新疆阿克苏', '48989'),
+    ('玉溪', '48990'),
+    ('德宏', '48991'),
+    ('昆明', '48993'),
+]
