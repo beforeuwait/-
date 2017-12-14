@@ -50,6 +50,7 @@ class DianPingItemsEngine(object):
         self.pipe.save_category_list(category_list['data'])
         # 清理
         category_list['data'].clear()
+        return
 
     def get_category_logic(self, city):
         data = []
@@ -84,6 +85,7 @@ class DianPingItemsEngine(object):
             # pool.apply_async(self.shop_list_logic, (info, ))
         # pool.close()
         # pool.join()
+        return
 
     def shop_list_logic(self, info):
         page = 50
@@ -106,6 +108,7 @@ class DianPingItemsEngine(object):
             response['status_code'] = ''
             response['error'] = ''
             shop_list['data'].clear()
+        return
 
     def construct_url(self):
         """构造请求用的url"""
@@ -136,6 +139,7 @@ class DianPingItemsEngine(object):
                 # pool.apply_async(self.get_info, (each,))
         # pool.close()
         # pool.join()
+        return
 
     def shop_info_logic(self, info):
         response = setting.requests_result
@@ -152,6 +156,7 @@ class DianPingItemsEngine(object):
         response['status_code'] = ''
         response['error'] = ''
         shop_info['data'].clear()
+        return
 
     def update_comments(self, min_date, max_date):
         """这里是作为评论天更新的存在
@@ -168,6 +173,7 @@ class DianPingItemsEngine(object):
             self.update_comments_logic(shop, min_date, max_date)
         # pool.close()
         # pool.join()
+        return
 
     def update_comments_logic(self, shop, min_date, max_date):
         """获取评论的逻辑"""
@@ -188,6 +194,7 @@ class DianPingItemsEngine(object):
             response['params'] = ''
             response['status_code'] = ''
             response['error'] = ''
+        return
 
     def recording_response(self, response):
         """"做记录写入日志
@@ -202,7 +209,7 @@ class DianPingItemsEngine(object):
             logging.warning('%s, url: %s, params: %s' % (response['error'], response['url'], response['params']))
         else:
             logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
-
+        return
 
 class DianPingItemsDownloader(object):
     """作为下载器的存在
@@ -365,6 +372,7 @@ class DianPingItemsPipeline(object):
             text += setting.blank.join([i[0], i[1]]) + '\n'
         with open(setting.category_file[setting.choice], 'w+', encoding=setting.encode) as f:
             f.write(text)
+        return
 
     def save_shop_list(self, data, info):
         content = ''
@@ -377,6 +385,7 @@ class DianPingItemsPipeline(object):
                 content += setting.blank.join([shop_id, each[1], text]) + '\n'
         with open(setting.shop_list_file[setting.choice], 'a', encoding=setting.encode) as f:
             f.write(content)
+        return
 
     def save_shop_info(self, data, info, url):
         shop = setting.data_style[setting.choice]
@@ -410,6 +419,7 @@ class DianPingItemsPipeline(object):
         # 保存这家店的ID
         with open(setting.shop_exists[setting.choice], 'a', encoding=setting.encode) as p:
             p.write(info[0] + '\n')
+        return
 
     def save_shop_cmt(self, data, info, min_date, max_date):
         result = True
@@ -485,28 +495,37 @@ class DianPingItemsSchedule(object):
     每次更新抓取时，当前日期没最大抓取日期，并在本次结束后写入文档里
     """
 
-    def execute(self):
+    def execute(self, count):
         max_date = datetime.datetime.today().strftime('%Y-%m-%d')
         min_date = open(setting.start_date[setting.choice], 'r', encoding=setting.encode).read()
         dpie = DianPingItemsEngine()
-        dpie.get_catgory()
+        if count == 1:
+            dpie.get_catgory()
         dpie.shop_list()
         dpie.shop_info()
         dpie.update_comments(min_date, max_date)
         del dpie
         with open(setting.start_date[setting.choice], 'w+', encoding=setting.encode) as f:
             f.write(max_date)
+        return
 
     def main(self):
+        # count存在的意思在于，只有第一次获取分类后，就不再花请求去获取分类
+        count = 1
         while True:
+            # 清理日志
+            f = open('requests_%s.log' % setting.provs, 'w+')
+            f.close()
             record_start = time.time()
-            self.main()
+            self.execute(count)
             self.load_2_hdfs()
             record_end = time.time()
             lasting = int(record_end-record_start)
             total_seconds = 7*24*3600
             if lasting < total_seconds:
                 time.sleep(total_seconds-lasting)
+            count += 1
+        return
 
     def load_2_hdfs(self):
         shop_list = setting.shop_list_file[setting.choice]
@@ -522,6 +541,7 @@ class DianPingItemsSchedule(object):
             hdfs.put(shop_cmt, hdfs_shop_cmt)
         except Exception as e:
             logging.warning('集群挂了:', e)
+        return
 
 if __name__ == '__main__':
     dpis = DianPingItemsSchedule()
