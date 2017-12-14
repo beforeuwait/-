@@ -405,7 +405,7 @@ class DianPingItemsPipeline(object):
 
         with open(setting.shop_info_file[setting.choice], 'a', encoding=setting.encode) as f:
             text = setting.blank.join([shop[i] for i in setting.data_style_l[setting.choice]])
-            text = re.sub('\r|\n| |&| None', '', text) + '\n'
+            text = re.sub('\r|\n| |&|None', '', text) + '\n'
             f.write(text)
         # 保存这家店的ID
         with open(setting.shop_exists[setting.choice], 'a', encoding=setting.encode) as p:

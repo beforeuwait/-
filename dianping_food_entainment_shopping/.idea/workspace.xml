@@ -20,11 +20,11 @@
       <file leaf-file-name="dianping_items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dianping_items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="444" column="0" lean-forward="true" selection-start-line="444" selection-start-column="0" selection-end-line="444" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="408" column="25" lean-forward="true" selection-start-line="408" selection-start-column="25" selection-end-line="408" selection-end-column="25" />
               <folding>
                 <element signature="e#113#122#0" expanded="true" />
-                <marker date="1513235398941" expanded="true" signature="2554:2789" ph="..." />
+                <marker date="1513240562497" expanded="true" signature="2554:2789" ph="..." />
               </folding>
             </state>
           </provider>
@@ -47,11 +47,11 @@
         <option value="$PROJECT_DIR$/新疆/新疆_entertainment_exists.txt" />
         <option value="$PROJECT_DIR$/新疆/新疆_entertainment_shop_list.txt" />
         <option value="$PROJECT_DIR$/新疆/shopping_category_list.txt" />
-        <option value="$PROJECT_DIR$/dianping_items.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/config_area1.py" />
         <option value="$PROJECT_DIR$/config_area.py" />
+        <option value="$PROJECT_DIR$/dianping_items.py" />
       </list>
     </option>
   </component>
@@ -236,8 +236,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -477,11 +478,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dianping_items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="444" column="0" lean-forward="true" selection-start-line="444" selection-start-column="0" selection-end-line="444" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="408" column="25" lean-forward="true" selection-start-line="408" selection-start-column="25" selection-end-line="408" selection-end-column="25" />
           <folding>
             <element signature="e#113#122#0" expanded="true" />
-            <marker date="1513235398941" expanded="true" signature="2554:2789" ph="..." />
+            <marker date="1513240562497" expanded="true" signature="2554:2789" ph="..." />
           </folding>
         </state>
       </provider>
