@@ -246,7 +246,10 @@ class LinkIpSpider(object):
     def news_info_content(self, html, info):
         selector = etree.HTML(html)
         parse = setting.info_parse
-        info['content'] = selector.xpath(parse['content'])[0].xpath('string(.)')
+        try:
+            info['content'] = selector.xpath(parse['content'])[0].xpath('string(.)')
+        except:
+            info['content'] = ''
         info['source'] = selector.xpath(parse['source'])[0] if selector.xpath(parse['source']) else ''
         info['author'] = selector.xpath(parse['author'])[0] if selector.xpath(parse['author']) else ''
         info['time'] = selector.xpath(parse['time'])[0] if selector.xpath(parse['time']) else ''
