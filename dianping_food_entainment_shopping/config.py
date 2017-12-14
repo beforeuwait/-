@@ -1,17 +1,23 @@
 import os
+import sys
 import logging
 from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-CHOICE = 'entertainment'
+PROVS = sys.argv[1:][0]
+CHOICE = sys.argv[1:][1]
+"""
+# 测试用
+CHOICE = 'food'
 PROVS = '新疆'
+"""
 CITY_LIST = CITY_LIST
 
 # 设置
 BLANK = '\u0001'
 ENCODEING = 'utf8'
-
+HDFS = '/user/spider/dianping/%s'
 # 请求回应 response
 
 REQUESTS_RESULT = {
@@ -33,6 +39,10 @@ SHOP_LIST = {
 SHOP_INFO = {
     'data': [],
     'error': ''
+}
+
+SHOP_CMT = {
+    'data': [],
 }
 
 # logging
@@ -59,6 +69,8 @@ SHOP_URL = 'http://www.dianping.com/search/category/%s/%s/%s%sp'
 
 INFO_URL = 'http://www.dianping.com/ajax/json/shopfood/wizard/BasicHideInfoAjaxFP'
 
+CMT_URL = 'http://www.dianping.com/shop/%s/review_more_latest?pageno=%s'
+
 # xpath
 
 CATEGORY_LIST_PARSE = {
@@ -73,17 +85,28 @@ SHOP_LIST_PARSE = {
     'name': 'div[@class="txt"]/div[@class="tit"]/a/h4/text()',
 }
 
+SHOP_CMT_PARSE = {
+    'data': '//div[@class="comment-mode"]/div[@class="comment-list"]/ul/li',
+    'user': 'div[@class="pic"]/p[@class="name"]/a/text()',
+    'contribution': 'div[@class="pic"]/p[@class="contribution"]/span/@title',
+    'attitute': 'div[@class="content"]/div[@class="user-info"]/span/@title',
+    'socer': 'div[@class="content"]/div[@class="user-info"]/div[@class="comment-rst"]/span/text()',
+    'content': 'div[@class="content"]/div[@class="comment-txt"]/div/text()',
+    'date': 'div[@class="content"]/div[@class="misc-info"]/span[@class="time"]/a/text()',
+    'fav': 'div[@class="content"]/div[@class="comment-recommend"]/text()',
+    'imgs': 'div[@class="content"]/div[@class="shop-photo"]/ul/li',
+}
+
 # cookies
 
 COOKIES = {
     "Cookie": ("_lxsdk_cuid=15f764046b2c8-003bfe4009ee8f-31657c00-13c680-15f764046b3c8;"
                " _lxsdk=15f764046b2c8-003bfe4009ee8f-31657c00-13c680-15f764046b3c8;"
                " _hc.v=92e1ae93-4aec-7711-499b-0502c77845c6.1509517445;"
-               " dper=3a1b49e3683bea7772dddba1e3868a19b0fb2b8f88a9be0b63086064ddac9362;"
                " ua=_%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86;"
                " ctu=a91d9076090ffb8fe11e3982711567ed3409b280252436c851c0d7543e06e90d;"
-               " aburl=1; cye=sanya; cy=345; ll=7fd06e815b796be3df069dec7836c3df;"
-               " s_ViewType=10; _lxsdk_s=1604dd94b9b-fd8-3d6-fa4%7C%7C12")
+               " aburl=1; cye=sanya; ctu=60c2e2547b17f450a8bfd7790239d62d222ffce9390e3acbcc97748c545642d63"
+               "e09c01dfbef72119da3a7f1c9e9cf97; cy=345; s_ViewType=10; _lxsdk_s=16052bd7e02-ca2-817-99d%7C%7C21")
 }
 # PARAMS
 PARAMS = {
@@ -143,6 +166,24 @@ SHOP_ALREADY_EXISTS = {
     'food': os.path.join(os.path.abspath(PROVS), '%s_food_shop_exists.txt' % PROVS),
     'entertainment': os.path.join(os.path.abspath(PROVS), '%s_entertainment_exists.txt' % PROVS),
     'shopping': os.path.join(os.path.abspath(PROVS), '%s_shopping_exists.txt' % PROVS),
+}
+
+SHOP_CMT_FILE = {
+    'food': os.path.join(os.path.abspath(PROVS), '%s_food_cmt.txt' % PROVS),
+    'entertainment': os.path.join(os.path.abspath(PROVS), '%s_entertainment_cmt.txt' % PROVS),
+    'shopping': os.path.join(os.path.abspath(PROVS), '%s_shopping_cmt.txt' % PROVS)
+}
+
+SHOP_CMT_HISTORY_FILE = {
+    'food': os.path.join(os.path.abspath(PROVS), '%s_food_history_cmt.txt' % PROVS),
+    'entertainment': os.path.join(os.path.abspath(PROVS), '%s_entertainment_history_cmt.txt' % PROVS),
+    'shopping': os.path.join(os.path.abspath(PROVS), '%s_shopping_history_cmt.txt' % PROVS)
+}
+
+START_DATE_FILE = {
+    'food': os.path.join(os.path.abspath(PROVS), 'food_start.txt'),
+    'entertainment': os.path.join(os.path.abspath(PROVS), 'entertainment_start.txt'),
+    'shopping': os.path.join(os.path.abspath(PROVS), 'shopping_start.txt'),
 }
 #
 DATA_STYLE = {
@@ -249,18 +290,12 @@ if not os.path.exists(PROVS):
     os.mkdir(os.path.abspath(PROVS))
 
 for each in ['food', 'entertainment', 'shopping']:
-    if not os.path.exists(CATEGORY_FILE[each]):
-        f = open(CATEGORY_FILE[each], 'w+')
-        f.close()
+    for i in [CATEGORY_FILE, SHOP_LIST_FILE, SHOP_INFO_FILE, SHOP_ALREADY_EXISTS, SHOP_CMT_FILE, SHOP_CMT_HISTORY_FILE]:
+        if not os.path.exists(i[each]):
+            f = open(i[each], 'w+')
+            f.close()
 
-    if not os.path.exists(SHOP_LIST_FILE[each]):
-        f = open(SHOP_LIST_FILE[each], 'w+')
-        f.close()
-
-    if not os.path.exists(SHOP_INFO_FILE[each]):
-        f = open(SHOP_INFO_FILE[each], 'w+')
-        f.close()
-
-    if not os.path.exists(SHOP_ALREADY_EXISTS[each]):
-        f = open(SHOP_ALREADY_EXISTS[each], 'w+')
+    if not os.path.exists(START_DATE_FILE[each]):
+        f = open(START_DATE_FILE[each], 'w+')
+        f.write('2001-01-01')
         f.close()

@@ -1,2 +1,2 @@
-Wed, 13 Dec 2017 17:48:42 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 13 Dec 2017 17:48:42 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/ajax/json/shopfood/wizard/BasicHideInfoAjaxFP?_nr_force=1513158522360&shopId=70379580 HTTP/1.1" 200 None
+Thu, 14 Dec 2017 15:04:51 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Thu, 14 Dec 2017 15:04:51 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/ajax/json/shopfood/wizard/BasicHideInfoAjaxFP?_nr_force=1513235091375&shopId=68046539 HTTP/1.1" 200 None
