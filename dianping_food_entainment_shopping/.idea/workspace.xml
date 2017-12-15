@@ -11,20 +11,41 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/dianping_food_entainment_shopping$temp__1_.coverage" NAME="temp (1) Coverage Results" MODIFIED="1513237559284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dianping_food_entainment_shopping$demo.coverage" NAME="demo Coverage Results" MODIFIED="1513318286316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dianping_food_entainment_shopping$dianping_items.coverage" NAME="dianping_items Coverage Results" MODIFIED="1513243942842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dianping_food_entainment_shopping$temp.coverage" NAME="temp Coverage Results" MODIFIED="1513133591785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
     <SUITE FILE_PATH="coverage/dianping_food_entainment_shopping$config.coverage" NAME="config Coverage Results" MODIFIED="1513233001318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dianping_items.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dianping_items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dianping_items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="380" column="42" lean-forward="true" selection-start-line="380" selection-start-column="42" selection-end-line="380" selection-end-column="42" />
+            <state relative-caret-position="450">
+              <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
               <folding>
                 <element signature="e#113#122#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_area.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config_area.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17295">
+              <caret line="1153" column="51" lean-forward="true" selection-start-line="1153" selection-start-column="51" selection-end-line="1153" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,8 +73,9 @@
         <option value="$PROJECT_DIR$/requests_四川.log" />
         <option value="$PROJECT_DIR$/四川/四川_food_shop_list.txt" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/dianping_items.py" />
         <option value="$PROJECT_DIR$/config_area.py" />
+        <option value="$PROJECT_DIR$/dianping_items.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
       </list>
     </option>
   </component>
@@ -106,6 +128,11 @@
               <item name="dianping_food_entainment_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="dianping_food_entainment_shopping" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dianping_food_entainment_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dianping_food_entainment_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -135,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dianping_items">
+  <component name="RunManager" selected="Python.demo">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,6 +177,24 @@
       <module name="dianping_food_entainment_shopping" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dianping_food_entainment_shopping" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,18 +253,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.temp" />
       <item index="1" class="java.lang.String" itemvalue="Python.dianping_items" />
       <item index="2" class="java.lang.String" itemvalue="Python.config" />
       <item index="3" class="java.lang.String" itemvalue="Python.temp (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.dianping_items" />
-        <item index="1" class="java.lang.String" itemvalue="Python.temp (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.config" />
-        <item index="3" class="java.lang.String" itemvalue="Python.temp" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dianping_items" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.config" />
+        <item index="4" class="java.lang.String" itemvalue="Python.temp" />
       </list>
     </recent_temporary>
   </component>
@@ -272,14 +319,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/provs_city_code.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -492,31 +531,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_area.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="1153" column="51" lean-forward="true" selection-start-line="1153" selection-start-column="51" selection-end-line="1153" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dianping_items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="380" column="42" lean-forward="true" selection-start-line="380" selection-start-column="42" selection-end-line="380" selection-end-column="42" />
+        <state relative-caret-position="450">
+          <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
           <folding>
             <element signature="e#113#122#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/provs_city_code.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/get_area.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1837">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_area.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17295">
+          <caret line="1153" column="51" lean-forward="true" selection-start-line="1153" selection-start-column="51" selection-end-line="1153" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

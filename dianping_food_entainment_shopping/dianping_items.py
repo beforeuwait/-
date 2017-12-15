@@ -298,15 +298,22 @@ class DianPingItemsSpider(object):
         return data
 
     def shop_list(self, html):
-        selector = etree.HTML(html)
         data = []
-        parse = setting.shop_list_parse
-        shop_list = selector.xpath(parse['list'])
-        if shop_list:
-            for shop in shop_list:
-                url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else '&'
-                name = shop.xpath(parse['name'])[0] if shop.xpath(parse['name']) else '&'
-                data.append([url, name])
+        try:
+            selector = etree.HTML(html)
+            parse = setting.shop_list_parse
+            shop_list = selector.xpath(parse['list'])
+            if shop_list:
+                for shop in shop_list:
+                    url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else '&'
+                    name = shop.xpath(parse['name'])[0] if shop.xpath(parse['name']) else '&'
+                    data.append([url, name])
+        except:
+            # 报错，写入文本
+            data = []
+            with open(os.path.join(os.path.abspath(setting.provs), 'list_error.txt'), 'w+', encoding='utf8') as f:
+                f.write(html)
+
         return data
 
     def shop_info(self, html, shop_info):
@@ -331,27 +338,31 @@ class DianPingItemsSpider(object):
         return shop_info
 
     def update_comment(self, html, shop_cmt):
-        parse = setting.shop_cmt_parse
-        selector = etree.HTML(html)
-        data = selector.xpath(parse['data'])
-        if data:
-            for each in data:
-                user = each.xpath(parse['user'])[0] if each.xpath(parse['user']) else ''
-                contribution = each.xpath(parse['contribution'])[0] if each.xpath(parse['contribution']) else ''
-                attitute = each.xpath(parse['attitute'])[0] if each.xpath(parse['attitute']) else ''
-                socer = ','.join(each.xpath(parse['socer'])) if each.xpath(parse['socer']) else ''
-                content = each.xpath(parse['content'])[0] if each.xpath(parse['content']) else ''
-                date = each.xpath(parse['date'])[0] if each.xpath(parse['date']) else '2001-01-01'
-                fav = ''
-                if each.xpath(parse['fav']):
-                    fav = ','.join(each.xpath(parse['fav']))
-                imgs = ''
-                try:
-                    if each.xpath(parse['imgs']):
-                        imgs = ','.join(each.xpath(parse['imgs']))
-                except:
-                    pass
-                shop_cmt['data'].append([user, contribution, attitute, socer, content, date, fav, imgs])
+        try:
+            parse = setting.shop_cmt_parse
+            selector = etree.HTML(html)
+            data = selector.xpath(parse['data'])
+            if data:
+                for each in data:
+                    user = each.xpath(parse['user'])[0] if each.xpath(parse['user']) else ''
+                    contribution = each.xpath(parse['contribution'])[0] if each.xpath(parse['contribution']) else ''
+                    attitute = each.xpath(parse['attitute'])[0] if each.xpath(parse['attitute']) else ''
+                    socer = ','.join(each.xpath(parse['socer'])) if each.xpath(parse['socer']) else ''
+                    content = each.xpath(parse['content'])[0] if each.xpath(parse['content']) else ''
+                    date = each.xpath(parse['date'])[0] if each.xpath(parse['date']) else '2001-01-01'
+                    fav = ''
+                    if each.xpath(parse['fav']):
+                        fav = ','.join(each.xpath(parse['fav']))
+                    imgs = ''
+                    try:
+                        if each.xpath(parse['imgs']):
+                            imgs = ','.join(each.xpath(parse['imgs']))
+                    except:
+                        pass
+                    shop_cmt['data'].append([user, contribution, attitute, socer, content, date, fav, imgs])
+        except:
+            with open(os.path.join(os.path.abspath(setting.provs), 'cmt_error.txt'), 'w+', encoding='utf8') as f:
+                f.write(html)
         return shop_cmt
 
 
