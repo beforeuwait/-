@@ -6,14 +6,19 @@ __author__ = 'WangJiaWei'
     2017-12-11： 开始开发正式版
     2017-12-12： 完成第一版开发
         测试过程中遇到的问题：比如某个关键词有 100 页，跑到第60页时候就可能中断掉了
+    2017-12-15： 遇到的问题有，程序运行时间过长
+                通过反复登录的方式，或者多进程来简短抓取时间
+                封装了逻辑，将数据结构清洗模块进行封装
 """
 
 import re
 import os
 import json
+import random
 import datetime
 import time
 import logging
+import multiprocessing
 import requests
 from faker import Faker
 from lxml import etree
@@ -48,16 +53,23 @@ class LinkIpEngine(object):
         每次获取列表都要对id_list进行清空
         以及 news_list进行清空
         """
+        self.do_clear_list_id_file()
+        # 这里提供3个进程，共用同一个session
+        pool = multiprocessing.Pool(3)
+        id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
+        for key_word in setting.key_words:
+            # self.get_data(key_word, id_set)
+            pool.apply_async(self.get_data, (key_word, id_set,))
+        pool.close()
+        pool.join()
+
+    def do_clear_list_id_file(self):
+        """每次运行时候，都将把list以及id文件进行重置"""
         f = open(setting.news_list_ids_file, 'w+')
         f.close()
 
         f = open(setting.news_list_file, 'w+')
         f.close()
-
-        id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
-        for key_word in setting.key_words:
-            self.get_data(key_word, id_set)
-
 
     def get_data(self, key_word, id_set):
         """
@@ -65,7 +77,8 @@ class LinkIpEngine(object):
         """
         page, num, next_page = 1, 1, True
         while num <= page:
-            response = self.down.get_data(num, key_word[1])
+            response = setting.request_result
+            response = self.down.get_data(num, key_word[1], response)
             # 处理cookie，出现新的jessionid则顺势添加
             cookie = response['cookies'].get('JSESSIONID', 'none')
             if cookie is not 'none':
@@ -78,9 +91,7 @@ class LinkIpEngine(object):
             else:
                 next_page = False
             #清理
-            news_list['list'].clear()
-            news_list['page'] = 1
-            news_list['json_error'] = False
+            self.do_clear_data_struct(response=response, news_list=news_list)
             num += 1
             # 遇到已采集就停止
             if not next_page:
@@ -100,17 +111,36 @@ class LinkIpEngine(object):
 
 
     def get_info_logic(self, id):
-        response = self.down.get_info(id)
+        response = setting.request_result
+        response = self.down.get_info(id, response)
         info = setting.news_info_content
         if response['response'] is not 'bad_request':
             info = self.spider.news_info_content(response['response'], info)
             self.pipe.save_news_info(id, info)
-        # 清空字典
-        info['content'] = ''
-        info['source'] = ''
-        info['author'] = ''
-        info['time'] = ''
+        self.do_clear_data_struct(response=response, info=info)
 
+
+    def do_clear_data_struct(self, **kwargs):
+        # 清空字典
+        response = kwargs.get('response', {})
+        info = kwargs.get('info', {})
+        news_list = kwargs.get('news_list', {})
+        if not response == {}:
+            response['response'] = 'bad_requests'
+            response['url'] = ''
+            response['cookies'] = ''
+            response['data'] = ''
+            response['status_code'] = ''
+            response['error'] = ''
+        elif not info == {}:
+            info['content'] = ''
+            info['source'] = ''
+            info['author'] = ''
+            info['time'] = ''
+        elif not news_list == {}:
+            news_list['list'].clear()
+            news_list['page'] = 1
+            news_list['json_error'] = False
 
     def load_2_hdfs(self):
         news_list = setting.news_list_file
@@ -133,16 +163,18 @@ class LinkIpDownloader(object):
     def GET_request(self, *args):
         ''' GET请求模块 '''
         retry = 10
-        response = setting.request_result
+        response = args[2]
         response['url'] = args[0]
-        response['params'] = args[2] if (len(args) == 3) else ''
+        response['params'] = args[3] if (len(args) == 4) else ''
         while retry > 0:
             args[1]['User-Agent'] = Faker().user_agent()
+            # 休息0-1秒间的随机数
+            time.sleep(random.random())
             try:
                 if len(args) == 2:
                     res = self.session.get(args[0], headers=args[1], proxies=setting.proxy, timeout=30)
                 else:
-                    res = self.session.get(args[0], headers=args[1], params=args[2], proxies=setting.proxy, timeout=30)
+                    res = self.session.get(args[0], headers=args[1], params=args[3], proxies=setting.proxy, timeout=30)
                 # 这里暂时只对 2xx和4xx做处理
                 response['status_code'] = res.status_code
                 if repr(res.status_code).startswith('2'):
@@ -166,13 +198,14 @@ class LinkIpDownloader(object):
     def POST_request(self, *args):
         ''' POST请求模块 '''
         retry = 10
-        response = setting.request_result
+        response = args[2]
         response['url'] = args[0]
-        response['data'] = args[2] if (len(args) == 3) else ''
+        response['data'] = args[3] if (len(args) == 4) else ''
         while retry > 0:
             args[1]['User-Agent'] = Faker().user_agent()
             try:
-                res = self.session.post(args[0], headers=args[1], data=args[2], cookies=setting.cookie_dict, proxies=setting.proxy, timeout=30)
+                res = self.session.post(args[0], headers=args[1], data=args[3],
+                                        cookies=setting.cookie_dict, proxies=setting.proxy, timeout=30)
                 # 这里暂时只对 2xx和4xx做处理
                 response['status_code'] = res.status_code
                 if repr(res.status_code).startswith('2'):
@@ -206,7 +239,7 @@ class LinkIpDownloader(object):
         response = self.POST_request(url, headers, data)
         return response
 
-    def get_data(self, num, theme_id):
+    def get_data(self, num, theme_id, response):
         url = setting.url_data
         headers = setting.headers_xml
         data = setting.request_data
@@ -214,13 +247,13 @@ class LinkIpDownloader(object):
         data['themeId'] = theme_id
         data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
         data['endDay'] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
-        response = self.POST_request(url, headers, data)
+        response = self.POST_request(url, headers, response, data)
         return response
 
-    def get_info(self, id):
+    def get_info(self, id, response):
         url = setting.url_yq % id
         headers = setting.headers
-        response = self.GET_request(url, headers)
+        response = self.GET_request(url, headers, response)
         return response
 
 class LinkIpSpider(object):
