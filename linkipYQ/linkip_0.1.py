@@ -42,10 +42,13 @@ class LinkIpEngine(object):
         登录模块
         """
         # 获取第一个response，主要是拿到jessionid
-        home_page = self.down.get_home_page()
+        response = setting.request_result
+        response = self.down.get_home_page(response)
         # 处理并获取jessionid
-        setting.cookie_dict['Cookies'] = setting.cookies_text % home_page['cookies'].get('JSESSIONID')
-        login = self.down.login()
+        setting.cookie_dict['Cookies'] = setting.cookies_text % response['cookies'].get('JSESSIONID')
+        # 登录
+        self.down.login(response)
+        self.do_clear_data_struct(response=response)
 
     def get_news_types(self):
         """根据不同的分类，抓取不同的关键词的舆情新闻
@@ -104,11 +107,14 @@ class LinkIpEngine(object):
         """
         f = open(setting.news_info_file, 'w+')
         f.close()
-
+        pool = multiprocessing.Pool(3)
         id_list = (i.strip() for i in open(setting.news_list_ids_file, 'r', encoding=setting.encode))
         for id in id_list:
-            self.get_info_logic(id)
+            # self.get_info_logic(id)
+            pool.apply_async(self.get_info_logic, (id,))
 
+        pool.close()
+        pool.join()
 
     def get_info_logic(self, id):
         response = setting.request_result
@@ -171,7 +177,7 @@ class LinkIpDownloader(object):
             # 休息0-1秒间的随机数
             time.sleep(random.random())
             try:
-                if len(args) == 2:
+                if len(args) == 3:
                     res = self.session.get(args[0], headers=args[1], proxies=setting.proxy, timeout=30)
                 else:
                     res = self.session.get(args[0], headers=args[1], params=args[3], proxies=setting.proxy, timeout=30)
@@ -203,6 +209,7 @@ class LinkIpDownloader(object):
         response['data'] = args[3] if (len(args) == 4) else ''
         while retry > 0:
             args[1]['User-Agent'] = Faker().user_agent()
+            time.sleep(random.random())
             try:
                 res = self.session.post(args[0], headers=args[1], data=args[3],
                                         cookies=setting.cookie_dict, proxies=setting.proxy, timeout=30)
@@ -226,17 +233,17 @@ class LinkIpDownloader(object):
             retry -= 1
         return response
 
-    def get_home_page(self):
+    def get_home_page(self, response):
         url = setting.url_home
         headers = setting.headers
-        response = self.GET_request(url, headers)
+        response = self.GET_request(url, headers, response)
         return response
 
-    def login(self):
+    def login(self, response):
         url = setting.url_login
         headers = setting.headers
         data = setting.login_data
-        response = self.POST_request(url, headers, data)
+        response = self.POST_request(url, headers, response, data)
         return response
 
     def get_data(self, num, theme_id, response):
