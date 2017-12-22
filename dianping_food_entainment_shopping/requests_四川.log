@@ -1,3 +1,90 @@
-Fri, 22 Dec 2017 12:00:34 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Fri, 22 Dec 2017 12:00:34 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/530140/review_all/p1?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
-Fri, 22 Dec 2017 12:00:36 dianping_items.py[line:217] DEBUG 请求成功, url: http://www.dianping.com/shop/530140/review_all/p1?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Fri, 22 Dec 2017 14:38:02 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/24986942/review_all/p1?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:03 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/24986942/review_all/p1?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:04 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/24986942/review_all/p2?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:04 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/24986942/review_all/p2?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:05 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/62643966/review_all/p1?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:05 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/62643966/review_all/p1?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:07 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p1?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:08 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p1?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:10 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p2?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:10 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p2?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:12 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p3?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:12 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p3?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:14 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p4?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:14 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p4?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:16 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p5?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:17 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p5?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:18 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p6?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:18 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p6?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:50 connectionpool.py[line:208] DEBUG Starting new HTTP connection (2): proxy.abuyun.com
+Fri, 22 Dec 2017 14:38:50 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p7?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:51 dianping_items.py[line:214] WARNING HTTPConnectionPool(host='proxy.abuyun.com', port=9010): Read timed out. (read timeout=30), url: http://www.dianping.com/shop/23002017/review_all/p7?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:53 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p8?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:53 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p8?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:54 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p9?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:55 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p9?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:56 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p10?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:57 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p10?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:38:58 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p11?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:38:59 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p11?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:00 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p12?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:00 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p12?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:01 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p13?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:02 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p13?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:08 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p14?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:17 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p14?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:19 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p15?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:19 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p15?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:24 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p16?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:25 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p16?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:27 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p17?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:27 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p17?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:29 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p18?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:30 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p18?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:31 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p19?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:31 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p19?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:33 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p20?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:33 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p20?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:38 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p21?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:39 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p21?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:40 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p22?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:40 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p22?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:42 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p23?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:42 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p23?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:43 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p24?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:43 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p24?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:44 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p25?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:44 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p25?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:47 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p26?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:48 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p26?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:49 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p27?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:49 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p27?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:51 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p28?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:52 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p28?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:53 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p29?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:53 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p29?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:55 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p30?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:55 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p30?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:56 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p31?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:56 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p31?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:58 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p32?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:39:58 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p32?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:39:59 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p33?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:00 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p33?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:01 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p34?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:02 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p34?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:04 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p35?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:04 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p35?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:05 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p36?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:05 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p36?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:07 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p37?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:08 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p37?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:09 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p38?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:10 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p38?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:11 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p39?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:11 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p39?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:13 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p40?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:13 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p40?queryType=sortType&queryVal=latest, params: 
+Fri, 22 Dec 2017 14:40:14 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://www.dianping.com/shop/23002017/review_all/p41?queryType=sortType&queryVal=latest HTTP/1.1" 200 None
+Fri, 22 Dec 2017 14:40:14 dianping_items.py[line:216] DEBUG 请求成功, url: http://www.dianping.com/shop/23002017/review_all/p41?queryType=sortType&queryVal=latest, params: 

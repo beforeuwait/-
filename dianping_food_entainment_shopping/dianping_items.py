@@ -198,6 +198,7 @@ class DianPingItemsEngine(object):
             response['params'] = ''
             response['status_code'] = ''
             response['error'] = ''
+            shop_cmt['data'].clear()
 
     def recording_response(self, response):
         """"做记录写入日志
@@ -533,7 +534,7 @@ class DianPingItemsSchedule(object):
 
     def main(self):
         # count存在的意思在于，只有第一次获取分类后，就不再花请求去获取分类
-        count = 1
+        count = 0
         while True:
             self.do_clear_logging()
             record_start = time.time()

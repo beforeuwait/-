@@ -20,7 +20,7 @@ CITY_LIST = CITY_LIST
 BLANK = '\u0001'
 ENCODEING = 'utf8'
 HDFS = '/user/spider/dianping/%s'
-REQUESTS_LOG = 'requests_log_%s.log'
+REQUESTS_LOG = 'requests_%s.log'
 # 请求回应 response
 
 REQUESTS_RESULT = {
