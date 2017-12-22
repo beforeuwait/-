@@ -116,7 +116,7 @@ class LinkIpEngine(object):
         """
         f = open(setting.news_info_file, 'w+')
         f.close()
-        pool = multiprocessing.Pool(3)
+        pool = multiprocessing.Pool(10)
         id_list = (i.strip() for i in open(setting.news_list_ids_file, 'r', encoding=setting.encode))
         for id in id_list:
             # self.get_info_logic(id)
@@ -263,7 +263,6 @@ class LinkIpDownloader(object):
         data['themeId'] = theme_id
         data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
         data['endDay'] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
-        print(data)
         response = self.POST_request(url, headers, response, data)
         return response
 
