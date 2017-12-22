@@ -8,6 +8,7 @@ __author__ = 'WangJiaWei'
         2017-12-14 继续修改
         2017-12-15 修改bug
         2017-12-19 发现获取页面数据时候，有token
+        2017-12-22 更新评论抓取的逻辑
 """
 
 import re
@@ -88,7 +89,6 @@ class DianPingItemsEngine(object):
             # pool.apply_async(self.shop_list_logic, (info, ))
         # pool.close()
         # pool.join()
-        return
 
     def shop_list_logic(self, info):
         page = 50
@@ -198,7 +198,7 @@ class DianPingItemsEngine(object):
             response['params'] = ''
             response['status_code'] = ''
             response['error'] = ''
-        return
+
 
     def recording_response(self, response):
         """"做记录写入日志
@@ -287,6 +287,7 @@ class DianPingItemsDownloader(object):
 
     def update_comment(self, shopid, page, response):
         url = setting.cmt_url % (shopid, page)
+        print(url)
         headers = setting.headers
         response = self.do_get_requests(url, headers, response)
         return response
@@ -355,7 +356,7 @@ class DianPingItemsSpider(object):
                     user = each.xpath(parse['user'])[0] if each.xpath(parse['user']) else ''
                     contribution = each.xpath(parse['contribution'])[0] if each.xpath(parse['contribution']) else ''
                     attitute = each.xpath(parse['attitute'])[0] if each.xpath(parse['attitute']) else ''
-                    socer = ','.join(each.xpath(parse['socer'])) if each.xpath(parse['socer']) else ''
+                    score = ','.join(each.xpath(parse['score'])) if each.xpath(parse['score']) else ''
                     content = each.xpath(parse['content'])[0] if each.xpath(parse['content']) else ''
                     date = each.xpath(parse['date'])[0] if each.xpath(parse['date']) else '2001-01-01'
                     fav = ''
@@ -367,7 +368,7 @@ class DianPingItemsSpider(object):
                             imgs = ','.join(each.xpath(parse['imgs']))
                     except:
                         pass
-                    shop_cmt['data'].append([user, contribution, attitute, socer, content, date, fav, imgs])
+                    shop_cmt['data'].append([user, contribution, attitute, score, content, date, fav, imgs])
         except:
             with open(os.path.join(os.path.abspath(setting.provs), 'cmt_error.txt'), 'w+', encoding='utf8') as f:
                 f.write(html)
@@ -442,12 +443,12 @@ class DianPingItemsPipeline(object):
         text = ''
         for each in data:
             # each[5] 清洗后的日期
+            each[2] = self.clear_star(each[2])
             each[5] = self.clear_date(each[5])
             if each[5] < max_date and each[5] >= min_date:
                 txt = [info[0], info[1], info[2]]
                 txt.extend(each)
-                text = setting.blank.join(txt)
-                text = re.sub('\r|\n| ', '', text)
+                text += re.sub('\r|\n| ', '', setting.blank.join(txt)) + '\n'
                 result = True
             else:
                 result = False
@@ -457,6 +458,19 @@ class DianPingItemsPipeline(object):
         with open(setting.shop_cmt_history_file[setting.choice], 'a', encoding=setting.encode) as f:
             f.write(text)
         return result
+
+    def clear_star(self, info):
+        score = re.findall('\d\d', info)[0] if re.findall('\d\d', info) else 10
+        attitute = ''
+        if score == '50':
+            attitute = '非常好'
+        elif score == '40':
+            attitute = '好评'
+        elif score == '30':
+            attitute = '中评'
+        else:
+            attitute = '差评'
+        return attitute
 
     def clear_date(self, date_temp):
         if len(date_temp) == 5:
@@ -513,7 +527,7 @@ class DianPingItemsSchedule(object):
     """
 
     def execute(self, count):
-        max_date = datetime.datetime.today().strftime('%Y-%m-%d')
+        max_date = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
         min_date = open(setting.start_date[setting.choice], 'r', encoding=setting.encode).read()
         dpie = DianPingItemsEngine()
         if count == 0:
@@ -540,7 +554,7 @@ class DianPingItemsSchedule(object):
             if lasting < total_seconds:
                 time.sleep(total_seconds-lasting)
             count += 1
-            break
+
 
     def do_clear_logging(self):
         """将日志清理模块封装"""

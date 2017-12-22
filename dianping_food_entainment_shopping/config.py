@@ -5,13 +5,15 @@ from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-PROVS = sys.argv[1:][0]
-CHOICE = sys.argv[1:][1]
+# PROVS = sys.argv[1:][0]
+# CHOICE = sys.argv[1:][1]
 """
 # 测试用
 CHOICE = 'food'
 PROVS = '新疆'
 """
+PROVS = '四川'
+CHOICE = 'food'
 CITY_LIST = CITY_LIST
 
 # 设置
@@ -70,7 +72,8 @@ SHOP_URL = 'http://www.dianping.com/search/category/%s/%s/%s%sp'
 
 INFO_URL = 'http://www.dianping.com/ajax/json/shopfood/wizard/BasicHideInfoAjaxFP'
 
-CMT_URL = 'http://www.dianping.com/shop/%s/review_more_latest?pageno=%s'
+# CMT_URL = 'http://www.dianping.com/shop/%s/review_more_latest?pageno=%s'
+CMT_URL = 'http://www.dianping.com/shop/%s/review_all/p%s?queryType=sortType&queryVal=latest'
 
 # xpath
 
@@ -87,15 +90,17 @@ SHOP_LIST_PARSE = {
 }
 
 SHOP_CMT_PARSE = {
-    'data': '//div[@class="comment-mode"]/div[@class="comment-list"]/ul/li',
-    'user': 'div[@class="pic"]/p[@class="name"]/a/text()',
-    'contribution': 'div[@class="pic"]/p[@class="contribution"]/span/@title',
-    'attitute': 'div[@class="content"]/div[@class="user-info"]/span/@title',
-    'socer': 'div[@class="content"]/div[@class="user-info"]/div[@class="comment-rst"]/span/text()',
-    'content': 'div[@class="content"]/div[@class="comment-txt"]/div/text()',
-    'date': 'div[@class="content"]/div[@class="misc-info"]/span[@class="time"]/a/text()',
-    'fav': 'div[@class="content"]/div[@class="comment-recommend"]/text()',
-    'imgs': 'div[@class="content"]/div[@class="shop-photo"]/ul/li',
+    'data': '//div[@class="reviews-items"]/ul/li',
+    'user': 'div[@class="main-review"]/div[@class="dper-info"]/a/text()',
+    # 贡献值被取消
+    'contribution': 'div[@class="no_data"]/text()',
+    'attitute': 'div[@class="main-review"]/div[@class="review-rank"]/span/@class',
+    # 分数也没有了
+    'score': 'div[@class="main-review"]/div[@class="review-rank"]/span[@class="score"]/span/text()',
+    'content': 'div[@class="main-review"]/div[@class="review-words"]/text()',
+    'date': 'div[@class="main-review"]/div[@class="misc-info clearfix"]/span[@class="time"]/text()',
+    'fav': 'div[@class="main-review"]/div[@class="review-recommend"]/a/text()',
+    'imgs': 'div[@class="main-review"]/div[@class="review-pictures"]/ul/li/a/img/@data-big',
 }
 
 # cookies
@@ -298,5 +303,5 @@ for each in ['food', 'entertainment', 'shopping']:
 
     if not os.path.exists(START_DATE_FILE[each]):
         f = open(START_DATE_FILE[each], 'w+')
-        f.write('2001-01-01')
+        f.write('2001-01-01 00:00')
         f.close()
