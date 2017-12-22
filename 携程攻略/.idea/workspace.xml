@@ -22,22 +22,10 @@
       <file leaf-file-name="ctrip_items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ctrip_items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1622">
-              <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
               <folding>
                 <element signature="e#244#253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16207">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="24" />
-              <folding>
-                <element signature="e#20#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,6 +148,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,6 +159,9 @@
     <property name="SearchEverywhereHistoryKey" value="setting&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/DataList" />
     </key>
@@ -255,7 +246,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="携程攻略" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_restaurant.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp/get_restaurant.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,7 +264,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="携程攻略" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_shop.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp/get_shop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,20 +337,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataList/start_date_food.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataList/start_date_shop.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataList/end_date_food.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -401,13 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_cmt_2012-01-01_2017-11-28.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -454,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataTemp/provs_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -481,14 +444,7 @@
     <entry file="file://$PROJECT_DIR$/四川/restaurant_shop_already_exists.txt" />
     <entry file="file://$PROJECT_DIR$/四川/shopping_shop_already_exists.txt" />
     <entry file="file://$PROJECT_DIR$/四川/restaurant_shop_list.txt" />
-    <entry file="file://$PROJECT_DIR$/config_old.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="155" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_restaurant.py">
+    <entry file="file://$PROJECT_DIR$/temp/get_restaurant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="305" column="51" lean-forward="false" selection-start-line="305" selection-start-column="48" selection-end-line="305" selection-end-column="51" />
@@ -565,20 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataList/city_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="57" lean-forward="false" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataList/city_list_demo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="1347" column="57" lean-forward="true" selection-start-line="1286" selection-start-column="0" selection-end-line="1347" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataList/demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -621,7 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_shop.py">
+    <entry file="file://$PROJECT_DIR$/temp/get_shop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="43" />
@@ -635,27 +577,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Data/restaurant_shop_cmt_2012-01-01_2017-11-28.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="260">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataTemp/provs_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16207">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding>
             <element signature="e#20#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataList/city_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10080">
+          <caret line="81" column="57" lean-forward="false" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataList/city_list_demo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10065">
+          <caret line="1322" column="9" lean-forward="false" selection-start-line="1322" selection-start-column="9" selection-end-line="1322" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataList/city_list_total.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42150">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/get_area.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1372">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/config_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="126" column="15" lean-forward="true" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ctrip_items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1622">
-          <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
           <folding>
             <element signature="e#244#253#0" expanded="true" />
           </folding>
