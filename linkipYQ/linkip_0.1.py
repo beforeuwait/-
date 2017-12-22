@@ -9,6 +9,7 @@ __author__ = 'WangJiaWei'
     2017-12-15： 遇到的问题有，程序运行时间过长
                 通过反复登录的方式，或者多进程来简短抓取时间
                 封装了逻辑，将数据结构清洗模块进行封装
+    2017-12-22：修改逻辑，迭代
 """
 
 import re
@@ -58,11 +59,16 @@ class LinkIpEngine(object):
         """
         self.do_clear_list_id_file()
         # 这里提供3个进程，共用同一个session
-        pool = multiprocessing.Pool(3)
-        id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
+        pool = multiprocessing.Pool(4)
+        # 发现一个问题，讲id_set放这会出现反复重复录入
+        # id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
         for key_word in setting.key_words:
             # self.get_data(key_word, id_set)
-            pool.apply_async(self.get_data, (key_word, id_set,))
+            # 无id_set版本
+            # self.get_data(key_word)
+            # pool.apply_async(self.get_data, (key_word, id_set,))
+            # 无id_set版本
+            pool.apply_async(self.get_data, (key_word,))
         pool.close()
         pool.join()
 
@@ -74,7 +80,8 @@ class LinkIpEngine(object):
         f = open(setting.news_list_file, 'w+')
         f.close()
 
-    def get_data(self, key_word, id_set):
+    # def get_data(self, key_word, id_set):
+    def get_data(self, key_word):
         """
         每次都是请求 1个月前到当前请求的数据，如果id一旦重复，则停止
         """
@@ -90,6 +97,7 @@ class LinkIpEngine(object):
             news_list = self.spider.news_list(response['response'], news_list)
             page = news_list['page']
             if not news_list['list'] == []:
+                id_set = set(i.strip()for i in open(setting.news_list_ids_history_file, 'r', encoding=setting.encode))
                 next_page = self.pipe.save_news_list(news_list['list'], key_word[0], id_set)
             else:
                 next_page = False
@@ -99,6 +107,7 @@ class LinkIpEngine(object):
             # 遇到已采集就停止
             if not next_page:
                 break
+
 
     def get_info(self):
         """抓取每天舆情的快照
@@ -254,6 +263,7 @@ class LinkIpDownloader(object):
         data['themeId'] = theme_id
         data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
         data['endDay'] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
+        print(data)
         response = self.POST_request(url, headers, response, data)
         return response
 
