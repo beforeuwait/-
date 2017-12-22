@@ -5,15 +5,15 @@ from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-# PROVS = sys.argv[1:][0]
-# CHOICE = sys.argv[1:][1]
+PROVS = sys.argv[1:][0]
+CHOICE = sys.argv[1:][1]
 """
 # 测试用
 CHOICE = 'food'
 PROVS = '新疆'
 """
-PROVS = '四川'
-CHOICE = 'food'
+# PROVS = '四川'
+# CHOICE = 'food'
 CITY_LIST = CITY_LIST
 
 # 设置
@@ -303,5 +303,5 @@ for each in ['food', 'entertainment', 'shopping']:
 
     if not os.path.exists(START_DATE_FILE[each]):
         f = open(START_DATE_FILE[each], 'w+')
-        f.write('2001-01-01 00:00')
+        f.write('2001-01-01')
         f.close()

@@ -199,7 +199,6 @@ class DianPingItemsEngine(object):
             response['status_code'] = ''
             response['error'] = ''
 
-
     def recording_response(self, response):
         """"做记录写入日志
 
@@ -281,13 +280,10 @@ class DianPingItemsDownloader(object):
         params['shopId'] = id
         params['_nr_force'] = int(time.time() * 1000)
         response = self.do_get_requests(url, headers, response, params)
-        for k,v in response.items():
-            print(k, v)
         return response
 
     def update_comment(self, shopid, page, response):
         url = setting.cmt_url % (shopid, page)
-        print(url)
         headers = setting.headers
         response = self.do_get_requests(url, headers, response)
         return response
@@ -473,12 +469,7 @@ class DianPingItemsPipeline(object):
         return attitute
 
     def clear_date(self, date_temp):
-        if len(date_temp) == 5:
-            date_temp = datetime.datetime.today().strftime('%Y') + '-' + date_temp
-        elif len(date_temp) == 8:
-            date_temp = '20' + date_temp
-        else:
-            date_temp = '20' + re.findall('\d\d-\d\d-\d\d', date_temp)[0] if (
+        date_temp = '20' + re.findall('\d\d-\d\d-\d\d', date_temp)[0] if (
                 re.findall('\d\d-\d\d-\d\d', date_temp)) else '17-01-01'
         return date_temp
 
@@ -527,7 +518,7 @@ class DianPingItemsSchedule(object):
     """
 
     def execute(self, count):
-        max_date = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
+        max_date = datetime.datetime.today().strftime('%Y-%m-%d')
         min_date = open(setting.start_date[setting.choice], 'r', encoding=setting.encode).read()
         dpie = DianPingItemsEngine()
         if count == 0:
