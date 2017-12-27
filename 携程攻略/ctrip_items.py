@@ -288,18 +288,22 @@ class CtripItemsSpider(object):
 
     def __init__(self, setting):
         self.setting = setting
+
     def shop_list(self, response, shop_list_data):
-        selector = etree.HTML(response)
-        parse = self.setting.shop_list_parse
-        shop_list = selector.xpath(parse['shop_list'])
-        data = shop_list_data['data']
-        for shop in shop_list:
-            id = shop.xpath(parse['id'])[0] if shop.xpath(parse['id']) else ''
-            name = shop.xpath(parse['name'])[0] if shop.xpath(parse['name']) else ''
-            address = shop.xpath(parse['address'])[0] if shop.xpath(parse['address']) else ''
-            average = shop.xpath(parse['average'])[0] if shop.xpath(parse['average']) else ''
-            url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else ''
-            data.append([id, name, address, average, url])
+        try:
+            selector = etree.HTML(response)
+            parse = self.setting.shop_list_parse
+            shop_list = selector.xpath(parse['shop_list'])
+            data = shop_list_data['data']
+            for shop in shop_list:
+                id = shop.xpath(parse['id'])[0] if shop.xpath(parse['id']) else ''
+                name = shop.xpath(parse['name'])[0] if shop.xpath(parse['name']) else ''
+                address = shop.xpath(parse['address'])[0] if shop.xpath(parse['address']) else ''
+                average = shop.xpath(parse['average'])[0] if shop.xpath(parse['average']) else ''
+                url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else ''
+                data.append([id, name, address, average, url])
+        except Exception as e:
+            shop_list_data['error'] = e
         return shop_list_data
 
     def shop_info_pid(self, html, shop_info, choice):
@@ -373,21 +377,24 @@ class CtripItemsSpider(object):
         return shop_info
 
     def shop_comment(self, html, shop_cmt):
-        selector = etree.HTML(html)
-        parse = self.setting.cmt_parse
-        comments = selector.xpath(parse['comments'])
-        if comments:
-            for comment in comments:
-                user = comment.xpath(parse['user'])[0] if comment.xpath(parse['user']) else ''
-                star = comment.xpath(parse['star'])[0] if comment.xpath(parse['star']) else ''
-                socar = comment.xpath(parse['socar'])[0] if comment.xpath(parse['socar']) else ''
-                average = comment.xpath(parse['average'])[0] if comment.xpath(parse['average']) else ''
-                content = comment.xpath(parse['content'])[0] if comment.xpath(parse['content']) else ''
-                time2 = comment.xpath(parse['time2'])[0] if comment.xpath(parse['time2']) else ''
-                photo = ''
-                if comment.xpath(parse['photo']):
-                    photo = ','.join(comment.xpath(parse['photo']))
-                shop_cmt['data'].append([user, star, socar, average, content, time2, photo])
+        try:
+            selector = etree.HTML(html)
+            parse = self.setting.cmt_parse
+            comments = selector.xpath(parse['comments'])
+            if comments:
+                for comment in comments:
+                    user = comment.xpath(parse['user'])[0] if comment.xpath(parse['user']) else ''
+                    star = comment.xpath(parse['star'])[0] if comment.xpath(parse['star']) else ''
+                    socar = comment.xpath(parse['socar'])[0] if comment.xpath(parse['socar']) else ''
+                    average = comment.xpath(parse['average'])[0] if comment.xpath(parse['average']) else ''
+                    content = comment.xpath(parse['content'])[0] if comment.xpath(parse['content']) else ''
+                    time2 = comment.xpath(parse['time2'])[0] if comment.xpath(parse['time2']) else ''
+                    photo = ''
+                    if comment.xpath(parse['photo']):
+                        photo = ','.join(comment.xpath(parse['photo']))
+                    shop_cmt['data'].append([user, star, socar, average, content, time2, photo])
+        except Exception as e:
+            shop_cmt['error'] = e
         return shop_cmt
 
 
