@@ -26,7 +26,6 @@ except:
     pass
 
 
-
 class CtripItemsEngine(object):
     """作为整个爬虫系统引擎的存在
 
@@ -290,8 +289,12 @@ class CtripItemsSpider(object):
         self.setting = setting
 
     def shop_list(self, response, shop_list_data):
+        selector = None
         try:
             selector = etree.HTML(response)
+        except Exception as e:
+            shop_list_data['error'] = e
+        if selector is not None:
             parse = self.setting.shop_list_parse
             shop_list = selector.xpath(parse['shop_list'])
             data = shop_list_data['data']
@@ -302,83 +305,88 @@ class CtripItemsSpider(object):
                 average = shop.xpath(parse['average'])[0] if shop.xpath(parse['average']) else ''
                 url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else ''
                 data.append([id, name, address, average, url])
-        except Exception as e:
-            shop_list_data['error'] = e
+
         return shop_list_data
 
     def shop_info_pid(self, html, shop_info, choice):
         '''负责解析每个店铺的pid'''
+        selector = None
         try:
-            if not choice == 'shopping':
-                selector = etree.HTML(html)
-                # 解析规则
-                parse = self.setting.shop_info_pid_parse
-                data = []
-                ex_info = re.findall(parse['ex_info'], html)[0] if re.findall(parse['ex_info'], html) else ''
-                try:
-                    shop_info['js_dict'] = json.loads(ex_info)
-                except json.JSONDecodeError:
-                    shop_info['json_error'] = True
-                # 经纬度
-                lng = shop_info['js_dict'].get('lng', '')
-                lat = shop_info['js_dict'].get('lat', '')
-                data.append(lng)
-                data.append(lat)
-                # 如果pid 返回值为'1'的话，则放弃对该店铺的评论获取
-                data.append(selector.xpath(parse['pid'])[0] if selector.xpath(parse['pid'])else '1')
-                # 分类
-                data.append(selector.xpath(parse['category'])[0] if selector.xpath(parse['category'])else '')
-                # 电话
-                data.append(selector.xpath(parse['tel'])[0]if selector.xpath(parse['tel'])else '')
-                # 营业时间
-                data.append(selector.xpath(parse['open_time'])[0]if selector.xpath(parse['open_time'])else '')
-                # 描述
-                data.append(selector.xpath(parse['descrip'])[0]if selector.xpath(parse['descrip'])else '')
-                # cate
-                data.append(selector.xpath(parse['cate'])[0]if selector.xpath(parse['cate'])else '')
-                shop_info['data'] = data
-            else:
-                # 解析商铺的parse
-                data = []
-                parse = self.setting.shop_info_pid_parse
-                # city_id
-                data.append(re.findall(parse['city_id'], html)[0] if re.findall(parse['city_id'], html) else '0')
-                # pid
-                data.append(re.findall(parse['shop_pid'], html)[0] if re.findall(parse['shop_pid'], html) else '0')
-                # city_cnc
-                data.append(re.findall(parse['city_cnc'], html)[0] if re.findall(parse['city_cnc'], html) else '')
-                selector = etree.HTML(html)
-                # catrgory
-                data.append(selector.xpath(parse['shop_category'])[0]if selector.xpath(parse['shop_category']) else '')
-                # addresss
-                data.append(selector.xpath(parse['shop_address'])[0] if selector.xpath(parse['shop_address']) else '')
-                # tel
-                data.append(selector.xpath(parse['shop_tel'])[0] if selector.xpath(parse['shop_tel']) else '')
-                # opentime
-                data.append(selector.xpath(parse['shop_optime'])[0] if selector.xpath(parse['shop_optime']) else '')
-                # deacriptation
-                try:
-                    descriptation = selector.xpath(parse['shop_descrip'])[0].xpath('string(.)')
-                except:
-                    descriptation = ''
-                data.append(descriptation)
-                # product
-                data.append(','.join(selector.xpath(parse['shop_product'])))
-                # trans
-                try:
-                    trans = selector.xpath(parse['shop_trans'])[1] if selector.xpath(parse['shop_trans']) else ''
-                except:
-                    trans = ''
-                # city_id, pid, city_cnc, category, address, tel, opentime, descriptation,products,trans
-                data.append(trans)
-                shop_info['data'] = data
+            selector = etree.HTML(html)
         except Exception as e:
             shop_info['error'] = e
+        if choice == 'restaurant' and selector is not None:
+            selector = etree.HTML(html)
+            # 解析规则
+            parse = self.setting.shop_info_pid_parse
+            data = []
+            ex_info = re.findall(parse['ex_info'], html)[0] if re.findall(parse['ex_info'], html) else ''
+            try:
+                shop_info['js_dict'] = json.loads(ex_info)
+            except json.JSONDecodeError:
+                shop_info['json_error'] = True
+            # 经纬度
+            lng = shop_info['js_dict'].get('lng', '')
+            lat = shop_info['js_dict'].get('lat', '')
+            data.append(lng)
+            data.append(lat)
+            # 如果pid 返回值为'1'的话，则放弃对该店铺的评论获取
+            data.append(selector.xpath(parse['pid'])[0] if selector.xpath(parse['pid'])else '1')
+            # 分类
+            data.append(selector.xpath(parse['category'])[0] if selector.xpath(parse['category'])else '')
+            # 电话
+            data.append(selector.xpath(parse['tel'])[0]if selector.xpath(parse['tel'])else '')
+            # 营业时间
+            data.append(selector.xpath(parse['open_time'])[0]if selector.xpath(parse['open_time'])else '')
+            # 描述
+            data.append(selector.xpath(parse['descrip'])[0]if selector.xpath(parse['descrip'])else '')
+            # cate
+            data.append(selector.xpath(parse['cate'])[0]if selector.xpath(parse['cate'])else '')
+            shop_info['data'] = data
+        elif choice == 'shopping' and selector is not None:
+            # 解析商铺的parse
+            data = []
+            parse = self.setting.shop_info_pid_parse
+            # city_id
+            data.append(re.findall(parse['city_id'], html)[0] if re.findall(parse['city_id'], html) else '0')
+            # pid
+            data.append(re.findall(parse['shop_pid'], html)[0] if re.findall(parse['shop_pid'], html) else '0')
+            # city_cnc
+            data.append(re.findall(parse['city_cnc'], html)[0] if re.findall(parse['city_cnc'], html) else '')
+            selector = etree.HTML(html)
+            # catrgory
+            data.append(selector.xpath(parse['shop_category'])[0]if selector.xpath(parse['shop_category']) else '')
+            # addresss
+            data.append(selector.xpath(parse['shop_address'])[0] if selector.xpath(parse['shop_address']) else '')
+            # tel
+            data.append(selector.xpath(parse['shop_tel'])[0] if selector.xpath(parse['shop_tel']) else '')
+            # opentime
+            data.append(selector.xpath(parse['shop_optime'])[0] if selector.xpath(parse['shop_optime']) else '')
+            # deacriptation
+            try:
+                descriptation = selector.xpath(parse['shop_descrip'])[0].xpath('string(.)')
+            except:
+                descriptation = ''
+            data.append(descriptation)
+            # product
+            data.append(','.join(selector.xpath(parse['shop_product'])))
+            # trans
+            try:
+                trans = selector.xpath(parse['shop_trans'])[1] if selector.xpath(parse['shop_trans']) else ''
+            except:
+                trans = ''
+            # city_id, pid, city_cnc, category, address, tel, opentime, descriptation,products,trans
+            data.append(trans)
+            shop_info['data'] = data
         return shop_info
 
     def shop_comment(self, html, shop_cmt):
+        selector = None
         try:
             selector = etree.HTML(html)
+        except Exception as e:
+            shop_cmt['error'] = e
+        if selector is not None:
             parse = self.setting.cmt_parse
             comments = selector.xpath(parse['comments'])
             if comments:
@@ -393,13 +401,12 @@ class CtripItemsSpider(object):
                     if comment.xpath(parse['photo']):
                         photo = ','.join(comment.xpath(parse['photo']))
                     shop_cmt['data'].append([user, star, socar, average, content, time2, photo])
-        except Exception as e:
-            shop_cmt['error'] = e
         return shop_cmt
 
 
 class CtripItemsPipeline(object):
     """管道，做数据处理用的"""
+
     def __init__(self, setting):
         self.setting = setting
 
@@ -499,9 +506,10 @@ class CtripItemsPipeline(object):
 
 
 class CtripItemsSchedule(object):
-    """调度模块
-
     """
+    调度模块
+    """
+
     def execute(self):
         """
         这里是一个循环控制模块。一周执行一次
