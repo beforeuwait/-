@@ -1,16 +1,10 @@
-Wed, 27 Dec 2017 10:56:52 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 27 Dec 2017 10:56:54 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p1.html HTTP/1.1" 200 34883
-Wed, 27 Dec 2017 10:56:55 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p1.html, params: 
-Wed, 27 Dec 2017 10:56:55 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 27 Dec 2017 10:56:57 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p2.html HTTP/1.1" 200 33682
-Wed, 27 Dec 2017 10:56:58 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p2.html, params: 
-Wed, 27 Dec 2017 10:56:58 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 27 Dec 2017 10:57:01 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p3.html HTTP/1.1" 200 32744
-Wed, 27 Dec 2017 10:57:01 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p3.html, params: 
-Wed, 27 Dec 2017 10:57:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 27 Dec 2017 10:57:04 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p4.html HTTP/1.1" 200 32963
-Wed, 27 Dec 2017 10:57:04 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p4.html, params: 
-Wed, 27 Dec 2017 10:57:04 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
-Wed, 27 Dec 2017 10:57:07 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p5.html HTTP/1.1" 200 32257
-Wed, 27 Dec 2017 10:57:07 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p5.html, params: 
-Wed, 27 Dec 2017 10:57:07 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Wed, 27 Dec 2017 17:50:59 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Wed, 27 Dec 2017 17:51:02 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p1.html HTTP/1.1" 200 35077
+Wed, 27 Dec 2017 17:51:02 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p1.html, params: 
+Wed, 27 Dec 2017 17:51:02 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Wed, 27 Dec 2017 17:51:04 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p2.html HTTP/1.1" 200 33803
+Wed, 27 Dec 2017 17:51:04 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p2.html, params: 
+Wed, 27 Dec 2017 17:51:04 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com
+Wed, 27 Dec 2017 17:51:07 connectionpool.py[line:396] DEBUG http://proxy.abuyun.com:9010 "GET http://you.ctrip.com/shoppinglist/chengdu104/s0-p3.html HTTP/1.1" 200 32887
+Wed, 27 Dec 2017 17:51:07 ctrip_items.py[line:214] DEBUG 请求成功, url: http://you.ctrip.com/shoppinglist/chengdu104/s0-p3.html, params: 
+Wed, 27 Dec 2017 17:51:07 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): proxy.abuyun.com

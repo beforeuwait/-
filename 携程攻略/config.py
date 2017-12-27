@@ -6,14 +6,15 @@ import logging
 
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
-
-PROV = sys.argv[1:][0]
+PROV = '四川'
+CHOICE = 'shopping'
+# PROV = sys.argv[1:][0]
 # PATH 代表每个省份
 PATH = PROV
 if not os.path.exists(PATH):
     os.mkdir(os.path.abspath(PATH))
 
-CHOICE = sys.argv[1:][1]
+# CHOICE = sys.argv[1:][1]
 HDFS_PATH = '/user/spider/everyday/%s'
 
 # logging
