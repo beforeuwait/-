@@ -26,7 +26,6 @@ try:
     from hdfs3 import HDFileSystem
 except:
     pass
-import config
 
 
 class DianPingItemsEngine(object):
@@ -40,17 +39,17 @@ class DianPingItemsEngine(object):
         self.pipe 管道的实例
     """
 
-    def __init__(self) -> None:
-        super().__init__()
-        self.down = DianPingItemsDownloader()
-        self.spider = DianPingItemsSpider()
-        self.pipe = DianPingItemsPipeline()
+    def __init__(self, setting):
+        self.down = DianPingItemsDownloader(setting)
+        self.spider = DianPingItemsSpider(setting)
+        self.pipe = DianPingItemsPipeline(setting)
+        self.setting = setting
 
     def get_catgory(self):
         """"该模块作为迭代每个市，获取目录分类"""
-        city_list = setting.city_list[setting.provs]
-        category_list = setting.category_list
-        category_list['data'] = [self.get_category_logic(i.strip().split(setting.blank)) for i in city_list]
+        city_list = self.setting['city_list'][self.setting['provs']]
+        category_list = self.setting['category_list']
+        category_list['data'] = [self.get_category_logic(i.strip().split(self.setting['blank'])) for i in city_list]
         self.pipe.save_category_list(category_list['data'])
         # 清理
         category_list['data'].clear()
@@ -58,7 +57,7 @@ class DianPingItemsEngine(object):
 
     def get_category_logic(self, city):
         data = []
-        response = setting.requests_result
+        response = self.setting['requests_result']
         response = self.down.get_category(response, city[-3])
         self.recording_response(response)
         if response['response'] is not 'bad_requests':
@@ -79,7 +78,7 @@ class DianPingItemsEngine(object):
         每一次都要迭代一次列表
         """
 
-        f = open(setting.shop_list_file[setting.choice], 'w+')
+        f = open(self.setting['shop_list_file'][self.setting['choice']], 'w+')
         f.close()
         start_urls_infos = self.construct_url()
         # 当前并发量不够，单进程跑数据
@@ -93,8 +92,8 @@ class DianPingItemsEngine(object):
     def shop_list_logic(self, info):
         page = 50
         while page > 0:
-            response = setting.requests_result
-            shop_list = setting.shop_list
+            response = self.setting['requests_result']
+            shop_list = self.setting['shop_list']
             url = info[0] + str(51 - page)
             response = self.down.get_restaurant(url, response)
             self.recording_response(response)
@@ -116,15 +115,17 @@ class DianPingItemsEngine(object):
     def construct_url(self):
         """构造请求用的url"""
         urls = []
-        url = setting.url_shop_list
-        area = setting.city_list[setting.provs]
-        cate_file = setting.category_file[setting.choice]
+        url = self.setting['url_shop_list']
+        area = self.setting['city_list'][self.setting['provs']]
+        cate_file = self.setting['category_file'][self.setting['choice']]
 
         for city in area:
-            for category in open(cate_file, 'r', encoding=setting.encode):
-                info = city.strip().split(setting.blank)
-                cate = category.strip().split(setting.blank)
-                urls.append([url % (info[-3], setting.types[setting.choice], cate[1], info[-2]), cate[0], info])
+            for category in open(cate_file, 'r', encoding=self.setting['encode']):
+                info = city.strip().split(self.setting['blank'])
+                cate = category.strip().split(self.setting['blank'])
+                urls.append(
+                    [url % (info[-3], self.setting['types'][self.setting['choice']], cate[1], info[-2]), cate[0], info]
+                )
         return urls
 
     def shop_info(self):
@@ -132,9 +133,15 @@ class DianPingItemsEngine(object):
 
         也是要做一个清洗，做一个增量更新
         """
-        shop_list = (i.strip().split(setting.blank)
-                     for i in open(setting.shop_list_file[setting.choice], 'r', encoding=setting.encode))
-        shop_exists = set(i.strip() for i in open(setting.shop_exists[setting.choice], 'r', encoding=setting.encode))
+        shop_list = (i.strip().split(self.setting['blank'])
+                     for i in open(self.setting['shop_list_file'][self.setting['choice']],
+                                   'r',
+                                   encoding=self.setting['encode'])
+                     )
+        shop_exists = set(i.strip() for i in open(self.setting['shop_exists'][self.setting['choice']],
+                                                  'r',
+                                                  encoding=self.setting['encode'])
+                          )
         # pool = multiprocessing.Pool(1)
         for each in shop_list:
             if each[0] not in shop_exists:
@@ -144,8 +151,8 @@ class DianPingItemsEngine(object):
         # pool.join()
 
     def shop_info_logic(self, info):
-        response = setting.requests_result
-        shop_info = setting.shop_info
+        response = self.setting['requests_result']
+        shop_info = self.setting['shop_info']
         response = self.down.shop_info(info[0], response)
         self.recording_response(response)
         if response['response'] is not 'bad_requests':
@@ -166,11 +173,14 @@ class DianPingItemsEngine(object):
         在这里不关心到底有多少的评论，有评论就抓取，无评论就跳过。 按照日期来过滤
         对于新增加的店铺实现全部评论抓取
         """
-        f = open(setting.shop_cmt_file[setting.choice], 'w+')
+        f = open(self.setting['shop_cmt_file'][self.setting['choice']], 'w+')
         f.close()
 
-        shop_list = (i.strip().split(setting.blank)
-                     for i in open(setting.shop_list_file[setting.choice], 'r', encoding=setting.encode))
+        shop_list = (i.strip().split(self.setting['blank'])
+                     for i in open(self.setting['shop_list_file'][self.setting['choice']],
+                                   'r',
+                                   encoding=self.setting['encode'])
+                     )
         # pool = multiprocessing.Pool(1)
         for shop in shop_list:
             # pool.apply_async(self.updata_comments_logic, (shop, min_date, max_date))
@@ -183,8 +193,8 @@ class DianPingItemsEngine(object):
         """获取评论的逻辑"""
         page, next_page = 1, True
         while next_page:
-            response = setting.requests_result
-            shop_cmt = setting.shop_cmt
+            response = self.setting['requests_result']
+            shop_cmt = self.setting['shop_cmt']
             response = self.down.update_comment(shop[0], str(page), response)
             self.recording_response(response)
             if response['response'] is not 'bad_requests':
@@ -215,14 +225,15 @@ class DianPingItemsEngine(object):
             logging.debug('请求成功, url: %s, params: %s' % (response['url'], response['params']))
         return
 
+
 class DianPingItemsDownloader(object):
     """作为下载器的存在
 
     """
 
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, setting):
         self.session = requests.session()
+        self.setting = setting
 
     def do_get_requests(self, *args):
         retry = 30
@@ -235,16 +246,16 @@ class DianPingItemsDownloader(object):
                 if len(args) == 3:
                     res = self.session.get(args[0],
                                         headers=args[1],
-                                        cookies=setting.cookies,
-                                        proxies=setting.proxies,
+                                        cookies=self.setting['cookies'],
+                                        proxies=self.setting['proxies'],
                                         allow_redirects=True,
                                         timeout=30)
                 else:
                     res = self.session.get(args[0],
                                            headers=args[1],
-                                           cookies=setting.cookies,
+                                           cookies=self.setting['cookies'],
                                            params=args[3],
-                                           proxies=setting.proxies,
+                                           proxies=self.setting['proxies'],
                                            allow_redirects=True,
                                            timeout=30
                                            )
@@ -252,7 +263,7 @@ class DianPingItemsDownloader(object):
                 response['url'] = res.url
                 if repr(res.status_code).startswith('2'):
                     self.session.cookies.update(res.cookies)
-                    response['response'] = res.content.decode(setting.encode)
+                    response['response'] = res.content.decode(self.setting['encode'])
                     break
                 else:
                     # 但凡遇到403，如果是代理的问题则切换ip
@@ -264,36 +275,39 @@ class DianPingItemsDownloader(object):
         return response
 
     def get_category(self, response, city_id):
-        url = setting.categroy_url % (city_id, setting.types[setting.choice])
-        headers = setting.headers
+        url = self.setting['categroy_url'] % (city_id, self.setting['types'][self.setting['choice']])
+        headers = self.setting['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
     def get_restaurant(self, url, response):
-        headers = setting.headers
+        headers = self.setting['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
     def shop_info(self, id, response):
-        headers = setting.headers_xml
-        url = setting.url_info
-        params = setting.params
+        headers = self.setting['headers_xml']
+        url = self.setting['url_info']
+        params = self.setting['params']
         params['shopId'] = id
         params['_nr_force'] = int(time.time() * 1000)
         response = self.do_get_requests(url, headers, response, params)
         return response
 
     def update_comment(self, shopid, page, response):
-        url = setting.cmt_url % (shopid, page)
-        headers = setting.headers
+        url = self.setting['cmt_url'] % (shopid, page)
+        headers = self.setting['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
 class DianPingItemsSpider(object):
 
+    def __init__(self, setting):
+        self.setting = setting
+
     def get_category(self, html):
         selector = etree.HTML(html)
-        parse = setting.cate_list_parse
+        parse = self.setting['cate_list_parse']
         category_list = selector.xpath(parse['list'])
         data = []
         if category_list:
@@ -307,7 +321,7 @@ class DianPingItemsSpider(object):
         data = []
         try:
             selector = etree.HTML(html)
-            parse = setting.shop_list_parse
+            parse = self.setting['shop_list_parse']
             shop_list = selector.xpath(parse['list'])
             if shop_list:
                 for shop in shop_list:
@@ -317,7 +331,9 @@ class DianPingItemsSpider(object):
         except:
             # 报错，写入文本
             data = []
-            with open(os.path.join(os.path.abspath(setting.provs), 'list_error.txt'), 'w+', encoding='utf8') as f:
+            with open(os.path.join(os.path.abspath(self.setting['provs']), 'list_error.txt'),
+                      'w+',
+                      encoding=self.setting['encode']) as f:
                 f.write(html)
 
         return data
@@ -345,7 +361,7 @@ class DianPingItemsSpider(object):
 
     def update_comment(self, html, shop_cmt):
         try:
-            parse = setting.shop_cmt_parse
+            parse = self.setting['shop_cmt_parse']
             selector = etree.HTML(html)
             data = selector.xpath(parse['data'])
             if data:
@@ -367,7 +383,9 @@ class DianPingItemsSpider(object):
                         pass
                     shop_cmt['data'].append([user, contribution, attitute, score, content, date, fav, imgs])
         except:
-            with open(os.path.join(os.path.abspath(setting.provs), 'cmt_error.txt'), 'w+', encoding='utf8') as f:
+            with open(os.path.join(os.path.abspath(self.setting['provs']), 'cmt_error.txt'),
+                      'w+',
+                      encoding='utf8') as f:
                 f.write(html)
         return shop_cmt
 
@@ -377,6 +395,10 @@ class DianPingItemsPipeline(object):
     """作为管道的存在
 
     """
+
+    def __init__(self, setting):
+        self.setting = setting
+
     def save_category_list(self, cate_list):
         cate = []
         for i in cate_list:
@@ -386,24 +408,24 @@ class DianPingItemsPipeline(object):
         cate_set = set(cate)
         text = ''
         for i in cate_set:
-            text += setting.blank.join([i[0], i[1]]) + '\n'
-        with open(setting.category_file[setting.choice], 'w+', encoding=setting.encode) as f:
+            text += self.setting['blank'].join([i[0], i[1]]) + '\n'
+        with open(self.setting['category_file'][self.setting['choice']], 'w+', encoding=self.setting['encode']) as f:
             f.write(text)
 
     def save_shop_list(self, data, info):
         content = ''
         for each in data:
             txt = [info[1], info[2][0], info[2][1], info[2][2], info[2][3], info[2][4], info[2][5], info[2][6], info[2][7]]
-            text = setting.blank.join(txt)
+            text = self.setting['blank'].join(txt)
             text = re.sub('\r|\n| ', '', text)
             if not each[0] is '&':
                 shop_id = each[0].split('/')[-1]
-                content += setting.blank.join([shop_id, each[1], text]) + '\n'
-        with open(setting.shop_list_file[setting.choice], 'a', encoding=setting.encode) as f:
+                content += self.setting['blank'].join([shop_id, each[1], text]) + '\n'
+        with open(self.setting['shop_list_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
             f.write(content)
 
     def save_shop_info(self, data, info, url):
-        shop = setting.data_style[setting.choice]
+        shop = self.setting['data_style'][self.setting['choice']]
         shop['中文全称'] = info[1]
         shop['所属地区'] = info[8]
         shop['地址'] = data[0]
@@ -424,15 +446,15 @@ class DianPingItemsPipeline(object):
         shop['区县简称'] = info[9]
         shop['地区编码'] = info[10]
         shop['url'] = url
-        if setting.choice is 'food':
+        if self.setting['choice'] is 'food':
             shop['人均消费'] = data[4]
 
-        with open(setting.shop_info_file[setting.choice], 'a', encoding=setting.encode) as f:
-            text = setting.blank.join([shop[i] for i in setting.data_style_l[setting.choice]])
+        with open(self.setting['shop_info_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
+            text = self.setting['blank'].join([shop[i] for i in self.setting['data_style_l'][self.setting['choice']]])
             text = re.sub('\r|\n| |&|None', '', text) + '\n'
             f.write(text)
         # 保存这家店的ID
-        with open(setting.shop_exists[setting.choice], 'a', encoding=setting.encode) as p:
+        with open(self.setting['shop_exists'][self.setting['choice']], 'a', encoding=self.setting['encode']) as p:
             p.write(info[0] + '\n')
 
     def save_shop_cmt(self, data, info, min_date, max_date):
@@ -445,14 +467,14 @@ class DianPingItemsPipeline(object):
             if each[5] < max_date and each[5] >= min_date:
                 txt = [info[0], info[1], info[2]]
                 txt.extend(each)
-                text += re.sub('\r|\n| ', '', setting.blank.join(txt)) + '\n'
+                text += re.sub('\r|\n| ', '', self.setting['blank'].join(txt)) + '\n'
                 result = True
             else:
                 result = False
-        with open(setting.shop_cmt_file[setting.choice], 'a', encoding=setting.encode) as f:
+        with open(self.setting['shop_cmt_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
             f.write(text)
         # 写入历史文件
-        with open(setting.shop_cmt_history_file[setting.choice], 'a', encoding=setting.encode) as f:
+        with open(self.setting['shop_cmt_history_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
             f.write(text)
         return result
 
@@ -475,53 +497,16 @@ class DianPingItemsPipeline(object):
         return date_temp
 
 
-class setting(object):
-    choice = config.CHOICE
-    city_list = config.CITY_LIST
-    provs = config.PROVS
-    categroy_url = config.CATEGORY_URL
-    cookies = config.COOKIES
-    proxies = config.PROXIES
-    blank = config.BLANK
-    encode = config.ENCODEING
-    requests_result = config.REQUESTS_RESULT
-    types = config.TYPES
-    headers = config.HEADERS
-    headers_xml = config.HEADERS_XML
-    category_list =config.CATEGORY_LIST
-    cate_list_parse = config.CATEGORY_LIST_PARSE
-    category_file = config.CATEGORY_FILE
-    url_shop_list = config.SHOP_URL
-    shop_list = config.SHOP_LIST
-    shop_list_parse = config.SHOP_LIST_PARSE
-    shop_list_file = config.SHOP_LIST_FILE
-    url_info = config.INFO_URL
-    params = config.PARAMS
-    shop_info = config.SHOP_INFO
-    data_style = config.DATA_STYLE
-    data_style_l = config.DATA_STYLE_L
-    shop_info_file = config.SHOP_INFO_FILE
-    shop_exists = config.SHOP_ALREADY_EXISTS
-    cmt_url = config.CMT_URL
-    shop_cmt = config.SHOP_CMT
-    shop_cmt_parse = config.SHOP_CMT_PARSE
-    shop_cmt_file = config.SHOP_CMT_FILE
-    shop_cmt_history_file = config.SHOP_CMT_HISTORY_FILE
-    start_date = config.START_DATE_FILE
-    hdfs = config.HDFS
-    requests_log = config.REQUESTS_LOG
-
-
 class DianPingItemsSchedule(object):
     """简易的调度
 
     每次更新抓取时，当前日期没最大抓取日期，并在本次结束后写入文档里
     """
 
-    def execute(self, count):
+    def execute(self, count, setting):
         max_date = datetime.datetime.today().strftime('%Y-%m-%d')
-        min_date = open(setting.start_date[setting.choice], 'r', encoding=setting.encode).read()
-        dpie = DianPingItemsEngine()
+        min_date = open(setting['start_date'][setting['choice']], 'r', encoding=setting['encode']).read()
+        dpie = DianPingItemsEngine(setting)
         if count == 0:
             dpie.get_catgory()
         if count != 1:
@@ -529,17 +514,18 @@ class DianPingItemsSchedule(object):
         # dpie.shop_info()
         dpie.update_comments(min_date, max_date)
         del dpie
-        with open(setting.start_date[setting.choice], 'w+', encoding=setting.encode) as f:
+        with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
             f.write(max_date)
 
     def main(self):
         # count存在的意思在于，只有第一次获取分类后，就不再花请求去获取分类
         count = 0
         while True:
-            self.do_clear_logging()
+            setting = self.reload_config()
+            self.do_clear_logging(setting)
             record_start = time.time()
-            self.execute(count)
-            self.load_2_hdfs()
+            self.execute(count, setting)
+            self.load_2_hdfs(setting)
             record_end = time.time()
             lasting = int(record_end-record_start)
             total_seconds = 7*24*3600
@@ -548,18 +534,18 @@ class DianPingItemsSchedule(object):
             count += 1
 
 
-    def do_clear_logging(self):
+    def do_clear_logging(self, setting):
         """将日志清理模块封装"""
-        f = open(setting.requests_log % setting.provs, 'w+')
+        f = open(setting['requests_log'] % setting['provs'], 'w+')
         f.close()
 
-    def load_2_hdfs(self):
-        shop_list = setting.shop_list_file[setting.choice]
-        shop_info = setting.shop_info_file[setting.choice]
-        shop_cmt = setting.shop_cmt_file[setting.choice]
-        hdfs_shop_list = setting.hdfs % (os.path.split(shop_list)[1])
-        hdfs_shop_info = setting.hdfs % (os.path.split(shop_info)[1])
-        hdfs_shop_cmt = setting.hdfs % (os.path.split(shop_cmt)[1])
+    def load_2_hdfs(self, setting):
+        shop_list = setting['shop_list_file'][setting['choice']]
+        shop_info = setting['shop_info_file'][setting['choice']]
+        shop_cmt = setting['shop_cmt_file'][setting['choice']]
+        hdfs_shop_list = setting['hdfs'] % (os.path.split(shop_list)[1])
+        hdfs_shop_info = setting['hdfs'] % (os.path.split(shop_info)[1])
+        hdfs_shop_cmt = setting['hdfs'] % (os.path.split(shop_cmt)[1])
         try:
             hdfs = HDFileSystem(host='192.168.100.151', port=8020)
             hdfs.put(shop_list, hdfs_shop_list)
@@ -567,6 +553,55 @@ class DianPingItemsSchedule(object):
             hdfs.put(shop_cmt, hdfs_shop_cmt)
         except Exception as e:
             logging.warning('集群挂了:', e)
+
+    def reload_config(self):
+        """
+        作为动态的配置文件的导入
+        """
+        config = open('config.ini', 'r', encoding='utf8').read()
+        with open('config.py', 'w', encoding='utf8') as f:
+            f.write(config)
+        import config
+        from imp import reload
+        reload(config)
+        setting = {
+            'choice': config.CHOICE,
+            'city_list': config.CITY_LIST,
+            'provs': config.PROVS,
+            'categroy_url': config.CATEGORY_URL,
+            'cookies': config.COOKIES,
+            'proxies': config.PROXIES,
+            'blank': config.BLANK,
+            'encode': config.ENCODEING,
+            'requests_result': config.REQUESTS_RESULT,
+            'types': config.TYPES,
+            'headers': config.HEADERS,
+            'headers_xml': config.HEADERS_XML,
+            'category_list': config.CATEGORY_LIST,
+            'cate_list_parse': config.CATEGORY_LIST_PARSE,
+            'category_file': config.CATEGORY_FILE,
+            'url_shop_list': config.SHOP_URL,
+            'shop_list': config.SHOP_LIST,
+            'shop_list_parse': config.SHOP_LIST_PARSE,
+            'shop_list_file': config.SHOP_LIST_FILE,
+            'url_info': config.INFO_URL,
+            'params': config.PARAMS,
+            'shop_info': config.SHOP_INFO,
+            'data_style': config.DATA_STYLE,
+            'data_style_l': config.DATA_STYLE_L,
+            'shop_info_file': config.SHOP_INFO_FILE,
+            'shop_exists': config.SHOP_ALREADY_EXISTS,
+            'cmt_url': config.CMT_URL,
+            'shop_cmt': config.SHOP_CMT,
+            'shop_cmt_parse': config.SHOP_CMT_PARSE,
+            'shop_cmt_file': config.SHOP_CMT_FILE,
+            'shop_cmt_history_file': config.SHOP_CMT_HISTORY_FILE,
+            'start_date': config.START_DATE_FILE,
+            'hdfs': config.HDFS,
+            'requests_log': config.REQUESTS_LOG,
+        }
+        return setting
+
 
 if __name__ == '__main__':
     dpis = DianPingItemsSchedule()
