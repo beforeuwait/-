@@ -44,13 +44,13 @@ class DianPingItemsEngine(object):
         self.down = DianPingItemsDownloader(setting)
         self.spider = DianPingItemsSpider(setting)
         self.pipe = DianPingItemsPipeline(setting)
-        self.setting = setting
+        self.s = setting
 
     def get_catgory(self):
         """"该模块作为迭代每个市，获取目录分类"""
-        city_list = self.setting['city_list'][self.setting['provs']]
-        category_list = self.setting['category_list']
-        category_list['data'] = [self.get_category_logic(i.strip().split(self.setting['blank'])) for i in city_list]
+        city_list = self.s['city_list'][self.s['provs']]
+        category_list = self.s['category_list']
+        category_list['data'] = [self.get_category_logic(i.strip().split(self.s['blank'])) for i in city_list]
         self.pipe.save_category_list(category_list['data'])
         # 清理
         category_list['data'].clear()
@@ -58,7 +58,7 @@ class DianPingItemsEngine(object):
 
     def get_category_logic(self, city):
         data = []
-        response = self.setting['requests_result']
+        response = self.s['requests_result']
         response = self.down.get_category(response, city[-3])
         self.recording_response(response)
         if response['response'] is not 'bad_requests':
@@ -79,7 +79,7 @@ class DianPingItemsEngine(object):
         每一次都要迭代一次列表
         """
 
-        f = open(self.setting['shop_list_file'][self.setting['choice']], 'w+')
+        f = open(self.s['shop_list_file'][self.s['choice']], 'w+')
         f.close()
         start_urls_infos = self.construct_url()
         # 当前并发量不够，单进程跑数据
@@ -93,8 +93,8 @@ class DianPingItemsEngine(object):
     def shop_list_logic(self, info):
         page = 50
         while page > 0:
-            response = self.setting['requests_result']
-            shop_list = self.setting['shop_list']
+            response = self.s['requests_result']
+            shop_list = self.s['shop_list']
             url = info[0] + str(51 - page)
             response = self.down.get_restaurant(url, response)
             self.recording_response(response)
@@ -116,16 +116,16 @@ class DianPingItemsEngine(object):
     def construct_url(self):
         """构造请求用的url"""
         urls = []
-        url = self.setting['url_shop_list']
-        area = self.setting['city_list'][self.setting['provs']]
-        cate_file = self.setting['category_file'][self.setting['choice']]
+        url = self.s['url_shop_list']
+        area = self.s['city_list'][self.s['provs']]
+        cate_file = self.s['category_file'][self.s['choice']]
 
         for city in area:
-            for category in open(cate_file, 'r', encoding=self.setting['encode']):
-                info = city.strip().split(self.setting['blank'])
-                cate = category.strip().split(self.setting['blank'])
+            for category in open(cate_file, 'r', encoding=self.s['encode']):
+                info = city.strip().split(self.s['blank'])
+                cate = category.strip().split(self.s['blank'])
                 urls.append(
-                    [url % (info[-3], self.setting['types'][self.setting['choice']], cate[1], info[-2]), cate[0], info]
+                    [url % (info[-3], self.s['types'][self.s['choice']], cate[1], info[-2]), cate[0], info]
                 )
         return urls
 
@@ -134,14 +134,10 @@ class DianPingItemsEngine(object):
 
         也是要做一个清洗，做一个增量更新
         """
-        shop_list = (i.strip().split(self.setting['blank'])
-                     for i in open(self.setting['shop_list_file'][self.setting['choice']],
-                                   'r',
-                                   encoding=self.setting['encode'])
+        shop_list = (i.strip().split(self.s['blank'])
+                     for i in open(self.s['shop_list_file'][self.s['choice']], 'r', encoding=self.s['encode'])
                      )
-        shop_exists = set(i.strip() for i in open(self.setting['shop_exists'][self.setting['choice']],
-                                                  'r',
-                                                  encoding=self.setting['encode'])
+        shop_exists = set(i.strip() for i in open(self.s['shop_exists'][self.s['choice']], 'r', encoding=self.s['encode'])
                           )
         # pool = multiprocessing.Pool(1)
         for each in shop_list:
@@ -152,8 +148,8 @@ class DianPingItemsEngine(object):
         # pool.join()
 
     def shop_info_logic(self, info):
-        response = self.setting['requests_result']
-        shop_info = self.setting['shop_info']
+        response = self.s['requests_result']
+        shop_info = self.s['shop_info']
         response = self.down.shop_info(info[0], response)
         self.recording_response(response)
         if response['response'] is not 'bad_requests':
@@ -174,13 +170,11 @@ class DianPingItemsEngine(object):
         在这里不关心到底有多少的评论，有评论就抓取，无评论就跳过。 按照日期来过滤
         对于新增加的店铺实现全部评论抓取
         """
-        f = open(self.setting['shop_cmt_file'][self.setting['choice']], 'w+')
+        f = open(self.s['shop_cmt_file'][self.s['choice']], 'w+')
         f.close()
 
-        shop_list = (i.strip().split(self.setting['blank'])
-                     for i in open(self.setting['shop_list_file'][self.setting['choice']],
-                                   'r',
-                                   encoding=self.setting['encode'])
+        shop_list = (i.strip().split(self.s['blank'])
+                     for i in open(self.s['shop_list_file'][self.s['choice']], 'r', encoding=self.s['encode'])
                      )
         # pool = multiprocessing.Pool(1)
         for shop in shop_list:
@@ -194,8 +188,8 @@ class DianPingItemsEngine(object):
         """获取评论的逻辑"""
         page, next_page = 1, True
         while next_page:
-            response = self.setting['requests_result']
-            shop_cmt = self.setting['shop_cmt']
+            response = self.s['requests_result']
+            shop_cmt = self.s['shop_cmt']
             response = self.down.update_comment(shop[0], str(page), response)
             self.recording_response(response)
             if response['response'] is not 'bad_requests':
@@ -234,7 +228,7 @@ class DianPingItemsDownloader(object):
 
     def __init__(self, setting):
         self.session = requests.session()
-        self.setting = setting
+        self.s = setting
 
     def do_get_requests(self, *args):
         retry = 30
@@ -247,16 +241,16 @@ class DianPingItemsDownloader(object):
                 if len(args) == 3:
                     res = self.session.get(args[0],
                                         headers=args[1],
-                                        cookies=self.setting['cookies'],
-                                        proxies=self.setting['proxies'],
+                                        cookies=self.s['cookies'],
+                                        proxies=self.s['proxies'],
                                         allow_redirects=True,
                                         timeout=30)
                 else:
                     res = self.session.get(args[0],
                                            headers=args[1],
-                                           cookies=self.setting['cookies'],
+                                           cookies=self.s['cookies'],
                                            params=args[3],
-                                           proxies=self.setting['proxies'],
+                                           proxies=self.s['proxies'],
                                            allow_redirects=True,
                                            timeout=30
                                            )
@@ -264,7 +258,7 @@ class DianPingItemsDownloader(object):
                 response['url'] = res.url
                 if repr(res.status_code).startswith('2'):
                     self.session.cookies.update(res.cookies)
-                    response['response'] = res.content.decode(self.setting['encode'])
+                    response['response'] = res.content.decode(self.s['encode'])
                     break
                 else:
                     # 但凡遇到403，如果是代理的问题则切换ip
@@ -276,67 +270,73 @@ class DianPingItemsDownloader(object):
         return response
 
     def get_category(self, response, city_id):
-        url = self.setting['categroy_url'] % (city_id, self.setting['types'][self.setting['choice']])
-        headers = self.setting['headers']
+        url = self.s['categroy_url'] % (city_id, self.s['types'][self.s['choice']])
+        headers = self.s['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
     def get_restaurant(self, url, response):
-        headers = self.setting['headers']
+        headers = self.s['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
     def shop_info(self, id, response):
-        headers = self.setting['headers_xml']
-        url = self.setting['url_info']
-        params = self.setting['params']
+        headers = self.s['headers_xml']
+        url = self.s['url_info']
+        params = self.s['params']
         params['shopId'] = id
         params['_nr_force'] = int(time.time() * 1000)
         response = self.do_get_requests(url, headers, response, params)
         return response
 
     def update_comment(self, shopid, page, response):
-        url = self.setting['cmt_url'] % (shopid, page)
-        headers = self.setting['headers']
+        url = self.s['cmt_url'] % (shopid, page)
+        headers = self.s['headers']
         response = self.do_get_requests(url, headers, response)
         return response
 
 class DianPingItemsSpider(object):
 
     def __init__(self, setting):
-        self.setting = setting
+        self.s = setting
 
     def get_category(self, html):
-        selector = etree.HTML(html)
-        parse = self.setting['cate_list_parse']
-        category_list = selector.xpath(parse['list'])
+        selector = None
         data = []
-        if category_list:
-            for cate in category_list:
-                id = cate.xpath(parse['id'])[0].split('/')[-1]
-                type = cate.xpath(parse['type'])[0]
-                data.append([type, id])
+        try:
+            selector = etree.HTML(html)
+        except:
+            pass
+        if selector is not None:
+            parse = self.s['cate_list_parse']
+            category_list = selector.xpath(parse['list'])
+            if category_list:
+                for cate in category_list:
+                    id = cate.xpath(parse['id'])[0].split('/')[-1]
+                    type = cate.xpath(parse['type'])[0]
+                    data.append([type, id])
         return data
 
     def shop_list(self, html):
         data = []
+        selector = None
         try:
             selector = etree.HTML(html)
-            parse = self.setting['shop_list_parse']
+        except:
+            # 报错，写入文本
+            data = []
+            path = os.path.join(os.path.abspath(self.s['provs']), 'list_error.txt')
+            with open(path, 'w+', encoding=self.s['encode']) as f:
+                f.write(html)
+
+        if selector is not None:
+            parse = self.s['shop_list_parse']
             shop_list = selector.xpath(parse['list'])
             if shop_list:
                 for shop in shop_list:
                     url = shop.xpath(parse['url'])[0] if shop.xpath(parse['url']) else '&'
                     name = shop.xpath(parse['name'])[0] if shop.xpath(parse['name']) else '&'
                     data.append([url, name])
-        except:
-            # 报错，写入文本
-            data = []
-            with open(os.path.join(os.path.abspath(self.setting['provs']), 'list_error.txt'),
-                      'w+',
-                      encoding=self.setting['encode']) as f:
-                f.write(html)
-
         return data
 
     def shop_info(self, html, shop_info):
@@ -361,9 +361,16 @@ class DianPingItemsSpider(object):
         return shop_info
 
     def update_comment(self, html, shop_cmt):
+        parse = self.s['shop_cmt_parse']
+        selector = None
         try:
-            parse = self.setting['shop_cmt_parse']
             selector = etree.HTML(html)
+        except:
+            path = os.path.join(os.path.abspath(self.s['provs']), 'cmt_error.txt')
+            with open(path, 'w+', encoding='utf8') as f:
+                f.write(html)
+
+        if selector is not None:
             data = selector.xpath(parse['data'])
             if data:
                 for each in data:
@@ -383,11 +390,7 @@ class DianPingItemsSpider(object):
                     except:
                         pass
                     shop_cmt['data'].append([user, contribution, attitute, score, content, date, fav, imgs])
-        except:
-            with open(os.path.join(os.path.abspath(self.setting['provs']), 'cmt_error.txt'),
-                      'w+',
-                      encoding='utf8') as f:
-                f.write(html)
+
         return shop_cmt
 
 
@@ -398,7 +401,7 @@ class DianPingItemsPipeline(object):
     """
 
     def __init__(self, setting):
-        self.setting = setting
+        self.s = setting
 
     def save_category_list(self, cate_list):
         cate = []
@@ -409,24 +412,24 @@ class DianPingItemsPipeline(object):
         cate_set = set(cate)
         text = ''
         for i in cate_set:
-            text += self.setting['blank'].join([i[0], i[1]]) + '\n'
-        with open(self.setting['category_file'][self.setting['choice']], 'w+', encoding=self.setting['encode']) as f:
+            text += self.s['blank'].join([i[0], i[1]]) + '\n'
+        with open(self.s['category_file'][self.s['choice']], 'w+', encoding=self.s['encode']) as f:
             f.write(text)
 
     def save_shop_list(self, data, info):
         content = ''
         for each in data:
             txt = [info[1], info[2][0], info[2][1], info[2][2], info[2][3], info[2][4], info[2][5], info[2][6], info[2][7]]
-            text = self.setting['blank'].join(txt)
+            text = self.s['blank'].join(txt)
             text = re.sub('\r|\n| ', '', text)
             if not each[0] is '&':
                 shop_id = each[0].split('/')[-1]
-                content += self.setting['blank'].join([shop_id, each[1], text]) + '\n'
-        with open(self.setting['shop_list_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
+                content += self.s['blank'].join([shop_id, each[1], text]) + '\n'
+        with open(self.s['shop_list_file'][self.s['choice']], 'a', encoding=self.s['encode']) as f:
             f.write(content)
 
     def save_shop_info(self, data, info, url):
-        shop = self.setting['data_style'][self.setting['choice']]
+        shop = self.s['data_style'][self.s['choice']]
         shop['中文全称'] = info[1]
         shop['所属地区'] = info[8]
         shop['地址'] = data[0]
@@ -447,15 +450,15 @@ class DianPingItemsPipeline(object):
         shop['区县简称'] = info[9]
         shop['地区编码'] = info[10]
         shop['url'] = url
-        if self.setting['choice'] is 'food':
+        if self.s['choice'] is 'food':
             shop['人均消费'] = data[4]
 
-        with open(self.setting['shop_info_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
-            text = self.setting['blank'].join([shop[i] for i in self.setting['data_style_l'][self.setting['choice']]])
+        with open(self.s['shop_info_file'][self.s['choice']], 'a', encoding=self.s['encode']) as f:
+            text = self.s['blank'].join([shop[i] for i in self.s['data_style_l'][self.s['choice']]])
             text = re.sub('\r|\n| |&|None', '', text) + '\n'
             f.write(text)
         # 保存这家店的ID
-        with open(self.setting['shop_exists'][self.setting['choice']], 'a', encoding=self.setting['encode']) as p:
+        with open(self.s['shop_exists'][self.s['choice']], 'a', encoding=self.s['encode']) as p:
             p.write(info[0] + '\n')
 
     def save_shop_cmt(self, data, info, min_date, max_date):
@@ -468,14 +471,14 @@ class DianPingItemsPipeline(object):
             if each[5] < max_date and each[5] >= min_date:
                 txt = [info[0], info[1], info[2]]
                 txt.extend(each)
-                text += re.sub('\r|\n| ', '', self.setting['blank'].join(txt)) + '\n'
+                text += re.sub('\r|\n| ', '', self.s['blank'].join(txt)) + '\n'
                 result = True
             else:
                 result = False
-        with open(self.setting['shop_cmt_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
+        with open(self.s['shop_cmt_file'][self.s['choice']], 'a', encoding=self.s['encode']) as f:
             f.write(text)
         # 写入历史文件
-        with open(self.setting['shop_cmt_history_file'][self.setting['choice']], 'a', encoding=self.setting['encode']) as f:
+        with open(self.s['shop_cmt_history_file'][self.s['choice']], 'a', encoding=self.s['encode']) as f:
             f.write(text)
         return result
 
