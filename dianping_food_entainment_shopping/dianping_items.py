@@ -10,6 +10,7 @@ __author__ = 'WangJiaWei'
         2017-12-19 发现获取页面数据时候，有token
         2017-12-22 更新评论抓取的逻辑
         2017-12-28 迭代，实现动态加载配置文件
+        2018-01-04 迭代，获取静态通用token，重写商铺基础数据部分
 """
 
 import re
@@ -516,7 +517,7 @@ class DianPingItemsSchedule(object):
             dpie.get_catgory()
         if count != 1:
             dpie.shop_list()
-        # dpie.shop_info()
+        dpie.shop_info()
         dpie.update_comments(min_date, max_date)
         del dpie
         with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
@@ -603,6 +604,7 @@ class DianPingItemsSchedule(object):
             'start_date': config.START_DATE_FILE,
             'hdfs': config.HDFS,
             'requests_log': config.REQUESTS_LOG,
+            'token': config.TOKEN
         }
         return setting
 
