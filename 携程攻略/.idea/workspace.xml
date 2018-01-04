@@ -19,19 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ctrip_items.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ctrip_items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3916">
-              <caret line="580" column="35" lean-forward="true" selection-start-line="580" selection-start-column="35" selection-end-line="580" selection-end-column="35" />
-              <folding>
-                <element signature="e#304#313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
@@ -590,22 +578,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ctrip_items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="349" column="21" lean-forward="false" selection-start-line="349" selection-start-column="21" selection-end-line="349" selection-end-column="21" />
+          <folding>
+            <element signature="e#304#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="136" column="1" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
           <folding>
             <element signature="e#20#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctrip_items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3916">
-          <caret line="580" column="35" lean-forward="true" selection-start-line="580" selection-start-column="35" selection-end-line="580" selection-end-column="35" />
-          <folding>
-            <element signature="e#304#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
