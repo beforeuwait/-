@@ -20,6 +20,7 @@ import datetime
 import logging
 import random
 import multiprocessing
+from imp import reload
 import requests
 from lxml import etree
 from faker import Faker
@@ -566,7 +567,6 @@ class DianPingItemsSchedule(object):
         with open('config.py', 'w', encoding='utf8') as f:
             f.write(config)
         import config
-        from imp import reload
         reload(config)
         setting = {
             'choice': config.CHOICE,
