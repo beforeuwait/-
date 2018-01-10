@@ -11,6 +11,7 @@ __author__ = 'WangJiaWei'
         2017-12-22 更新评论抓取的逻辑
         2017-12-28 迭代，实现动态加载配置文件
         2018-01-04 迭代，获取静态通用token，重写商铺基础数据部分
+        2018-01-10 迭代，修改逻辑，将省份并发，该为先后顺序，同时分配高并发
 """
 
 import re
@@ -29,6 +30,7 @@ try:
     from hdfs3 import HDFileSystem
 except:
     pass
+import config_area
 
 
 class DianPingItemsEngine(object):
@@ -85,12 +87,12 @@ class DianPingItemsEngine(object):
         f.close()
         start_urls_infos = self.construct_url()
         # 当前并发量不够，单进程跑数据
-        # pool = multiprocessing.Pool(1)
+        pool = multiprocessing.Pool(6)
         for info in start_urls_infos:
-            self.shop_list_logic(info)
-            # pool.apply_async(self.shop_list_logic, (info, ))
-        # pool.close()
-        # pool.join()
+            # self.shop_list_logic(info)
+            pool.apply_async(self.shop_list_logic, (info, ))
+        pool.close()
+        pool.join()
 
     def shop_list_logic(self, info):
         page = 50
@@ -141,13 +143,13 @@ class DianPingItemsEngine(object):
                      )
         shop_exists = set(i.strip() for i in open(self.s['shop_exists'][self.s['choice']], 'r', encoding=self.s['encode'])
                           )
-        # pool = multiprocessing.Pool(1)
+        pool = multiprocessing.Pool(6)
         for each in shop_list:
             if each[0] not in shop_exists:
-                self.shop_info_logic(each)
-                # pool.apply_async(self.get_info, (each,))
-        # pool.close()
-        # pool.join()
+                # self.shop_info_logic(each)
+                pool.apply_async(self.shop_info_logic, (each,))
+        pool.close()
+        pool.join()
 
     def shop_info_logic(self, info):
         response = self.s['requests_result']
@@ -178,13 +180,12 @@ class DianPingItemsEngine(object):
         shop_list = (i.strip().split(self.s['blank'])
                      for i in open(self.s['shop_list_file'][self.s['choice']], 'r', encoding=self.s['encode'])
                      )
-        # pool = multiprocessing.Pool(1)
+        pool = multiprocessing.Pool(10)
         for shop in shop_list:
-            # pool.apply_async(self.updata_comments_logic, (shop, min_date, max_date))
-            self.update_comments_logic(shop, min_date, max_date)
-        # pool.close()
-        # pool.join()
-        return
+            pool.apply_async(self.update_comments_logic, (shop, min_date, max_date))
+            # self.update_comments_logic(shop, min_date, max_date)
+        pool.close()
+        pool.join()
 
     def update_comments_logic(self, shop, min_date, max_date):
         """获取评论的逻辑"""
@@ -509,36 +510,29 @@ class DianPingItemsSchedule(object):
     每次更新抓取时，当前日期没最大抓取日期，并在本次结束后写入文档里
     """
 
-    def execute(self, count, setting):
-        max_date = datetime.datetime.today().strftime('%Y-%m-%d')
-        min_date = open(setting['start_date'][setting['choice']], 'r', encoding=setting['encode']).read()
+    def execute(self, setting, min_date, max_date):
         dpie = DianPingItemsEngine(setting)
-        if count == 0:
-            dpie.get_catgory()
-        if count != 1:
-            dpie.shop_list()
+        # 分类不必要每次都拿
+        # dpie.get_catgory()
+        dpie.shop_list()
         dpie.shop_info()
         dpie.update_comments(min_date, max_date)
         del dpie
-        with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
-            f.write(max_date)
 
     def main(self):
         # count存在的意思在于，只有第一次获取分类后，就不再花请求去获取分类
-        count = 0
+        #
+        # 2018-01-10 这里做了逻辑处理，将日期的处理从execute提出，放入main函数里，涉及到共用的原因
         while True:
-            setting = self.reload_config()
-            self.do_clear_logging(setting)
-            record_start = time.time()
-            self.execute(count, setting)
-            self.load_2_hdfs(setting)
-            record_end = time.time()
-            lasting = int(record_end-record_start)
-            total_seconds = 7*24*3600
-            if lasting < total_seconds:
-                time.sleep(total_seconds-lasting)
-            count += 1
-
+            max_date = datetime.datetime.today().strftime('%Y-%m-%d')
+            for prov in config_area.PROVS_LIST:
+                setting = self.reload_config(prov)
+                min_date = open(setting['start_date'][setting['choice']], 'r', encoding=setting['encode']).read()
+                self.do_clear_logging(setting)
+                self.execute(setting, min_date, max_date)
+                self.load_2_hdfs(setting)
+            with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
+                f.write(max_date)
 
     def do_clear_logging(self, setting):
         """将日志清理模块封装"""
@@ -553,20 +547,20 @@ class DianPingItemsSchedule(object):
         hdfs_shop_info = setting['hdfs'] % (os.path.split(shop_info)[1])
         hdfs_shop_cmt = setting['hdfs'] % (os.path.split(shop_cmt)[1])
         try:
-            hdfs = HDFileSystem(host='192.168.100.151', port=8020)
+            hdfs = HDFileSystem(host='192.168.100.178', port=8020)
             hdfs.put(shop_list, hdfs_shop_list)
             hdfs.put(shop_info, hdfs_shop_info)
             hdfs.put(shop_cmt, hdfs_shop_cmt)
         except Exception as e:
             logging.warning('集群挂了:', e)
 
-    def reload_config(self):
+    def reload_config(self, prov):
         """
         作为动态的配置文件的导入
         """
         config = open('config.ini', 'r', encoding='utf8').read()
         with open('config.py', 'w', encoding='utf8') as f:
-            f.write(config)
+            f.write('PROVS=\'%s\'' % prov + '\n' + config)
         import config
         reload(config)
         setting = {
@@ -604,7 +598,6 @@ class DianPingItemsSchedule(object):
             'start_date': config.START_DATE_FILE,
             'hdfs': config.HDFS,
             'requests_log': config.REQUESTS_LOG,
-            'token': config.TOKEN
         }
         return setting
 

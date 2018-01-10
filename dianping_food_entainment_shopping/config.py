@@ -1,3 +1,4 @@
+PROVS='贵州'
 import os
 import sys
 import logging
@@ -5,8 +6,8 @@ from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-PROVS = sys.argv[1:][0]
-CHOICE = sys.argv[1:][1]
+# CHOICE = sys.argv[1:][0]
+CHOICE = 'shopping'
 """
 # 测试用
 CHOICE = 'food'
@@ -21,6 +22,7 @@ BLANK = '\u0001'
 ENCODEING = 'utf8'
 HDFS = '/user/spider/dianping/%s'
 REQUESTS_LOG = 'requests_%s.log'
+TOKEN = 'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
 # 请求回应 response
 
 REQUESTS_RESULT = {
