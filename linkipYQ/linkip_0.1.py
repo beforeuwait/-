@@ -265,8 +265,9 @@ class LinkIpDownloader(object):
         data = self.s['request_data']
         data['currPage'] = num
         data['themeId'] = theme_id
-        data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
-        data['endDay'] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M')
+        # data['startDay'] = (datetime.datetime.today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d %H:%M')
+        data['startDay'] = '2017-01-01 00:00'
+        data['endDay'] = '2017-12-31 23:59'
         response = self.POST_request(url, headers, response, data)
         return response
 
