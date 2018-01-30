@@ -1,4 +1,4 @@
-PROVS='贵州'
+PROVS = '贵州'
 import os
 import sys
 import logging
@@ -6,8 +6,7 @@ from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-# CHOICE = sys.argv[1:][0]
-CHOICE = 'shopping'
+CHOICE = sys.argv[1:][0]
 """
 # 测试用
 CHOICE = 'food'
@@ -107,15 +106,31 @@ SHOP_CMT_PARSE = {
 
 # cookies
 
-COOKIES = {
-    "Cookie": ("_lxsdk_cuid=15f764046b2c8-003bfe4009ee8f-31657c00-13c680-15f764046b3c8;"
-               " _lxsdk=15f764046b2c8-003bfe4009ee8f-31657c00-13c680-15f764046b3c8;"
-               " _hc.v=92e1ae93-4aec-7711-499b-0502c77845c6.1509517445;"
-               " ua=_%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86;"
-               " ctu=a91d9076090ffb8fe11e3982711567ed3409b280252436c851c0d7543e06e90d;"
-               " aburl=1; cye=sanya; ctu=60c2e2547b17f450a8bfd7790239d62d222ffce9390e3acbcc97748c545642d63"
-               "e09c01dfbef72119da3a7f1c9e9cf97; cy=345; s_ViewType=10; _lxsdk_s=16052bd7e02-ca2-817-99d%7C%7C21")
+COOKIES1 = {
+    "Cookie": (
+        # "cy=8;"
+        # " cye=chengdu;"
+        # " _lxsdk_cuid=1614591ca5dc8-077d8fce01b563-32667403-13c680-1614591ca5dc8;"
+        # " _lxsdk=1614591ca5dc8-077d8fce01b563-32667403-13c680-1614591ca5dc8;"
+        # " _hc.v=368d1395-fa0e-d541-e0f6-8690a26bb529.1517290638;"
+        # " dper=9b5ba8ba8fb7338106d7db259d132cf9e4a4b9ff6044c42201fcf8347bf59323;"
+        " ll=7fd06e815b796be3df069dec7836c3df;"  ## !!!
+         " lgtoken=025cadcec-73bf-4809-a971-4e7bdebdd442;"
+        # " ua=18582389107;" 
+        " ctu=06936018815a622639a414e01836cb5348b97dd37cfa87092eb83d7be0c80ad4;"  # !!!
+        # " s_ViewType=10;"
+        " _lxsdk_s=1614591ca60-041-da1-f01%7C%7C44"  # !!!
+    )
 }
+COOKIES = {
+    "Cookie": (
+        " ctu=06936018815a622639a414e01836cb5348b97dd37cfa87092eb83d7be0c80ad4;"
+        " lgtoken=025cadcec-73bf-4809-a971-4e7bdebdd442;"
+        " dper=9b5ba8ba8fb7338106d7db259d132cf979bd7c9299704797928e6a65c744f6cc;"
+        " ll=7fd06e815b796be3df069dec7836c3df;"
+        )
+}
+
 # PARAMS
 PARAMS = {
     "_nr_force": "1508318702379",

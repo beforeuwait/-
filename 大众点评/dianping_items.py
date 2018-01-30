@@ -13,6 +13,8 @@ __author__ = 'WangJiaWei'
         2018-01-04 迭代，获取静态通用token，重写商铺基础数据部分
         2018-01-10 迭代，修改逻辑，将省份并发，该为先后顺序，同时分配高并发
         2018-01-29 正儿八经的开始迭代
+                    1. 通过屏蔽cookies里关于client的字段达到突破，性能未测试
+                    2. 暂时考虑请求cmt时候不要带cookies
 """
 
 import re
@@ -88,7 +90,7 @@ class DianPingItemsEngine(object):
         f.close()
         start_urls_infos = self.construct_url()
         # 当前并发量不够，单进程跑数据
-        pool = multiprocessing.Pool(6)
+        pool = multiprocessing.Pool(4)
         for info in start_urls_infos:
             # self.shop_list_logic(info)
             pool.apply_async(self.shop_list_logic, (info, ))
@@ -144,7 +146,7 @@ class DianPingItemsEngine(object):
                      )
         shop_exists = set(i.strip() for i in open(self.s['shop_exists'][self.s['choice']], 'r', encoding=self.s['encode'])
                           )
-        pool = multiprocessing.Pool(6)
+        pool = multiprocessing.Pool(4)
         for each in shop_list:
             if each[0] not in shop_exists:
                 # self.shop_info_logic(each)
@@ -177,7 +179,6 @@ class DianPingItemsEngine(object):
         """
         f = open(self.s['shop_cmt_file'][self.s['choice']], 'w+')
         f.close()
-
         shop_list = (i.strip().split(self.s['blank'])
                      for i in open(self.s['shop_list_file'][self.s['choice']], 'r', encoding=self.s['encode'])
                      )
@@ -243,14 +244,16 @@ class DianPingItemsDownloader(object):
                 # 休息 0-1之间的随机数
                 time.sleep(random.random())
                 if len(args) == 3:
-                    res = self.session.get(args[0],
+                    # res = self.session.get(args[0],
+                    res = requests.get(args[0],
                                         headers=args[1],
                                         cookies=self.s['cookies'],
                                         proxies=self.s['proxies'],
                                         allow_redirects=True,
                                         timeout=30)
                 else:
-                    res = self.session.get(args[0],
+                    # res = self.session.get(args[0],
+                    res = requests.get(args[0],
                                            headers=args[1],
                                            cookies=self.s['cookies'],
                                            params=args[3],
@@ -267,6 +270,7 @@ class DianPingItemsDownloader(object):
                 else:
                     # 但凡遇到403，如果是代理的问题则切换ip
                     args[1]['Proxy-Switch-Ip'] = 'yes'
+                    print(datetime.datetime.today().strftime('%Y-%m-%d %H-%M-%s'), '出现: ', res.status_code)
             except Exception as e:
                 args[1]['Proxy-Switch-Ip'] = 'yes'
                 response['error'] = e
@@ -511,12 +515,15 @@ class DianPingItemsSchedule(object):
     每次更新抓取时，当前日期没最大抓取日期，并在本次结束后写入文档里
     """
 
-    def execute(self, setting, min_date, max_date):
+    def execute(self, setting, min_date, max_date, n):
         dpie = DianPingItemsEngine(setting)
         # 分类不必要每次都拿
+        #
+        # 同时，更新了策略，每一次迭代，并不重新获取列表了
         # dpie.get_catgory()
-        dpie.shop_list()
-        dpie.shop_info()
+        if n == 1:
+            dpie.shop_list()
+            dpie.shop_info()
         dpie.update_comments(min_date, max_date)
         del dpie
 
@@ -524,16 +531,18 @@ class DianPingItemsSchedule(object):
         # count存在的意思在于，只有第一次获取分类后，就不再花请求去获取分类
         #
         # 2018-01-10 这里做了逻辑处理，将日期的处理从execute提出，放入main函数里，涉及到共用的原因
+        n = 1
         while True:
             max_date = datetime.datetime.today().strftime('%Y-%m-%d')
             for prov in config_area.PROVS_LIST:
                 setting = self.reload_config(prov)
                 min_date = open(setting['start_date'][setting['choice']], 'r', encoding=setting['encode']).read()
                 self.do_clear_logging(setting)
-                self.execute(setting, min_date, max_date)
+                self.execute(setting, min_date, max_date, n)
                 self.load_2_hdfs(setting)
-            with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
-                f.write(max_date)
+                with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
+                    f.write(max_date)
+                n += 1
 
     def do_clear_logging(self, setting):
         """将日志清理模块封装"""
