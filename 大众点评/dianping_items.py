@@ -15,6 +15,7 @@ __author__ = 'WangJiaWei'
         2018-01-29 正儿八经的开始迭代
                     1. 通过屏蔽cookies里关于client的字段达到突破，性能未测试
                     2. 暂时考虑请求cmt时候不要带cookies
+                    3. 仍旧会带着cookies
 """
 
 import re
