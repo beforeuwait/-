@@ -1,4 +1,4 @@
-PROVS = '贵州'
+PROVS='河北'
 import os
 import sys
 import logging
@@ -6,14 +6,14 @@ from config_area import CITY_LIST
 
 os.chdir(os.path.split(os.path.abspath(__file__))[0])
 
-CHOICE = sys.argv[1:][0]
+# CHOICE = sys.argv[1:][0]
 """
 # 测试用
 CHOICE = 'food'
 PROVS = '新疆'
 """
-# PROVS = '四川'
-# CHOICE = 'food'
+PROVS = '四川'
+CHOICE = 'food'
 CITY_LIST = CITY_LIST
 
 # 设置
@@ -21,7 +21,6 @@ BLANK = '\u0001'
 ENCODEING = 'utf8'
 HDFS = '/user/spider/dianping/%s'
 REQUESTS_LOG = 'requests_%s.log'
-TOKEN = 'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
 # 请求回应 response
 
 REQUESTS_RESULT = {
@@ -92,7 +91,8 @@ SHOP_LIST_PARSE = {
 
 SHOP_CMT_PARSE = {
     'data': '//div[@class="reviews-items"]/ul/li',
-    'user': 'div[@class="main-review"]/div[@class="dper-info"]/a/text()',
+    'user1': 'div[@class="main-review"]/div[@class="dper-info"]/a/text()',
+    'user2': 'div[@class="main-review"]/div[@class="dper-info"]/span/text()',
     # 贡献值被取消
     'contribution': 'div[@class="no_data"]/text()',
     'attitute': 'div[@class="main-review"]/div[@class="review-rank"]/span/@class',
@@ -116,7 +116,7 @@ COOKIES1 = {
         # " dper=9b5ba8ba8fb7338106d7db259d132cf9e4a4b9ff6044c42201fcf8347bf59323;"
         " ll=7fd06e815b796be3df069dec7836c3df;"  ## !!!
          " lgtoken=025cadcec-73bf-4809-a971-4e7bdebdd442;"
-        # " ua=18582389107;" 
+        # " ua=18582389107;"
         " ctu=06936018815a622639a414e01836cb5348b97dd37cfa87092eb83d7be0c80ad4;"  # !!!
         # " s_ViewType=10;"
         " _lxsdk_s=1614591ca60-041-da1-f01%7C%7C44"  # !!!
@@ -320,5 +320,5 @@ for each in ['food', 'entertainment', 'shopping']:
 
     if not os.path.exists(START_DATE_FILE[each]):
         f = open(START_DATE_FILE[each], 'w+')
-        f.write('2001-01-01')
+        f.write('2017-11-01')
         f.close()

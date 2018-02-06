@@ -62,7 +62,6 @@ class DianPingItemsEngine(object):
         self.pipe.save_category_list(category_list['data'])
         # 清理
         category_list['data'].clear()
-        return
 
     def get_category_logic(self, city):
         data = []
@@ -383,7 +382,14 @@ class DianPingItemsSpider(object):
             data = selector.xpath(parse['data'])
             if data:
                 for each in data:
-                    user = each.xpath(parse['user'])[0] if each.xpath(parse['user']) else ''
+                    # user这里有点复杂
+                    # user = each.xpath(parse['user'])[0] if each.xpath(parse['user']) else ''
+                    if each.xpath(parse['user1']):
+                        user = each.xpath(parse['user1'])[0]
+                    elif each.xpath(parse['user2']):
+                        user = each.xpath(parse['user2'])[0]
+                    else:
+                        user = ''
                     contribution = each.xpath(parse['contribution'])[0] if each.xpath(parse['contribution']) else ''
                     attitute = each.xpath(parse['attitute'])[0] if each.xpath(parse['attitute']) else ''
                     score = ','.join(each.xpath(parse['score'])) if each.xpath(parse['score']) else ''
@@ -398,7 +404,8 @@ class DianPingItemsSpider(object):
                             imgs = ','.join(each.xpath(parse['imgs']))
                     except:
                         pass
-                    shop_cmt['data'].append([user, contribution, attitute, score, content, date, fav, imgs])
+                    if user != '':
+                        shop_cmt['data'].append([user, contribution, attitute, score, content, date, fav, imgs])
 
         return shop_cmt
 
@@ -493,7 +500,6 @@ class DianPingItemsPipeline(object):
 
     def clear_star(self, info):
         score = re.findall('\d\d', info)[0] if re.findall('\d\d', info) else 10
-        attitute = ''
         if score == '50':
             attitute = '非常好'
         elif score == '40':
@@ -543,7 +549,7 @@ class DianPingItemsSchedule(object):
                 self.load_2_hdfs(setting)
                 with open(setting['start_date'][setting['choice']], 'w+', encoding=setting['encode']) as f:
                     f.write(max_date)
-                n += 1
+            n += 1
 
     def do_clear_logging(self, setting):
         """将日志清理模块封装"""
