@@ -12,3 +12,25 @@
 		 # 获取每个城市的餐饮 购物 的商铺列表
 		 # 采集每个商铺的详细数据
 		 # 采集每个商铺指定时间的评论（携程恶心，只能采集前1000条）
+		 
+
+-
+查看所有库
+	
+		pip list
+
+列出所有已过期的库
+
+		pip list --outdated
+		
+单个更新库
+
+		pip install --upgrade 库名
+
+批量更新
+
+		import pip
+		from subprocess import call
+		
+		for dist in pip.get_installed_distributions():
+			call("pip install --upgrade " + dist.project_name, shell=True)
