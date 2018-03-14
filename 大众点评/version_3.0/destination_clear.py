@@ -8,7 +8,6 @@ __date__ = '2018-03-14'
 """
 
 import json
-import random
 import time
 import requests
 from lxml import etree
@@ -130,4 +129,14 @@ def get_sub_destation():
 
 
 if __name__ == '__main__':
+    """
+    各个步骤相对独立，自由选择
+    """
+    # 第一步清洗
+    get_all_cities()
+    # 第二步清洗
+    get_all_city_parent()
+    # 第三步清洗
+    clear_2nd()
+    # 最后一步
     get_sub_destation()
