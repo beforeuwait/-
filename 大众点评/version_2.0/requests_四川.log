@@ -1,0 +1,116 @@
+Thu, 22 Feb 2018 16:03:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:01 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g34014c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:01 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g34014c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:01 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g34014c1699p1, params: 
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g116c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g116c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:03 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g116c1699p1, params: 
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g116c1699p2 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:03 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g116c1699p2 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:04 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g116c1699p2, params: 
+Thu, 22 Feb 2018 16:03:04 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:04 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g1817c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:04 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g1817c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:04 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g1817c1699p1, params: 
+Thu, 22 Feb 2018 16:03:05 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:05 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g3017c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:05 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g3017c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:05 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g3017c1699p1, params: 
+Thu, 22 Feb 2018 16:03:06 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:06 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:07 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:07 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p1, params: 
+Thu, 22 Feb 2018 16:03:07 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:07 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p2 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:08 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p2 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:08 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p2, params: 
+Thu, 22 Feb 2018 16:03:09 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:09 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p3 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:09 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p3 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:09 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p3, params: 
+Thu, 22 Feb 2018 16:03:10 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:10 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p4 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:10 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p4 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:10 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p4, params: 
+Thu, 22 Feb 2018 16:03:11 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:11 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p5 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:12 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p5 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:12 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p5, params: 
+Thu, 22 Feb 2018 16:03:12 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:12 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g110c1699p6 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:13 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g110c1699p6 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:13 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g110c1699p6, params: 
+Thu, 22 Feb 2018 16:03:13 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:13 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g109c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:13 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g109c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:13 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g109c1699p1, params: 
+Thu, 22 Feb 2018 16:03:13 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:14 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:14 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:14 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p1, params: 
+Thu, 22 Feb 2018 16:03:14 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:14 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p2 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:15 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p2 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:15 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p2, params: 
+Thu, 22 Feb 2018 16:03:15 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:15 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p3 HTTP/1.1" 403 None
+Thu, 22 Feb 2018 16:03:16 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:16 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p3 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:17 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p3 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:17 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p3, params: 
+Thu, 22 Feb 2018 16:03:18 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:18 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p4 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:18 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p4 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:18 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p4, params: 
+Thu, 22 Feb 2018 16:03:18 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:18 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p5 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:19 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p5 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:19 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p5, params: 
+Thu, 22 Feb 2018 16:03:20 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:20 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p6 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:20 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p6 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:20 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p6, params: 
+Thu, 22 Feb 2018 16:03:21 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:21 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g118c1699p7 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:21 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g118c1699p7 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:21 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g118c1699p7, params: 
+Thu, 22 Feb 2018 16:03:21 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:21 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p1 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:22 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p1 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:22 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p1, params: 
+Thu, 22 Feb 2018 16:03:22 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:22 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p2 HTTP/1.1" 403 None
+Thu, 22 Feb 2018 16:03:23 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:23 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p2 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:24 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p2 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:24 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p2, params: 
+Thu, 22 Feb 2018 16:03:24 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:25 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p3 HTTP/1.1" 403 None
+Thu, 22 Feb 2018 16:03:25 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:25 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p3 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:25 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p3 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:25 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p3, params: 
+Thu, 22 Feb 2018 16:03:26 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:26 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p4 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:26 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p4 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:26 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p4, params: 
+Thu, 22 Feb 2018 16:03:27 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:27 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p5 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:28 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p5 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:28 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p5, params: 
+Thu, 22 Feb 2018 16:03:29 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:29 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p6 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:29 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p6 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:29 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p6, params: 
+Thu, 22 Feb 2018 16:03:30 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:30 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p7 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:31 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p7 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:31 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p7, params: 
+Thu, 22 Feb 2018 16:03:32 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:32 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p8 HTTP/1.1" 301 0
+Thu, 22 Feb 2018 16:03:32 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/aba/ch10/g210c1699p8 HTTP/1.1" 200 None
+Thu, 22 Feb 2018 16:03:32 dianping_items.py[line:226] DEBUG 请求成功, url: http://www.dianping.com/aba/ch10/g210c1699p8, params: 
+Thu, 22 Feb 2018 16:03:33 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Thu, 22 Feb 2018 16:03:33 connectionpool.py[line:396] DEBUG http://127.0.0.1:51703 "GET http://www.dianping.com/search/category/255/10/g210c1699p9 HTTP/1.1" 301 0

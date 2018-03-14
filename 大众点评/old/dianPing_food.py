@@ -343,15 +343,15 @@ class dianpingFoodPipeline:
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.RESTAURANT_LIST % config.PROVINCE,
+                config.RESTAURANT_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         else:
-            open(config.RESTAURANT_LIST % config.PROVINCE , 'w+', encoding=self.code)
+            open(config.RESTAURANT_LIST % config.PROVINCE, 'w+', encoding=self.code)
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.RESTAURANT_LIST % config.PROVINCE,
+                config.RESTAURANT_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         return shop_list

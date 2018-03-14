@@ -337,7 +337,7 @@ class dianpingShoppingPipeline:
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.SHOPPING_LIST % config.PROVINCE,
+                config.SHOPPING_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         else:
@@ -345,7 +345,7 @@ class dianpingShoppingPipeline:
             shop_list = (
                 i.strip().split(
                     self.blank) for i in open(
-                    config.SHOPPING_LIST % config.PROVINCE,
+                config.SHOPPING_LIST % config.PROVINCE,
                     'r',
                     encoding=self.code))
         return shop_list
