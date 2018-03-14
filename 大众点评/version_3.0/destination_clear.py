@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 __author__ = 'wangjiawei'
-
+__date__ = '2018-03-14'
 """
 说明：这是地域清洗脚本，从json格式中提取数据，将每个省，每个市的数据输出，并放入json文件里
 格式：{ 省:xx, 省id:xx,城市:xx, 城市cne: xx}
@@ -34,8 +34,8 @@ def get_all_cities():
             cityName = each.get('cityName', '')
             cityOrderId = each.get('cityOrderId', '')
             parentCityId = each.get('parentCityId', '')
-            all_cities.append({'prov': pname, 'cityName': cityName, 'cityEnName': cityEnName, \
-                            'cityId': cityId, 'cityAreaCode': cityAreaCode,\
+            all_cities.append({'prov': pname, 'cityName': cityName, 'cityEnName': cityEnName,
+                            'cityId': cityId, 'cityAreaCode': cityAreaCode,
                              'cityOrderId': cityOrderId, 'parentCityId': parentCityId})
         
     result = json.dumps(all_cities)
@@ -79,27 +79,26 @@ HEADERS = {
     "Host": "www.dianping.com",
     "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) "
                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"),
-}
+    }
 COOKIES = {
-    "Cookie": ("showNav=javascript:;\
-                 navCtgScroll=0;\
-                  navCtgScroll=0;\
-                   showNav=#nav-tab|0|1;\
-                    # _lxsdk_cuid=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;\
-                     _lxsdk=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;\
-                      _hc.v=59decaa2-84aa-e238-6da0-49c0bbf865c0.1519281203;\
-                       s_ViewType=10;\
-                        dper=9b5ba8ba8fb7338106d7db259d132cf99f1c4f7f1807e94bea6e9fcda606c0b6;\
-                         ua=18582389107;\
-                          ctu=06936018815a622639a414e01836cb531dc3092e5e853dc9b35845d6e3c87db5;\
-                           cityid=1;\
-                            default_ab=shop%3AA%3A1%7Cindex%3AA%3A1%7CshopList%3AA%3A1%7Cshopreviewlist%3AA%3A1%7Csinglereview%3AA%3A1;\
-                             ll=7fd06e815b796be3df069dec7836c3df;\
-                              cy=8;\
-                               cye=chengdu;\
-                                _lxsdk_s=162230cf5a0-69d-49-e8b%7C%7C29"
-                                )
-}
+    "Cookie": ("showNav=javascript:;"
+               "navCtgScroll=0;"
+               "navCtgScroll=0;"
+               "showNav=#nav-tab|0|1;"
+               " _lxsdk_cuid=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;"
+               "_lxsdk=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;"
+               "_hc.v=59decaa2-84aa-e238-6da0-49c0bbf865c0.1519281203;"
+               "s_ViewType=10;dper=9b5ba8ba8fb7338106d7db259d132cf99f1c4f7f1807e94bea6e9fcda606c0b6;ua=18582389107;"
+               "ctu=06936018815a622639a414e01836cb531dc3092e5e853dc9b35845d6e3c87db5;"
+               "cityid=1;"
+               "default_ab=shop%3AA%3A1%7Cindex%3AA%3A1%7CshopList%3AA%3A1%7Cshopreviewlist%3AA%3A1%7Csinglereview%3AA%3A1;"
+               "ll=7fd06e815b796be3df069dec7836c3df;"
+               "cy=8;"
+               "cye=chengdu;"
+               "_lxsdk_s=162230cf5a0-69d-49-e8b%7C%7C29")
+    }
+
+# todo: 完成全国城市列表的获取
 def get_sub_destation():
     """请求一个固定的网址，从而获取全部的城市的下一级
     """
