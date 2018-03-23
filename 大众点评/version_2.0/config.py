@@ -8,10 +8,10 @@ os.chdir(os.path.split(os.path.abspath(__file__))[0])
 """
 # 测试用
 CHOICE = 'food'
-PROVS = '新疆'
+PROVS = '河北'
 """
-PROVS = '四川'
-CHOICE = 'food'
+PROVS = '河北'
+CHOICE = 'shopping'
 CITY_LIST = CITY_LIST
 
 # 设置
@@ -122,29 +122,26 @@ COOKIES1 = {
 }
 COOKIES = {
     "Cookie": (
-        " ctu=06936018815a622639a414e01836cb531dc3092e5e853dc9b35845d6e3c87db5;;"
-        " lgtoken=065ec2aad-8279-4b04-b08a-6758fd945962;"
-        " dper=9b5ba8ba8fb7338106d7db259d132cf979bd7c9299704797928e6a65c744f6cc;"
+        "cy=8;"
+        " cye=chengdu;"
+        " _lxsdk_cuid=162422c252dc8-0fcacc5ef594bc-33627805-13c680-162422c252ec8;"
+        " _lxsdk=162422c252dc8-0fcacc5ef594bc-33627805-13c680-162422c252ec8;"
+        " _hc.v=d5577e34-76fc-368f-4031-71cdbdcfe638.1521528612;"
+        " lgtoken=059f0fd5a-1baf-4927-9e20-2c4933bdf245;"
+        " thirdtoken=481037F8F2674FD1871F3898C6905637;"
+        " JSESSIONID=A1925DDA6858B3170FC3FBC4BDA69F2F;"
+        " dper=668d1f13c70683432c25a44d18614673879dea2f3c2c030adc1c685ac6298b8e;"
         " ll=7fd06e815b796be3df069dec7836c3df;"
-        " _hc.v=59decaa2-84aa-e238-6da0-49c0bbf865c0.1519281203;"
-        " ua=18582389107;"
-    )
+        " ua=_%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86;"
+        " ctu=a91d9076090ffb8fe11e3982711567ed049a427fb68f247a21e59c84a4ed9fac;"
+        " s_ViewType=10;"
+        " wed_user_path=2814|0;"
+        " aburl=1;"
+        "__mta=189209876.1521528632529.1521528632529.1521528632534.2;"
+        " _lxsdk_s=162422c2531-361-e20-a4f%7C%7C33"
+   )
 }
-COOKIES22 = {
-    "Cookie": (
-                # "_lxsdk_cuid=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;"
-               # " _lxsdk=161bc37672fc8-01d3f62a97e012-32687a04-13c680-161bc37672fc8;"
-               " _hc.v=59decaa2-84aa-e238-6da0-49c0bbf865c0.1519281203;"
-               " s_ViewType=10;"
-               " dper=9b5ba8ba8fb7338106d7db259d132cf99f1c4f7f1807e94bea6e9fcda606c0b6;"
-               " ll=7fd06e815b796be3df069dec7836c3df;"
-               " ua=18582389107;"
-               # " ctu=06936018815a622639a414e01836cb531dc3092e5e853dc9b35845d6e3c87db5;"
-               # " cy=255;"
-               # " cye=aba;"
-               # " _lxsdk_s=161bc376732-3fc-937-ce0%7C%7C210"
-               )
-}
+
 # PARAMS
 PARAMS = {
     "_nr_force": "1508318702379",
@@ -161,6 +158,7 @@ PROXIES = {
 
 HEADERS = {
         'Host': 'www.dianping.com',
+        'Referer': 'http://www.dianping.com/shop/3998371',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'Accept-Encoding': 'gzip, deflate',
         'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',

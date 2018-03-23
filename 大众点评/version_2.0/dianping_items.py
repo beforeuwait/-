@@ -100,6 +100,7 @@ class DianPingItemsEngine(object):
     def shop_list_logic(self, info):
         page = 50
         while page > 0:
+            print(info, page)
             response = self.s['requests_result']
             shop_list = self.s['shop_list']
             url = info[0] + str(51 - page)
@@ -177,8 +178,8 @@ class DianPingItemsEngine(object):
         在这里不关心到底有多少的评论，有评论就抓取，无评论就跳过。 按照日期来过滤
         对于新增加的店铺实现全部评论抓取
         """
-        f = open(self.s['shop_cmt_file'][self.s['choice']], 'w+')
-        f.close()
+        # f = open(self.s['shop_cmt_file'][self.s['choice']], 'w+')
+        # f.close()
         shop_list = (i.strip().split(self.s['blank'])
                      for i in open(self.s['shop_list_file'][self.s['choice']], 'r', encoding=self.s['encode'])
                      )
@@ -242,8 +243,8 @@ class DianPingItemsDownloader(object):
         while retry > 0:
             try:
                 args[1]['User-Agent'] = Faker().user_agent()
-                # 休息 0-1之间的随机数
-                time.sleep(random.random())
+                # 休息5秒
+                time.sleep(3)
                 if len(args) == 3:
                     # res = self.session.get(args[0],
                     res = requests.get(args[0],
@@ -529,10 +530,10 @@ class DianPingItemsSchedule(object):
         #
         # 同时，更新了策略，每一次迭代，并不重新获取列表了
         # dpie.get_catgory()
-        if n == 1:
-            dpie.shop_list()
+        # if n == 1:
+            # dpie.shop_list()
             # dpie.shop_info()
-        # dpie.update_comments(min_date, max_date)
+        dpie.update_comments(min_date, max_date)
         del dpie
 
     def main(self):
