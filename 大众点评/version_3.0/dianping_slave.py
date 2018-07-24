@@ -17,6 +17,7 @@ import json
 import time
 from lxml import etree
 from request_model import RequestModelAPI
+from parse_model import DianpingList
 
 # todo 1:模仿一个从消息队列里提取数据的中间模块
 
@@ -37,6 +38,8 @@ class SlaveModel(object):
         # 关于50页url该如何设计呢
 
         # 实例化请求模块
+
+        # 2018-03-29 突然发现这不是一个通用的execute
         rma = RequestModelAPI()
         for page in range(50):
             seed['url'] = self.construct_url(seed.get('url'), page+1)
@@ -45,7 +48,11 @@ class SlaveModel(object):
                 time.sleep(3)
                 result = rma.execute(seed)
                 seed.update(result)
-                DianpingParseList.parse_list(result)
+                # 解析规则
+
+                # todo: 这儿的问题,需要在 parse里设置一个api来接收
+                dpl = DianpingList()
+                dpl.parse_list(result)
                 # 放入消息队列，这里用文档形式
                 if result.get('retry') == 'no':
                     with open('seed/shop_list_json.txt', 'w', encoding='utf8') as f:
@@ -53,8 +60,10 @@ class SlaveModel(object):
                     del seed
                     del result
                     break
+
+                elif result.get('next_page') == 'no':
+                    break
                 current_num += 1
-            # 接下来的的处理逻辑，交给parse小朋友啦
 
             break
 
@@ -64,26 +73,14 @@ class SlaveModel(object):
         url = link + str(page)
         return url
 
-class DianpingParseList():
 
-    @staticmethod
-    def parse_list(result):
-        # 处理selector，报错就停止
-        try:
-            selector = etree.HTML(result.get('html'))
-        except:
-            selector = None
-        if selector is not None:
-            list = selector.xpath('//div[@id="shop-all-list"]/ul/li')
-            for each in list:
-                url = each.xpath('div[@class="txt"]/div[@class="tit"]/a/@href')[0]
-                name = each.xpath('div[@class="txt"]/div[@class="tit"]/a/h4/text()')[0]
-                id = url.split('/')[-1]
-                print(name, id)
 
 
 if __name__ == '__main__':
     # sm = SlaveModel()
     # sm.reveive_seed()
     a = open('./seed/shop_list_json.txt', 'r', encoding='utf8').read()
-    DianpingParseList.parse_list(json.loads(a))
+    dpl = DianpingList()
+    dpl.parse_list(json.loads(a))
+
+    # todo: 需要解决一个很明显的问题，就是slave获取了数据，如何确定还有下一页，又如何告知其他slave或者引擎去执行下一个

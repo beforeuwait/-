@@ -423,6 +423,8 @@ class RequestModelAPI(object):
             'error_info': '',
             'cookie_info': '',
             'retry': 'no',
+            'next_page': 'no',
+            'data': '',
             # 需要topic，针对反爬虫，不同的topic对于的cookie不同
         }
         # 装载url
